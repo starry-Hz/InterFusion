@@ -188,7 +188,7 @@ if __name__ == "__main__":
     label_folder = "data/interpretation_label"
     txt_files = [f for f in os.listdir(label_folder) 
                  if f.startswith("omi-") and f.endswith(".txt")]
-    txt_files = ['omi-1.txt']
+    # txt_files = ['omi-1.txt']
     global_expected = 0
     global_true_positive = 0
     global_detected = 0
