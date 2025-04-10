@@ -1,0 +1,34 @@
+文件: omi-1.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-2.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-3.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-4.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-5.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-6.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-7.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-8.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-9.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-10.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-11.txt,train.pkl大小: (8640, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+文件: omi-12.txt,train.pkl大小: (7291, 19),test.pkl大小: (4320, 19),test_label.pkl: (4320, 1)
+
+
+
+# 遍历每个文件，查看其数据形状
+for txt_filename in txt_files:
+    prefix = txt_filename.split(".")[0]
+    test_data_path = os.path.join("data/processed", f"{prefix}_test.pkl")
+    test_labels_path = os.path.join("data/processed", f"{prefix}_test_label.pkl")
+    
+    test_data = pd.read_pickle(test_data_path)
+    test_labels = pd.read_pickle(test_labels_path)
+    print(f"test_data type: {type(test_data)},test_labels type: {type(test_labels)}")
+    # 为什么是通过pd读的，但是shape是ndarray？ 回答：因为在读取时，pandas会自动将数据转换为numpy数组格式
+    # 转换为DataFrame格式
+    if isinstance(test_data, np.ndarray):
+        test_data = pd.DataFrame(test_data)
+    if isinstance(test_labels, np.ndarray):
+        test_labels = pd.DataFrame(test_labels, columns=["label"])
+    elif isinstance(test_labels, pd.Series):
+        test_labels = test_labels.to_frame(name="label")
+
+    print(f"文件: {txt_filename},test.pkl大小: {test_data.shape},test_label.pkl: {test_labels.shape}")
