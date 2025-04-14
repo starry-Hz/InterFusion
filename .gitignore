@@ -8,3 +8,5 @@ __pycache__/
 *.log
 data/Dataset Description.md
 .idea/vcs.xml
+*.png
+*.gif
