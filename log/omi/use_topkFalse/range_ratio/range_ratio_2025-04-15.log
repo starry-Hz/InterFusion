@@ -1,0 +1,1300 @@
+2025-04-15 23:35:31,623 - INFO - 
+ Starting experiment with config: ExperimentConfig(dataset='omi', window_size=5, score_thresholds=array([1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5, 5. , 5.5, 6. , 6.5, 7. ]), topk_range=range(1, 10), score_modes=['range_ratio'], use_topk=False, data_dir='./data/processed', label_dir='./data/interpretation_label', log_dir='./log/use_topkFalse', visual_dir='./visual/use_topkFalse', num_workers=4, gif_duration=500)
+2025-04-15 23:35:31,624 - INFO - pearson correlation 取绝对值
+2025-04-15 23:35:31,624 - INFO - 当前评分模式: ['range_ratio']
+2025-04-15 23:35:31,624 - INFO - 
+==================================================
+2025-04-15 23:35:31,624 - INFO - 开始执行网格搜索...
+2025-04-15 23:35:31,628 - INFO - [omi-1] Starting grid search...
+2025-04-15 23:35:34,947 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:34,947 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:34,965 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:34,968 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:36,985 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:37,090 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:37,162 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:37,171 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:39,142 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:39,291 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:39,305 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:39,350 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:41,135 - INFO - [omi-1.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.7417, R=1.0000, F1=0.8517
+2025-04-15 23:35:41,150 - INFO - [omi-10] Starting grid search...
+2025-04-15 23:35:44,497 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:44,579 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:44,579 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:44,579 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:46,709 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:46,836 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:46,838 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:46,839 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:48,960 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:49,155 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:49,156 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.4444, R=0.9836, F1=0.6122
+2025-04-15 23:35:49,156 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.4478, R=0.9836, F1=0.6154
+2025-04-15 23:35:51,087 - INFO - [omi-10.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.4478, R=0.9836, F1=0.6154
+2025-04-15 23:35:51,104 - INFO - [omi-11] Starting grid search...
+2025-04-15 23:35:54,399 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:54,455 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:54,470 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:54,488 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:56,570 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:56,701 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:56,712 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:56,712 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:58,703 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:58,929 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:58,929 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:35:58,929 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:36:00,758 - INFO - [omi-11.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.3434, R=0.9828, F1=0.5089
+2025-04-15 23:36:00,775 - INFO - [omi-12] Starting grid search...
+2025-04-15 23:36:03,566 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.6129, R=0.9500, F1=0.7451
+2025-04-15 23:36:03,570 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.6129, R=0.9500, F1=0.7451
+2025-04-15 23:36:03,617 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.6129, R=0.9500, F1=0.7451
+2025-04-15 23:36:03,620 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.6129, R=0.9500, F1=0.7451
+2025-04-15 23:36:05,229 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.6129, R=0.9500, F1=0.7451
+2025-04-15 23:36:05,242 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.6129, R=0.9500, F1=0.7451
+2025-04-15 23:36:05,317 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.6230, R=0.9500, F1=0.7525
+2025-04-15 23:36:05,317 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.6230, R=0.9500, F1=0.7525
+2025-04-15 23:36:06,919 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.6230, R=0.9500, F1=0.7525
+2025-04-15 23:36:06,921 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.6230, R=0.9500, F1=0.7525
+2025-04-15 23:36:06,921 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.6230, R=0.9500, F1=0.7525
+2025-04-15 23:36:06,921 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.6230, R=0.9500, F1=0.7525
+2025-04-15 23:36:08,367 - INFO - [omi-12.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.6230, R=0.9500, F1=0.7525
+2025-04-15 23:36:08,382 - INFO - [omi-2] Starting grid search...
+2025-04-15 23:36:11,557 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:11,569 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:11,608 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:11,608 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:13,610 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:13,682 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:13,682 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:13,682 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:15,655 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:15,655 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:15,655 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:15,688 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:17,444 - INFO - [omi-2.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.4559, R=1.0000, F1=0.6263
+2025-04-15 23:36:17,460 - INFO - [omi-3] Starting grid search...
+2025-04-15 23:36:20,723 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:20,749 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:20,749 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:20,784 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:22,785 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:22,834 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:22,834 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:22,844 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:24,915 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.7738, R=0.8333, F1=0.8025
+2025-04-15 23:36:24,916 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.7831, R=0.8333, F1=0.8075
+2025-04-15 23:36:24,961 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.7927, R=0.8333, F1=0.8125
+2025-04-15 23:36:24,961 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.7927, R=0.8333, F1=0.8125
+2025-04-15 23:36:26,756 - INFO - [omi-3.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.7927, R=0.8333, F1=0.8125
+2025-04-15 23:36:26,770 - INFO - [omi-4] Starting grid search...
+2025-04-15 23:36:29,968 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.7952, R=0.9851, F1=0.8800
+2025-04-15 23:36:29,978 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.7952, R=0.9851, F1=0.8800
+2025-04-15 23:36:30,038 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.7952, R=0.9851, F1=0.8800
+2025-04-15 23:36:30,038 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.7952, R=0.9851, F1=0.8800
+2025-04-15 23:36:32,115 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.7952, R=0.9851, F1=0.8800
+2025-04-15 23:36:32,150 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:32,150 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:32,150 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:34,240 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:34,241 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:34,241 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:34,241 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:36,113 - INFO - [omi-4.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.8049, R=0.9851, F1=0.8859
+2025-04-15 23:36:36,128 - INFO - [omi-5] Starting grid search...
+2025-04-15 23:36:39,399 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.4537, R=1.0000, F1=0.6242
+2025-04-15 23:36:39,546 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.4537, R=1.0000, F1=0.6242
+2025-04-15 23:36:39,547 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.4579, R=1.0000, F1=0.6282
+2025-04-15 23:36:39,547 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.4579, R=1.0000, F1=0.6282
+2025-04-15 23:36:41,608 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.4579, R=1.0000, F1=0.6282
+2025-04-15 23:36:41,616 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.4579, R=1.0000, F1=0.6282
+2025-04-15 23:36:41,616 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.4528, R=0.9796, F1=0.6194
+2025-04-15 23:36:41,672 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.4528, R=0.9796, F1=0.6194
+2025-04-15 23:36:43,680 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.4571, R=0.9796, F1=0.6234
+2025-04-15 23:36:43,719 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.4571, R=0.9796, F1=0.6234
+2025-04-15 23:36:43,765 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.4571, R=0.9796, F1=0.6234
+2025-04-15 23:36:43,858 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.4571, R=0.9796, F1=0.6234
+2025-04-15 23:36:45,680 - INFO - [omi-5.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.4615, R=0.9796, F1=0.6275
+2025-04-15 23:36:45,698 - INFO - [omi-6] Starting grid search...
+2025-04-15 23:36:48,913 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:48,926 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:48,976 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:49,029 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:51,026 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:51,026 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:51,039 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:51,131 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:53,143 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.2544, R=0.9773, F1=0.4038
+2025-04-15 23:36:53,143 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.2575, R=0.9773, F1=0.4076
+2025-04-15 23:36:53,143 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.2590, R=0.9773, F1=0.4095
+2025-04-15 23:36:53,227 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.2590, R=0.9773, F1=0.4095
+2025-04-15 23:36:55,091 - INFO - [omi-6.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.2590, R=0.9773, F1=0.4095
+2025-04-15 23:36:55,107 - INFO - [omi-7] Starting grid search...
+2025-04-15 23:36:58,228 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.8261, R=0.9744, F1=0.8941
+2025-04-15 23:36:58,283 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.8261, R=0.9744, F1=0.8941
+2025-04-15 23:36:58,358 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:36:58,364 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:00,189 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:00,238 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:00,317 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:00,340 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:02,172 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:02,208 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:02,307 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:02,367 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:03,996 - INFO - [omi-7.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.8444, R=0.9744, F1=0.9048
+2025-04-15 23:37:04,012 - INFO - [omi-8] Starting grid search...
+2025-04-15 23:37:07,112 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:07,181 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:07,192 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:07,193 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:09,201 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:09,203 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:09,271 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:09,271 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:11,132 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:11,207 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.3537, R=0.9355, F1=0.5133
+2025-04-15 23:37:11,290 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.3580, R=0.9355, F1=0.5179
+2025-04-15 23:37:11,341 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.3580, R=0.9355, F1=0.5179
+2025-04-15 23:37:12,977 - INFO - [omi-8.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.3580, R=0.9355, F1=0.5179
+2025-04-15 23:37:12,993 - INFO - [omi-9] Starting grid search...
+2025-04-15 23:37:16,182 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=1.0, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:16,183 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=1.5, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:16,183 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=2.0, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:16,183 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=2.5, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:18,104 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=3.0, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:18,135 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=3.5, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:18,135 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=4.0, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:18,158 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=4.5, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:20,089 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=5.0, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:20,114 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=5.5, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:20,134 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=6.0, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:20,147 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=6.5, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:21,938 - INFO - [omi-9.txt] mode=range_ratio, top_k=None, threshold=7.0, use_topk=False, P=0.4962, R=0.9155, F1=0.6436
+2025-04-15 23:37:21,960 - INFO - 
+==================================================
+2025-04-15 23:37:21,960 - INFO - 开始汇总结果...
+2025-04-15 23:37:21,967 - INFO - 
+===== Best Results per Dataset =====
+   dataset  score_mode top_k  score_threshold  use_topk  precision   recall  f1_score
+ omi-1.txt range_ratio  None              1.5     False   0.741667 1.000000  0.851675
+omi-10.txt range_ratio  None              7.0     False   0.447761 0.983607  0.615385
+omi-11.txt range_ratio  None              1.5     False   0.343373 0.982759  0.508929
+omi-12.txt range_ratio  None              5.5     False   0.622951 0.950000  0.752475
+ omi-2.txt range_ratio  None              7.0     False   0.455882 1.000000  0.626263
+ omi-3.txt range_ratio  None              6.0     False   0.792683 0.833333  0.812500
+ omi-4.txt range_ratio  None              7.0     False   0.804878 0.985075  0.885906
+ omi-5.txt range_ratio  None              2.0     False   0.457944 1.000000  0.628205
+ omi-6.txt range_ratio  None              6.5     False   0.259036 0.977273  0.409524
+ omi-7.txt range_ratio  None              2.5     False   0.844444 0.974359  0.904762
+ omi-8.txt range_ratio  None              6.5     False   0.358025 0.935484  0.517857
+ omi-9.txt range_ratio  None              2.0     False   0.496183 0.915493  0.643564
+2025-04-15 23:37:21,967 - INFO - 
+===== Overall Metrics =====
+Precision: 0.4835  Recall: 0.9585  F1: 0.6427
+2025-04-15 23:37:21,967 - INFO - 
+【原始汇总指标】
+2025-04-15 23:37:21,967 - INFO - 精确率(Precision): 0.4835
+2025-04-15 23:37:21,967 - INFO - 召回率(Recall):    0.9585
+2025-04-15 23:37:21,967 - INFO - F1值:             0.6427
+2025-04-15 23:37:21,967 - INFO - 
+==================================================
+2025-04-15 23:37:21,967 - INFO - 开始生成可视化结果...
+2025-04-15 23:37:21,968 - INFO - 
+==================================================
+2025-04-15 23:37:21,968 - INFO - 开始数据集可视化: omi-1
+2025-04-15 23:37:21,968 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=1.5
+2025-04-15 23:37:21,968 - INFO - ==================================================
+
+2025-04-15 23:37:21,968 - INFO - 正在加载数据集 omi-1 的数据
+2025-04-15 23:37:21,969 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:21,969 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:23,946 - INFO - 已计算 170 条边的统计量
+2025-04-15 23:37:23,948 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:23,948 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-1
+2025-04-15 23:37:23,949 - INFO - 在数据集中发现 7 个异常时间段
+2025-04-15 23:37:23,949 - INFO - 
+正在处理时间段 1/7: 760-765
+2025-04-15 23:37:23,949 - INFO - 该时间段的真实异常节点: {4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:23,950 - INFO - 正在计算异常分数...
+2025-04-15 23:37:23,951 - INFO - 检测到的异常节点: {1, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:23,951 - INFO - 正在为时间段 760-765 生成可视化
+2025-04-15 23:37:23,951 - INFO - 正在为时间段 760-765 生成异常图可视化
+2025-04-15 23:37:23,951 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:23,952 - DEBUG - 边统计: 正常边 118 条, 异常边 122 条
+2025-04-15 23:37:23,952 - INFO - 时间段 760-765 的节点检测统计: 真阳性=15, 假阳性=1, 假阴性=0, 正常节点=3
+2025-04-15 23:37:24,037 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-1\seg_0_760_765.png
+2025-04-15 23:37:24,114 - INFO - 成功保存时间段 760-765 的可视化结果
+2025-04-15 23:37:24,115 - INFO - 
+正在处理时间段 2/7: 1064-1298
+2025-04-15 23:37:24,115 - INFO - 该时间段的真实异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,115 - INFO - 正在计算异常分数...
+2025-04-15 23:37:24,220 - INFO - 检测到的异常节点: {1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,220 - INFO - 正在为时间段 1064-1298 生成可视化
+2025-04-15 23:37:24,220 - INFO - 正在为时间段 1064-1298 生成异常图可视化
+2025-04-15 23:37:24,220 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:24,222 - DEBUG - 边统计: 正常边 194 条, 异常边 112 条
+2025-04-15 23:37:24,222 - INFO - 时间段 1064-1298 的节点检测统计: 真阳性=13, 假阳性=5, 假阴性=0, 正常节点=1
+2025-04-15 23:37:24,317 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-1\seg_1_1064_1298.png
+2025-04-15 23:37:24,423 - INFO - 成功保存时间段 1064-1298 的可视化结果
+2025-04-15 23:37:24,424 - INFO - 
+正在处理时间段 3/7: 2758-2772
+2025-04-15 23:37:24,424 - INFO - 该时间段的真实异常节点: {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,424 - INFO - 正在计算异常分数...
+2025-04-15 23:37:24,432 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,432 - INFO - 正在为时间段 2758-2772 生成可视化
+2025-04-15 23:37:24,432 - INFO - 正在为时间段 2758-2772 生成异常图可视化
+2025-04-15 23:37:24,432 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:24,433 - DEBUG - 边统计: 正常边 176 条, 异常边 96 条
+2025-04-15 23:37:24,433 - INFO - 时间段 2758-2772 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=0, 正常节点=2
+2025-04-15 23:37:24,517 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-1\seg_2_2758_2772.png
+2025-04-15 23:37:24,592 - INFO - 成功保存时间段 2758-2772 的可视化结果
+2025-04-15 23:37:24,592 - INFO - 
+正在处理时间段 4/7: 2874-2885
+2025-04-15 23:37:24,593 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-15 23:37:24,593 - INFO - 正在计算异常分数...
+2025-04-15 23:37:24,598 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,598 - INFO - 正在为时间段 2874-2885 生成可视化
+2025-04-15 23:37:24,598 - INFO - 正在为时间段 2874-2885 生成异常图可视化
+2025-04-15 23:37:24,598 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:24,599 - DEBUG - 边统计: 正常边 190 条, 异常边 82 条
+2025-04-15 23:37:24,599 - INFO - 时间段 2874-2885 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-15 23:37:24,680 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-1\seg_3_2874_2885.png
+2025-04-15 23:37:24,758 - INFO - 成功保存时间段 2874-2885 的可视化结果
+2025-04-15 23:37:24,758 - INFO - 
+正在处理时间段 5/7: 3012-3025
+2025-04-15 23:37:24,758 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,758 - INFO - 正在计算异常分数...
+2025-04-15 23:37:24,764 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,764 - INFO - 正在为时间段 3012-3025 生成可视化
+2025-04-15 23:37:24,764 - INFO - 正在为时间段 3012-3025 生成异常图可视化
+2025-04-15 23:37:24,764 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:24,765 - DEBUG - 边统计: 正常边 164 条, 异常边 108 条
+2025-04-15 23:37:24,765 - INFO - 时间段 3012-3025 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-15 23:37:24,846 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-1\seg_4_3012_3025.png
+2025-04-15 23:37:24,937 - INFO - 成功保存时间段 3012-3025 的可视化结果
+2025-04-15 23:37:24,937 - INFO - 
+正在处理时间段 6/7: 3160-3305
+2025-04-15 23:37:24,938 - INFO - 该时间段的真实异常节点: {8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:24,938 - INFO - 正在计算异常分数...
+2025-04-15 23:37:25,006 - INFO - 检测到的异常节点: {1, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:25,006 - INFO - 正在为时间段 3160-3305 生成可视化
+2025-04-15 23:37:25,006 - INFO - 正在为时间段 3160-3305 生成异常图可视化
+2025-04-15 23:37:25,006 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:25,007 - DEBUG - 边统计: 正常边 194 条, 异常边 112 条
+2025-04-15 23:37:25,007 - INFO - 时间段 3160-3305 的节点检测统计: 真阳性=12, 假阳性=6, 假阴性=0, 正常节点=1
+2025-04-15 23:37:25,086 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-1\seg_5_3160_3305.png
+2025-04-15 23:37:25,184 - INFO - 成功保存时间段 3160-3305 的可视化结果
+2025-04-15 23:37:25,185 - INFO - 
+正在处理时间段 7/7: 3626-3638
+2025-04-15 23:37:25,185 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:25,185 - INFO - 正在计算异常分数...
+2025-04-15 23:37:25,190 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:25,190 - INFO - 正在为时间段 3626-3638 生成可视化
+2025-04-15 23:37:25,190 - INFO - 正在为时间段 3626-3638 生成异常图可视化
+2025-04-15 23:37:25,191 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:25,192 - DEBUG - 边统计: 正常边 190 条, 异常边 82 条
+2025-04-15 23:37:25,192 - INFO - 时间段 3626-3638 的节点检测统计: 真阳性=12, 假阳性=5, 假阴性=0, 正常节点=2
+2025-04-15 23:37:25,279 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-1\seg_6_3626_3638.png
+2025-04-15 23:37:25,360 - INFO - 成功保存时间段 3626-3638 的可视化结果
+2025-04-15 23:37:25,360 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-1 中的图像创建GIF
+2025-04-15 23:37:25,563 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-1\omi-1.gif
+2025-04-15 23:37:25,563 - INFO - 
+==================================================
+2025-04-15 23:37:25,563 - INFO - 开始数据集可视化: omi-10
+2025-04-15 23:37:25,563 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=7.0
+2025-04-15 23:37:25,563 - INFO - ==================================================
+
+2025-04-15 23:37:25,564 - INFO - 正在加载数据集 omi-10 的数据
+2025-04-15 23:37:25,565 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:25,565 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:27,512 - INFO - 已计算 136 条边的统计量
+2025-04-15 23:37:27,512 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:27,513 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-10
+2025-04-15 23:37:27,513 - INFO - 在数据集中发现 8 个异常时间段
+2025-04-15 23:37:27,513 - INFO - 
+正在处理时间段 1/8: 740-780
+2025-04-15 23:37:27,514 - INFO - 该时间段的真实异常节点: {2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:27,514 - INFO - 正在计算异常分数...
+2025-04-15 23:37:27,536 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:27,536 - INFO - 正在为时间段 740-780 生成可视化
+2025-04-15 23:37:27,536 - INFO - 正在为时间段 740-780 生成异常图可视化
+2025-04-15 23:37:27,536 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:27,537 - DEBUG - 边统计: 正常边 206 条, 异常边 66 条
+2025-04-15 23:37:27,537 - INFO - 时间段 740-780 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=1, 正常节点=1
+2025-04-15 23:37:27,619 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_0_740_780.png
+2025-04-15 23:37:27,697 - INFO - 成功保存时间段 740-780 的可视化结果
+2025-04-15 23:37:27,697 - INFO - 
+正在处理时间段 2/8: 1345-1406
+2025-04-15 23:37:27,698 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-15 23:37:27,698 - INFO - 正在计算异常分数...
+2025-04-15 23:37:27,735 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:27,735 - INFO - 正在为时间段 1345-1406 生成可视化
+2025-04-15 23:37:27,735 - INFO - 正在为时间段 1345-1406 生成异常图可视化
+2025-04-15 23:37:27,735 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:27,736 - DEBUG - 边统计: 正常边 210 条, 异常边 62 条
+2025-04-15 23:37:27,736 - INFO - 时间段 1345-1406 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-15 23:37:27,819 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_1_1345_1406.png
+2025-04-15 23:37:27,899 - INFO - 成功保存时间段 1345-1406 的可视化结果
+2025-04-15 23:37:27,899 - INFO - 
+正在处理时间段 3/8: 2224-2272
+2025-04-15 23:37:27,899 - INFO - 该时间段的真实异常节点: {4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:27,899 - INFO - 正在计算异常分数...
+2025-04-15 23:37:27,928 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:27,928 - INFO - 正在为时间段 2224-2272 生成可视化
+2025-04-15 23:37:27,928 - INFO - 正在为时间段 2224-2272 生成异常图可视化
+2025-04-15 23:37:27,928 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:27,929 - DEBUG - 边统计: 正常边 208 条, 异常边 64 条
+2025-04-15 23:37:27,929 - INFO - 时间段 2224-2272 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=0, 正常节点=2
+2025-04-15 23:37:28,015 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_2_2224_2272.png
+2025-04-15 23:37:28,100 - INFO - 成功保存时间段 2224-2272 的可视化结果
+2025-04-15 23:37:28,100 - INFO - 
+正在处理时间段 4/8: 2514-2592
+2025-04-15 23:37:28,100 - INFO - 该时间段的真实异常节点: {16, 4}
+2025-04-15 23:37:28,100 - INFO - 正在计算异常分数...
+2025-04-15 23:37:28,148 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:28,149 - INFO - 正在为时间段 2514-2592 生成可视化
+2025-04-15 23:37:28,149 - INFO - 正在为时间段 2514-2592 生成异常图可视化
+2025-04-15 23:37:28,149 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:28,149 - DEBUG - 边统计: 正常边 180 条, 异常边 92 条
+2025-04-15 23:37:28,149 - INFO - 时间段 2514-2592 的节点检测统计: 真阳性=2, 假阳性=15, 假阴性=0, 正常节点=2
+2025-04-15 23:37:28,234 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_3_2514_2592.png
+2025-04-15 23:37:28,370 - INFO - 成功保存时间段 2514-2592 的可视化结果
+2025-04-15 23:37:28,370 - INFO - 
+正在处理时间段 5/8: 2733-2778
+2025-04-15 23:37:28,370 - INFO - 该时间段的真实异常节点: {11, 14, 15}
+2025-04-15 23:37:28,370 - INFO - 正在计算异常分数...
+2025-04-15 23:37:28,397 - INFO - 检测到的异常节点: {1, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:28,397 - INFO - 正在为时间段 2733-2778 生成可视化
+2025-04-15 23:37:28,397 - INFO - 正在为时间段 2733-2778 生成异常图可视化
+2025-04-15 23:37:28,397 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:28,398 - DEBUG - 边统计: 正常边 178 条, 异常边 62 条
+2025-04-15 23:37:28,398 - INFO - 时间段 2733-2778 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-15 23:37:28,479 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_4_2733_2778.png
+2025-04-15 23:37:28,557 - INFO - 成功保存时间段 2733-2778 的可视化结果
+2025-04-15 23:37:28,557 - INFO - 
+正在处理时间段 6/8: 3401-3405
+2025-04-15 23:37:28,557 - INFO - 该时间段的真实异常节点: {1}
+2025-04-15 23:37:28,557 - INFO - 正在计算异常分数...
+2025-04-15 23:37:28,558 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:28,558 - INFO - 正在为时间段 3401-3405 生成可视化
+2025-04-15 23:37:28,558 - INFO - 正在为时间段 3401-3405 生成异常图可视化
+2025-04-15 23:37:28,558 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:28,559 - DEBUG - 边统计: 正常边 138 条, 异常边 134 条
+2025-04-15 23:37:28,559 - INFO - 时间段 3401-3405 的节点检测统计: 真阳性=1, 假阳性=15, 假阴性=0, 正常节点=3
+2025-04-15 23:37:28,641 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_5_3401_3405.png
+2025-04-15 23:37:28,718 - INFO - 成功保存时间段 3401-3405 的可视化结果
+2025-04-15 23:37:28,719 - INFO - 
+正在处理时间段 7/8: 3414-3459
+2025-04-15 23:37:28,719 - INFO - 该时间段的真实异常节点: {8}
+2025-04-15 23:37:28,719 - INFO - 正在计算异常分数...
+2025-04-15 23:37:28,745 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:28,745 - INFO - 正在为时间段 3414-3459 生成可视化
+2025-04-15 23:37:28,745 - INFO - 正在为时间段 3414-3459 生成异常图可视化
+2025-04-15 23:37:28,745 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:28,746 - DEBUG - 边统计: 正常边 148 条, 异常边 124 条
+2025-04-15 23:37:28,746 - INFO - 时间段 3414-3459 的节点检测统计: 真阳性=1, 假阳性=16, 假阴性=0, 正常节点=2
+2025-04-15 23:37:28,824 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_6_3414_3459.png
+2025-04-15 23:37:28,902 - INFO - 成功保存时间段 3414-3459 的可视化结果
+2025-04-15 23:37:28,902 - INFO - 
+正在处理时间段 8/8: 3700-3744
+2025-04-15 23:37:28,902 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-15 23:37:28,903 - INFO - 正在计算异常分数...
+2025-04-15 23:37:28,929 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:28,929 - INFO - 正在为时间段 3700-3744 生成可视化
+2025-04-15 23:37:28,929 - INFO - 正在为时间段 3700-3744 生成异常图可视化
+2025-04-15 23:37:28,929 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:28,930 - DEBUG - 边统计: 正常边 152 条, 异常边 120 条
+2025-04-15 23:37:28,930 - INFO - 时间段 3700-3744 的节点检测统计: 真阳性=12, 假阳性=5, 假阴性=0, 正常节点=2
+2025-04-15 23:37:29,013 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-10\seg_7_3700_3744.png
+2025-04-15 23:37:29,097 - INFO - 成功保存时间段 3700-3744 的可视化结果
+2025-04-15 23:37:29,098 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-10 中的图像创建GIF
+2025-04-15 23:37:29,314 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-10\omi-10.gif
+2025-04-15 23:37:29,314 - INFO - 
+==================================================
+2025-04-15 23:37:29,314 - INFO - 开始数据集可视化: omi-11
+2025-04-15 23:37:29,314 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=1.5
+2025-04-15 23:37:29,314 - INFO - ==================================================
+
+2025-04-15 23:37:29,314 - INFO - 正在加载数据集 omi-11 的数据
+2025-04-15 23:37:29,315 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:29,315 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:31,227 - INFO - 已计算 153 条边的统计量
+2025-04-15 23:37:31,227 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:31,228 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-11
+2025-04-15 23:37:31,228 - INFO - 在数据集中发现 9 个异常时间段
+2025-04-15 23:37:31,228 - INFO - 
+正在处理时间段 1/9: 738-755
+2025-04-15 23:37:31,228 - INFO - 该时间段的真实异常节点: {2}
+2025-04-15 23:37:31,229 - INFO - 正在计算异常分数...
+2025-04-15 23:37:31,237 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:31,237 - INFO - 正在为时间段 738-755 生成可视化
+2025-04-15 23:37:31,237 - INFO - 正在为时间段 738-755 生成异常图可视化
+2025-04-15 23:37:31,238 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:31,238 - DEBUG - 边统计: 正常边 170 条, 异常边 70 条
+2025-04-15 23:37:31,238 - INFO - 时间段 738-755 的节点检测统计: 真阳性=0, 假阳性=16, 假阴性=1, 正常节点=2
+2025-04-15 23:37:31,319 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_0_738_755.png
+2025-04-15 23:37:31,402 - INFO - 成功保存时间段 738-755 的可视化结果
+2025-04-15 23:37:31,402 - INFO - 
+正在处理时间段 2/9: 757-815
+2025-04-15 23:37:31,402 - INFO - 该时间段的真实异常节点: set()
+2025-04-15 23:37:31,402 - INFO - 正在计算异常分数...
+2025-04-15 23:37:31,437 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:31,437 - INFO - 正在为时间段 757-815 生成可视化
+2025-04-15 23:37:31,437 - INFO - 正在为时间段 757-815 生成异常图可视化
+2025-04-15 23:37:31,437 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:31,438 - DEBUG - 边统计: 正常边 266 条, 异常边 6 条
+2025-04-15 23:37:31,438 - INFO - 时间段 757-815 的节点检测统计: 真阳性=0, 假阳性=17, 假阴性=0, 正常节点=2
+2025-04-15 23:37:31,520 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_1_757_815.png
+2025-04-15 23:37:31,597 - INFO - 成功保存时间段 757-815 的可视化结果
+2025-04-15 23:37:31,598 - INFO - 
+正在处理时间段 3/9: 1366-1375
+2025-04-15 23:37:31,598 - INFO - 该时间段的真实异常节点: {4, 5, 8, 17, 19}
+2025-04-15 23:37:31,598 - INFO - 正在计算异常分数...
+2025-04-15 23:37:31,602 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:31,602 - INFO - 正在为时间段 1366-1375 生成可视化
+2025-04-15 23:37:31,602 - INFO - 正在为时间段 1366-1375 生成异常图可视化
+2025-04-15 23:37:31,602 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:31,603 - DEBUG - 边统计: 正常边 102 条, 异常边 170 条
+2025-04-15 23:37:31,603 - INFO - 时间段 1366-1375 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-15 23:37:31,691 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_2_1366_1375.png
+2025-04-15 23:37:31,769 - INFO - 成功保存时间段 1366-1375 的可视化结果
+2025-04-15 23:37:31,769 - INFO - 
+正在处理时间段 4/9: 2301-2314
+2025-04-15 23:37:31,769 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-15 23:37:31,769 - INFO - 正在计算异常分数...
+2025-04-15 23:37:31,776 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:31,777 - INFO - 正在为时间段 2301-2314 生成可视化
+2025-04-15 23:37:31,777 - INFO - 正在为时间段 2301-2314 生成异常图可视化
+2025-04-15 23:37:31,777 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:31,778 - DEBUG - 边统计: 正常边 144 条, 异常边 128 条
+2025-04-15 23:37:31,778 - INFO - 时间段 2301-2314 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-15 23:37:31,865 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_3_2301_2314.png
+2025-04-15 23:37:31,948 - INFO - 成功保存时间段 2301-2314 的可视化结果
+2025-04-15 23:37:31,948 - INFO - 
+正在处理时间段 5/9: 2365-2381
+2025-04-15 23:37:31,949 - INFO - 该时间段的真实异常节点: {19}
+2025-04-15 23:37:31,949 - INFO - 正在计算异常分数...
+2025-04-15 23:37:31,956 - INFO - 检测到的异常节点: {4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:31,956 - INFO - 正在为时间段 2365-2381 生成可视化
+2025-04-15 23:37:31,956 - INFO - 正在为时间段 2365-2381 生成异常图可视化
+2025-04-15 23:37:31,956 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:31,957 - DEBUG - 边统计: 正常边 146 条, 异常边 64 条
+2025-04-15 23:37:31,957 - INFO - 时间段 2365-2381 的节点检测统计: 真阳性=1, 假阳性=14, 假阴性=0, 正常节点=4
+2025-04-15 23:37:32,040 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_4_2365_2381.png
+2025-04-15 23:37:32,120 - INFO - 成功保存时间段 2365-2381 的可视化结果
+2025-04-15 23:37:32,120 - INFO - 
+正在处理时间段 6/9: 2464-2485
+2025-04-15 23:37:32,120 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-15 23:37:32,120 - INFO - 正在计算异常分数...
+2025-04-15 23:37:32,134 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:32,134 - INFO - 正在为时间段 2464-2485 生成可视化
+2025-04-15 23:37:32,134 - INFO - 正在为时间段 2464-2485 生成异常图可视化
+2025-04-15 23:37:32,134 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:32,135 - DEBUG - 边统计: 正常边 136 条, 异常边 136 条
+2025-04-15 23:37:32,135 - INFO - 时间段 2464-2485 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-15 23:37:32,218 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_5_2464_2485.png
+2025-04-15 23:37:32,303 - INFO - 成功保存时间段 2464-2485 的可视化结果
+2025-04-15 23:37:32,303 - INFO - 
+正在处理时间段 7/9: 2588-2610
+2025-04-15 23:37:32,303 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-15 23:37:32,303 - INFO - 正在计算异常分数...
+2025-04-15 23:37:32,315 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:32,315 - INFO - 正在为时间段 2588-2610 生成可视化
+2025-04-15 23:37:32,315 - INFO - 正在为时间段 2588-2610 生成异常图可视化
+2025-04-15 23:37:32,315 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:32,316 - DEBUG - 边统计: 正常边 142 条, 异常边 130 条
+2025-04-15 23:37:32,316 - INFO - 时间段 2588-2610 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-15 23:37:32,398 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_6_2588_2610.png
+2025-04-15 23:37:32,481 - INFO - 成功保存时间段 2588-2610 的可视化结果
+2025-04-15 23:37:32,481 - INFO - 
+正在处理时间段 8/9: 2650-2675
+2025-04-15 23:37:32,481 - INFO - 该时间段的真实异常节点: {19}
+2025-04-15 23:37:32,481 - INFO - 正在计算异常分数...
+2025-04-15 23:37:32,498 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:32,498 - INFO - 正在为时间段 2650-2675 生成可视化
+2025-04-15 23:37:32,498 - INFO - 正在为时间段 2650-2675 生成异常图可视化
+2025-04-15 23:37:32,498 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:32,499 - DEBUG - 边统计: 正常边 136 条, 异常边 104 条
+2025-04-15 23:37:32,499 - INFO - 时间段 2650-2675 的节点检测统计: 真阳性=1, 假阳性=15, 假阴性=0, 正常节点=3
+2025-04-15 23:37:32,586 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_7_2650_2675.png
+2025-04-15 23:37:32,663 - INFO - 成功保存时间段 2650-2675 的可视化结果
+2025-04-15 23:37:32,663 - INFO - 
+正在处理时间段 9/9: 3012-3072
+2025-04-15 23:37:32,663 - INFO - 该时间段的真实异常节点: {1, 4, 5, 8, 17, 19}
+2025-04-15 23:37:32,663 - INFO - 正在计算异常分数...
+2025-04-15 23:37:32,700 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:32,700 - INFO - 正在为时间段 3012-3072 生成可视化
+2025-04-15 23:37:32,700 - INFO - 正在为时间段 3012-3072 生成异常图可视化
+2025-04-15 23:37:32,700 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:32,702 - DEBUG - 边统计: 正常边 192 条, 异常边 80 条
+2025-04-15 23:37:32,702 - INFO - 时间段 3012-3072 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=0, 正常节点=2
+2025-04-15 23:37:32,841 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-11\seg_8_3012_3072.png
+2025-04-15 23:37:32,927 - INFO - 成功保存时间段 3012-3072 的可视化结果
+2025-04-15 23:37:32,927 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-11 中的图像创建GIF
+2025-04-15 23:37:33,177 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-11\omi-11.gif
+2025-04-15 23:37:33,177 - INFO - 
+==================================================
+2025-04-15 23:37:33,177 - INFO - 开始数据集可视化: omi-12
+2025-04-15 23:37:33,177 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=5.5
+2025-04-15 23:37:33,177 - INFO - ==================================================
+
+2025-04-15 23:37:33,177 - INFO - 正在加载数据集 omi-12 的数据
+2025-04-15 23:37:33,178 - INFO - 数据加载成功。训练集形状: (7291, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:33,178 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:34,657 - INFO - 已计算 133 条边的统计量
+2025-04-15 23:37:34,657 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:34,658 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-12
+2025-04-15 23:37:34,658 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-15 23:37:34,658 - INFO - 
+正在处理时间段 1/5: 740-813
+2025-04-15 23:37:34,659 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:34,659 - INFO - 正在计算异常分数...
+2025-04-15 23:37:34,697 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:34,697 - INFO - 正在为时间段 740-813 生成可视化
+2025-04-15 23:37:34,697 - INFO - 正在为时间段 740-813 生成异常图可视化
+2025-04-15 23:37:34,698 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:34,698 - DEBUG - 边统计: 正常边 168 条, 异常边 42 条
+2025-04-15 23:37:34,698 - INFO - 时间段 740-813 的节点检测统计: 真阳性=15, 假阳性=0, 假阴性=1, 正常节点=3
+2025-04-15 23:37:34,779 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-12\seg_0_740_813.png
+2025-04-15 23:37:34,856 - INFO - 成功保存时间段 740-813 的可视化结果
+2025-04-15 23:37:34,856 - INFO - 
+正在处理时间段 2/5: 2486-2493
+2025-04-15 23:37:34,857 - INFO - 该时间段的真实异常节点: {4, 5}
+2025-04-15 23:37:34,857 - INFO - 正在计算异常分数...
+2025-04-15 23:37:34,860 - INFO - 检测到的异常节点: {1, 4, 5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18}
+2025-04-15 23:37:34,860 - INFO - 正在为时间段 2486-2493 生成可视化
+2025-04-15 23:37:34,860 - INFO - 正在为时间段 2486-2493 生成异常图可视化
+2025-04-15 23:37:34,860 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:34,860 - DEBUG - 边统计: 正常边 110 条, 异常边 96 条
+2025-04-15 23:37:34,860 - INFO - 时间段 2486-2493 的节点检测统计: 真阳性=2, 假阳性=12, 假阴性=0, 正常节点=5
+2025-04-15 23:37:34,939 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-12\seg_1_2486_2493.png
+2025-04-15 23:37:35,017 - INFO - 成功保存时间段 2486-2493 的可视化结果
+2025-04-15 23:37:35,017 - INFO - 
+正在处理时间段 3/5: 2515-2525
+2025-04-15 23:37:35,017 - INFO - 该时间段的真实异常节点: {1, 4, 5, 7, 8, 9, 17, 18}
+2025-04-15 23:37:35,017 - INFO - 正在计算异常分数...
+2025-04-15 23:37:35,023 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:35,023 - INFO - 正在为时间段 2515-2525 生成可视化
+2025-04-15 23:37:35,023 - INFO - 正在为时间段 2515-2525 生成异常图可视化
+2025-04-15 23:37:35,023 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:35,024 - DEBUG - 边统计: 正常边 126 条, 异常边 140 条
+2025-04-15 23:37:35,024 - INFO - 时间段 2515-2525 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=0, 正常节点=2
+2025-04-15 23:37:35,110 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-12\seg_2_2515_2525.png
+2025-04-15 23:37:35,189 - INFO - 成功保存时间段 2515-2525 的可视化结果
+2025-04-15 23:37:35,189 - INFO - 
+正在处理时间段 4/5: 2721-2723
+2025-04-15 23:37:35,189 - INFO - 该时间段的真实异常节点: {4}
+2025-04-15 23:37:35,189 - INFO - 正在计算异常分数...
+2025-04-15 23:37:35,189 - INFO - 检测到的异常节点: set()
+2025-04-15 23:37:35,189 - INFO - 正在为时间段 2721-2723 生成可视化
+2025-04-15 23:37:35,189 - INFO - 正在为时间段 2721-2723 生成异常图可视化
+2025-04-15 23:37:35,190 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:35,190 - DEBUG - 边统计: 正常边 32 条, 异常边 56 条
+2025-04-15 23:37:35,190 - INFO - 时间段 2721-2723 的节点检测统计: 真阳性=0, 假阳性=0, 假阴性=1, 正常节点=18
+2025-04-15 23:37:35,275 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-12\seg_3_2721_2723.png
+2025-04-15 23:37:35,353 - INFO - 成功保存时间段 2721-2723 的可视化结果
+2025-04-15 23:37:35,353 - INFO - 
+正在处理时间段 5/5: 3500-3535
+2025-04-15 23:37:35,353 - INFO - 该时间段的真实异常节点: {5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:35,354 - INFO - 正在计算异常分数...
+2025-04-15 23:37:35,369 - INFO - 检测到的异常节点: {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:35,369 - INFO - 正在为时间段 3500-3535 生成可视化
+2025-04-15 23:37:35,369 - INFO - 正在为时间段 3500-3535 生成异常图可视化
+2025-04-15 23:37:35,370 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:35,370 - DEBUG - 边统计: 正常边 122 条, 异常边 88 条
+2025-04-15 23:37:35,370 - INFO - 时间段 3500-3535 的节点检测统计: 真阳性=13, 假阳性=2, 假阴性=0, 正常节点=4
+2025-04-15 23:37:35,448 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-12\seg_4_3500_3535.png
+2025-04-15 23:37:35,523 - INFO - 成功保存时间段 3500-3535 的可视化结果
+2025-04-15 23:37:35,523 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-12 中的图像创建GIF
+2025-04-15 23:37:35,658 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-12\omi-12.gif
+2025-04-15 23:37:35,658 - INFO - 
+==================================================
+2025-04-15 23:37:35,658 - INFO - 开始数据集可视化: omi-2
+2025-04-15 23:37:35,658 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=7.0
+2025-04-15 23:37:35,658 - INFO - ==================================================
+
+2025-04-15 23:37:35,658 - INFO - 正在加载数据集 omi-2 的数据
+2025-04-15 23:37:35,659 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:35,659 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:37,586 - INFO - 已计算 153 条边的统计量
+2025-04-15 23:37:37,586 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:37,587 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-2
+2025-04-15 23:37:37,587 - INFO - 在数据集中发现 4 个异常时间段
+2025-04-15 23:37:37,588 - INFO - 
+正在处理时间段 1/4: 486-498
+2025-04-15 23:37:37,588 - INFO - 该时间段的真实异常节点: {1, 4, 5}
+2025-04-15 23:37:37,588 - INFO - 正在计算异常分数...
+2025-04-15 23:37:37,594 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:37,594 - INFO - 正在为时间段 486-498 生成可视化
+2025-04-15 23:37:37,594 - INFO - 正在为时间段 486-498 生成异常图可视化
+2025-04-15 23:37:37,594 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:37,595 - DEBUG - 边统计: 正常边 168 条, 异常边 104 条
+2025-04-15 23:37:37,595 - INFO - 时间段 486-498 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-15 23:37:37,678 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-2\seg_0_486_498.png
+2025-04-15 23:37:37,764 - INFO - 成功保存时间段 486-498 的可视化结果
+2025-04-15 23:37:37,764 - INFO - 
+正在处理时间段 2/4: 740-753
+2025-04-15 23:37:37,764 - INFO - 该时间段的真实异常节点: {2}
+2025-04-15 23:37:37,764 - INFO - 正在计算异常分数...
+2025-04-15 23:37:37,770 - INFO - 检测到的异常节点: {2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:37,770 - INFO - 正在为时间段 740-753 生成可视化
+2025-04-15 23:37:37,770 - INFO - 正在为时间段 740-753 生成异常图可视化
+2025-04-15 23:37:37,770 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:37,772 - DEBUG - 边统计: 正常边 184 条, 异常边 88 条
+2025-04-15 23:37:37,772 - INFO - 时间段 740-753 的节点检测统计: 真阳性=1, 假阳性=16, 假阴性=0, 正常节点=2
+2025-04-15 23:37:37,849 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-2\seg_1_740_753.png
+2025-04-15 23:37:37,930 - INFO - 成功保存时间段 740-753 的可视化结果
+2025-04-15 23:37:37,930 - INFO - 
+正在处理时间段 3/4: 766-783
+2025-04-15 23:37:37,930 - INFO - 该时间段的真实异常节点: {1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:37,930 - INFO - 正在计算异常分数...
+2025-04-15 23:37:37,938 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:37,938 - INFO - 正在为时间段 766-783 生成可视化
+2025-04-15 23:37:37,938 - INFO - 正在为时间段 766-783 生成异常图可视化
+2025-04-15 23:37:37,938 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:37,939 - DEBUG - 边统计: 正常边 242 条, 异常边 30 条
+2025-04-15 23:37:37,939 - INFO - 时间段 766-783 的节点检测统计: 真阳性=16, 假阳性=1, 假阴性=0, 正常节点=2
+2025-04-15 23:37:38,022 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-2\seg_2_766_783.png
+2025-04-15 23:37:38,100 - INFO - 成功保存时间段 766-783 的可视化结果
+2025-04-15 23:37:38,100 - INFO - 
+正在处理时间段 4/4: 1436-1445
+2025-04-15 23:37:38,100 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-15 23:37:38,100 - INFO - 正在计算异常分数...
+2025-04-15 23:37:38,104 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:38,104 - INFO - 正在为时间段 1436-1445 生成可视化
+2025-04-15 23:37:38,104 - INFO - 正在为时间段 1436-1445 生成异常图可视化
+2025-04-15 23:37:38,104 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:38,105 - DEBUG - 边统计: 正常边 124 条, 异常边 148 条
+2025-04-15 23:37:38,105 - INFO - 时间段 1436-1445 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-15 23:37:38,186 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-2\seg_3_1436_1445.png
+2025-04-15 23:37:38,276 - INFO - 成功保存时间段 1436-1445 的可视化结果
+2025-04-15 23:37:38,277 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-2 中的图像创建GIF
+2025-04-15 23:37:38,383 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-2\omi-2.gif
+2025-04-15 23:37:38,384 - INFO - 
+==================================================
+2025-04-15 23:37:38,384 - INFO - 开始数据集可视化: omi-3
+2025-04-15 23:37:38,384 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=6.0
+2025-04-15 23:37:38,384 - INFO - ==================================================
+
+2025-04-15 23:37:38,384 - INFO - 正在加载数据集 omi-3 的数据
+2025-04-15 23:37:38,385 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:38,385 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:40,294 - INFO - 已计算 136 条边的统计量
+2025-04-15 23:37:40,294 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:40,299 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-3
+2025-04-15 23:37:40,299 - INFO - 在数据集中发现 6 个异常时间段
+2025-04-15 23:37:40,299 - INFO - 
+正在处理时间段 1/6: 760-820
+2025-04-15 23:37:40,300 - INFO - 该时间段的真实异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:40,300 - INFO - 正在计算异常分数...
+2025-04-15 23:37:40,333 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:40,333 - INFO - 正在为时间段 760-820 生成可视化
+2025-04-15 23:37:40,333 - INFO - 正在为时间段 760-820 生成异常图可视化
+2025-04-15 23:37:40,334 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:40,334 - DEBUG - 边统计: 正常边 192 条, 异常边 80 条
+2025-04-15 23:37:40,334 - INFO - 时间段 760-820 的节点检测统计: 真阳性=16, 假阳性=1, 假阴性=0, 正常节点=2
+2025-04-15 23:37:40,414 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-3\seg_0_760_820.png
+2025-04-15 23:37:40,488 - INFO - 成功保存时间段 760-820 的可视化结果
+2025-04-15 23:37:40,488 - INFO - 
+正在处理时间段 2/6: 842-860
+2025-04-15 23:37:40,488 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:40,488 - INFO - 正在计算异常分数...
+2025-04-15 23:37:40,497 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:40,498 - INFO - 正在为时间段 842-860 生成可视化
+2025-04-15 23:37:40,498 - INFO - 正在为时间段 842-860 生成异常图可视化
+2025-04-15 23:37:40,498 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:40,498 - DEBUG - 边统计: 正常边 194 条, 异常边 46 条
+2025-04-15 23:37:40,498 - INFO - 时间段 842-860 的节点检测统计: 真阳性=13, 假阳性=3, 假阴性=0, 正常节点=3
+2025-04-15 23:37:40,582 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-3\seg_1_842_860.png
+2025-04-15 23:37:40,659 - INFO - 成功保存时间段 842-860 的可视化结果
+2025-04-15 23:37:40,659 - INFO - 
+正在处理时间段 3/6: 1080-1120
+2025-04-15 23:37:40,659 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-15 23:37:40,659 - INFO - 正在计算异常分数...
+2025-04-15 23:37:40,684 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:40,684 - INFO - 正在为时间段 1080-1120 生成可视化
+2025-04-15 23:37:40,684 - INFO - 正在为时间段 1080-1120 生成异常图可视化
+2025-04-15 23:37:40,684 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:40,684 - DEBUG - 边统计: 正常边 202 条, 异常边 70 条
+2025-04-15 23:37:40,685 - INFO - 时间段 1080-1120 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-15 23:37:40,832 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-3\seg_2_1080_1120.png
+2025-04-15 23:37:40,923 - INFO - 成功保存时间段 1080-1120 的可视化结果
+2025-04-15 23:37:40,923 - INFO - 
+正在处理时间段 4/6: 2188-2201
+2025-04-15 23:37:40,923 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:40,923 - INFO - 正在计算异常分数...
+2025-04-15 23:37:40,930 - INFO - 检测到的异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:40,930 - INFO - 正在为时间段 2188-2201 生成可视化
+2025-04-15 23:37:40,930 - INFO - 正在为时间段 2188-2201 生成异常图可视化
+2025-04-15 23:37:40,930 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:40,930 - DEBUG - 边统计: 正常边 196 条, 异常边 76 条
+2025-04-15 23:37:40,930 - INFO - 时间段 2188-2201 的节点检测统计: 真阳性=12, 假阳性=4, 假阴性=0, 正常节点=3
+2025-04-15 23:37:41,016 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-3\seg_3_2188_2201.png
+2025-04-15 23:37:41,093 - INFO - 成功保存时间段 2188-2201 的可视化结果
+2025-04-15 23:37:41,093 - INFO - 
+正在处理时间段 5/6: 2497-2500
+2025-04-15 23:37:41,093 - INFO - 该时间段的真实异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:41,093 - INFO - 正在计算异常分数...
+2025-04-15 23:37:41,093 - INFO - 检测到的异常节点: set()
+2025-04-15 23:37:41,094 - INFO - 正在为时间段 2497-2500 生成可视化
+2025-04-15 23:37:41,094 - INFO - 正在为时间段 2497-2500 生成异常图可视化
+2025-04-15 23:37:41,094 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:41,094 - DEBUG - 边统计: 正常边 178 条, 异常边 32 条
+2025-04-15 23:37:41,094 - INFO - 时间段 2497-2500 的节点检测统计: 真阳性=0, 假阳性=0, 假阴性=13, 正常节点=6
+2025-04-15 23:37:41,179 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-3\seg_4_2497_2500.png
+2025-04-15 23:37:41,262 - INFO - 成功保存时间段 2497-2500 的可视化结果
+2025-04-15 23:37:41,262 - INFO - 
+正在处理时间段 6/6: 3428-3434
+2025-04-15 23:37:41,262 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:41,262 - INFO - 正在计算异常分数...
+2025-04-15 23:37:41,263 - INFO - 检测到的异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:41,263 - INFO - 正在为时间段 3428-3434 生成可视化
+2025-04-15 23:37:41,263 - INFO - 正在为时间段 3428-3434 生成异常图可视化
+2025-04-15 23:37:41,263 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:41,264 - DEBUG - 边统计: 正常边 230 条, 异常边 42 条
+2025-04-15 23:37:41,264 - INFO - 时间段 3428-3434 的节点检测统计: 真阳性=13, 假阳性=3, 假阴性=0, 正常节点=3
+2025-04-15 23:37:41,346 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-3\seg_5_3428_3434.png
+2025-04-15 23:37:41,424 - INFO - 成功保存时间段 3428-3434 的可视化结果
+2025-04-15 23:37:41,425 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-3 中的图像创建GIF
+2025-04-15 23:37:41,607 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-3\omi-3.gif
+2025-04-15 23:37:41,609 - INFO - 
+==================================================
+2025-04-15 23:37:41,609 - INFO - 开始数据集可视化: omi-4
+2025-04-15 23:37:41,609 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=7.0
+2025-04-15 23:37:41,609 - INFO - ==================================================
+
+2025-04-15 23:37:41,609 - INFO - 正在加载数据集 omi-4 的数据
+2025-04-15 23:37:41,609 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:41,610 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:43,528 - INFO - 已计算 136 条边的统计量
+2025-04-15 23:37:43,528 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:43,529 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-4
+2025-04-15 23:37:43,529 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-15 23:37:43,529 - INFO - 
+正在处理时间段 1/5: 727-782
+2025-04-15 23:37:43,529 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:43,529 - INFO - 正在计算异常分数...
+2025-04-15 23:37:43,560 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:43,560 - INFO - 正在为时间段 727-782 生成可视化
+2025-04-15 23:37:43,560 - INFO - 正在为时间段 727-782 生成异常图可视化
+2025-04-15 23:37:43,560 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:43,560 - DEBUG - 边统计: 正常边 236 条, 异常边 36 条
+2025-04-15 23:37:43,560 - INFO - 时间段 727-782 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=1, 正常节点=1
+2025-04-15 23:37:43,639 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-4\seg_0_727_782.png
+2025-04-15 23:37:43,720 - INFO - 成功保存时间段 727-782 的可视化结果
+2025-04-15 23:37:43,721 - INFO - 
+正在处理时间段 2/5: 843-857
+2025-04-15 23:37:43,721 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:43,721 - INFO - 正在计算异常分数...
+2025-04-15 23:37:43,728 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:43,728 - INFO - 正在为时间段 843-857 生成可视化
+2025-04-15 23:37:43,728 - INFO - 正在为时间段 843-857 生成异常图可视化
+2025-04-15 23:37:43,729 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:43,729 - DEBUG - 边统计: 正常边 166 条, 异常边 74 条
+2025-04-15 23:37:43,729 - INFO - 时间段 843-857 的节点检测统计: 真阳性=14, 假阳性=2, 假阴性=0, 正常节点=3
+2025-04-15 23:37:43,811 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-4\seg_1_843_857.png
+2025-04-15 23:37:43,887 - INFO - 成功保存时间段 843-857 的可视化结果
+2025-04-15 23:37:43,887 - INFO - 
+正在处理时间段 3/5: 2178-2238
+2025-04-15 23:37:43,887 - INFO - 该时间段的真实异常节点: {8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:43,887 - INFO - 正在计算异常分数...
+2025-04-15 23:37:43,921 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:43,921 - INFO - 正在为时间段 2178-2238 生成可视化
+2025-04-15 23:37:43,921 - INFO - 正在为时间段 2178-2238 生成异常图可视化
+2025-04-15 23:37:43,922 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:43,922 - DEBUG - 边统计: 正常边 188 条, 异常边 84 条
+2025-04-15 23:37:43,922 - INFO - 时间段 2178-2238 的节点检测统计: 真阳性=12, 假阳性=5, 假阴性=0, 正常节点=2
+2025-04-15 23:37:44,007 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-4\seg_2_2178_2238.png
+2025-04-15 23:37:44,091 - INFO - 成功保存时间段 2178-2238 的可视化结果
+2025-04-15 23:37:44,091 - INFO - 
+正在处理时间段 4/5: 2494-2501
+2025-04-15 23:37:44,092 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:44,092 - INFO - 正在计算异常分数...
+2025-04-15 23:37:44,094 - INFO - 检测到的异常节点: {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:44,094 - INFO - 正在为时间段 2494-2501 生成可视化
+2025-04-15 23:37:44,094 - INFO - 正在为时间段 2494-2501 生成异常图可视化
+2025-04-15 23:37:44,094 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:44,095 - DEBUG - 边统计: 正常边 170 条, 异常边 70 条
+2025-04-15 23:37:44,095 - INFO - 时间段 2494-2501 的节点检测统计: 真阳性=12, 假阳性=3, 假阴性=0, 正常节点=4
+2025-04-15 23:37:44,177 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-4\seg_3_2494_2501.png
+2025-04-15 23:37:44,260 - INFO - 成功保存时间段 2494-2501 的可视化结果
+2025-04-15 23:37:44,260 - INFO - 
+正在处理时间段 5/5: 3425-3435
+2025-04-15 23:37:44,260 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:44,260 - INFO - 正在计算异常分数...
+2025-04-15 23:37:44,265 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:44,266 - INFO - 正在为时间段 3425-3435 生成可视化
+2025-04-15 23:37:44,266 - INFO - 正在为时间段 3425-3435 生成异常图可视化
+2025-04-15 23:37:44,266 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:44,267 - DEBUG - 边统计: 正常边 130 条, 异常边 142 条
+2025-04-15 23:37:44,267 - INFO - 时间段 3425-3435 的节点检测统计: 真阳性=13, 假阳性=4, 假阴性=0, 正常节点=2
+2025-04-15 23:37:44,353 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-4\seg_4_3425_3435.png
+2025-04-15 23:37:44,437 - INFO - 成功保存时间段 3425-3435 的可视化结果
+2025-04-15 23:37:44,438 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-4 中的图像创建GIF
+2025-04-15 23:37:44,576 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-4\omi-4.gif
+2025-04-15 23:37:44,576 - INFO - 
+==================================================
+2025-04-15 23:37:44,576 - INFO - 开始数据集可视化: omi-5
+2025-04-15 23:37:44,576 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=2.0
+2025-04-15 23:37:44,576 - INFO - ==================================================
+
+2025-04-15 23:37:44,577 - INFO - 正在加载数据集 omi-5 的数据
+2025-04-15 23:37:44,577 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:44,577 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:46,608 - INFO - 已计算 153 条边的统计量
+2025-04-15 23:37:46,608 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:46,610 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-5
+2025-04-15 23:37:46,612 - INFO - 在数据集中发现 6 个异常时间段
+2025-04-15 23:37:46,612 - INFO - 
+正在处理时间段 1/6: 765-781
+2025-04-15 23:37:46,613 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:46,613 - INFO - 正在计算异常分数...
+2025-04-15 23:37:46,627 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:46,627 - INFO - 正在为时间段 765-781 生成可视化
+2025-04-15 23:37:46,627 - INFO - 正在为时间段 765-781 生成异常图可视化
+2025-04-15 23:37:46,627 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:46,628 - DEBUG - 边统计: 正常边 220 条, 异常边 86 条
+2025-04-15 23:37:46,628 - INFO - 时间段 765-781 的节点检测统计: 真阳性=14, 假阳性=4, 假阴性=0, 正常节点=1
+2025-04-15 23:37:46,713 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-5\seg_0_765_781.png
+2025-04-15 23:37:46,797 - INFO - 成功保存时间段 765-781 的可视化结果
+2025-04-15 23:37:46,797 - INFO - 
+正在处理时间段 2/6: 1589-1617
+2025-04-15 23:37:46,797 - INFO - 该时间段的真实异常节点: {17, 2, 4}
+2025-04-15 23:37:46,797 - INFO - 正在计算异常分数...
+2025-04-15 23:37:46,815 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:46,816 - INFO - 正在为时间段 1589-1617 生成可视化
+2025-04-15 23:37:46,816 - INFO - 正在为时间段 1589-1617 生成异常图可视化
+2025-04-15 23:37:46,816 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:46,816 - DEBUG - 边统计: 正常边 166 条, 异常边 140 条
+2025-04-15 23:37:46,816 - INFO - 时间段 1589-1617 的节点检测统计: 真阳性=3, 假阳性=15, 假阴性=0, 正常节点=1
+2025-04-15 23:37:46,902 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-5\seg_1_1589_1617.png
+2025-04-15 23:37:46,977 - INFO - 成功保存时间段 1589-1617 的可视化结果
+2025-04-15 23:37:46,977 - INFO - 
+正在处理时间段 3/6: 2440-2446
+2025-04-15 23:37:46,979 - INFO - 该时间段的真实异常节点: {8, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:46,979 - INFO - 正在计算异常分数...
+2025-04-15 23:37:46,981 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:46,981 - INFO - 正在为时间段 2440-2446 生成可视化
+2025-04-15 23:37:46,981 - INFO - 正在为时间段 2440-2446 生成异常图可视化
+2025-04-15 23:37:46,981 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:46,982 - DEBUG - 边统计: 正常边 146 条, 异常边 160 条
+2025-04-15 23:37:46,982 - INFO - 时间段 2440-2446 的节点检测统计: 真阳性=10, 假阳性=8, 假阴性=0, 正常节点=1
+2025-04-15 23:37:47,071 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-5\seg_2_2440_2446.png
+2025-04-15 23:37:47,156 - INFO - 成功保存时间段 2440-2446 的可视化结果
+2025-04-15 23:37:47,156 - INFO - 
+正在处理时间段 4/6: 3356-3363
+2025-04-15 23:37:47,156 - INFO - 该时间段的真实异常节点: {17, 5, 6}
+2025-04-15 23:37:47,156 - INFO - 正在计算异常分数...
+2025-04-15 23:37:47,160 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:47,160 - INFO - 正在为时间段 3356-3363 生成可视化
+2025-04-15 23:37:47,160 - INFO - 正在为时间段 3356-3363 生成异常图可视化
+2025-04-15 23:37:47,160 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:47,160 - DEBUG - 边统计: 正常边 164 条, 异常边 142 条
+2025-04-15 23:37:47,160 - INFO - 时间段 3356-3363 的节点检测统计: 真阳性=3, 假阳性=15, 假阴性=0, 正常节点=1
+2025-04-15 23:37:47,298 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-5\seg_3_3356_3363.png
+2025-04-15 23:37:47,376 - INFO - 成功保存时间段 3356-3363 的可视化结果
+2025-04-15 23:37:47,376 - INFO - 
+正在处理时间段 5/6: 3416-3423
+2025-04-15 23:37:47,376 - INFO - 该时间段的真实异常节点: {4, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:47,376 - INFO - 正在计算异常分数...
+2025-04-15 23:37:47,379 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:47,379 - INFO - 正在为时间段 3416-3423 生成可视化
+2025-04-15 23:37:47,379 - INFO - 正在为时间段 3416-3423 生成异常图可视化
+2025-04-15 23:37:47,379 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:47,380 - DEBUG - 边统计: 正常边 220 条, 异常边 86 条
+2025-04-15 23:37:47,380 - INFO - 时间段 3416-3423 的节点检测统计: 真阳性=14, 假阳性=4, 假阴性=0, 正常节点=1
+2025-04-15 23:37:47,464 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-5\seg_4_3416_3423.png
+2025-04-15 23:37:47,545 - INFO - 成功保存时间段 3416-3423 的可视化结果
+2025-04-15 23:37:47,546 - INFO - 
+正在处理时间段 6/6: 3590-3594
+2025-04-15 23:37:47,546 - INFO - 该时间段的真实异常节点: {1, 8, 17, 18, 19}
+2025-04-15 23:37:47,546 - INFO - 正在计算异常分数...
+2025-04-15 23:37:47,547 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:47,547 - INFO - 正在为时间段 3590-3594 生成可视化
+2025-04-15 23:37:47,547 - INFO - 正在为时间段 3590-3594 生成异常图可视化
+2025-04-15 23:37:47,547 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:47,548 - DEBUG - 边统计: 正常边 162 条, 异常边 144 条
+2025-04-15 23:37:47,548 - INFO - 时间段 3590-3594 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-15 23:37:47,637 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-5\seg_5_3590_3594.png
+2025-04-15 23:37:47,716 - INFO - 成功保存时间段 3590-3594 的可视化结果
+2025-04-15 23:37:47,717 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-5 中的图像创建GIF
+2025-04-15 23:37:47,885 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-5\omi-5.gif
+2025-04-15 23:37:47,885 - INFO - 
+==================================================
+2025-04-15 23:37:47,885 - INFO - 开始数据集可视化: omi-6
+2025-04-15 23:37:47,885 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=6.5
+2025-04-15 23:37:47,885 - INFO - ==================================================
+
+2025-04-15 23:37:47,886 - INFO - 正在加载数据集 omi-6 的数据
+2025-04-15 23:37:47,886 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:47,887 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:49,852 - INFO - 已计算 153 条边的统计量
+2025-04-15 23:37:49,852 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:49,853 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-6
+2025-04-15 23:37:49,854 - INFO - 在数据集中发现 10 个异常时间段
+2025-04-15 23:37:49,854 - INFO - 
+正在处理时间段 1/10: 357-392
+2025-04-15 23:37:49,854 - INFO - 该时间段的真实异常节点: {19, 4}
+2025-04-15 23:37:49,854 - INFO - 正在计算异常分数...
+2025-04-15 23:37:49,877 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:49,877 - INFO - 正在为时间段 357-392 生成可视化
+2025-04-15 23:37:49,877 - INFO - 正在为时间段 357-392 生成异常图可视化
+2025-04-15 23:37:49,877 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:49,878 - DEBUG - 边统计: 正常边 188 条, 异常边 84 条
+2025-04-15 23:37:49,878 - INFO - 时间段 357-392 的节点检测统计: 真阳性=2, 假阳性=15, 假阴性=0, 正常节点=2
+2025-04-15 23:37:49,956 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_0_357_392.png
+2025-04-15 23:37:50,032 - INFO - 成功保存时间段 357-392 的可视化结果
+2025-04-15 23:37:50,032 - INFO - 
+正在处理时间段 2/10: 750-788
+2025-04-15 23:37:50,032 - INFO - 该时间段的真实异常节点: {2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:50,032 - INFO - 正在计算异常分数...
+2025-04-15 23:37:50,056 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:50,056 - INFO - 正在为时间段 750-788 生成可视化
+2025-04-15 23:37:50,056 - INFO - 正在为时间段 750-788 生成异常图可视化
+2025-04-15 23:37:50,056 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:50,057 - DEBUG - 边统计: 正常边 230 条, 异常边 42 条
+2025-04-15 23:37:50,057 - INFO - 时间段 750-788 的节点检测统计: 真阳性=14, 假阳性=3, 假阴性=1, 正常节点=1
+2025-04-15 23:37:50,138 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_1_750_788.png
+2025-04-15 23:37:50,225 - INFO - 成功保存时间段 750-788 的可视化结果
+2025-04-15 23:37:50,225 - INFO - 
+正在处理时间段 3/10: 1278-1293
+2025-04-15 23:37:50,225 - INFO - 该时间段的真实异常节点: {4, 5, 6, 8, 17}
+2025-04-15 23:37:50,225 - INFO - 正在计算异常分数...
+2025-04-15 23:37:50,234 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:50,234 - INFO - 正在为时间段 1278-1293 生成可视化
+2025-04-15 23:37:50,234 - INFO - 正在为时间段 1278-1293 生成异常图可视化
+2025-04-15 23:37:50,234 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:50,235 - DEBUG - 边统计: 正常边 178 条, 异常边 94 条
+2025-04-15 23:37:50,235 - INFO - 时间段 1278-1293 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-15 23:37:50,324 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_2_1278_1293.png
+2025-04-15 23:37:50,403 - INFO - 成功保存时间段 1278-1293 的可视化结果
+2025-04-15 23:37:50,403 - INFO - 
+正在处理时间段 4/10: 1590-1615
+2025-04-15 23:37:50,403 - INFO - 该时间段的真实异常节点: {1, 18, 9}
+2025-04-15 23:37:50,403 - INFO - 正在计算异常分数...
+2025-04-15 23:37:50,417 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:50,418 - INFO - 正在为时间段 1590-1615 生成可视化
+2025-04-15 23:37:50,418 - INFO - 正在为时间段 1590-1615 生成异常图可视化
+2025-04-15 23:37:50,418 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:50,418 - DEBUG - 边统计: 正常边 202 条, 异常边 70 条
+2025-04-15 23:37:50,418 - INFO - 时间段 1590-1615 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-15 23:37:50,501 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_3_1590_1615.png
+2025-04-15 23:37:50,581 - INFO - 成功保存时间段 1590-1615 的可视化结果
+2025-04-15 23:37:50,581 - INFO - 
+正在处理时间段 5/10: 2592-2604
+2025-04-15 23:37:50,582 - INFO - 该时间段的真实异常节点: {9, 4, 6}
+2025-04-15 23:37:50,582 - INFO - 正在计算异常分数...
+2025-04-15 23:37:50,587 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:50,588 - INFO - 正在为时间段 2592-2604 生成可视化
+2025-04-15 23:37:50,588 - INFO - 正在为时间段 2592-2604 生成异常图可视化
+2025-04-15 23:37:50,588 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:50,588 - DEBUG - 边统计: 正常边 162 条, 异常边 78 条
+2025-04-15 23:37:50,588 - INFO - 时间段 2592-2604 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-15 23:37:50,672 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_4_2592_2604.png
+2025-04-15 23:37:50,751 - INFO - 成功保存时间段 2592-2604 的可视化结果
+2025-04-15 23:37:50,753 - INFO - 
+正在处理时间段 6/10: 2734-2765
+2025-04-15 23:37:50,753 - INFO - 该时间段的真实异常节点: {8, 19, 4, 6}
+2025-04-15 23:37:50,753 - INFO - 正在计算异常分数...
+2025-04-15 23:37:50,773 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:50,773 - INFO - 正在为时间段 2734-2765 生成可视化
+2025-04-15 23:37:50,773 - INFO - 正在为时间段 2734-2765 生成异常图可视化
+2025-04-15 23:37:50,773 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:50,774 - DEBUG - 边统计: 正常边 158 条, 异常边 114 条
+2025-04-15 23:37:50,774 - INFO - 时间段 2734-2765 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-15 23:37:50,855 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_5_2734_2765.png
+2025-04-15 23:37:50,941 - INFO - 成功保存时间段 2734-2765 的可视化结果
+2025-04-15 23:37:50,941 - INFO - 
+正在处理时间段 7/10: 3066-3072
+2025-04-15 23:37:50,941 - INFO - 该时间段的真实异常节点: {19, 4, 6}
+2025-04-15 23:37:50,941 - INFO - 正在计算异常分数...
+2025-04-15 23:37:50,944 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:50,944 - INFO - 正在为时间段 3066-3072 生成可视化
+2025-04-15 23:37:50,944 - INFO - 正在为时间段 3066-3072 生成异常图可视化
+2025-04-15 23:37:50,944 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:50,945 - DEBUG - 边统计: 正常边 138 条, 异常边 134 条
+2025-04-15 23:37:50,945 - INFO - 时间段 3066-3072 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-15 23:37:51,026 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_6_3066_3072.png
+2025-04-15 23:37:51,107 - INFO - 成功保存时间段 3066-3072 的可视化结果
+2025-04-15 23:37:51,108 - INFO - 
+正在处理时间段 8/10: 3596-3605
+2025-04-15 23:37:51,108 - INFO - 该时间段的真实异常节点: {19, 4, 5, 6}
+2025-04-15 23:37:51,108 - INFO - 正在计算异常分数...
+2025-04-15 23:37:51,112 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:51,112 - INFO - 正在为时间段 3596-3605 生成可视化
+2025-04-15 23:37:51,112 - INFO - 正在为时间段 3596-3605 生成异常图可视化
+2025-04-15 23:37:51,112 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:51,113 - DEBUG - 边统计: 正常边 140 条, 异常边 132 条
+2025-04-15 23:37:51,114 - INFO - 时间段 3596-3605 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-15 23:37:51,192 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_7_3596_3605.png
+2025-04-15 23:37:51,268 - INFO - 成功保存时间段 3596-3605 的可视化结果
+2025-04-15 23:37:51,268 - INFO - 
+正在处理时间段 9/10: 3610-3622
+2025-04-15 23:37:51,268 - INFO - 该时间段的真实异常节点: {1, 4, 5}
+2025-04-15 23:37:51,268 - INFO - 正在计算异常分数...
+2025-04-15 23:37:51,274 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:51,274 - INFO - 正在为时间段 3610-3622 生成可视化
+2025-04-15 23:37:51,274 - INFO - 正在为时间段 3610-3622 生成异常图可视化
+2025-04-15 23:37:51,274 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:51,275 - DEBUG - 边统计: 正常边 218 条, 异常边 54 条
+2025-04-15 23:37:51,275 - INFO - 时间段 3610-3622 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-15 23:37:51,356 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_8_3610_3622.png
+2025-04-15 23:37:51,432 - INFO - 成功保存时间段 3610-3622 的可视化结果
+2025-04-15 23:37:51,433 - INFO - 
+正在处理时间段 10/10: 4159-4164
+2025-04-15 23:37:51,433 - INFO - 该时间段的真实异常节点: {4, 5}
+2025-04-15 23:37:51,433 - INFO - 正在计算异常分数...
+2025-04-15 23:37:51,434 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 13, 14, 15, 16, 17, 18}
+2025-04-15 23:37:51,434 - INFO - 正在为时间段 4159-4164 生成可视化
+2025-04-15 23:37:51,434 - INFO - 正在为时间段 4159-4164 生成异常图可视化
+2025-04-15 23:37:51,435 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:51,435 - DEBUG - 边统计: 正常边 142 条, 异常边 130 条
+2025-04-15 23:37:51,435 - INFO - 时间段 4159-4164 的节点检测统计: 真阳性=2, 假阳性=12, 假阴性=0, 正常节点=5
+2025-04-15 23:37:51,575 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-6\seg_9_4159_4164.png
+2025-04-15 23:37:51,663 - INFO - 成功保存时间段 4159-4164 的可视化结果
+2025-04-15 23:37:51,663 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-6 中的图像创建GIF
+2025-04-15 23:37:51,957 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-6\omi-6.gif
+2025-04-15 23:37:51,958 - INFO - 
+==================================================
+2025-04-15 23:37:51,958 - INFO - 开始数据集可视化: omi-7
+2025-04-15 23:37:51,958 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=2.5
+2025-04-15 23:37:51,958 - INFO - ==================================================
+
+2025-04-15 23:37:51,958 - INFO - 正在加载数据集 omi-7 的数据
+2025-04-15 23:37:51,959 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:51,959 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:53,836 - INFO - 已计算 136 条边的统计量
+2025-04-15 23:37:53,836 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:53,837 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-7
+2025-04-15 23:37:53,837 - INFO - 在数据集中发现 3 个异常时间段
+2025-04-15 23:37:53,837 - INFO - 
+正在处理时间段 1/3: 738-778
+2025-04-15 23:37:53,838 - INFO - 该时间段的真实异常节点: {1, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:53,838 - INFO - 正在计算异常分数...
+2025-04-15 23:37:53,858 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:53,858 - INFO - 正在为时间段 738-778 生成可视化
+2025-04-15 23:37:53,858 - INFO - 正在为时间段 738-778 生成异常图可视化
+2025-04-15 23:37:53,858 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:53,859 - DEBUG - 边统计: 正常边 204 条, 异常边 68 条
+2025-04-15 23:37:53,859 - INFO - 时间段 738-778 的节点检测统计: 真阳性=16, 假阳性=1, 假阴性=1, 正常节点=1
+2025-04-15 23:37:53,938 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-7\seg_0_738_778.png
+2025-04-15 23:37:54,031 - INFO - 成功保存时间段 738-778 的可视化结果
+2025-04-15 23:37:54,031 - INFO - 
+正在处理时间段 2/3: 1625-1660
+2025-04-15 23:37:54,031 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:54,032 - INFO - 正在计算异常分数...
+2025-04-15 23:37:54,050 - INFO - 检测到的异常节点: {5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:54,050 - INFO - 正在为时间段 1625-1660 生成可视化
+2025-04-15 23:37:54,050 - INFO - 正在为时间段 1625-1660 生成异常图可视化
+2025-04-15 23:37:54,050 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:54,052 - DEBUG - 边统计: 正常边 130 条, 异常边 52 条
+2025-04-15 23:37:54,052 - INFO - 时间段 1625-1660 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=0, 正常节点=5
+2025-04-15 23:37:54,128 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-7\seg_1_1625_1660.png
+2025-04-15 23:37:54,210 - INFO - 成功保存时间段 1625-1660 的可视化结果
+2025-04-15 23:37:54,210 - INFO - 
+正在处理时间段 3/3: 3311-3320
+2025-04-15 23:37:54,210 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:54,210 - INFO - 正在计算异常分数...
+2025-04-15 23:37:54,214 - INFO - 检测到的异常节点: {5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:54,214 - INFO - 正在为时间段 3311-3320 生成可视化
+2025-04-15 23:37:54,214 - INFO - 正在为时间段 3311-3320 生成异常图可视化
+2025-04-15 23:37:54,214 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:54,215 - DEBUG - 边统计: 正常边 164 条, 异常边 46 条
+2025-04-15 23:37:54,215 - INFO - 时间段 3311-3320 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=0, 正常节点=5
+2025-04-15 23:37:54,300 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-7\seg_2_3311_3320.png
+2025-04-15 23:37:54,387 - INFO - 成功保存时间段 3311-3320 的可视化结果
+2025-04-15 23:37:54,387 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-7 中的图像创建GIF
+2025-04-15 23:37:54,459 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-7\omi-7.gif
+2025-04-15 23:37:54,460 - INFO - 
+==================================================
+2025-04-15 23:37:54,460 - INFO - 开始数据集可视化: omi-8
+2025-04-15 23:37:54,460 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=6.5
+2025-04-15 23:37:54,460 - INFO - ==================================================
+
+2025-04-15 23:37:54,460 - INFO - 正在加载数据集 omi-8 的数据
+2025-04-15 23:37:54,461 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:54,461 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:56,303 - INFO - 已计算 136 条边的统计量
+2025-04-15 23:37:56,303 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:56,304 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-8
+2025-04-15 23:37:56,304 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-15 23:37:56,304 - INFO - 
+正在处理时间段 1/5: 740-753
+2025-04-15 23:37:56,305 - INFO - 该时间段的真实异常节点: {2, 4}
+2025-04-15 23:37:56,305 - INFO - 正在计算异常分数...
+2025-04-15 23:37:56,311 - INFO - 检测到的异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:56,311 - INFO - 正在为时间段 740-753 生成可视化
+2025-04-15 23:37:56,311 - INFO - 正在为时间段 740-753 生成异常图可视化
+2025-04-15 23:37:56,311 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:56,312 - DEBUG - 边统计: 正常边 178 条, 异常边 62 条
+2025-04-15 23:37:56,312 - INFO - 时间段 740-753 的节点检测统计: 真阳性=1, 假阳性=15, 假阴性=1, 正常节点=2
+2025-04-15 23:37:56,409 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-8\seg_0_740_753.png
+2025-04-15 23:37:56,505 - INFO - 成功保存时间段 740-753 的可视化结果
+2025-04-15 23:37:56,505 - INFO - 
+正在处理时间段 2/5: 764-780
+2025-04-15 23:37:56,505 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:56,505 - INFO - 正在计算异常分数...
+2025-04-15 23:37:56,513 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:56,513 - INFO - 正在为时间段 764-780 生成可视化
+2025-04-15 23:37:56,513 - INFO - 正在为时间段 764-780 生成异常图可视化
+2025-04-15 23:37:56,513 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:56,513 - DEBUG - 边统计: 正常边 172 条, 异常边 38 条
+2025-04-15 23:37:56,514 - INFO - 时间段 764-780 的节点检测统计: 真阳性=14, 假阳性=1, 假阴性=0, 正常节点=4
+2025-04-15 23:37:56,599 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-8\seg_1_764_780.png
+2025-04-15 23:37:56,681 - INFO - 成功保存时间段 764-780 的可视化结果
+2025-04-15 23:37:56,681 - INFO - 
+正在处理时间段 3/5: 2319-2325
+2025-04-15 23:37:56,681 - INFO - 该时间段的真实异常节点: {4, 5, 6}
+2025-04-15 23:37:56,681 - INFO - 正在计算异常分数...
+2025-04-15 23:37:56,683 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:56,683 - INFO - 正在为时间段 2319-2325 生成可视化
+2025-04-15 23:37:56,683 - INFO - 正在为时间段 2319-2325 生成异常图可视化
+2025-04-15 23:37:56,684 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:56,684 - DEBUG - 边统计: 正常边 134 条, 异常边 138 条
+2025-04-15 23:37:56,684 - INFO - 时间段 2319-2325 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-15 23:37:56,760 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-8\seg_2_2319_2325.png
+2025-04-15 23:37:56,843 - INFO - 成功保存时间段 2319-2325 的可视化结果
+2025-04-15 23:37:56,843 - INFO - 
+正在处理时间段 4/5: 2586-2675
+2025-04-15 23:37:56,843 - INFO - 该时间段的真实异常节点: {5, 6, 8, 17, 18, 19}
+2025-04-15 23:37:56,843 - INFO - 正在计算异常分数...
+2025-04-15 23:37:56,896 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:56,896 - INFO - 正在为时间段 2586-2675 生成可视化
+2025-04-15 23:37:56,896 - INFO - 正在为时间段 2586-2675 生成异常图可视化
+2025-04-15 23:37:56,896 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:56,897 - DEBUG - 边统计: 正常边 146 条, 异常边 126 条
+2025-04-15 23:37:56,897 - INFO - 时间段 2586-2675 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=0, 正常节点=2
+2025-04-15 23:37:56,985 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-8\seg_3_2586_2675.png
+2025-04-15 23:37:57,072 - INFO - 成功保存时间段 2586-2675 的可视化结果
+2025-04-15 23:37:57,072 - INFO - 
+正在处理时间段 5/5: 2897-2956
+2025-04-15 23:37:57,072 - INFO - 该时间段的真实异常节点: {2, 6, 8, 17, 18, 19}
+2025-04-15 23:37:57,072 - INFO - 正在计算异常分数...
+2025-04-15 23:37:57,108 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:57,108 - INFO - 正在为时间段 2897-2956 生成可视化
+2025-04-15 23:37:57,108 - INFO - 正在为时间段 2897-2956 生成异常图可视化
+2025-04-15 23:37:57,108 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:57,109 - DEBUG - 边统计: 正常边 136 条, 异常边 136 条
+2025-04-15 23:37:57,109 - INFO - 时间段 2897-2956 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=1, 正常节点=1
+2025-04-15 23:37:57,191 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-8\seg_4_2897_2956.png
+2025-04-15 23:37:57,266 - INFO - 成功保存时间段 2897-2956 的可视化结果
+2025-04-15 23:37:57,266 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-8 中的图像创建GIF
+2025-04-15 23:37:57,407 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-8\omi-8.gif
+2025-04-15 23:37:57,408 - INFO - 
+==================================================
+2025-04-15 23:37:57,408 - INFO - 开始数据集可视化: omi-9
+2025-04-15 23:37:57,408 - INFO - 使用参数: 评分模式=range_ratio, top_k=None, 阈值=2.0
+2025-04-15 23:37:57,408 - INFO - ==================================================
+
+2025-04-15 23:37:57,408 - INFO - 正在加载数据集 omi-9 的数据
+2025-04-15 23:37:57,409 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-15 23:37:57,409 - INFO - 正在计算边缘统计量...
+2025-04-15 23:37:59,186 - INFO - 已计算 136 条边的统计量
+2025-04-15 23:37:59,186 - INFO - 为每个节点使用所有邻居
+2025-04-15 23:37:59,186 - INFO - 可视化结果将保存到: ./visual/use_topkFalse\omi\range_ratio\omi-9
+2025-04-15 23:37:59,187 - INFO - 在数据集中发现 8 个异常时间段
+2025-04-15 23:37:59,187 - INFO - 
+正在处理时间段 1/8: 738-756
+2025-04-15 23:37:59,187 - INFO - 该时间段的真实异常节点: {2, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:59,187 - INFO - 正在计算异常分数...
+2025-04-15 23:37:59,194 - INFO - 检测到的异常节点: {1, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:59,195 - INFO - 正在为时间段 738-756 生成可视化
+2025-04-15 23:37:59,195 - INFO - 正在为时间段 738-756 生成异常图可视化
+2025-04-15 23:37:59,195 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:59,195 - DEBUG - 边统计: 正常边 112 条, 异常边 70 条
+2025-04-15 23:37:59,195 - INFO - 时间段 738-756 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=1, 正常节点=4
+2025-04-15 23:37:59,274 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_0_738_756.png
+2025-04-15 23:37:59,362 - INFO - 成功保存时间段 738-756 的可视化结果
+2025-04-15 23:37:59,364 - INFO - 
+正在处理时间段 2/8: 763-780
+2025-04-15 23:37:59,364 - INFO - 该时间段的真实异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:59,364 - INFO - 正在计算异常分数...
+2025-04-15 23:37:59,371 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:59,371 - INFO - 正在为时间段 763-780 生成可视化
+2025-04-15 23:37:59,371 - INFO - 正在为时间段 763-780 生成异常图可视化
+2025-04-15 23:37:59,371 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:59,372 - DEBUG - 边统计: 正常边 142 条, 异常边 68 条
+2025-04-15 23:37:59,372 - INFO - 时间段 763-780 的节点检测统计: 真阳性=15, 假阳性=0, 假阴性=0, 正常节点=4
+2025-04-15 23:37:59,462 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_1_763_780.png
+2025-04-15 23:37:59,538 - INFO - 成功保存时间段 763-780 的可视化结果
+2025-04-15 23:37:59,538 - INFO - 
+正在处理时间段 3/8: 2514-2524
+2025-04-15 23:37:59,538 - INFO - 该时间段的真实异常节点: {1, 4, 5, 7, 8, 9, 17, 18}
+2025-04-15 23:37:59,538 - INFO - 正在计算异常分数...
+2025-04-15 23:37:59,543 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:59,543 - INFO - 正在为时间段 2514-2524 生成可视化
+2025-04-15 23:37:59,543 - INFO - 正在为时间段 2514-2524 生成异常图可视化
+2025-04-15 23:37:59,543 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:59,544 - DEBUG - 边统计: 正常边 162 条, 异常边 110 条
+2025-04-15 23:37:59,544 - INFO - 时间段 2514-2524 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=0, 正常节点=2
+2025-04-15 23:37:59,627 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_2_2514_2524.png
+2025-04-15 23:37:59,704 - INFO - 成功保存时间段 2514-2524 的可视化结果
+2025-04-15 23:37:59,704 - INFO - 
+正在处理时间段 4/8: 2603-2668
+2025-04-15 23:37:59,704 - INFO - 该时间段的真实异常节点: {1, 2, 5, 6, 8, 17, 18, 19}
+2025-04-15 23:37:59,704 - INFO - 正在计算异常分数...
+2025-04-15 23:37:59,739 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:59,740 - INFO - 正在为时间段 2603-2668 生成可视化
+2025-04-15 23:37:59,740 - INFO - 正在为时间段 2603-2668 生成异常图可视化
+2025-04-15 23:37:59,740 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:59,741 - DEBUG - 边统计: 正常边 106 条, 异常边 166 条
+2025-04-15 23:37:59,741 - INFO - 时间段 2603-2668 的节点检测统计: 真阳性=7, 假阳性=10, 假阴性=1, 正常节点=1
+2025-04-15 23:37:59,821 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_3_2603_2668.png
+2025-04-15 23:37:59,964 - INFO - 成功保存时间段 2603-2668 的可视化结果
+2025-04-15 23:37:59,964 - INFO - 
+正在处理时间段 5/8: 2918-2958
+2025-04-15 23:37:59,965 - INFO - 该时间段的真实异常节点: {1, 2, 5, 6, 8, 17, 18, 19}
+2025-04-15 23:37:59,965 - INFO - 正在计算异常分数...
+2025-04-15 23:37:59,985 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:37:59,986 - INFO - 正在为时间段 2918-2958 生成可视化
+2025-04-15 23:37:59,986 - INFO - 正在为时间段 2918-2958 生成异常图可视化
+2025-04-15 23:37:59,986 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:37:59,987 - DEBUG - 边统计: 正常边 124 条, 异常边 148 条
+2025-04-15 23:37:59,987 - INFO - 时间段 2918-2958 的节点检测统计: 真阳性=7, 假阳性=10, 假阴性=1, 正常节点=1
+2025-04-15 23:38:00,070 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_4_2918_2958.png
+2025-04-15 23:38:00,155 - INFO - 成功保存时间段 2918-2958 的可视化结果
+2025-04-15 23:38:00,156 - INFO - 
+正在处理时间段 6/8: 3170-3245
+2025-04-15 23:38:00,156 - INFO - 该时间段的真实异常节点: {1, 2, 6, 8, 17, 18, 19}
+2025-04-15 23:38:00,156 - INFO - 正在计算异常分数...
+2025-04-15 23:38:00,199 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:38:00,199 - INFO - 正在为时间段 3170-3245 生成可视化
+2025-04-15 23:38:00,199 - INFO - 正在为时间段 3170-3245 生成异常图可视化
+2025-04-15 23:38:00,199 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:38:00,200 - DEBUG - 边统计: 正常边 154 条, 异常边 118 条
+2025-04-15 23:38:00,200 - INFO - 时间段 3170-3245 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=1, 正常节点=1
+2025-04-15 23:38:00,279 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_5_3170_3245.png
+2025-04-15 23:38:00,358 - INFO - 成功保存时间段 3170-3245 的可视化结果
+2025-04-15 23:38:00,358 - INFO - 
+正在处理时间段 7/8: 3508-3528
+2025-04-15 23:38:00,358 - INFO - 该时间段的真实异常节点: {8, 2, 19, 6}
+2025-04-15 23:38:00,358 - INFO - 正在计算异常分数...
+2025-04-15 23:38:00,369 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:38:00,369 - INFO - 正在为时间段 3508-3528 生成可视化
+2025-04-15 23:38:00,369 - INFO - 正在为时间段 3508-3528 生成异常图可视化
+2025-04-15 23:38:00,369 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:38:00,369 - DEBUG - 边统计: 正常边 160 条, 异常边 112 条
+2025-04-15 23:38:00,370 - INFO - 时间段 3508-3528 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=1, 正常节点=1
+2025-04-15 23:38:00,448 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_6_3508_3528.png
+2025-04-15 23:38:00,525 - INFO - 成功保存时间段 3508-3528 的可视化结果
+2025-04-15 23:38:00,525 - INFO - 
+正在处理时间段 8/8: 4064-4108
+2025-04-15 23:38:00,526 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 17, 18, 19}
+2025-04-15 23:38:00,526 - INFO - 正在计算异常分数...
+2025-04-15 23:38:00,552 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-15 23:38:00,552 - INFO - 正在为时间段 4064-4108 生成可视化
+2025-04-15 23:38:00,552 - INFO - 正在为时间段 4064-4108 生成异常图可视化
+2025-04-15 23:38:00,552 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-15 23:38:00,553 - DEBUG - 边统计: 正常边 108 条, 异常边 164 条
+2025-04-15 23:38:00,553 - INFO - 时间段 4064-4108 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=1, 正常节点=1
+2025-04-15 23:38:00,642 - DEBUG - 正在保存可视化结果到 ./visual/use_topkFalse\omi\range_ratio\omi-9\seg_7_4064_4108.png
+2025-04-15 23:38:00,724 - INFO - 成功保存时间段 4064-4108 的可视化结果
+2025-04-15 23:38:00,724 - INFO - 正在从 ./visual/use_topkFalse\omi\range_ratio\omi-9 中的图像创建GIF
+2025-04-15 23:38:00,943 - INFO - GIF已保存到 ./visual/use_topkFalse\omi\range_ratio\omi-9\omi-9.gif
+2025-04-15 23:38:00,943 - INFO - 可视化结果生成完成！
+2025-04-15 23:38:00,944 - INFO - 
+==================================================
+2025-04-15 23:38:00,944 - INFO - 程序运行总耗时: 0:02:29.320633
