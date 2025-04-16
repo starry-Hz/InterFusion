@@ -1,0 +1,2044 @@
+2025-04-16 13:06:10,038 - INFO - 
+ Starting experiment with config: ExperimentConfig(dataset='omi', window_size=5, score_thresholds=array([0. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5, 5. , 5.5, 6. ,
+       6.5, 7. ]), topk_range=range(1, 10), corr_threshold_range=array([0.1, 0.2, 0.3, 0.4, 0.5]), neighbor_selection='corr_threshold', score_modes=['robust_zscore'], data_dir='./data/processed', label_dir='./data/interpretation_label', log_dir='./log/omi/neighbor_corr_threshold', visual_dir='./visual/omi/neighbor_corr_threshold', num_workers=4, gif_duration=500)
+2025-04-16 13:06:10,040 - INFO - 当前评分模式: ['robust_zscore']
+2025-04-16 13:06:10,040 - INFO - 
+==================================================
+2025-04-16 13:06:10,040 - INFO - 开始执行网格搜索...
+2025-04-16 13:06:10,041 - INFO - [omi-1] Starting grid search...
+2025-04-16 13:06:13,101 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:13,132 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:13,178 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:13,194 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:15,097 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:15,176 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:15,176 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:15,233 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:17,068 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:17,135 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:17,139 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:17,229 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:19,755 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:19,756 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:19,758 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:19,758 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:23,075 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:23,077 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:23,077 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:23,077 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:25,584 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:26,095 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:26,095 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:26,096 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:28,559 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:29,261 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:29,291 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:29,292 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:31,531 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:32,458 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:32,460 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:32,528 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:34,632 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:35,031 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:35,499 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:35,717 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:37,552 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:37,898 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:38,910 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:38,986 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:40,345 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:41,305 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:42,291 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:42,292 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:42,991 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:44,510 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:44,761 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:45,582 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:46,247 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:47,801 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:47,973 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:48,893 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:49,261 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:51,186 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.7395, R=0.9888, F1=0.8462
+2025-04-16 13:06:51,187 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:51,929 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:52,198 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:54,256 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:54,257 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:54,773 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.7350, R=0.9663, F1=0.8350
+2025-04-16 13:06:55,317 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 13:06:56,576 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 13:06:57,732 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 13:06:57,733 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 13:06:58,001 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 13:06:59,330 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.8925, R=0.9326, F1=0.9121
+2025-04-16 13:07:00,668 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.8925, R=0.9326, F1=0.9121
+2025-04-16 13:07:00,825 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.8925, R=0.9326, F1=0.9121
+2025-04-16 13:07:00,826 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.8925, R=0.9326, F1=0.9121
+2025-04-16 13:07:02,291 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.8925, R=0.9326, F1=0.9121
+2025-04-16 13:07:03,748 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.8925, R=0.9326, F1=0.9121
+2025-04-16 13:07:03,749 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.8925, R=0.9326, F1=0.9121
+2025-04-16 13:07:03,852 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.8913, R=0.9213, F1=0.9061
+2025-04-16 13:07:05,451 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.8913, R=0.9213, F1=0.9061
+2025-04-16 13:07:06,161 - INFO - [omi-1.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.8913, R=0.9213, F1=0.9061
+2025-04-16 13:07:06,183 - INFO - [omi-10] Starting grid search...
+2025-04-16 13:07:09,367 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:09,368 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:09,419 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:09,420 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:11,382 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:11,408 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:11,409 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:11,458 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:13,458 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:13,459 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.4724, R=0.9836, F1=0.6383
+2025-04-16 13:07:13,460 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.4800, R=0.9836, F1=0.6452
+2025-04-16 13:07:13,472 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.4800, R=0.9836, F1=0.6452
+2025-04-16 13:07:16,041 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.4839, R=0.9836, F1=0.6486
+2025-04-16 13:07:16,471 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.4839, R=0.9836, F1=0.6486
+2025-04-16 13:07:16,472 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:16,474 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:18,513 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:19,196 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:19,197 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:19,639 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:21,715 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:22,415 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:22,416 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:22,733 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.4688, R=0.9836, F1=0.6349
+2025-04-16 13:07:25,342 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.4724, R=0.9836, F1=0.6383
+2025-04-16 13:07:25,343 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.4800, R=0.9836, F1=0.6452
+2025-04-16 13:07:25,641 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.4800, R=0.9836, F1=0.6452
+2025-04-16 13:07:25,642 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.4839, R=0.9836, F1=0.6486
+2025-04-16 13:07:28,301 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.4839, R=0.9836, F1=0.6486
+2025-04-16 13:07:28,546 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:28,673 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:28,743 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:31,321 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:31,672 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:31,673 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:31,674 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:34,697 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:34,698 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:34,698 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:34,826 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.4720, R=0.9672, F1=0.6344
+2025-04-16 13:07:36,894 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.4797, R=0.9672, F1=0.6413
+2025-04-16 13:07:37,333 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.4797, R=0.9672, F1=0.6413
+2025-04-16 13:07:38,169 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:38,170 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:39,589 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:40,417 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:41,122 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:41,272 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:42,718 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:43,881 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:43,881 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:44,220 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:45,747 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:46,853 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.4683, R=0.9672, F1=0.6310
+2025-04-16 13:07:46,869 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.4720, R=0.9672, F1=0.6344
+2025-04-16 13:07:47,235 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.4797, R=0.9672, F1=0.6413
+2025-04-16 13:07:48,503 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.4797, R=0.9672, F1=0.6413
+2025-04-16 13:07:50,089 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:50,218 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:50,218 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.4836, R=0.9672, F1=0.6448
+2025-04-16 13:07:51,517 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:53,311 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:53,311 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:53,313 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:54,423 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:55,902 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:55,903 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:56,388 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:57,486 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:58,913 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:58,914 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:07:59,140 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:08:00,119 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:08:01,620 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:08:01,763 - INFO - [omi-10.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.5258, R=0.8361, F1=0.6456
+2025-04-16 13:08:01,782 - INFO - [omi-11] Starting grid search...
+2025-04-16 13:08:04,846 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:04,899 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:04,899 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:04,932 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:06,841 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:06,933 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:06,933 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:06,933 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:08,810 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:08,886 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:08,898 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:08,900 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:11,338 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:11,339 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:11,420 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:11,420 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:14,067 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:14,068 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:14,068 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:14,793 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:17,435 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:17,436 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:17,436 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:17,436 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:19,888 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:20,477 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:20,571 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:20,571 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:23,066 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:23,504 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:23,796 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:23,797 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:25,856 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:26,689 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:27,003 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:27,003 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:28,913 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:29,632 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:29,879 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:29,880 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:31,631 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:32,536 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:33,072 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:33,073 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:34,823 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:35,614 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:35,616 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:35,693 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:37,702 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:38,047 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:38,843 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:38,845 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:40,983 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:40,986 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:42,036 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:42,036 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:43,996 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:43,996 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:44,797 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:45,113 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 13:08:46,951 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:47,102 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:47,488 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:47,714 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:49,998 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:50,171 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:50,449 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:50,558 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:52,998 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:53,254 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:53,535 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:53,793 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:55,348 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:56,035 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:56,240 - INFO - [omi-11.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 13:08:56,257 - INFO - [omi-12] Starting grid search...
+2025-04-16 13:08:58,856 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:08:58,857 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:08:58,893 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:08:58,893 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:00,337 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:00,369 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:00,387 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:00,391 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:01,819 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:01,843 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:01,916 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:01,916 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:03,284 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:03,306 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:03,322 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:03,413 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:05,119 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:05,308 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:05,308 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:05,308 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:07,583 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:07,585 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:07,701 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:07,702 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:09,324 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:09,924 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:10,299 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:10,300 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:11,316 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:12,543 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:12,543 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:12,792 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:13,664 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:14,284 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:14,829 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:14,963 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:15,930 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:16,431 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:16,957 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:17,409 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:18,330 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:18,505 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:19,284 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:19,829 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:20,772 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:20,773 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:21,893 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:22,050 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:22,843 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:23,162 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:24,419 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:24,420 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:25,230 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:25,296 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 13:09:26,434 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:26,824 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:27,444 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:27,444 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:28,554 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:29,235 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.6066, R=0.9250, F1=0.7327
+2025-04-16 13:09:29,445 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:29,871 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:30,950 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:31,428 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:31,697 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:32,355 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:32,896 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:33,871 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:33,871 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:34,237 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:35,437 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:35,779 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:36,066 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:36,373 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:37,203 - INFO - [omi-12.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.5893, R=0.8250, F1=0.6875
+2025-04-16 13:09:37,221 - INFO - [omi-2] Starting grid search...
+2025-04-16 13:09:40,202 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:40,249 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:40,271 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:40,272 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:42,063 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:42,071 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:42,130 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:42,163 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:43,957 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:44,013 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:44,025 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:44,062 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:46,197 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:46,261 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:46,263 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:46,263 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:49,235 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:49,236 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:49,236 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:49,353 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:51,520 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:51,584 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:52,187 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:52,402 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:54,249 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:54,557 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:55,498 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:55,499 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:56,923 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:57,162 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:57,963 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:58,127 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:09:59,873 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:00,149 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:00,991 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:00,992 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:02,201 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:02,780 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:03,970 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:04,009 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:05,057 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:05,692 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:06,696 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:07,141 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:07,557 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:08,916 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:09,371 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:10,393 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:10,395 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:11,769 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:12,009 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:13,021 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:13,241 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:14,634 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:15,147 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:15,847 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:16,219 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:16,963 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:18,161 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:18,620 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 13:10:19,116 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.5319, R=0.8065, F1=0.6410
+2025-04-16 13:10:20,079 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.5319, R=0.8065, F1=0.6410
+2025-04-16 13:10:20,928 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.5319, R=0.8065, F1=0.6410
+2025-04-16 13:10:21,967 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.5319, R=0.8065, F1=0.6410
+2025-04-16 13:10:21,968 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.5319, R=0.8065, F1=0.6410
+2025-04-16 13:10:22,752 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.5217, R=0.7742, F1=0.6234
+2025-04-16 13:10:23,781 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.5455, R=0.7742, F1=0.6400
+2025-04-16 13:10:24,828 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.5349, R=0.7419, F1=0.6216
+2025-04-16 13:10:25,031 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.5610, R=0.7419, F1=0.6389
+2025-04-16 13:10:25,546 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.5610, R=0.7419, F1=0.6389
+2025-04-16 13:10:26,491 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.5750, R=0.7419, F1=0.6479
+2025-04-16 13:10:27,630 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.5641, R=0.7097, F1=0.6286
+2025-04-16 13:10:27,915 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.5676, R=0.6774, F1=0.6176
+2025-04-16 13:10:28,261 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.5676, R=0.6774, F1=0.6176
+2025-04-16 13:10:28,936 - INFO - [omi-2.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.5676, R=0.6774, F1=0.6176
+2025-04-16 13:10:28,950 - INFO - [omi-3] Starting grid search...
+2025-04-16 13:10:31,997 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:32,049 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:32,103 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:32,104 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:33,983 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:33,984 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:33,986 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:33,989 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:35,838 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:35,875 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:35,933 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:35,933 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:38,158 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:38,382 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:38,384 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:38,447 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:41,139 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:41,140 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:41,140 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:41,766 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:43,896 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:43,930 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:44,331 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:44,426 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:46,896 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:46,897 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:47,104 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:47,105 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:49,633 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:49,644 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:50,039 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:50,040 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:52,680 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:52,681 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:52,860 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:52,973 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:55,878 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:55,879 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:10:55,879 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:56,119 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:57,762 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:10:58,188 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:58,756 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:10:59,182 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:11:00,504 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:11:01,437 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:01,575 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:01,916 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:03,135 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:04,353 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:04,420 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:05,009 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:06,037 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.8025, R=0.8333, F1=0.8176
+2025-04-16 13:11:07,499 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:11:07,500 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:11:07,965 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.8228, R=0.8333, F1=0.8280
+2025-04-16 13:11:08,999 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:11:10,109 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:11:10,586 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:11:10,937 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.8205, R=0.8205, F1=0.8205
+2025-04-16 13:11:11,879 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:12,995 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:13,520 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:13,521 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:14,621 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:16,153 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:16,495 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:16,496 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:17,548 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:19,041 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:19,191 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.9130, R=0.8077, F1=0.8571
+2025-04-16 13:11:19,465 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.9118, R=0.7949, F1=0.8493
+2025-04-16 13:11:19,907 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.9118, R=0.7949, F1=0.8493
+2025-04-16 13:11:21,961 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.9118, R=0.7949, F1=0.8493
+2025-04-16 13:11:22,039 - INFO - [omi-3.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.9118, R=0.7949, F1=0.8493
+2025-04-16 13:11:22,056 - INFO - [omi-4] Starting grid search...
+2025-04-16 13:11:25,224 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:25,225 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:25,225 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:25,225 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:26,990 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:27,046 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:27,061 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:27,153 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:28,935 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:28,989 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:28,989 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:29,089 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:31,326 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:31,326 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:31,328 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:31,624 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:33,863 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:34,639 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:34,646 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:34,647 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:36,886 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:36,911 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:37,698 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:37,699 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:40,065 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:40,066 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:40,529 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:40,855 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:42,391 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:43,008 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:43,471 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:43,990 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:45,059 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:46,257 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:46,258 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:46,795 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:47,970 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:49,189 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:49,190 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:49,987 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:51,034 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:11:52,410 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:52,411 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:52,599 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:54,219 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:11:54,791 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:55,205 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:55,484 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:57,287 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:57,643 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:57,866 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:11:58,223 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:12:00,465 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.8250, R=0.9851, F1=0.8980
+2025-04-16 13:12:00,973 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:12:00,975 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:12:00,975 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.8462, R=0.9851, F1=0.9103
+2025-04-16 13:12:03,337 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:12:03,427 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:12:03,773 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:12:03,913 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.8442, R=0.9701, F1=0.9028
+2025-04-16 13:12:06,468 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:06,469 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:06,739 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:06,740 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:09,344 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:09,345 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:09,615 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:09,616 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:12,068 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:12,108 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:12,265 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.9420, R=0.9701, F1=0.9559
+2025-04-16 13:12:12,653 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.9412, R=0.9552, F1=0.9481
+2025-04-16 13:12:14,346 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.9412, R=0.9552, F1=0.9481
+2025-04-16 13:12:15,066 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.9412, R=0.9552, F1=0.9481
+2025-04-16 13:12:15,242 - INFO - [omi-4.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.9412, R=0.9552, F1=0.9481
+2025-04-16 13:12:15,261 - INFO - [omi-5] Starting grid search...
+2025-04-16 13:12:18,401 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:18,413 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:18,454 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:18,455 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:20,335 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:20,416 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:20,421 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:20,432 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:22,301 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:22,445 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:22,445 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:22,446 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:24,781 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:24,897 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.4653, R=0.9592, F1=0.6267
+2025-04-16 13:12:24,909 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.4700, R=0.9592, F1=0.6309
+2025-04-16 13:12:24,937 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:27,836 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:27,883 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:28,055 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:28,056 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:31,357 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:31,413 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:31,413 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:31,413 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:33,515 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:33,731 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:34,559 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:34,561 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:36,252 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.4653, R=0.9592, F1=0.6267
+2025-04-16 13:12:36,709 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.4700, R=0.9592, F1=0.6309
+2025-04-16 13:12:37,422 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:37,748 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:39,155 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:39,326 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:40,803 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:40,805 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:42,368 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:42,513 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:43,475 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:43,672 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:45,196 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:45,517 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:46,730 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:46,732 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.4653, R=0.9592, F1=0.6267
+2025-04-16 13:12:48,022 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.4700, R=0.9592, F1=0.6309
+2025-04-16 13:12:48,630 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:49,074 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:49,748 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:50,732 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:51,964 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:52,019 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.4757, R=1.0000, F1=0.6447
+2025-04-16 13:12:52,335 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:53,838 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:54,664 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:55,518 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:55,518 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:56,653 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:57,495 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.4706, R=0.9796, F1=0.6358
+2025-04-16 13:12:58,240 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.4653, R=0.9592, F1=0.6267
+2025-04-16 13:12:58,630 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.4700, R=0.9592, F1=0.6309
+2025-04-16 13:12:59,637 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.4884, R=0.8571, F1=0.6222
+2025-04-16 13:13:00,582 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.4884, R=0.8571, F1=0.6222
+2025-04-16 13:13:01,253 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.4884, R=0.8571, F1=0.6222
+2025-04-16 13:13:01,255 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.4884, R=0.8571, F1=0.6222
+2025-04-16 13:13:02,571 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.4884, R=0.8571, F1=0.6222
+2025-04-16 13:13:03,474 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.4884, R=0.8571, F1=0.6222
+2025-04-16 13:13:03,975 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.4762, R=0.8163, F1=0.6015
+2025-04-16 13:13:04,327 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.4762, R=0.8163, F1=0.6015
+2025-04-16 13:13:05,452 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.4762, R=0.8163, F1=0.6015
+2025-04-16 13:13:06,679 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.4762, R=0.8163, F1=0.6015
+2025-04-16 13:13:06,840 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.4762, R=0.8163, F1=0.6015
+2025-04-16 13:13:07,091 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.4762, R=0.8163, F1=0.6015
+2025-04-16 13:13:08,363 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.4699, R=0.7959, F1=0.5909
+2025-04-16 13:13:09,110 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.4699, R=0.7959, F1=0.5909
+2025-04-16 13:13:09,550 - INFO - [omi-5.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.4699, R=0.7959, F1=0.5909
+2025-04-16 13:13:09,565 - INFO - [omi-6] Starting grid search...
+2025-04-16 13:13:12,722 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:12,735 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:12,735 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:12,735 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:14,653 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:14,654 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:14,668 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:14,688 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:16,572 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:16,582 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:16,622 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:16,627 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:18,883 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:19,228 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:19,229 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:19,260 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:22,147 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:22,149 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:22,291 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:22,291 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:25,046 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:25,482 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:25,482 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:25,651 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:27,922 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:28,163 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:28,484 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:28,707 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:31,090 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:31,234 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:31,406 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:31,705 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:34,478 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:34,479 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:34,479 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:34,908 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:37,438 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:37,473 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:37,475 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:38,268 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:39,817 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:40,787 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:40,788 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:41,582 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:42,839 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:42,840 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:43,625 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:44,670 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:45,731 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:45,732 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:46,636 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:47,413 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:48,873 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:49,254 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.2606, R=0.9773, F1=0.4115
+2025-04-16 13:13:49,901 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:50,422 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:51,622 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:51,995 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:52,937 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:53,389 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.2638, R=0.9773, F1=0.4155
+2025-04-16 13:13:54,648 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.2431, R=0.7955, F1=0.3723
+2025-04-16 13:13:55,292 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.2431, R=0.7955, F1=0.3723
+2025-04-16 13:13:55,739 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.2431, R=0.7955, F1=0.3723
+2025-04-16 13:13:56,864 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.2431, R=0.7955, F1=0.3723
+2025-04-16 13:13:57,908 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.2431, R=0.7955, F1=0.3723
+2025-04-16 13:13:58,300 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.2431, R=0.7955, F1=0.3723
+2025-04-16 13:13:58,950 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.2214, R=0.7045, F1=0.3370
+2025-04-16 13:13:59,663 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.2214, R=0.7045, F1=0.3370
+2025-04-16 13:14:00,895 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.2214, R=0.7045, F1=0.3370
+2025-04-16 13:14:01,314 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.2214, R=0.7045, F1=0.3370
+2025-04-16 13:14:01,965 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.2214, R=0.7045, F1=0.3370
+2025-04-16 13:14:02,610 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.2214, R=0.7045, F1=0.3370
+2025-04-16 13:14:03,843 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.2158, R=0.6818, F1=0.3279
+2025-04-16 13:14:04,006 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.2158, R=0.6818, F1=0.3279
+2025-04-16 13:14:04,446 - INFO - [omi-6.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.2158, R=0.6818, F1=0.3279
+2025-04-16 13:14:04,463 - INFO - [omi-7] Starting grid search...
+2025-04-16 13:14:07,408 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:07,436 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:07,436 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:07,532 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:09,184 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:09,233 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:09,235 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:09,327 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:11,025 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:11,066 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:11,067 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:11,134 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:12,906 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:13,084 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:13,177 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:13,210 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:15,929 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:15,930 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:16,047 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:16,048 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:18,157 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:18,603 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:18,710 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:18,762 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:20,574 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:21,584 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:21,585 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:21,602 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:23,045 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:23,956 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:24,157 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:24,543 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:25,551 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:26,992 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:26,993 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:27,373 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:28,131 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:29,672 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:29,673 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:29,873 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:30,935 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:32,869 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:32,870 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:32,930 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:33,384 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:34,530 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:35,162 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:35,430 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:36,473 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:37,459 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:38,107 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:38,290 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:38,925 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:40,735 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:41,248 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:41,249 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:41,462 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:43,493 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:43,493 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:44,126 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.9048, R=0.9744, F1=0.9383
+2025-04-16 13:14:44,126 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:45,531 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:46,663 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:46,664 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:47,280 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:48,111 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:48,955 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:49,465 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:50,232 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:50,904 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:51,756 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:52,319 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:52,471 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:53,946 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:54,258 - INFO - [omi-7.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.9714, R=0.8718, F1=0.9189
+2025-04-16 13:14:54,278 - INFO - [omi-8] Starting grid search...
+2025-04-16 13:14:57,209 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:14:57,211 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:14:57,329 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:14:57,330 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:14:59,027 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:14:59,028 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:14:59,093 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:14:59,144 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:00,904 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:00,906 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:01,002 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:01,002 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:03,017 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:03,018 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:03,060 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:03,061 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:05,668 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:05,923 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:05,930 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:05,930 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:08,222 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:08,800 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:09,110 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:09,111 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:11,223 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:11,340 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:11,698 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:11,698 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:14,474 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:14,475 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:14,475 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:14,641 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:17,261 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:17,413 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:17,414 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:17,655 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:20,114 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:20,114 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:20,114 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:20,768 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:22,213 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:22,793 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:22,952 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:23,494 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:25,367 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:25,692 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:25,955 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:26,225 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:28,215 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:28,464 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:28,898 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:29,175 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:30,553 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:30,996 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:31,581 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:32,233 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:33,349 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:33,893 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:34,529 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:35,043 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.3580, R=0.9355, F1=0.5179
+2025-04-16 13:15:36,467 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:36,749 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:37,299 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:37,695 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:39,074 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:39,949 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:40,121 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:40,238 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.3506, R=0.8710, F1=0.5000
+2025-04-16 13:15:42,060 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.3553, R=0.8710, F1=0.5047
+2025-04-16 13:15:43,154 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.3553, R=0.8710, F1=0.5047
+2025-04-16 13:15:43,154 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.3553, R=0.8710, F1=0.5047
+2025-04-16 13:15:43,154 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.3553, R=0.8710, F1=0.5047
+2025-04-16 13:15:44,992 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.3553, R=0.8710, F1=0.5047
+2025-04-16 13:15:44,993 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.3553, R=0.8710, F1=0.5047
+2025-04-16 13:15:44,993 - INFO - [omi-8.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.3553, R=0.8710, F1=0.5047
+2025-04-16 13:15:45,010 - INFO - [omi-9] Starting grid search...
+2025-04-16 13:15:47,998 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:47,999 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:48,057 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:48,057 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:49,822 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:49,838 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:49,838 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:49,895 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:51,677 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:51,677 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:51,678 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:51,698 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:53,785 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:53,785 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:53,805 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.1, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:53,805 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:56,961 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:56,962 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:56,962 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:56,962 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:59,635 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:15:59,636 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:00,043 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:00,044 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:01,803 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:02,437 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:02,553 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:02,755 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:04,580 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:05,247 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.2, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:05,428 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:05,794 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:07,480 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:08,217 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:08,352 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:08,572 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:10,410 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:11,068 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:11,188 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:11,732 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:12,982 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:13,969 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:13,970 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:15,083 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:16,252 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.3, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:16,254 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:16,635 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:18,177 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:19,237 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:19,238 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:19,238 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:20,594 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:21,700 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:22,300 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:22,300 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:23,542 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:24,270 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:24,650 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:25,264 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:26,393 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.4, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 13:16:27,089 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:27,657 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=0.5, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:27,830 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:28,923 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=1.5, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:30,261 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:30,739 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=2.5, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:30,739 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:31,374 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=3.5, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:33,057 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:33,250 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=4.5, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:33,296 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:33,809 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=5.5, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:36,022 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:36,023 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=6.5, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:36,023 - INFO - [omi-9.txt] mode=robust_zscore, corr_threshold=0.5, threshold=7.0, P=0.4754, R=0.8169, F1=0.6010
+2025-04-16 13:16:36,043 - INFO - 
+==================================================
+2025-04-16 13:16:36,043 - INFO - 开始汇总结果...
+2025-04-16 13:16:36,051 - INFO - 
+===== Best Results per Dataset =====
+   dataset    score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score  logged_neighbor_param
+ omi-1.txt robust_zscore             0.5              3.0     corr_threshold   0.892473 0.932584  0.912088                    0.5
+omi-10.txt robust_zscore             0.2              6.0     corr_threshold   0.483871 0.983607  0.648649                    0.2
+omi-11.txt robust_zscore             0.1              0.0     corr_threshold   0.343373 0.982759  0.508929                    0.1
+omi-12.txt robust_zscore             0.4              3.0     corr_threshold   0.612903 0.950000  0.745098                    0.4
+ omi-2.txt robust_zscore             0.5              5.0     corr_threshold   0.575000 0.741935  0.647887                    0.5
+ omi-3.txt robust_zscore             0.5              4.0     corr_threshold   0.913043 0.807692  0.857143                    0.5
+ omi-4.txt robust_zscore             0.5              4.5     corr_threshold   0.942029 0.970149  0.955882                    0.5
+ omi-5.txt robust_zscore             0.2              0.0     corr_threshold   0.475728 1.000000  0.644737                    0.2
+ omi-6.txt robust_zscore             0.1              7.0     corr_threshold   0.263804 0.977273  0.415459                    0.1
+ omi-7.txt robust_zscore             0.2              0.5     corr_threshold   0.904762 0.974359  0.938272                    0.2
+ omi-8.txt robust_zscore             0.1              5.5     corr_threshold   0.358025 0.935484  0.517857                    0.1
+ omi-9.txt robust_zscore             0.1              0.0     corr_threshold   0.496183 0.915493  0.643564                    0.1
+2025-04-16 13:16:36,051 - INFO - 
+===== Overall Metrics =====
+Precision: 0.5119  Recall: 0.9238  F1: 0.6588
+2025-04-16 13:16:36,051 - INFO - 
+【原始汇总指标】
+2025-04-16 13:16:36,051 - INFO - 精确率(Precision): 0.5119
+2025-04-16 13:16:36,051 - INFO - 召回率(Recall):    0.9238
+2025-04-16 13:16:36,051 - INFO - F1值:             0.6588
+2025-04-16 13:16:36,051 - INFO - 
+==================================================
+2025-04-16 13:16:36,051 - INFO - 开始生成可视化结果...
+2025-04-16 13:16:36,052 - INFO - 
+==================================================
+2025-04-16 13:16:36,052 - INFO - 开始数据集可视化: omi-1
+2025-04-16 13:16:36,052 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.5, 阈值=3.0
+2025-04-16 13:16:36,052 - INFO - ==================================================
+
+2025-04-16 13:16:36,052 - INFO - 正在加载数据集 omi-1 的数据
+2025-04-16 13:16:36,053 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:36,053 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:37,798 - INFO - 已计算 170 条边的统计量
+2025-04-16 13:16:37,798 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 13:16:37,803 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1
+2025-04-16 13:16:37,804 - INFO - 在数据集中发现 7 个异常时间段
+2025-04-16 13:16:37,804 - INFO - 
+正在处理时间段 1/7: 760-765
+2025-04-16 13:16:37,804 - INFO - 该时间段的真实异常节点: {4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:37,804 - INFO - 正在计算异常分数...
+2025-04-16 13:16:37,805 - INFO - 检测到的异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:37,805 - INFO - 正在为时间段 760-765 生成可视化
+2025-04-16 13:16:37,805 - INFO - 正在为时间段 760-765 生成异常图可视化
+2025-04-16 13:16:37,806 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:37,806 - DEBUG - 边统计: 正常边 112 条, 异常边 20 条
+2025-04-16 13:16:37,806 - INFO - 时间段 760-765 的节点检测统计: 真阳性=12, 假阳性=0, 假阴性=3, 正常节点=4
+2025-04-16 13:16:37,883 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\seg_0_760_765.png
+2025-04-16 13:16:37,970 - INFO - 成功保存时间段 760-765 的可视化结果
+2025-04-16 13:16:37,970 - INFO - 
+正在处理时间段 2/7: 1064-1298
+2025-04-16 13:16:37,970 - INFO - 该时间段的真实异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:37,972 - INFO - 正在计算异常分数...
+2025-04-16 13:16:38,038 - INFO - 检测到的异常节点: {3, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,038 - INFO - 正在为时间段 1064-1298 生成可视化
+2025-04-16 13:16:38,038 - INFO - 正在为时间段 1064-1298 生成异常图可视化
+2025-04-16 13:16:38,038 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:38,039 - DEBUG - 边统计: 正常边 156 条, 异常边 22 条
+2025-04-16 13:16:38,039 - INFO - 时间段 1064-1298 的节点检测统计: 真阳性=13, 假阳性=1, 假阴性=0, 正常节点=5
+2025-04-16 13:16:38,124 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\seg_1_1064_1298.png
+2025-04-16 13:16:38,214 - INFO - 成功保存时间段 1064-1298 的可视化结果
+2025-04-16 13:16:38,214 - INFO - 
+正在处理时间段 3/7: 2758-2772
+2025-04-16 13:16:38,214 - INFO - 该时间段的真实异常节点: {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,214 - INFO - 正在计算异常分数...
+2025-04-16 13:16:38,220 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,220 - INFO - 正在为时间段 2758-2772 生成可视化
+2025-04-16 13:16:38,220 - INFO - 正在为时间段 2758-2772 生成异常图可视化
+2025-04-16 13:16:38,221 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:38,221 - DEBUG - 边统计: 正常边 124 条, 异常边 30 条
+2025-04-16 13:16:38,221 - INFO - 时间段 2758-2772 的节点检测统计: 真阳性=13, 假阳性=0, 假阴性=2, 正常节点=4
+2025-04-16 13:16:38,302 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\seg_2_2758_2772.png
+2025-04-16 13:16:38,381 - INFO - 成功保存时间段 2758-2772 的可视化结果
+2025-04-16 13:16:38,381 - INFO - 
+正在处理时间段 4/7: 2874-2885
+2025-04-16 13:16:38,382 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 13:16:38,382 - INFO - 正在计算异常分数...
+2025-04-16 13:16:38,385 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,385 - INFO - 正在为时间段 2874-2885 生成可视化
+2025-04-16 13:16:38,385 - INFO - 正在为时间段 2874-2885 生成异常图可视化
+2025-04-16 13:16:38,385 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:38,386 - DEBUG - 边统计: 正常边 134 条, 异常边 20 条
+2025-04-16 13:16:38,386 - INFO - 时间段 2874-2885 的节点检测统计: 真阳性=11, 假阳性=2, 假阴性=0, 正常节点=6
+2025-04-16 13:16:38,467 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\seg_3_2874_2885.png
+2025-04-16 13:16:38,541 - INFO - 成功保存时间段 2874-2885 的可视化结果
+2025-04-16 13:16:38,542 - INFO - 
+正在处理时间段 5/7: 3012-3025
+2025-04-16 13:16:38,542 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,542 - INFO - 正在计算异常分数...
+2025-04-16 13:16:38,546 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,546 - INFO - 正在为时间段 3012-3025 生成可视化
+2025-04-16 13:16:38,546 - INFO - 正在为时间段 3012-3025 生成异常图可视化
+2025-04-16 13:16:38,546 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:38,547 - DEBUG - 边统计: 正常边 116 条, 异常边 38 条
+2025-04-16 13:16:38,547 - INFO - 时间段 3012-3025 的节点检测统计: 真阳性=11, 假阳性=2, 假阴性=0, 正常节点=6
+2025-04-16 13:16:38,626 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\seg_4_3012_3025.png
+2025-04-16 13:16:38,705 - INFO - 成功保存时间段 3012-3025 的可视化结果
+2025-04-16 13:16:38,705 - INFO - 
+正在处理时间段 6/7: 3160-3305
+2025-04-16 13:16:38,705 - INFO - 该时间段的真实异常节点: {8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,705 - INFO - 正在计算异常分数...
+2025-04-16 13:16:38,744 - INFO - 检测到的异常节点: {3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,745 - INFO - 正在为时间段 3160-3305 生成可视化
+2025-04-16 13:16:38,745 - INFO - 正在为时间段 3160-3305 生成异常图可视化
+2025-04-16 13:16:38,745 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:38,745 - DEBUG - 边统计: 正常边 176 条, 异常边 2 条
+2025-04-16 13:16:38,745 - INFO - 时间段 3160-3305 的节点检测统计: 真阳性=11, 假阳性=4, 假阴性=1, 正常节点=3
+2025-04-16 13:16:38,832 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\seg_5_3160_3305.png
+2025-04-16 13:16:38,914 - INFO - 成功保存时间段 3160-3305 的可视化结果
+2025-04-16 13:16:38,914 - INFO - 
+正在处理时间段 7/7: 3626-3638
+2025-04-16 13:16:38,915 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,915 - INFO - 正在计算异常分数...
+2025-04-16 13:16:38,918 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:38,918 - INFO - 正在为时间段 3626-3638 生成可视化
+2025-04-16 13:16:38,918 - INFO - 正在为时间段 3626-3638 生成异常图可视化
+2025-04-16 13:16:38,918 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:38,918 - DEBUG - 边统计: 正常边 136 条, 异常边 18 条
+2025-04-16 13:16:38,918 - INFO - 时间段 3626-3638 的节点检测统计: 真阳性=12, 假阳性=1, 假阴性=0, 正常节点=6
+2025-04-16 13:16:39,000 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\seg_6_3626_3638.png
+2025-04-16 13:16:39,080 - INFO - 成功保存时间段 3626-3638 的可视化结果
+2025-04-16 13:16:39,080 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1 中的图像创建GIF
+2025-04-16 13:16:39,277 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-1\omi-1.gif
+2025-04-16 13:16:39,277 - INFO - 
+==================================================
+2025-04-16 13:16:39,277 - INFO - 开始数据集可视化: omi-10
+2025-04-16 13:16:39,277 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.2, 阈值=6.0
+2025-04-16 13:16:39,277 - INFO - ==================================================
+
+2025-04-16 13:16:39,278 - INFO - 正在加载数据集 omi-10 的数据
+2025-04-16 13:16:39,279 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:39,279 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:41,103 - INFO - 已计算 136 条边的统计量
+2025-04-16 13:16:41,103 - INFO - 为每个节点使用相关系数阈值 >= 0.2 的邻居
+2025-04-16 13:16:41,105 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10
+2025-04-16 13:16:41,105 - INFO - 在数据集中发现 8 个异常时间段
+2025-04-16 13:16:41,105 - INFO - 
+正在处理时间段 1/8: 740-780
+2025-04-16 13:16:41,106 - INFO - 该时间段的真实异常节点: {2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:41,106 - INFO - 正在计算异常分数...
+2025-04-16 13:16:41,125 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:41,125 - INFO - 正在为时间段 740-780 生成可视化
+2025-04-16 13:16:41,125 - INFO - 正在为时间段 740-780 生成异常图可视化
+2025-04-16 13:16:41,125 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:41,126 - DEBUG - 边统计: 正常边 166 条, 异常边 106 条
+2025-04-16 13:16:41,126 - INFO - 时间段 740-780 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=1, 正常节点=1
+2025-04-16 13:16:41,207 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_0_740_780.png
+2025-04-16 13:16:41,283 - INFO - 成功保存时间段 740-780 的可视化结果
+2025-04-16 13:16:41,284 - INFO - 
+正在处理时间段 2/8: 1345-1406
+2025-04-16 13:16:41,284 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 13:16:41,284 - INFO - 正在计算异常分数...
+2025-04-16 13:16:41,314 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:41,314 - INFO - 正在为时间段 1345-1406 生成可视化
+2025-04-16 13:16:41,314 - INFO - 正在为时间段 1345-1406 生成异常图可视化
+2025-04-16 13:16:41,314 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:41,314 - DEBUG - 边统计: 正常边 268 条, 异常边 4 条
+2025-04-16 13:16:41,314 - INFO - 时间段 1345-1406 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-16 13:16:41,391 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_1_1345_1406.png
+2025-04-16 13:16:41,520 - INFO - 成功保存时间段 1345-1406 的可视化结果
+2025-04-16 13:16:41,520 - INFO - 
+正在处理时间段 3/8: 2224-2272
+2025-04-16 13:16:41,521 - INFO - 该时间段的真实异常节点: {4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:41,521 - INFO - 正在计算异常分数...
+2025-04-16 13:16:41,544 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:41,544 - INFO - 正在为时间段 2224-2272 生成可视化
+2025-04-16 13:16:41,544 - INFO - 正在为时间段 2224-2272 生成异常图可视化
+2025-04-16 13:16:41,544 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:41,545 - DEBUG - 边统计: 正常边 264 条, 异常边 8 条
+2025-04-16 13:16:41,545 - INFO - 时间段 2224-2272 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=0, 正常节点=2
+2025-04-16 13:16:41,625 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_2_2224_2272.png
+2025-04-16 13:16:41,701 - INFO - 成功保存时间段 2224-2272 的可视化结果
+2025-04-16 13:16:41,701 - INFO - 
+正在处理时间段 4/8: 2514-2592
+2025-04-16 13:16:41,701 - INFO - 该时间段的真实异常节点: {16, 4}
+2025-04-16 13:16:41,701 - INFO - 正在计算异常分数...
+2025-04-16 13:16:41,739 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:41,739 - INFO - 正在为时间段 2514-2592 生成可视化
+2025-04-16 13:16:41,739 - INFO - 正在为时间段 2514-2592 生成异常图可视化
+2025-04-16 13:16:41,739 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:41,740 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 13:16:41,740 - INFO - 时间段 2514-2592 的节点检测统计: 真阳性=2, 假阳性=15, 假阴性=0, 正常节点=2
+2025-04-16 13:16:41,817 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_3_2514_2592.png
+2025-04-16 13:16:41,895 - INFO - 成功保存时间段 2514-2592 的可视化结果
+2025-04-16 13:16:41,895 - INFO - 
+正在处理时间段 5/8: 2733-2778
+2025-04-16 13:16:41,895 - INFO - 该时间段的真实异常节点: {11, 14, 15}
+2025-04-16 13:16:41,895 - INFO - 正在计算异常分数...
+2025-04-16 13:16:41,917 - INFO - 检测到的异常节点: {1, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:41,917 - INFO - 正在为时间段 2733-2778 生成可视化
+2025-04-16 13:16:41,917 - INFO - 正在为时间段 2733-2778 生成异常图可视化
+2025-04-16 13:16:41,918 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:41,918 - DEBUG - 边统计: 正常边 238 条, 异常边 2 条
+2025-04-16 13:16:41,918 - INFO - 时间段 2733-2778 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-16 13:16:42,000 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_4_2733_2778.png
+2025-04-16 13:16:42,080 - INFO - 成功保存时间段 2733-2778 的可视化结果
+2025-04-16 13:16:42,081 - INFO - 
+正在处理时间段 6/8: 3401-3405
+2025-04-16 13:16:42,081 - INFO - 该时间段的真实异常节点: {1}
+2025-04-16 13:16:42,081 - INFO - 正在计算异常分数...
+2025-04-16 13:16:42,082 - INFO - 检测到的异常节点: {1, 4, 5, 6, 11, 16}
+2025-04-16 13:16:42,082 - INFO - 正在为时间段 3401-3405 生成可视化
+2025-04-16 13:16:42,082 - INFO - 正在为时间段 3401-3405 生成异常图可视化
+2025-04-16 13:16:42,082 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:42,082 - DEBUG - 边统计: 正常边 252 条, 异常边 20 条
+2025-04-16 13:16:42,083 - INFO - 时间段 3401-3405 的节点检测统计: 真阳性=1, 假阳性=5, 假阴性=0, 正常节点=13
+2025-04-16 13:16:42,166 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_5_3401_3405.png
+2025-04-16 13:16:42,252 - INFO - 成功保存时间段 3401-3405 的可视化结果
+2025-04-16 13:16:42,252 - INFO - 
+正在处理时间段 7/8: 3414-3459
+2025-04-16 13:16:42,253 - INFO - 该时间段的真实异常节点: {8}
+2025-04-16 13:16:42,253 - INFO - 正在计算异常分数...
+2025-04-16 13:16:42,275 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:42,275 - INFO - 正在为时间段 3414-3459 生成可视化
+2025-04-16 13:16:42,275 - INFO - 正在为时间段 3414-3459 生成异常图可视化
+2025-04-16 13:16:42,275 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:42,276 - DEBUG - 边统计: 正常边 234 条, 异常边 38 条
+2025-04-16 13:16:42,276 - INFO - 时间段 3414-3459 的节点检测统计: 真阳性=1, 假阳性=16, 假阴性=0, 正常节点=2
+2025-04-16 13:16:42,362 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_6_3414_3459.png
+2025-04-16 13:16:42,447 - INFO - 成功保存时间段 3414-3459 的可视化结果
+2025-04-16 13:16:42,447 - INFO - 
+正在处理时间段 8/8: 3700-3744
+2025-04-16 13:16:42,448 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 13:16:42,448 - INFO - 正在计算异常分数...
+2025-04-16 13:16:42,468 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:42,469 - INFO - 正在为时间段 3700-3744 生成可视化
+2025-04-16 13:16:42,469 - INFO - 正在为时间段 3700-3744 生成异常图可视化
+2025-04-16 13:16:42,469 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:42,469 - DEBUG - 边统计: 正常边 228 条, 异常边 44 条
+2025-04-16 13:16:42,469 - INFO - 时间段 3700-3744 的节点检测统计: 真阳性=12, 假阳性=5, 假阴性=0, 正常节点=2
+2025-04-16 13:16:42,549 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\seg_7_3700_3744.png
+2025-04-16 13:16:42,628 - INFO - 成功保存时间段 3700-3744 的可视化结果
+2025-04-16 13:16:42,628 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10 中的图像创建GIF
+2025-04-16 13:16:42,841 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-10\omi-10.gif
+2025-04-16 13:16:42,841 - INFO - 
+==================================================
+2025-04-16 13:16:42,841 - INFO - 开始数据集可视化: omi-11
+2025-04-16 13:16:42,841 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.1, 阈值=0.0
+2025-04-16 13:16:42,841 - INFO - ==================================================
+
+2025-04-16 13:16:42,841 - INFO - 正在加载数据集 omi-11 的数据
+2025-04-16 13:16:42,842 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:42,842 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:44,650 - INFO - 已计算 153 条边的统计量
+2025-04-16 13:16:44,650 - INFO - 为每个节点使用相关系数阈值 >= 0.1 的邻居
+2025-04-16 13:16:44,651 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11
+2025-04-16 13:16:44,651 - INFO - 在数据集中发现 9 个异常时间段
+2025-04-16 13:16:44,651 - INFO - 
+正在处理时间段 1/9: 738-755
+2025-04-16 13:16:44,652 - INFO - 该时间段的真实异常节点: {2}
+2025-04-16 13:16:44,652 - INFO - 正在计算异常分数...
+2025-04-16 13:16:44,660 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:44,660 - INFO - 正在为时间段 738-755 生成可视化
+2025-04-16 13:16:44,660 - INFO - 正在为时间段 738-755 生成异常图可视化
+2025-04-16 13:16:44,661 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:44,662 - DEBUG - 边统计: 正常边 240 条, 异常边 0 条
+2025-04-16 13:16:44,662 - INFO - 时间段 738-755 的节点检测统计: 真阳性=0, 假阳性=16, 假阴性=1, 正常节点=2
+2025-04-16 13:16:44,753 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_0_738_755.png
+2025-04-16 13:16:44,834 - INFO - 成功保存时间段 738-755 的可视化结果
+2025-04-16 13:16:44,835 - INFO - 
+正在处理时间段 2/9: 757-815
+2025-04-16 13:16:44,835 - INFO - 该时间段的真实异常节点: set()
+2025-04-16 13:16:44,835 - INFO - 正在计算异常分数...
+2025-04-16 13:16:44,868 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:44,869 - INFO - 正在为时间段 757-815 生成可视化
+2025-04-16 13:16:44,869 - INFO - 正在为时间段 757-815 生成异常图可视化
+2025-04-16 13:16:44,869 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:44,869 - DEBUG - 边统计: 正常边 248 条, 异常边 24 条
+2025-04-16 13:16:44,869 - INFO - 时间段 757-815 的节点检测统计: 真阳性=0, 假阳性=17, 假阴性=0, 正常节点=2
+2025-04-16 13:16:44,951 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_1_757_815.png
+2025-04-16 13:16:45,041 - INFO - 成功保存时间段 757-815 的可视化结果
+2025-04-16 13:16:45,042 - INFO - 
+正在处理时间段 3/9: 1366-1375
+2025-04-16 13:16:45,042 - INFO - 该时间段的真实异常节点: {4, 5, 8, 17, 19}
+2025-04-16 13:16:45,042 - INFO - 正在计算异常分数...
+2025-04-16 13:16:45,046 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:45,046 - INFO - 正在为时间段 1366-1375 生成可视化
+2025-04-16 13:16:45,046 - INFO - 正在为时间段 1366-1375 生成异常图可视化
+2025-04-16 13:16:45,046 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:45,047 - DEBUG - 边统计: 正常边 210 条, 异常边 62 条
+2025-04-16 13:16:45,047 - INFO - 时间段 1366-1375 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-16 13:16:45,127 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_2_1366_1375.png
+2025-04-16 13:16:45,210 - INFO - 成功保存时间段 1366-1375 的可视化结果
+2025-04-16 13:16:45,211 - INFO - 
+正在处理时间段 4/9: 2301-2314
+2025-04-16 13:16:45,211 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-16 13:16:45,211 - INFO - 正在计算异常分数...
+2025-04-16 13:16:45,218 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:45,218 - INFO - 正在为时间段 2301-2314 生成可视化
+2025-04-16 13:16:45,218 - INFO - 正在为时间段 2301-2314 生成异常图可视化
+2025-04-16 13:16:45,218 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:45,219 - DEBUG - 边统计: 正常边 232 条, 异常边 40 条
+2025-04-16 13:16:45,219 - INFO - 时间段 2301-2314 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 13:16:45,306 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_3_2301_2314.png
+2025-04-16 13:16:45,385 - INFO - 成功保存时间段 2301-2314 的可视化结果
+2025-04-16 13:16:45,385 - INFO - 
+正在处理时间段 5/9: 2365-2381
+2025-04-16 13:16:45,385 - INFO - 该时间段的真实异常节点: {19}
+2025-04-16 13:16:45,385 - INFO - 正在计算异常分数...
+2025-04-16 13:16:45,392 - INFO - 检测到的异常节点: {4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:45,392 - INFO - 正在为时间段 2365-2381 生成可视化
+2025-04-16 13:16:45,392 - INFO - 正在为时间段 2365-2381 生成异常图可视化
+2025-04-16 13:16:45,392 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:45,392 - DEBUG - 边统计: 正常边 168 条, 异常边 42 条
+2025-04-16 13:16:45,392 - INFO - 时间段 2365-2381 的节点检测统计: 真阳性=1, 假阳性=14, 假阴性=0, 正常节点=4
+2025-04-16 13:16:45,482 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_4_2365_2381.png
+2025-04-16 13:16:45,559 - INFO - 成功保存时间段 2365-2381 的可视化结果
+2025-04-16 13:16:45,559 - INFO - 
+正在处理时间段 6/9: 2464-2485
+2025-04-16 13:16:45,559 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-16 13:16:45,559 - INFO - 正在计算异常分数...
+2025-04-16 13:16:45,570 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:45,570 - INFO - 正在为时间段 2464-2485 生成可视化
+2025-04-16 13:16:45,571 - INFO - 正在为时间段 2464-2485 生成异常图可视化
+2025-04-16 13:16:45,571 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:45,571 - DEBUG - 边统计: 正常边 236 条, 异常边 36 条
+2025-04-16 13:16:45,571 - INFO - 时间段 2464-2485 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 13:16:45,652 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_5_2464_2485.png
+2025-04-16 13:16:45,801 - INFO - 成功保存时间段 2464-2485 的可视化结果
+2025-04-16 13:16:45,801 - INFO - 
+正在处理时间段 7/9: 2588-2610
+2025-04-16 13:16:45,801 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-16 13:16:45,802 - INFO - 正在计算异常分数...
+2025-04-16 13:16:45,811 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:45,811 - INFO - 正在为时间段 2588-2610 生成可视化
+2025-04-16 13:16:45,812 - INFO - 正在为时间段 2588-2610 生成异常图可视化
+2025-04-16 13:16:45,812 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:45,812 - DEBUG - 边统计: 正常边 216 条, 异常边 56 条
+2025-04-16 13:16:45,812 - INFO - 时间段 2588-2610 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 13:16:45,893 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_6_2588_2610.png
+2025-04-16 13:16:45,979 - INFO - 成功保存时间段 2588-2610 的可视化结果
+2025-04-16 13:16:45,979 - INFO - 
+正在处理时间段 8/9: 2650-2675
+2025-04-16 13:16:45,979 - INFO - 该时间段的真实异常节点: {19}
+2025-04-16 13:16:45,979 - INFO - 正在计算异常分数...
+2025-04-16 13:16:45,990 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:45,991 - INFO - 正在为时间段 2650-2675 生成可视化
+2025-04-16 13:16:45,991 - INFO - 正在为时间段 2650-2675 生成异常图可视化
+2025-04-16 13:16:45,991 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:45,991 - DEBUG - 边统计: 正常边 192 条, 异常边 48 条
+2025-04-16 13:16:45,991 - INFO - 时间段 2650-2675 的节点检测统计: 真阳性=1, 假阳性=15, 假阴性=0, 正常节点=3
+2025-04-16 13:16:46,073 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_7_2650_2675.png
+2025-04-16 13:16:46,150 - INFO - 成功保存时间段 2650-2675 的可视化结果
+2025-04-16 13:16:46,150 - INFO - 
+正在处理时间段 9/9: 3012-3072
+2025-04-16 13:16:46,151 - INFO - 该时间段的真实异常节点: {1, 4, 5, 8, 17, 19}
+2025-04-16 13:16:46,151 - INFO - 正在计算异常分数...
+2025-04-16 13:16:46,182 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:46,182 - INFO - 正在为时间段 3012-3072 生成可视化
+2025-04-16 13:16:46,182 - INFO - 正在为时间段 3012-3072 生成异常图可视化
+2025-04-16 13:16:46,182 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:46,184 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 13:16:46,184 - INFO - 时间段 3012-3072 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=0, 正常节点=2
+2025-04-16 13:16:46,263 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\seg_8_3012_3072.png
+2025-04-16 13:16:46,344 - INFO - 成功保存时间段 3012-3072 的可视化结果
+2025-04-16 13:16:46,345 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11 中的图像创建GIF
+2025-04-16 13:16:46,584 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-11\omi-11.gif
+2025-04-16 13:16:46,584 - INFO - 
+==================================================
+2025-04-16 13:16:46,584 - INFO - 开始数据集可视化: omi-12
+2025-04-16 13:16:46,584 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.4, 阈值=3.0
+2025-04-16 13:16:46,584 - INFO - ==================================================
+
+2025-04-16 13:16:46,584 - INFO - 正在加载数据集 omi-12 的数据
+2025-04-16 13:16:46,585 - INFO - 数据加载成功。训练集形状: (7291, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:46,585 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:47,960 - INFO - 已计算 133 条边的统计量
+2025-04-16 13:16:47,960 - INFO - 为每个节点使用相关系数阈值 >= 0.4 的邻居
+2025-04-16 13:16:47,961 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12
+2025-04-16 13:16:47,961 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-16 13:16:47,961 - INFO - 
+正在处理时间段 1/5: 740-813
+2025-04-16 13:16:47,962 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:47,962 - INFO - 正在计算异常分数...
+2025-04-16 13:16:47,990 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:47,990 - INFO - 正在为时间段 740-813 生成可视化
+2025-04-16 13:16:47,990 - INFO - 正在为时间段 740-813 生成异常图可视化
+2025-04-16 13:16:47,990 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:47,991 - DEBUG - 边统计: 正常边 140 条, 异常边 62 条
+2025-04-16 13:16:47,991 - INFO - 时间段 740-813 的节点检测统计: 真阳性=15, 假阳性=0, 假阴性=1, 正常节点=3
+2025-04-16 13:16:48,072 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12\seg_0_740_813.png
+2025-04-16 13:16:48,148 - INFO - 成功保存时间段 740-813 的可视化结果
+2025-04-16 13:16:48,148 - INFO - 
+正在处理时间段 2/5: 2486-2493
+2025-04-16 13:16:48,148 - INFO - 该时间段的真实异常节点: {4, 5}
+2025-04-16 13:16:48,148 - INFO - 正在计算异常分数...
+2025-04-16 13:16:48,150 - INFO - 检测到的异常节点: {1, 4, 5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:48,150 - INFO - 正在为时间段 2486-2493 生成可视化
+2025-04-16 13:16:48,150 - INFO - 正在为时间段 2486-2493 生成异常图可视化
+2025-04-16 13:16:48,150 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:48,151 - DEBUG - 边统计: 正常边 162 条, 异常边 32 条
+2025-04-16 13:16:48,151 - INFO - 时间段 2486-2493 的节点检测统计: 真阳性=2, 假阳性=13, 假阴性=0, 正常节点=4
+2025-04-16 13:16:48,232 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12\seg_1_2486_2493.png
+2025-04-16 13:16:48,305 - INFO - 成功保存时间段 2486-2493 的可视化结果
+2025-04-16 13:16:48,305 - INFO - 
+正在处理时间段 3/5: 2515-2525
+2025-04-16 13:16:48,305 - INFO - 该时间段的真实异常节点: {1, 4, 5, 7, 8, 9, 17, 18}
+2025-04-16 13:16:48,305 - INFO - 正在计算异常分数...
+2025-04-16 13:16:48,309 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:48,309 - INFO - 正在为时间段 2515-2525 生成可视化
+2025-04-16 13:16:48,309 - INFO - 正在为时间段 2515-2525 生成异常图可视化
+2025-04-16 13:16:48,309 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:48,310 - DEBUG - 边统计: 正常边 180 条, 异常边 70 条
+2025-04-16 13:16:48,310 - INFO - 时间段 2515-2525 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=0, 正常节点=2
+2025-04-16 13:16:48,386 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12\seg_2_2515_2525.png
+2025-04-16 13:16:48,462 - INFO - 成功保存时间段 2515-2525 的可视化结果
+2025-04-16 13:16:48,463 - INFO - 
+正在处理时间段 4/5: 2721-2723
+2025-04-16 13:16:48,463 - INFO - 该时间段的真实异常节点: {4}
+2025-04-16 13:16:48,463 - INFO - 正在计算异常分数...
+2025-04-16 13:16:48,463 - INFO - 检测到的异常节点: set()
+2025-04-16 13:16:48,463 - INFO - 正在为时间段 2721-2723 生成可视化
+2025-04-16 13:16:48,463 - INFO - 正在为时间段 2721-2723 生成异常图可视化
+2025-04-16 13:16:48,463 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:48,463 - DEBUG - 边统计: 正常边 38 条, 异常边 42 条
+2025-04-16 13:16:48,463 - INFO - 时间段 2721-2723 的节点检测统计: 真阳性=0, 假阳性=0, 假阴性=1, 正常节点=18
+2025-04-16 13:16:48,555 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12\seg_3_2721_2723.png
+2025-04-16 13:16:48,635 - INFO - 成功保存时间段 2721-2723 的可视化结果
+2025-04-16 13:16:48,635 - INFO - 
+正在处理时间段 5/5: 3500-3535
+2025-04-16 13:16:48,636 - INFO - 该时间段的真实异常节点: {5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:48,636 - INFO - 正在计算异常分数...
+2025-04-16 13:16:48,647 - INFO - 检测到的异常节点: {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:48,648 - INFO - 正在为时间段 3500-3535 生成可视化
+2025-04-16 13:16:48,648 - INFO - 正在为时间段 3500-3535 生成异常图可视化
+2025-04-16 13:16:48,648 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:48,648 - DEBUG - 边统计: 正常边 172 条, 异常边 38 条
+2025-04-16 13:16:48,648 - INFO - 时间段 3500-3535 的节点检测统计: 真阳性=13, 假阳性=2, 假阴性=0, 正常节点=4
+2025-04-16 13:16:48,738 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12\seg_4_3500_3535.png
+2025-04-16 13:16:48,816 - INFO - 成功保存时间段 3500-3535 的可视化结果
+2025-04-16 13:16:48,816 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12 中的图像创建GIF
+2025-04-16 13:16:48,972 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-12\omi-12.gif
+2025-04-16 13:16:48,973 - INFO - 
+==================================================
+2025-04-16 13:16:48,973 - INFO - 开始数据集可视化: omi-2
+2025-04-16 13:16:48,973 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.5, 阈值=5.0
+2025-04-16 13:16:48,973 - INFO - ==================================================
+
+2025-04-16 13:16:48,973 - INFO - 正在加载数据集 omi-2 的数据
+2025-04-16 13:16:48,974 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:48,974 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:50,767 - INFO - 已计算 153 条边的统计量
+2025-04-16 13:16:50,767 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 13:16:50,768 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-2
+2025-04-16 13:16:50,768 - INFO - 在数据集中发现 4 个异常时间段
+2025-04-16 13:16:50,768 - INFO - 
+正在处理时间段 1/4: 486-498
+2025-04-16 13:16:50,769 - INFO - 该时间段的真实异常节点: {1, 4, 5}
+2025-04-16 13:16:50,769 - INFO - 正在计算异常分数...
+2025-04-16 13:16:50,772 - INFO - 检测到的异常节点: {6, 9, 10, 11, 12, 13, 14, 15, 16}
+2025-04-16 13:16:50,772 - INFO - 正在为时间段 486-498 生成可视化
+2025-04-16 13:16:50,772 - INFO - 正在为时间段 486-498 生成异常图可视化
+2025-04-16 13:16:50,773 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:50,773 - DEBUG - 边统计: 正常边 140 条, 异常边 0 条
+2025-04-16 13:16:50,773 - INFO - 时间段 486-498 的节点检测统计: 真阳性=0, 假阳性=9, 假阴性=3, 正常节点=7
+2025-04-16 13:16:50,855 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-2\seg_0_486_498.png
+2025-04-16 13:16:50,936 - INFO - 成功保存时间段 486-498 的可视化结果
+2025-04-16 13:16:50,936 - INFO - 
+正在处理时间段 2/4: 740-753
+2025-04-16 13:16:50,938 - INFO - 该时间段的真实异常节点: {2}
+2025-04-16 13:16:50,938 - INFO - 正在计算异常分数...
+2025-04-16 13:16:50,940 - INFO - 检测到的异常节点: {2, 5, 6, 9, 10, 17, 19}
+2025-04-16 13:16:50,940 - INFO - 正在为时间段 740-753 生成可视化
+2025-04-16 13:16:50,940 - INFO - 正在为时间段 740-753 生成异常图可视化
+2025-04-16 13:16:50,941 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:50,941 - DEBUG - 边统计: 正常边 150 条, 异常边 4 条
+2025-04-16 13:16:50,941 - INFO - 时间段 740-753 的节点检测统计: 真阳性=1, 假阳性=6, 假阴性=0, 正常节点=12
+2025-04-16 13:16:51,021 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-2\seg_1_740_753.png
+2025-04-16 13:16:51,105 - INFO - 成功保存时间段 740-753 的可视化结果
+2025-04-16 13:16:51,105 - INFO - 
+正在处理时间段 3/4: 766-783
+2025-04-16 13:16:51,106 - INFO - 该时间段的真实异常节点: {1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:51,106 - INFO - 正在计算异常分数...
+2025-04-16 13:16:51,110 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:51,110 - INFO - 正在为时间段 766-783 生成可视化
+2025-04-16 13:16:51,110 - INFO - 正在为时间段 766-783 生成异常图可视化
+2025-04-16 13:16:51,110 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:51,111 - DEBUG - 边统计: 正常边 100 条, 异常边 40 条
+2025-04-16 13:16:51,111 - INFO - 时间段 766-783 的节点检测统计: 真阳性=13, 假阳性=0, 假阴性=3, 正常节点=3
+2025-04-16 13:16:51,188 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-2\seg_2_766_783.png
+2025-04-16 13:16:51,271 - INFO - 成功保存时间段 766-783 的可视化结果
+2025-04-16 13:16:51,271 - INFO - 
+正在处理时间段 4/4: 1436-1445
+2025-04-16 13:16:51,271 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 13:16:51,271 - INFO - 正在计算异常分数...
+2025-04-16 13:16:51,274 - INFO - 检测到的异常节点: {6, 7, 9, 10, 12, 13, 14, 15, 16, 18, 19}
+2025-04-16 13:16:51,274 - INFO - 正在为时间段 1436-1445 生成可视化
+2025-04-16 13:16:51,274 - INFO - 正在为时间段 1436-1445 生成异常图可视化
+2025-04-16 13:16:51,274 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:51,274 - DEBUG - 边统计: 正常边 140 条, 异常边 0 条
+2025-04-16 13:16:51,274 - INFO - 时间段 1436-1445 的节点检测统计: 真阳性=9, 假阳性=2, 假阴性=2, 正常节点=6
+2025-04-16 13:16:51,352 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-2\seg_3_1436_1445.png
+2025-04-16 13:16:51,431 - INFO - 成功保存时间段 1436-1445 的可视化结果
+2025-04-16 13:16:51,432 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-2 中的图像创建GIF
+2025-04-16 13:16:51,536 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-2\omi-2.gif
+2025-04-16 13:16:51,537 - INFO - 
+==================================================
+2025-04-16 13:16:51,537 - INFO - 开始数据集可视化: omi-3
+2025-04-16 13:16:51,537 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.5, 阈值=4.0
+2025-04-16 13:16:51,537 - INFO - ==================================================
+
+2025-04-16 13:16:51,538 - INFO - 正在加载数据集 omi-3 的数据
+2025-04-16 13:16:51,541 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:51,541 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:53,326 - INFO - 已计算 136 条边的统计量
+2025-04-16 13:16:53,327 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 13:16:53,327 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3
+2025-04-16 13:16:53,328 - INFO - 在数据集中发现 6 个异常时间段
+2025-04-16 13:16:53,328 - INFO - 
+正在处理时间段 1/6: 760-820
+2025-04-16 13:16:53,328 - INFO - 该时间段的真实异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:53,328 - INFO - 正在计算异常分数...
+2025-04-16 13:16:53,350 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:53,350 - INFO - 正在为时间段 760-820 生成可视化
+2025-04-16 13:16:53,350 - INFO - 正在为时间段 760-820 生成异常图可视化
+2025-04-16 13:16:53,350 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:53,351 - DEBUG - 边统计: 正常边 158 条, 异常边 22 条
+2025-04-16 13:16:53,351 - INFO - 时间段 760-820 的节点检测统计: 真阳性=14, 假阳性=0, 假阴性=2, 正常节点=3
+2025-04-16 13:16:53,481 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3\seg_0_760_820.png
+2025-04-16 13:16:53,562 - INFO - 成功保存时间段 760-820 的可视化结果
+2025-04-16 13:16:53,562 - INFO - 
+正在处理时间段 2/6: 842-860
+2025-04-16 13:16:53,562 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:53,562 - INFO - 正在计算异常分数...
+2025-04-16 13:16:53,569 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:53,569 - INFO - 正在为时间段 842-860 生成可视化
+2025-04-16 13:16:53,569 - INFO - 正在为时间段 842-860 生成异常图可视化
+2025-04-16 13:16:53,569 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:53,569 - DEBUG - 边统计: 正常边 164 条, 异常边 16 条
+2025-04-16 13:16:53,569 - INFO - 时间段 842-860 的节点检测统计: 真阳性=13, 假阳性=1, 假阴性=0, 正常节点=5
+2025-04-16 13:16:53,656 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3\seg_1_842_860.png
+2025-04-16 13:16:53,736 - INFO - 成功保存时间段 842-860 的可视化结果
+2025-04-16 13:16:53,736 - INFO - 
+正在处理时间段 3/6: 1080-1120
+2025-04-16 13:16:53,737 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 13:16:53,737 - INFO - 正在计算异常分数...
+2025-04-16 13:16:53,750 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:53,750 - INFO - 正在为时间段 1080-1120 生成可视化
+2025-04-16 13:16:53,750 - INFO - 正在为时间段 1080-1120 生成异常图可视化
+2025-04-16 13:16:53,750 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:53,750 - DEBUG - 边统计: 正常边 180 条, 异常边 0 条
+2025-04-16 13:16:53,750 - INFO - 时间段 1080-1120 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=0, 正常节点=5
+2025-04-16 13:16:53,831 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3\seg_2_1080_1120.png
+2025-04-16 13:16:53,911 - INFO - 成功保存时间段 1080-1120 的可视化结果
+2025-04-16 13:16:53,911 - INFO - 
+正在处理时间段 4/6: 2188-2201
+2025-04-16 13:16:53,911 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:53,911 - INFO - 正在计算异常分数...
+2025-04-16 13:16:53,915 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:53,915 - INFO - 正在为时间段 2188-2201 生成可视化
+2025-04-16 13:16:53,915 - INFO - 正在为时间段 2188-2201 生成异常图可视化
+2025-04-16 13:16:53,916 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:53,916 - DEBUG - 边统计: 正常边 166 条, 异常边 14 条
+2025-04-16 13:16:53,916 - INFO - 时间段 2188-2201 的节点检测统计: 真阳性=12, 假阳性=2, 假阴性=0, 正常节点=5
+2025-04-16 13:16:53,994 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3\seg_3_2188_2201.png
+2025-04-16 13:16:54,070 - INFO - 成功保存时间段 2188-2201 的可视化结果
+2025-04-16 13:16:54,070 - INFO - 
+正在处理时间段 5/6: 2497-2500
+2025-04-16 13:16:54,070 - INFO - 该时间段的真实异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:54,070 - INFO - 正在计算异常分数...
+2025-04-16 13:16:54,070 - INFO - 检测到的异常节点: set()
+2025-04-16 13:16:54,070 - INFO - 正在为时间段 2497-2500 生成可视化
+2025-04-16 13:16:54,070 - INFO - 正在为时间段 2497-2500 生成异常图可视化
+2025-04-16 13:16:54,070 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:54,071 - DEBUG - 边统计: 正常边 178 条, 异常边 2 条
+2025-04-16 13:16:54,071 - INFO - 时间段 2497-2500 的节点检测统计: 真阳性=0, 假阳性=0, 假阴性=13, 正常节点=6
+2025-04-16 13:16:54,156 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3\seg_4_2497_2500.png
+2025-04-16 13:16:54,231 - INFO - 成功保存时间段 2497-2500 的可视化结果
+2025-04-16 13:16:54,232 - INFO - 
+正在处理时间段 6/6: 3428-3434
+2025-04-16 13:16:54,232 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:54,232 - INFO - 正在计算异常分数...
+2025-04-16 13:16:54,233 - INFO - 检测到的异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:54,233 - INFO - 正在为时间段 3428-3434 生成可视化
+2025-04-16 13:16:54,233 - INFO - 正在为时间段 3428-3434 生成异常图可视化
+2025-04-16 13:16:54,233 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:54,234 - DEBUG - 边统计: 正常边 178 条, 异常边 2 条
+2025-04-16 13:16:54,234 - INFO - 时间段 3428-3434 的节点检测统计: 真阳性=13, 假阳性=0, 假阴性=0, 正常节点=6
+2025-04-16 13:16:54,312 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3\seg_5_3428_3434.png
+2025-04-16 13:16:54,394 - INFO - 成功保存时间段 3428-3434 的可视化结果
+2025-04-16 13:16:54,394 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3 中的图像创建GIF
+2025-04-16 13:16:54,552 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-3\omi-3.gif
+2025-04-16 13:16:54,552 - INFO - 
+==================================================
+2025-04-16 13:16:54,552 - INFO - 开始数据集可视化: omi-4
+2025-04-16 13:16:54,552 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.5, 阈值=4.5
+2025-04-16 13:16:54,552 - INFO - ==================================================
+
+2025-04-16 13:16:54,553 - INFO - 正在加载数据集 omi-4 的数据
+2025-04-16 13:16:54,554 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:54,554 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:56,402 - INFO - 已计算 136 条边的统计量
+2025-04-16 13:16:56,403 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 13:16:56,404 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4
+2025-04-16 13:16:56,404 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-16 13:16:56,404 - INFO - 
+正在处理时间段 1/5: 727-782
+2025-04-16 13:16:56,405 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,405 - INFO - 正在计算异常分数...
+2025-04-16 13:16:56,425 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,425 - INFO - 正在为时间段 727-782 生成可视化
+2025-04-16 13:16:56,425 - INFO - 正在为时间段 727-782 生成异常图可视化
+2025-04-16 13:16:56,426 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:56,426 - DEBUG - 边统计: 正常边 148 条, 异常边 32 条
+2025-04-16 13:16:56,426 - INFO - 时间段 727-782 的节点检测统计: 真阳性=14, 假阳性=0, 假阴性=2, 正常节点=3
+2025-04-16 13:16:56,509 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4\seg_0_727_782.png
+2025-04-16 13:16:56,589 - INFO - 成功保存时间段 727-782 的可视化结果
+2025-04-16 13:16:56,589 - INFO - 
+正在处理时间段 2/5: 843-857
+2025-04-16 13:16:56,589 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,589 - INFO - 正在计算异常分数...
+2025-04-16 13:16:56,593 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,593 - INFO - 正在为时间段 843-857 生成可视化
+2025-04-16 13:16:56,593 - INFO - 正在为时间段 843-857 生成异常图可视化
+2025-04-16 13:16:56,593 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:56,595 - DEBUG - 边统计: 正常边 176 条, 异常边 4 条
+2025-04-16 13:16:56,595 - INFO - 时间段 843-857 的节点检测统计: 真阳性=14, 假阳性=0, 假阴性=0, 正常节点=5
+2025-04-16 13:16:56,673 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4\seg_1_843_857.png
+2025-04-16 13:16:56,751 - INFO - 成功保存时间段 843-857 的可视化结果
+2025-04-16 13:16:56,751 - INFO - 
+正在处理时间段 3/5: 2178-2238
+2025-04-16 13:16:56,751 - INFO - 该时间段的真实异常节点: {8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,751 - INFO - 正在计算异常分数...
+2025-04-16 13:16:56,771 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,771 - INFO - 正在为时间段 2178-2238 生成可视化
+2025-04-16 13:16:56,771 - INFO - 正在为时间段 2178-2238 生成异常图可视化
+2025-04-16 13:16:56,771 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:56,772 - DEBUG - 边统计: 正常边 180 条, 异常边 0 条
+2025-04-16 13:16:56,772 - INFO - 时间段 2178-2238 的节点检测统计: 真阳性=12, 假阳性=2, 假阴性=0, 正常节点=5
+2025-04-16 13:16:56,860 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4\seg_2_2178_2238.png
+2025-04-16 13:16:56,935 - INFO - 成功保存时间段 2178-2238 的可视化结果
+2025-04-16 13:16:56,936 - INFO - 
+正在处理时间段 4/5: 2494-2501
+2025-04-16 13:16:56,936 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,936 - INFO - 正在计算异常分数...
+2025-04-16 13:16:56,938 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:56,938 - INFO - 正在为时间段 2494-2501 生成可视化
+2025-04-16 13:16:56,938 - INFO - 正在为时间段 2494-2501 生成异常图可视化
+2025-04-16 13:16:56,938 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:56,939 - DEBUG - 边统计: 正常边 158 条, 异常边 22 条
+2025-04-16 13:16:56,939 - INFO - 时间段 2494-2501 的节点检测统计: 真阳性=12, 假阳性=1, 假阴性=0, 正常节点=6
+2025-04-16 13:16:57,021 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4\seg_3_2494_2501.png
+2025-04-16 13:16:57,098 - INFO - 成功保存时间段 2494-2501 的可视化结果
+2025-04-16 13:16:57,099 - INFO - 
+正在处理时间段 5/5: 3425-3435
+2025-04-16 13:16:57,099 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:57,099 - INFO - 正在计算异常分数...
+2025-04-16 13:16:57,102 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:57,102 - INFO - 正在为时间段 3425-3435 生成可视化
+2025-04-16 13:16:57,102 - INFO - 正在为时间段 3425-3435 生成异常图可视化
+2025-04-16 13:16:57,102 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:57,102 - DEBUG - 边统计: 正常边 160 条, 异常边 20 条
+2025-04-16 13:16:57,102 - INFO - 时间段 3425-3435 的节点检测统计: 真阳性=13, 假阳性=1, 假阴性=0, 正常节点=5
+2025-04-16 13:16:57,186 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4\seg_4_3425_3435.png
+2025-04-16 13:16:57,273 - INFO - 成功保存时间段 3425-3435 的可视化结果
+2025-04-16 13:16:57,274 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4 中的图像创建GIF
+2025-04-16 13:16:57,408 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-4\omi-4.gif
+2025-04-16 13:16:57,408 - INFO - 
+==================================================
+2025-04-16 13:16:57,408 - INFO - 开始数据集可视化: omi-5
+2025-04-16 13:16:57,408 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.2, 阈值=0.0
+2025-04-16 13:16:57,408 - INFO - ==================================================
+
+2025-04-16 13:16:57,409 - INFO - 正在加载数据集 omi-5 的数据
+2025-04-16 13:16:57,409 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:16:57,409 - INFO - 正在计算边缘统计量...
+2025-04-16 13:16:59,286 - INFO - 已计算 153 条边的统计量
+2025-04-16 13:16:59,287 - INFO - 为每个节点使用相关系数阈值 >= 0.2 的邻居
+2025-04-16 13:16:59,287 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5
+2025-04-16 13:16:59,288 - INFO - 在数据集中发现 6 个异常时间段
+2025-04-16 13:16:59,288 - INFO - 
+正在处理时间段 1/6: 765-781
+2025-04-16 13:16:59,288 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:59,288 - INFO - 正在计算异常分数...
+2025-04-16 13:16:59,299 - INFO - 检测到的异常节点: {1, 2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:59,299 - INFO - 正在为时间段 765-781 生成可视化
+2025-04-16 13:16:59,299 - INFO - 正在为时间段 765-781 生成异常图可视化
+2025-04-16 13:16:59,299 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:59,300 - DEBUG - 边统计: 正常边 214 条, 异常边 92 条
+2025-04-16 13:16:59,300 - INFO - 时间段 765-781 的节点检测统计: 真阳性=14, 假阳性=3, 假阴性=0, 正常节点=2
+2025-04-16 13:16:59,382 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5\seg_0_765_781.png
+2025-04-16 13:16:59,462 - INFO - 成功保存时间段 765-781 的可视化结果
+2025-04-16 13:16:59,462 - INFO - 
+正在处理时间段 2/6: 1589-1617
+2025-04-16 13:16:59,462 - INFO - 该时间段的真实异常节点: {17, 2, 4}
+2025-04-16 13:16:59,462 - INFO - 正在计算异常分数...
+2025-04-16 13:16:59,479 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:59,479 - INFO - 正在为时间段 1589-1617 生成可视化
+2025-04-16 13:16:59,479 - INFO - 正在为时间段 1589-1617 生成异常图可视化
+2025-04-16 13:16:59,479 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:59,480 - DEBUG - 边统计: 正常边 270 条, 异常边 36 条
+2025-04-16 13:16:59,480 - INFO - 时间段 1589-1617 的节点检测统计: 真阳性=3, 假阳性=15, 假阴性=0, 正常节点=1
+2025-04-16 13:16:59,561 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5\seg_1_1589_1617.png
+2025-04-16 13:16:59,694 - INFO - 成功保存时间段 1589-1617 的可视化结果
+2025-04-16 13:16:59,695 - INFO - 
+正在处理时间段 3/6: 2440-2446
+2025-04-16 13:16:59,695 - INFO - 该时间段的真实异常节点: {8, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:59,695 - INFO - 正在计算异常分数...
+2025-04-16 13:16:59,697 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:59,697 - INFO - 正在为时间段 2440-2446 生成可视化
+2025-04-16 13:16:59,697 - INFO - 正在为时间段 2440-2446 生成异常图可视化
+2025-04-16 13:16:59,697 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:59,697 - DEBUG - 边统计: 正常边 246 条, 异常边 60 条
+2025-04-16 13:16:59,697 - INFO - 时间段 2440-2446 的节点检测统计: 真阳性=10, 假阳性=7, 假阴性=0, 正常节点=2
+2025-04-16 13:16:59,776 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5\seg_2_2440_2446.png
+2025-04-16 13:16:59,862 - INFO - 成功保存时间段 2440-2446 的可视化结果
+2025-04-16 13:16:59,862 - INFO - 
+正在处理时间段 4/6: 3356-3363
+2025-04-16 13:16:59,862 - INFO - 该时间段的真实异常节点: {17, 5, 6}
+2025-04-16 13:16:59,862 - INFO - 正在计算异常分数...
+2025-04-16 13:16:59,865 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:16:59,865 - INFO - 正在为时间段 3356-3363 生成可视化
+2025-04-16 13:16:59,865 - INFO - 正在为时间段 3356-3363 生成异常图可视化
+2025-04-16 13:16:59,866 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:16:59,866 - DEBUG - 边统计: 正常边 260 条, 异常边 46 条
+2025-04-16 13:16:59,866 - INFO - 时间段 3356-3363 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 13:16:59,944 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5\seg_3_3356_3363.png
+2025-04-16 13:17:00,022 - INFO - 成功保存时间段 3356-3363 的可视化结果
+2025-04-16 13:17:00,022 - INFO - 
+正在处理时间段 5/6: 3416-3423
+2025-04-16 13:17:00,022 - INFO - 该时间段的真实异常节点: {4, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:00,023 - INFO - 正在计算异常分数...
+2025-04-16 13:17:00,026 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:00,026 - INFO - 正在为时间段 3416-3423 生成可视化
+2025-04-16 13:17:00,026 - INFO - 正在为时间段 3416-3423 生成异常图可视化
+2025-04-16 13:17:00,026 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:00,027 - DEBUG - 边统计: 正常边 294 条, 异常边 12 条
+2025-04-16 13:17:00,027 - INFO - 时间段 3416-3423 的节点检测统计: 真阳性=14, 假阳性=3, 假阴性=0, 正常节点=2
+2025-04-16 13:17:00,105 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5\seg_4_3416_3423.png
+2025-04-16 13:17:00,181 - INFO - 成功保存时间段 3416-3423 的可视化结果
+2025-04-16 13:17:00,181 - INFO - 
+正在处理时间段 6/6: 3590-3594
+2025-04-16 13:17:00,181 - INFO - 该时间段的真实异常节点: {1, 8, 17, 18, 19}
+2025-04-16 13:17:00,181 - INFO - 正在计算异常分数...
+2025-04-16 13:17:00,182 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:00,182 - INFO - 正在为时间段 3590-3594 生成可视化
+2025-04-16 13:17:00,182 - INFO - 正在为时间段 3590-3594 生成异常图可视化
+2025-04-16 13:17:00,183 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:00,183 - DEBUG - 边统计: 正常边 232 条, 异常边 74 条
+2025-04-16 13:17:00,183 - INFO - 时间段 3590-3594 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-16 13:17:00,268 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5\seg_5_3590_3594.png
+2025-04-16 13:17:00,362 - INFO - 成功保存时间段 3590-3594 的可视化结果
+2025-04-16 13:17:00,362 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5 中的图像创建GIF
+2025-04-16 13:17:00,532 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-5\omi-5.gif
+2025-04-16 13:17:00,533 - INFO - 
+==================================================
+2025-04-16 13:17:00,533 - INFO - 开始数据集可视化: omi-6
+2025-04-16 13:17:00,533 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.1, 阈值=7.0
+2025-04-16 13:17:00,533 - INFO - ==================================================
+
+2025-04-16 13:17:00,533 - INFO - 正在加载数据集 omi-6 的数据
+2025-04-16 13:17:00,534 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:17:00,534 - INFO - 正在计算边缘统计量...
+2025-04-16 13:17:02,365 - INFO - 已计算 153 条边的统计量
+2025-04-16 13:17:02,365 - INFO - 为每个节点使用相关系数阈值 >= 0.1 的邻居
+2025-04-16 13:17:02,366 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6
+2025-04-16 13:17:02,367 - INFO - 在数据集中发现 10 个异常时间段
+2025-04-16 13:17:02,367 - INFO - 
+正在处理时间段 1/10: 357-392
+2025-04-16 13:17:02,367 - INFO - 该时间段的真实异常节点: {19, 4}
+2025-04-16 13:17:02,367 - INFO - 正在计算异常分数...
+2025-04-16 13:17:02,383 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:02,383 - INFO - 正在为时间段 357-392 生成可视化
+2025-04-16 13:17:02,383 - INFO - 正在为时间段 357-392 生成异常图可视化
+2025-04-16 13:17:02,383 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:02,383 - DEBUG - 边统计: 正常边 254 条, 异常边 18 条
+2025-04-16 13:17:02,383 - INFO - 时间段 357-392 的节点检测统计: 真阳性=2, 假阳性=15, 假阴性=0, 正常节点=2
+2025-04-16 13:17:02,466 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_0_357_392.png
+2025-04-16 13:17:02,553 - INFO - 成功保存时间段 357-392 的可视化结果
+2025-04-16 13:17:02,553 - INFO - 
+正在处理时间段 2/10: 750-788
+2025-04-16 13:17:02,553 - INFO - 该时间段的真实异常节点: {2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:02,554 - INFO - 正在计算异常分数...
+2025-04-16 13:17:02,573 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:02,573 - INFO - 正在为时间段 750-788 生成可视化
+2025-04-16 13:17:02,573 - INFO - 正在为时间段 750-788 生成异常图可视化
+2025-04-16 13:17:02,573 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:02,575 - DEBUG - 边统计: 正常边 184 条, 异常边 88 条
+2025-04-16 13:17:02,575 - INFO - 时间段 750-788 的节点检测统计: 真阳性=14, 假阳性=3, 假阴性=1, 正常节点=1
+2025-04-16 13:17:02,653 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_1_750_788.png
+2025-04-16 13:17:02,733 - INFO - 成功保存时间段 750-788 的可视化结果
+2025-04-16 13:17:02,734 - INFO - 
+正在处理时间段 3/10: 1278-1293
+2025-04-16 13:17:02,734 - INFO - 该时间段的真实异常节点: {4, 5, 6, 8, 17}
+2025-04-16 13:17:02,734 - INFO - 正在计算异常分数...
+2025-04-16 13:17:02,741 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:02,741 - INFO - 正在为时间段 1278-1293 生成可视化
+2025-04-16 13:17:02,741 - INFO - 正在为时间段 1278-1293 生成异常图可视化
+2025-04-16 13:17:02,741 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:02,742 - DEBUG - 边统计: 正常边 270 条, 异常边 2 条
+2025-04-16 13:17:02,742 - INFO - 时间段 1278-1293 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-16 13:17:02,832 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_2_1278_1293.png
+2025-04-16 13:17:02,906 - INFO - 成功保存时间段 1278-1293 的可视化结果
+2025-04-16 13:17:02,906 - INFO - 
+正在处理时间段 4/10: 1590-1615
+2025-04-16 13:17:02,906 - INFO - 该时间段的真实异常节点: {1, 18, 9}
+2025-04-16 13:17:02,906 - INFO - 正在计算异常分数...
+2025-04-16 13:17:02,918 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:02,918 - INFO - 正在为时间段 1590-1615 生成可视化
+2025-04-16 13:17:02,918 - INFO - 正在为时间段 1590-1615 生成异常图可视化
+2025-04-16 13:17:02,918 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:02,919 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 13:17:02,919 - INFO - 时间段 1590-1615 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 13:17:03,002 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_3_1590_1615.png
+2025-04-16 13:17:03,090 - INFO - 成功保存时间段 1590-1615 的可视化结果
+2025-04-16 13:17:03,090 - INFO - 
+正在处理时间段 5/10: 2592-2604
+2025-04-16 13:17:03,090 - INFO - 该时间段的真实异常节点: {9, 4, 6}
+2025-04-16 13:17:03,090 - INFO - 正在计算异常分数...
+2025-04-16 13:17:03,095 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:03,096 - INFO - 正在为时间段 2592-2604 生成可视化
+2025-04-16 13:17:03,096 - INFO - 正在为时间段 2592-2604 生成异常图可视化
+2025-04-16 13:17:03,096 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:03,096 - DEBUG - 边统计: 正常边 236 条, 异常边 4 条
+2025-04-16 13:17:03,096 - INFO - 时间段 2592-2604 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-16 13:17:03,183 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_4_2592_2604.png
+2025-04-16 13:17:03,267 - INFO - 成功保存时间段 2592-2604 的可视化结果
+2025-04-16 13:17:03,267 - INFO - 
+正在处理时间段 6/10: 2734-2765
+2025-04-16 13:17:03,267 - INFO - 该时间段的真实异常节点: {8, 19, 4, 6}
+2025-04-16 13:17:03,267 - INFO - 正在计算异常分数...
+2025-04-16 13:17:03,283 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:03,283 - INFO - 正在为时间段 2734-2765 生成可视化
+2025-04-16 13:17:03,283 - INFO - 正在为时间段 2734-2765 生成异常图可视化
+2025-04-16 13:17:03,284 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:03,284 - DEBUG - 边统计: 正常边 270 条, 异常边 2 条
+2025-04-16 13:17:03,284 - INFO - 时间段 2734-2765 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 13:17:03,372 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_5_2734_2765.png
+2025-04-16 13:17:03,457 - INFO - 成功保存时间段 2734-2765 的可视化结果
+2025-04-16 13:17:03,458 - INFO - 
+正在处理时间段 7/10: 3066-3072
+2025-04-16 13:17:03,458 - INFO - 该时间段的真实异常节点: {19, 4, 6}
+2025-04-16 13:17:03,458 - INFO - 正在计算异常分数...
+2025-04-16 13:17:03,460 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:03,460 - INFO - 正在为时间段 3066-3072 生成可视化
+2025-04-16 13:17:03,460 - INFO - 正在为时间段 3066-3072 生成异常图可视化
+2025-04-16 13:17:03,460 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:03,461 - DEBUG - 边统计: 正常边 230 条, 异常边 42 条
+2025-04-16 13:17:03,461 - INFO - 时间段 3066-3072 的节点检测统计: 真阳性=3, 假阳性=12, 假阴性=0, 正常节点=4
+2025-04-16 13:17:03,539 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_6_3066_3072.png
+2025-04-16 13:17:03,617 - INFO - 成功保存时间段 3066-3072 的可视化结果
+2025-04-16 13:17:03,617 - INFO - 
+正在处理时间段 8/10: 3596-3605
+2025-04-16 13:17:03,617 - INFO - 该时间段的真实异常节点: {19, 4, 5, 6}
+2025-04-16 13:17:03,617 - INFO - 正在计算异常分数...
+2025-04-16 13:17:03,621 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:03,621 - INFO - 正在为时间段 3596-3605 生成可视化
+2025-04-16 13:17:03,621 - INFO - 正在为时间段 3596-3605 生成异常图可视化
+2025-04-16 13:17:03,621 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:03,622 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 13:17:03,622 - INFO - 时间段 3596-3605 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 13:17:03,702 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_7_3596_3605.png
+2025-04-16 13:17:03,829 - INFO - 成功保存时间段 3596-3605 的可视化结果
+2025-04-16 13:17:03,829 - INFO - 
+正在处理时间段 9/10: 3610-3622
+2025-04-16 13:17:03,830 - INFO - 该时间段的真实异常节点: {1, 4, 5}
+2025-04-16 13:17:03,830 - INFO - 正在计算异常分数...
+2025-04-16 13:17:03,834 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:03,834 - INFO - 正在为时间段 3610-3622 生成可视化
+2025-04-16 13:17:03,834 - INFO - 正在为时间段 3610-3622 生成异常图可视化
+2025-04-16 13:17:03,834 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:03,835 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 13:17:03,835 - INFO - 时间段 3610-3622 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 13:17:03,915 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_8_3610_3622.png
+2025-04-16 13:17:03,993 - INFO - 成功保存时间段 3610-3622 的可视化结果
+2025-04-16 13:17:03,994 - INFO - 
+正在处理时间段 10/10: 4159-4164
+2025-04-16 13:17:03,994 - INFO - 该时间段的真实异常节点: {4, 5}
+2025-04-16 13:17:03,994 - INFO - 正在计算异常分数...
+2025-04-16 13:17:03,995 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 15, 17, 18}
+2025-04-16 13:17:03,995 - INFO - 正在为时间段 4159-4164 生成可视化
+2025-04-16 13:17:03,995 - INFO - 正在为时间段 4159-4164 生成异常图可视化
+2025-04-16 13:17:03,995 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:03,995 - DEBUG - 边统计: 正常边 248 条, 异常边 24 条
+2025-04-16 13:17:03,995 - INFO - 时间段 4159-4164 的节点检测统计: 真阳性=2, 假阳性=11, 假阴性=0, 正常节点=6
+2025-04-16 13:17:04,080 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\seg_9_4159_4164.png
+2025-04-16 13:17:04,159 - INFO - 成功保存时间段 4159-4164 的可视化结果
+2025-04-16 13:17:04,159 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6 中的图像创建GIF
+2025-04-16 13:17:04,433 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-6\omi-6.gif
+2025-04-16 13:17:04,434 - INFO - 
+==================================================
+2025-04-16 13:17:04,434 - INFO - 开始数据集可视化: omi-7
+2025-04-16 13:17:04,434 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.2, 阈值=0.5
+2025-04-16 13:17:04,434 - INFO - ==================================================
+
+2025-04-16 13:17:04,434 - INFO - 正在加载数据集 omi-7 的数据
+2025-04-16 13:17:04,435 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:17:04,435 - INFO - 正在计算边缘统计量...
+2025-04-16 13:17:06,172 - INFO - 已计算 136 条边的统计量
+2025-04-16 13:17:06,172 - INFO - 为每个节点使用相关系数阈值 >= 0.2 的邻居
+2025-04-16 13:17:06,172 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-7
+2025-04-16 13:17:06,173 - INFO - 在数据集中发现 3 个异常时间段
+2025-04-16 13:17:06,173 - INFO - 
+正在处理时间段 1/3: 738-778
+2025-04-16 13:17:06,175 - INFO - 该时间段的真实异常节点: {1, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:06,175 - INFO - 正在计算异常分数...
+2025-04-16 13:17:06,192 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:06,192 - INFO - 正在为时间段 738-778 生成可视化
+2025-04-16 13:17:06,192 - INFO - 正在为时间段 738-778 生成异常图可视化
+2025-04-16 13:17:06,193 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:06,193 - DEBUG - 边统计: 正常边 166 条, 异常边 106 条
+2025-04-16 13:17:06,193 - INFO - 时间段 738-778 的节点检测统计: 真阳性=16, 假阳性=1, 假阴性=1, 正常节点=1
+2025-04-16 13:17:06,273 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-7\seg_0_738_778.png
+2025-04-16 13:17:06,354 - INFO - 成功保存时间段 738-778 的可视化结果
+2025-04-16 13:17:06,354 - INFO - 
+正在处理时间段 2/3: 1625-1660
+2025-04-16 13:17:06,354 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:06,354 - INFO - 正在计算异常分数...
+2025-04-16 13:17:06,373 - INFO - 检测到的异常节点: {5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:06,373 - INFO - 正在为时间段 1625-1660 生成可视化
+2025-04-16 13:17:06,373 - INFO - 正在为时间段 1625-1660 生成异常图可视化
+2025-04-16 13:17:06,374 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:06,374 - DEBUG - 边统计: 正常边 130 条, 异常边 52 条
+2025-04-16 13:17:06,374 - INFO - 时间段 1625-1660 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=0, 正常节点=5
+2025-04-16 13:17:06,460 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-7\seg_1_1625_1660.png
+2025-04-16 13:17:06,534 - INFO - 成功保存时间段 1625-1660 的可视化结果
+2025-04-16 13:17:06,535 - INFO - 
+正在处理时间段 3/3: 3311-3320
+2025-04-16 13:17:06,535 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:06,535 - INFO - 正在计算异常分数...
+2025-04-16 13:17:06,538 - INFO - 检测到的异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:06,538 - INFO - 正在为时间段 3311-3320 生成可视化
+2025-04-16 13:17:06,538 - INFO - 正在为时间段 3311-3320 生成异常图可视化
+2025-04-16 13:17:06,538 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:06,539 - DEBUG - 边统计: 正常边 188 条, 异常边 22 条
+2025-04-16 13:17:06,539 - INFO - 时间段 3311-3320 的节点检测统计: 真阳性=11, 假阳性=0, 假阴性=0, 正常节点=8
+2025-04-16 13:17:06,620 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-7\seg_2_3311_3320.png
+2025-04-16 13:17:06,699 - INFO - 成功保存时间段 3311-3320 的可视化结果
+2025-04-16 13:17:06,699 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-7 中的图像创建GIF
+2025-04-16 13:17:06,782 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-7\omi-7.gif
+2025-04-16 13:17:06,782 - INFO - 
+==================================================
+2025-04-16 13:17:06,782 - INFO - 开始数据集可视化: omi-8
+2025-04-16 13:17:06,782 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.1, 阈值=5.5
+2025-04-16 13:17:06,782 - INFO - ==================================================
+
+2025-04-16 13:17:06,782 - INFO - 正在加载数据集 omi-8 的数据
+2025-04-16 13:17:06,783 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:17:06,783 - INFO - 正在计算边缘统计量...
+2025-04-16 13:17:08,470 - INFO - 已计算 136 条边的统计量
+2025-04-16 13:17:08,470 - INFO - 为每个节点使用相关系数阈值 >= 0.1 的邻居
+2025-04-16 13:17:08,471 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8
+2025-04-16 13:17:08,471 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-16 13:17:08,471 - INFO - 
+正在处理时间段 1/5: 740-753
+2025-04-16 13:17:08,472 - INFO - 该时间段的真实异常节点: {2, 4}
+2025-04-16 13:17:08,472 - INFO - 正在计算异常分数...
+2025-04-16 13:17:08,477 - INFO - 检测到的异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:08,477 - INFO - 正在为时间段 740-753 生成可视化
+2025-04-16 13:17:08,477 - INFO - 正在为时间段 740-753 生成异常图可视化
+2025-04-16 13:17:08,477 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:08,478 - DEBUG - 边统计: 正常边 238 条, 异常边 2 条
+2025-04-16 13:17:08,478 - INFO - 时间段 740-753 的节点检测统计: 真阳性=1, 假阳性=15, 假阴性=1, 正常节点=2
+2025-04-16 13:17:08,567 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8\seg_0_740_753.png
+2025-04-16 13:17:08,648 - INFO - 成功保存时间段 740-753 的可视化结果
+2025-04-16 13:17:08,648 - INFO - 
+正在处理时间段 2/5: 764-780
+2025-04-16 13:17:08,648 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:08,648 - INFO - 正在计算异常分数...
+2025-04-16 13:17:08,656 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:08,656 - INFO - 正在为时间段 764-780 生成可视化
+2025-04-16 13:17:08,656 - INFO - 正在为时间段 764-780 生成异常图可视化
+2025-04-16 13:17:08,656 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:08,657 - DEBUG - 边统计: 正常边 146 条, 异常边 64 条
+2025-04-16 13:17:08,657 - INFO - 时间段 764-780 的节点检测统计: 真阳性=14, 假阳性=1, 假阴性=0, 正常节点=4
+2025-04-16 13:17:08,737 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8\seg_1_764_780.png
+2025-04-16 13:17:08,813 - INFO - 成功保存时间段 764-780 的可视化结果
+2025-04-16 13:17:08,814 - INFO - 
+正在处理时间段 3/5: 2319-2325
+2025-04-16 13:17:08,814 - INFO - 该时间段的真实异常节点: {4, 5, 6}
+2025-04-16 13:17:08,814 - INFO - 正在计算异常分数...
+2025-04-16 13:17:08,816 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:08,816 - INFO - 正在为时间段 2319-2325 生成可视化
+2025-04-16 13:17:08,816 - INFO - 正在为时间段 2319-2325 生成异常图可视化
+2025-04-16 13:17:08,816 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:08,816 - DEBUG - 边统计: 正常边 228 条, 异常边 44 条
+2025-04-16 13:17:08,816 - INFO - 时间段 2319-2325 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-16 13:17:08,906 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8\seg_2_2319_2325.png
+2025-04-16 13:17:08,985 - INFO - 成功保存时间段 2319-2325 的可视化结果
+2025-04-16 13:17:08,985 - INFO - 
+正在处理时间段 4/5: 2586-2675
+2025-04-16 13:17:08,986 - INFO - 该时间段的真实异常节点: {5, 6, 8, 17, 18, 19}
+2025-04-16 13:17:08,986 - INFO - 正在计算异常分数...
+2025-04-16 13:17:09,031 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:09,031 - INFO - 正在为时间段 2586-2675 生成可视化
+2025-04-16 13:17:09,031 - INFO - 正在为时间段 2586-2675 生成异常图可视化
+2025-04-16 13:17:09,031 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:09,032 - DEBUG - 边统计: 正常边 260 条, 异常边 12 条
+2025-04-16 13:17:09,032 - INFO - 时间段 2586-2675 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=0, 正常节点=2
+2025-04-16 13:17:09,115 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8\seg_3_2586_2675.png
+2025-04-16 13:17:09,190 - INFO - 成功保存时间段 2586-2675 的可视化结果
+2025-04-16 13:17:09,190 - INFO - 
+正在处理时间段 5/5: 2897-2956
+2025-04-16 13:17:09,191 - INFO - 该时间段的真实异常节点: {2, 6, 8, 17, 18, 19}
+2025-04-16 13:17:09,191 - INFO - 正在计算异常分数...
+2025-04-16 13:17:09,219 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:09,219 - INFO - 正在为时间段 2897-2956 生成可视化
+2025-04-16 13:17:09,219 - INFO - 正在为时间段 2897-2956 生成异常图可视化
+2025-04-16 13:17:09,219 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:09,220 - DEBUG - 边统计: 正常边 230 条, 异常边 42 条
+2025-04-16 13:17:09,220 - INFO - 时间段 2897-2956 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=1, 正常节点=1
+2025-04-16 13:17:09,305 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8\seg_4_2897_2956.png
+2025-04-16 13:17:09,384 - INFO - 成功保存时间段 2897-2956 的可视化结果
+2025-04-16 13:17:09,384 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8 中的图像创建GIF
+2025-04-16 13:17:09,512 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-8\omi-8.gif
+2025-04-16 13:17:09,512 - INFO - 
+==================================================
+2025-04-16 13:17:09,512 - INFO - 开始数据集可视化: omi-9
+2025-04-16 13:17:09,512 - INFO - 使用参数: 评分模式=robust_zscore, corr_threshold=0.1, 阈值=0.0
+2025-04-16 13:17:09,512 - INFO - ==================================================
+
+2025-04-16 13:17:09,513 - INFO - 正在加载数据集 omi-9 的数据
+2025-04-16 13:17:09,514 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 13:17:09,514 - INFO - 正在计算边缘统计量...
+2025-04-16 13:17:11,204 - INFO - 已计算 136 条边的统计量
+2025-04-16 13:17:11,204 - INFO - 为每个节点使用相关系数阈值 >= 0.1 的邻居
+2025-04-16 13:17:11,205 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9
+2025-04-16 13:17:11,206 - INFO - 在数据集中发现 8 个异常时间段
+2025-04-16 13:17:11,206 - INFO - 
+正在处理时间段 1/8: 738-756
+2025-04-16 13:17:11,206 - INFO - 该时间段的真实异常节点: {2, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:11,206 - INFO - 正在计算异常分数...
+2025-04-16 13:17:11,211 - INFO - 检测到的异常节点: {1, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:11,211 - INFO - 正在为时间段 738-756 生成可视化
+2025-04-16 13:17:11,211 - INFO - 正在为时间段 738-756 生成异常图可视化
+2025-04-16 13:17:11,211 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:11,212 - DEBUG - 边统计: 正常边 158 条, 异常边 24 条
+2025-04-16 13:17:11,212 - INFO - 时间段 738-756 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=1, 正常节点=4
+2025-04-16 13:17:11,302 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_0_738_756.png
+2025-04-16 13:17:11,377 - INFO - 成功保存时间段 738-756 的可视化结果
+2025-04-16 13:17:11,377 - INFO - 
+正在处理时间段 2/8: 763-780
+2025-04-16 13:17:11,378 - INFO - 该时间段的真实异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:11,378 - INFO - 正在计算异常分数...
+2025-04-16 13:17:11,384 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:11,384 - INFO - 正在为时间段 763-780 生成可视化
+2025-04-16 13:17:11,384 - INFO - 正在为时间段 763-780 生成异常图可视化
+2025-04-16 13:17:11,384 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:11,385 - DEBUG - 边统计: 正常边 118 条, 异常边 92 条
+2025-04-16 13:17:11,385 - INFO - 时间段 763-780 的节点检测统计: 真阳性=15, 假阳性=0, 假阴性=0, 正常节点=4
+2025-04-16 13:17:11,466 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_1_763_780.png
+2025-04-16 13:17:11,546 - INFO - 成功保存时间段 763-780 的可视化结果
+2025-04-16 13:17:11,546 - INFO - 
+正在处理时间段 3/8: 2514-2524
+2025-04-16 13:17:11,546 - INFO - 该时间段的真实异常节点: {1, 4, 5, 7, 8, 9, 17, 18}
+2025-04-16 13:17:11,546 - INFO - 正在计算异常分数...
+2025-04-16 13:17:11,550 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:11,550 - INFO - 正在为时间段 2514-2524 生成可视化
+2025-04-16 13:17:11,551 - INFO - 正在为时间段 2514-2524 生成异常图可视化
+2025-04-16 13:17:11,551 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:11,551 - DEBUG - 边统计: 正常边 210 条, 异常边 62 条
+2025-04-16 13:17:11,551 - INFO - 时间段 2514-2524 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=0, 正常节点=2
+2025-04-16 13:17:11,695 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_2_2514_2524.png
+2025-04-16 13:17:11,771 - INFO - 成功保存时间段 2514-2524 的可视化结果
+2025-04-16 13:17:11,771 - INFO - 
+正在处理时间段 4/8: 2603-2668
+2025-04-16 13:17:11,771 - INFO - 该时间段的真实异常节点: {1, 2, 5, 6, 8, 17, 18, 19}
+2025-04-16 13:17:11,771 - INFO - 正在计算异常分数...
+2025-04-16 13:17:11,802 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:11,802 - INFO - 正在为时间段 2603-2668 生成可视化
+2025-04-16 13:17:11,802 - INFO - 正在为时间段 2603-2668 生成异常图可视化
+2025-04-16 13:17:11,802 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:11,803 - DEBUG - 边统计: 正常边 212 条, 异常边 60 条
+2025-04-16 13:17:11,803 - INFO - 时间段 2603-2668 的节点检测统计: 真阳性=7, 假阳性=10, 假阴性=1, 正常节点=1
+2025-04-16 13:17:11,888 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_3_2603_2668.png
+2025-04-16 13:17:11,963 - INFO - 成功保存时间段 2603-2668 的可视化结果
+2025-04-16 13:17:11,963 - INFO - 
+正在处理时间段 5/8: 2918-2958
+2025-04-16 13:17:11,963 - INFO - 该时间段的真实异常节点: {1, 2, 5, 6, 8, 17, 18, 19}
+2025-04-16 13:17:11,963 - INFO - 正在计算异常分数...
+2025-04-16 13:17:11,980 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:11,981 - INFO - 正在为时间段 2918-2958 生成可视化
+2025-04-16 13:17:11,981 - INFO - 正在为时间段 2918-2958 生成异常图可视化
+2025-04-16 13:17:11,981 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:11,981 - DEBUG - 边统计: 正常边 200 条, 异常边 72 条
+2025-04-16 13:17:11,981 - INFO - 时间段 2918-2958 的节点检测统计: 真阳性=7, 假阳性=10, 假阴性=1, 正常节点=1
+2025-04-16 13:17:12,063 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_4_2918_2958.png
+2025-04-16 13:17:12,149 - INFO - 成功保存时间段 2918-2958 的可视化结果
+2025-04-16 13:17:12,149 - INFO - 
+正在处理时间段 6/8: 3170-3245
+2025-04-16 13:17:12,150 - INFO - 该时间段的真实异常节点: {1, 2, 6, 8, 17, 18, 19}
+2025-04-16 13:17:12,150 - INFO - 正在计算异常分数...
+2025-04-16 13:17:12,181 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:12,181 - INFO - 正在为时间段 3170-3245 生成可视化
+2025-04-16 13:17:12,181 - INFO - 正在为时间段 3170-3245 生成异常图可视化
+2025-04-16 13:17:12,181 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:12,182 - DEBUG - 边统计: 正常边 226 条, 异常边 46 条
+2025-04-16 13:17:12,182 - INFO - 时间段 3170-3245 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=1, 正常节点=1
+2025-04-16 13:17:12,265 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_5_3170_3245.png
+2025-04-16 13:17:12,348 - INFO - 成功保存时间段 3170-3245 的可视化结果
+2025-04-16 13:17:12,348 - INFO - 
+正在处理时间段 7/8: 3508-3528
+2025-04-16 13:17:12,348 - INFO - 该时间段的真实异常节点: {8, 2, 19, 6}
+2025-04-16 13:17:12,348 - INFO - 正在计算异常分数...
+2025-04-16 13:17:12,355 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:12,355 - INFO - 正在为时间段 3508-3528 生成可视化
+2025-04-16 13:17:12,357 - INFO - 正在为时间段 3508-3528 生成异常图可视化
+2025-04-16 13:17:12,357 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:12,357 - DEBUG - 边统计: 正常边 208 条, 异常边 64 条
+2025-04-16 13:17:12,357 - INFO - 时间段 3508-3528 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=1, 正常节点=1
+2025-04-16 13:17:12,440 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_6_3508_3528.png
+2025-04-16 13:17:12,528 - INFO - 成功保存时间段 3508-3528 的可视化结果
+2025-04-16 13:17:12,528 - INFO - 
+正在处理时间段 8/8: 4064-4108
+2025-04-16 13:17:12,528 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 17, 18, 19}
+2025-04-16 13:17:12,528 - INFO - 正在计算异常分数...
+2025-04-16 13:17:12,547 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 13:17:12,548 - INFO - 正在为时间段 4064-4108 生成可视化
+2025-04-16 13:17:12,548 - INFO - 正在为时间段 4064-4108 生成异常图可视化
+2025-04-16 13:17:12,548 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 13:17:12,548 - DEBUG - 边统计: 正常边 190 条, 异常边 82 条
+2025-04-16 13:17:12,548 - INFO - 时间段 4064-4108 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=1, 正常节点=1
+2025-04-16 13:17:12,633 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\seg_7_4064_4108.png
+2025-04-16 13:17:12,717 - INFO - 成功保存时间段 4064-4108 的可视化结果
+2025-04-16 13:17:12,717 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9 中的图像创建GIF
+2025-04-16 13:17:12,937 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\robust_zscore\omi-9\omi-9.gif
+2025-04-16 13:17:12,937 - INFO - 可视化结果生成完成！
+2025-04-16 13:17:12,937 - INFO - 
+==================================================
+2025-04-16 13:17:12,937 - INFO - 程序运行总耗时: 0:11:02.899098

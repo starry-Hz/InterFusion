@@ -1,0 +1,2044 @@
+2025-04-16 12:22:04,747 - INFO - 
+ Starting experiment with config: ExperimentConfig(dataset='omi', window_size=5, score_thresholds=array([0. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5, 5. , 5.5, 6. ,
+       6.5, 7. ]), topk_range=range(1, 10), corr_threshold_range=array([0.1, 0.2, 0.3, 0.4, 0.5]), neighbor_selection='corr_threshold', score_modes=['deviation'], data_dir='./data/processed', label_dir='./data/interpretation_label', log_dir='./log/omi/neighbor_corr_threshold', visual_dir='./visual/omi/neighbor_corr_threshold', num_workers=4, gif_duration=500)
+2025-04-16 12:22:04,748 - INFO - 当前评分模式: ['deviation']
+2025-04-16 12:22:04,748 - INFO - 
+==================================================
+2025-04-16 12:22:04,748 - INFO - 开始执行网格搜索...
+2025-04-16 12:22:04,750 - INFO - [omi-1] Starting grid search...
+2025-04-16 12:22:08,121 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:08,168 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:08,168 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:08,168 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:10,178 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:10,181 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:10,194 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:10,194 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:12,173 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:12,204 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:12,205 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:12,205 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:14,705 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:15,241 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:15,242 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:15,242 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:17,994 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:17,996 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:18,233 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:18,424 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:20,216 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:20,595 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:21,792 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:21,793 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:22,829 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:23,870 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:24,820 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:24,862 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:25,994 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:26,949 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:27,919 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:27,920 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:29,413 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:29,620 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:31,029 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:31,107 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:32,561 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:32,860 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:33,855 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:33,897 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:35,499 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:35,907 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:36,917 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:36,919 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:38,777 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:39,399 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:40,074 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:40,074 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:41,897 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:42,381 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:43,641 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:43,668 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:44,931 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:45,208 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:46,433 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:46,942 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:48,403 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:48,403 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:49,693 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:49,695 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.7417, R=1.0000, F1=0.8517
+2025-04-16 12:22:50,700 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:51,752 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:52,590 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:52,891 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:53,749 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:54,705 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:55,430 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:56,415 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:56,499 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:57,731 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:57,731 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:59,378 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:22:59,379 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:23:00,708 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:23:00,951 - INFO - [omi-1.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.8830, R=0.9326, F1=0.9071
+2025-04-16 12:23:00,971 - INFO - [omi-10] Starting grid search...
+2025-04-16 12:23:04,274 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:04,275 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:04,408 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:04,409 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:06,388 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:06,390 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:06,454 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:06,577 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:08,499 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:08,500 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:08,570 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:08,689 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:11,251 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:11,841 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:12,012 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:12,013 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:14,454 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:15,297 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:15,297 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:15,777 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:17,632 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:17,788 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:18,963 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:19,080 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:20,850 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:21,052 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:22,376 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:22,377 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:23,810 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:24,287 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:25,799 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:25,800 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:26,879 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:27,455 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:28,870 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:28,976 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:30,223 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:30,477 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:31,981 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:32,360 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:33,899 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:34,069 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:35,046 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:35,447 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:37,391 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:37,392 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:38,393 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:38,394 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:40,201 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:40,492 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:41,299 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:41,322 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:43,508 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:44,129 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:44,872 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:44,873 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:46,464 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:47,288 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:48,007 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:48,455 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.4444, R=0.9836, F1=0.6122
+2025-04-16 12:23:49,208 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.4685, R=0.8525, F1=0.6047
+2025-04-16 12:23:50,580 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.4685, R=0.8525, F1=0.6047
+2025-04-16 12:23:50,916 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.4685, R=0.8525, F1=0.6047
+2025-04-16 12:23:51,778 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.4685, R=0.8525, F1=0.6047
+2025-04-16 12:23:52,017 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:53,625 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:53,976 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:55,060 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:55,302 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:56,589 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:57,211 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:57,933 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:58,245 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:59,307 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:59,938 - INFO - [omi-10.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.4636, R=0.8361, F1=0.5965
+2025-04-16 12:23:59,957 - INFO - [omi-11] Starting grid search...
+2025-04-16 12:24:03,163 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:03,194 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:03,219 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:03,219 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:05,182 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:05,231 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:05,233 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:05,278 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:07,242 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:07,273 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:07,274 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:07,330 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:10,217 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:10,256 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:10,256 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:10,256 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:13,262 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:13,483 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:13,484 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:13,646 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:16,533 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:16,676 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:16,677 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:16,677 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:19,096 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:19,700 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:19,701 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:19,953 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:21,721 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:22,593 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:22,595 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:23,108 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:24,588 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:25,447 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:26,178 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:26,179 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:27,592 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:28,510 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:29,531 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:29,532 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:30,776 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:31,381 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:32,185 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:32,941 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:33,907 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:34,144 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:35,148 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:35,611 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:37,332 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:37,333 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:38,037 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:38,724 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:40,050 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:40,456 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:40,800 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:41,354 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:43,466 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:43,819 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:43,945 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:44,462 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.3434, R=0.9828, F1=0.5089
+2025-04-16 12:24:46,367 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:46,960 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:46,988 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:47,490 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:49,170 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:49,484 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:49,977 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:51,060 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:52,463 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:52,463 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:52,642 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:54,051 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:55,166 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:55,443 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:55,444 - INFO - [omi-11.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.3000, R=0.6724, F1=0.4149
+2025-04-16 12:24:55,462 - INFO - [omi-12] Starting grid search...
+2025-04-16 12:24:58,132 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:24:58,133 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:24:58,162 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:24:58,162 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:24:59,606 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:24:59,607 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:24:59,685 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:24:59,685 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:01,053 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:01,086 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:01,155 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:01,182 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:02,609 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:02,636 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:02,729 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:02,729 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:04,526 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:04,543 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:04,631 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:04,733 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:06,637 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:06,638 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:07,323 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:07,324 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:08,620 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:08,721 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:09,163 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:09,981 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:10,896 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:10,897 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:11,548 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:12,423 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:13,010 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:13,357 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:13,800 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:14,542 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:15,722 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:15,723 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:15,723 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:16,894 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:18,203 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:18,212 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:18,213 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:19,110 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:19,970 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:20,793 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:20,794 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:21,637 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:22,453 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:22,571 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:22,972 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:24,061 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:24,777 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:24,867 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:25,478 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:26,725 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:26,986 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:27,368 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:27,476 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:29,269 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.6129, R=0.9500, F1=0.7451
+2025-04-16 12:25:29,270 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:29,654 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:29,655 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:31,492 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:31,964 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:31,965 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:31,965 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:33,695 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:34,188 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:34,188 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:34,188 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:35,809 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.6034, R=0.8750, F1=0.7143
+2025-04-16 12:25:35,944 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.5965, R=0.8500, F1=0.7010
+2025-04-16 12:25:36,466 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.5965, R=0.8500, F1=0.7010
+2025-04-16 12:25:36,466 - INFO - [omi-12.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.5965, R=0.8500, F1=0.7010
+2025-04-16 12:25:36,485 - INFO - [omi-2] Starting grid search...
+2025-04-16 12:25:39,624 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:39,633 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:39,634 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:39,634 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:41,438 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:41,561 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:41,596 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:41,596 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:43,457 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:43,501 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:43,561 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:43,581 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:45,953 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:45,954 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:46,168 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:46,169 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:48,203 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:48,807 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:48,809 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:49,354 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:51,106 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:52,006 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:52,008 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:52,008 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:54,025 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:54,418 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:54,625 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:54,916 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:56,526 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:57,025 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:57,381 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:57,950 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:59,619 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:25:59,620 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:00,015 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:00,538 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:02,726 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:02,727 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:02,875 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:03,568 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:05,436 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:05,556 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:05,804 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:06,148 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:08,570 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:08,571 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:08,571 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:09,188 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:11,367 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:11,367 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:11,704 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:11,940 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:14,180 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:14,561 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:14,561 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:14,561 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:16,794 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:17,209 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:17,307 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:17,308 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.4559, R=1.0000, F1=0.6263
+2025-04-16 12:26:19,299 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.4464, R=0.8065, F1=0.5747
+2025-04-16 12:26:19,631 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.4464, R=0.8065, F1=0.5747
+2025-04-16 12:26:20,398 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.4464, R=0.8065, F1=0.5747
+2025-04-16 12:26:20,439 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.4464, R=0.8065, F1=0.5747
+2025-04-16 12:26:22,115 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.4464, R=0.8065, F1=0.5747
+2025-04-16 12:26:22,486 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.4464, R=0.8065, F1=0.5747
+2025-04-16 12:26:23,021 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.4464, R=0.8065, F1=0.5747
+2025-04-16 12:26:23,315 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:24,720 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:25,283 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:25,975 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:25,985 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:27,274 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:27,846 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:28,089 - INFO - [omi-2.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.4545, R=0.8065, F1=0.5814
+2025-04-16 12:26:28,105 - INFO - [omi-3] Starting grid search...
+2025-04-16 12:26:31,142 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:31,224 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:31,225 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:31,248 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:33,074 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:33,137 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:33,173 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:33,261 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:35,060 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:35,085 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:35,135 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:35,275 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:37,266 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:37,278 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:37,793 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:37,905 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:40,222 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:40,222 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:40,597 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:40,928 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:43,065 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:43,370 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:43,670 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:43,860 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:46,405 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:46,406 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:46,436 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:46,825 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:49,613 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:49,614 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:49,614 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:49,614 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:52,180 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:52,434 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:52,435 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:52,435 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:54,935 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:55,168 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:55,663 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:55,663 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:57,920 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:58,275 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:58,751 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:26:58,753 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:00,748 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:01,448 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:01,449 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:01,775 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:03,836 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:04,553 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:04,553 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:04,553 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:07,057 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:07,057 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:07,058 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:07,732 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:09,652 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:09,914 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:10,400 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:10,461 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.7738, R=0.8333, F1=0.8025
+2025-04-16 12:27:12,383 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:12,568 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:12,847 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:13,366 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:15,467 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:15,468 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:15,729 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:16,345 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:17,838 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:18,782 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:18,876 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:18,876 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:20,358 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:21,770 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:21,770 - INFO - [omi-3.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.9000, R=0.8077, F1=0.8514
+2025-04-16 12:27:21,790 - INFO - [omi-4] Starting grid search...
+2025-04-16 12:27:24,870 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:24,871 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:24,919 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:24,930 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:26,850 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:26,851 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:26,940 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:26,940 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:28,800 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:28,833 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:28,874 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:28,934 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:31,449 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:31,450 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:31,450 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:31,608 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:34,131 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:34,133 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:34,142 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:34,278 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:37,037 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:37,114 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:37,114 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:37,713 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:39,668 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:40,044 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:40,203 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:40,660 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:43,027 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:43,028 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:43,028 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:43,657 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:45,240 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:46,124 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:46,124 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:46,801 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:48,024 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:48,622 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:49,354 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:49,566 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:50,692 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:51,707 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:52,493 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:52,494 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:53,454 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:54,716 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:55,187 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:55,547 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:56,406 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:57,311 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:58,307 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:58,418 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:27:59,248 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:00,171 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:01,192 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:01,514 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:02,000 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:03,466 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:04,297 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:04,934 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.7952, R=0.9851, F1=0.8800
+2025-04-16 12:28:04,934 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:06,291 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:07,255 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:07,872 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:07,930 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:09,463 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:10,391 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:10,895 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:10,896 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:12,474 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:13,120 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:13,399 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:14,073 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:15,441 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:15,844 - INFO - [omi-4.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.9286, R=0.9701, F1=0.9489
+2025-04-16 12:28:15,862 - INFO - [omi-5] Starting grid search...
+2025-04-16 12:28:19,133 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:19,134 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:19,177 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:19,177 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:20,959 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:21,028 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:21,108 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:21,191 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:22,971 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:23,031 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:23,124 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:23,205 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:25,284 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:25,841 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:25,843 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:26,038 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:28,816 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:28,817 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:29,247 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:29,247 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:31,156 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:31,417 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:31,768 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:32,111 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:33,979 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:34,288 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:34,836 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:35,418 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:36,844 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:37,105 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:38,113 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:38,736 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:39,189 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:39,407 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:41,445 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:41,878 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:42,032 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:42,261 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:44,530 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:44,564 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:44,865 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:45,554 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:47,417 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:47,579 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:47,758 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:48,632 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:50,256 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:50,495 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:50,641 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:51,547 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:53,433 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:53,436 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:53,705 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:54,626 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:56,159 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:56,161 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:56,610 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:57,317 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:58,795 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:59,000 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.4537, R=1.0000, F1=0.6242
+2025-04-16 12:28:59,712 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:00,502 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:01,469 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:02,024 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:02,763 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:03,401 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:04,669 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:04,837 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:05,417 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:06,496 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:07,843 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:07,986 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:08,178 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:09,061 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:09,957 - INFO - [omi-5.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.4667, R=0.8571, F1=0.6043
+2025-04-16 12:29:09,977 - INFO - [omi-6] Starting grid search...
+2025-04-16 12:29:13,052 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:13,124 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:13,175 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:13,176 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:15,067 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:15,104 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:15,105 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:15,190 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:17,093 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:17,093 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:17,110 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:17,169 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:19,671 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:19,673 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:19,673 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:19,775 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:22,331 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:22,688 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:22,808 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:22,895 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:25,441 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:25,789 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:25,789 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:25,824 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:28,576 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:28,936 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:28,937 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:28,937 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:31,344 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:31,345 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:31,913 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:31,915 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:34,557 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:34,558 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:34,611 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:35,384 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:36,787 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:37,766 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:37,767 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:38,342 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:39,618 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:40,877 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:40,877 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:41,517 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:42,259 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:43,785 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:43,868 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:44,301 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:45,160 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:46,892 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:46,946 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:47,431 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:48,033 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:49,978 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:50,002 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:50,365 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:51,061 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:53,263 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:53,264 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:53,350 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.2544, R=0.9773, F1=0.4038
+2025-04-16 12:29:54,241 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:29:55,804 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:29:55,943 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:29:56,048 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:29:57,298 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:29:58,655 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:29:58,835 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:29:58,905 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:30:00,493 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:30:01,223 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:30:01,534 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:30:02,276 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:30:02,975 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:30:04,343 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.2562, R=0.9318, F1=0.4020
+2025-04-16 12:30:04,344 - INFO - [omi-6.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.2468, R=0.8864, F1=0.3861
+2025-04-16 12:30:04,360 - INFO - [omi-7] Starting grid search...
+2025-04-16 12:30:07,338 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:07,339 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:07,371 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:07,372 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:09,094 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:09,189 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:09,189 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:09,190 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:10,911 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:11,019 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:11,029 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:11,039 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:12,989 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:12,989 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:13,008 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:13,098 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:15,686 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:16,261 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:16,264 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:16,264 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:18,087 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:18,645 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:19,008 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:19,286 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:20,948 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:21,184 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:21,444 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:22,304 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:23,479 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:23,607 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:24,369 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:24,808 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:26,646 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:26,777 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:26,778 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:27,086 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:28,963 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:28,965 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:29,688 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:29,781 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:31,557 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:31,892 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:32,430 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:32,662 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:34,334 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:34,478 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:35,516 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:35,517 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:37,065 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:37,065 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:38,077 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:38,397 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:39,641 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:40,179 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:41,232 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:41,232 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:42,570 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:42,841 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:44,367 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:44,367 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.8261, R=0.9744, F1=0.8941
+2025-04-16 12:30:44,856 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:45,987 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:46,195 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:47,612 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:47,632 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:48,613 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:49,409 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:50,147 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:50,668 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:51,203 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:51,852 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:52,663 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:53,592 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:54,112 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:54,113 - INFO - [omi-7.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.9474, R=0.9231, F1=0.9351
+2025-04-16 12:30:54,137 - INFO - [omi-8] Starting grid search...
+2025-04-16 12:30:57,177 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:30:57,232 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:30:57,289 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:30:57,290 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:30:59,048 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:30:59,076 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:30:59,158 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:30:59,159 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:00,928 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:00,960 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:00,993 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:01,041 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:03,170 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:03,171 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:03,256 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:03,301 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:06,342 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:06,342 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:06,343 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:06,343 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:08,800 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:09,083 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:09,203 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:09,204 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:11,183 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:11,447 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:12,051 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:12,291 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:14,330 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:14,332 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:14,792 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:15,449 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:16,935 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:17,536 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:17,657 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:18,391 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:19,390 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:20,148 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:20,641 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:21,664 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:22,224 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:23,005 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:23,258 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:24,550 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:25,432 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:26,066 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:26,086 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:27,189 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:28,284 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:29,279 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:29,307 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:29,891 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:31,134 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:32,545 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:32,547 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:32,644 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:33,777 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:35,302 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:35,303 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:35,938 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.3537, R=0.9355, F1=0.5133
+2025-04-16 12:31:36,107 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.3500, R=0.9032, F1=0.5045
+2025-04-16 12:31:37,714 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.3500, R=0.9032, F1=0.5045
+2025-04-16 12:31:37,860 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.3500, R=0.9032, F1=0.5045
+2025-04-16 12:31:39,282 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.3500, R=0.9032, F1=0.5045
+2025-04-16 12:31:39,283 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.3500, R=0.9032, F1=0.5045
+2025-04-16 12:31:40,274 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.3500, R=0.9032, F1=0.5045
+2025-04-16 12:31:40,667 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.3418, R=0.8710, F1=0.4909
+2025-04-16 12:31:41,490 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.3418, R=0.8710, F1=0.4909
+2025-04-16 12:31:42,268 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.3418, R=0.8710, F1=0.4909
+2025-04-16 12:31:43,077 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.3418, R=0.8710, F1=0.4909
+2025-04-16 12:31:43,234 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.3418, R=0.8710, F1=0.4909
+2025-04-16 12:31:44,306 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.3333, R=0.8387, F1=0.4771
+2025-04-16 12:31:45,316 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.3333, R=0.8387, F1=0.4771
+2025-04-16 12:31:45,721 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.3333, R=0.8387, F1=0.4771
+2025-04-16 12:31:45,722 - INFO - [omi-8.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.3333, R=0.8387, F1=0.4771
+2025-04-16 12:31:45,739 - INFO - [omi-9] Starting grid search...
+2025-04-16 12:31:48,781 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:48,829 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:48,890 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:48,891 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:50,675 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:50,760 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:50,816 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:50,844 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:52,530 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:52,653 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:52,715 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:52,739 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:54,811 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:54,812 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:54,812 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.1, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:55,092 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:57,742 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:57,787 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:57,787 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:31:57,788 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:00,333 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:00,503 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:00,505 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:00,966 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:03,231 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:03,232 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:03,689 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:04,178 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:05,772 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:05,997 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.2, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:06,432 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:07,185 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:08,350 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:09,006 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:09,006 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:10,518 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:10,724 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:11,873 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:11,875 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:13,636 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:13,637 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:14,527 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:14,643 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:16,659 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:17,052 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.3, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:17,053 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=0.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:17,123 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=0.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:19,608 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=1.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:19,630 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=1.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:20,024 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=2.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:20,024 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=2.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:22,803 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=3.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:22,804 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=3.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:22,804 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=4.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:23,105 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=4.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:25,082 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=5.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:25,495 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=5.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:25,640 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=6.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:26,015 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=6.5, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:28,140 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.4, threshold=7.0, P=0.4962, R=0.9155, F1=0.6436
+2025-04-16 12:32:28,524 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=0.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:28,525 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=0.5, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:28,701 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=1.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:30,662 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=1.5, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:31,669 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=2.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:31,670 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=2.5, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:31,816 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=3.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:33,333 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=3.5, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:33,510 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=4.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:34,782 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=4.5, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:34,782 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=5.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:35,935 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=5.5, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:36,548 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=6.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:37,428 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=6.5, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:37,635 - INFO - [omi-9.txt] mode=deviation, corr_threshold=0.5, threshold=7.0, P=0.4797, R=0.8310, F1=0.6082
+2025-04-16 12:32:37,660 - INFO - 
+==================================================
+2025-04-16 12:32:37,660 - INFO - 开始汇总结果...
+2025-04-16 12:32:37,666 - INFO - 
+===== Best Results per Dataset =====
+   dataset score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score  logged_neighbor_param
+ omi-1.txt  deviation             0.5              4.0     corr_threshold   0.882979 0.932584  0.907104                    0.5
+omi-10.txt  deviation             0.4              4.5     corr_threshold   0.444444 0.983607  0.612245                    0.4
+omi-11.txt  deviation             0.2              7.0     corr_threshold   0.343373 0.982759  0.508929                    0.2
+omi-12.txt  deviation             0.3              3.5     corr_threshold   0.612903 0.950000  0.745098                    0.3
+ omi-2.txt  deviation             0.4              4.0     corr_threshold   0.455882 1.000000  0.626263                    0.4
+ omi-3.txt  deviation             0.5              1.5     corr_threshold   0.900000 0.807692  0.851351                    0.5
+ omi-4.txt  deviation             0.5              6.5     corr_threshold   0.928571 0.970149  0.948905                    0.5
+ omi-5.txt  deviation             0.3              2.5     corr_threshold   0.453704 1.000000  0.624204                    0.3
+ omi-6.txt  deviation             0.4              0.5     corr_threshold   0.254438 0.977273  0.403756                    0.4
+ omi-7.txt  deviation             0.5              0.5     corr_threshold   0.947368 0.923077  0.935065                    0.5
+ omi-8.txt  deviation             0.1              4.0     corr_threshold   0.353659 0.935484  0.513274                    0.1
+ omi-9.txt  deviation             0.1              2.0     corr_threshold   0.496183 0.915493  0.643564                    0.1
+2025-04-16 12:32:37,666 - INFO - 
+===== Overall Metrics =====
+Precision: 0.4930  Recall: 0.9456  F1: 0.6481
+2025-04-16 12:32:37,666 - INFO - 
+【原始汇总指标】
+2025-04-16 12:32:37,666 - INFO - 精确率(Precision): 0.4930
+2025-04-16 12:32:37,666 - INFO - 召回率(Recall):    0.9456
+2025-04-16 12:32:37,666 - INFO - F1值:             0.6481
+2025-04-16 12:32:37,667 - INFO - 
+==================================================
+2025-04-16 12:32:37,667 - INFO - 开始生成可视化结果...
+2025-04-16 12:32:37,667 - INFO - 
+==================================================
+2025-04-16 12:32:37,667 - INFO - 开始数据集可视化: omi-1
+2025-04-16 12:32:37,667 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.5, 阈值=4.0
+2025-04-16 12:32:37,667 - INFO - ==================================================
+
+2025-04-16 12:32:37,668 - INFO - 正在加载数据集 omi-1 的数据
+2025-04-16 12:32:37,668 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:37,668 - INFO - 正在计算边缘统计量...
+2025-04-16 12:32:39,378 - INFO - 已计算 170 条边的统计量
+2025-04-16 12:32:39,378 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 12:32:39,379 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-1
+2025-04-16 12:32:39,379 - INFO - 在数据集中发现 7 个异常时间段
+2025-04-16 12:32:39,379 - INFO - 
+正在处理时间段 1/7: 760-765
+2025-04-16 12:32:39,379 - INFO - 该时间段的真实异常节点: {4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:39,379 - INFO - 正在计算异常分数...
+2025-04-16 12:32:39,381 - INFO - 检测到的异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:39,381 - INFO - 正在为时间段 760-765 生成可视化
+2025-04-16 12:32:39,381 - INFO - 正在为时间段 760-765 生成异常图可视化
+2025-04-16 12:32:39,381 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:39,382 - DEBUG - 边统计: 正常边 112 条, 异常边 20 条
+2025-04-16 12:32:39,382 - INFO - 时间段 760-765 的节点检测统计: 真阳性=12, 假阳性=0, 假阴性=3, 正常节点=4
+2025-04-16 12:32:39,470 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\seg_0_760_765.png
+2025-04-16 12:32:39,553 - INFO - 成功保存时间段 760-765 的可视化结果
+2025-04-16 12:32:39,553 - INFO - 
+正在处理时间段 2/7: 1064-1298
+2025-04-16 12:32:39,553 - INFO - 该时间段的真实异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:39,553 - INFO - 正在计算异常分数...
+2025-04-16 12:32:39,628 - INFO - 检测到的异常节点: {3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:39,628 - INFO - 正在为时间段 1064-1298 生成可视化
+2025-04-16 12:32:39,628 - INFO - 正在为时间段 1064-1298 生成异常图可视化
+2025-04-16 12:32:39,628 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:39,629 - DEBUG - 边统计: 正常边 156 条, 异常边 22 条
+2025-04-16 12:32:39,629 - INFO - 时间段 1064-1298 的节点检测统计: 真阳性=13, 假阳性=2, 假阴性=0, 正常节点=4
+2025-04-16 12:32:39,723 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\seg_1_1064_1298.png
+2025-04-16 12:32:39,817 - INFO - 成功保存时间段 1064-1298 的可视化结果
+2025-04-16 12:32:39,817 - INFO - 
+正在处理时间段 3/7: 2758-2772
+2025-04-16 12:32:39,817 - INFO - 该时间段的真实异常节点: {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:39,817 - INFO - 正在计算异常分数...
+2025-04-16 12:32:39,823 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:39,823 - INFO - 正在为时间段 2758-2772 生成可视化
+2025-04-16 12:32:39,823 - INFO - 正在为时间段 2758-2772 生成异常图可视化
+2025-04-16 12:32:39,823 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:39,823 - DEBUG - 边统计: 正常边 124 条, 异常边 30 条
+2025-04-16 12:32:39,824 - INFO - 时间段 2758-2772 的节点检测统计: 真阳性=13, 假阳性=0, 假阴性=2, 正常节点=4
+2025-04-16 12:32:39,902 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\seg_2_2758_2772.png
+2025-04-16 12:32:39,980 - INFO - 成功保存时间段 2758-2772 的可视化结果
+2025-04-16 12:32:39,981 - INFO - 
+正在处理时间段 4/7: 2874-2885
+2025-04-16 12:32:39,981 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 12:32:39,981 - INFO - 正在计算异常分数...
+2025-04-16 12:32:39,985 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:39,985 - INFO - 正在为时间段 2874-2885 生成可视化
+2025-04-16 12:32:39,985 - INFO - 正在为时间段 2874-2885 生成异常图可视化
+2025-04-16 12:32:39,985 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:39,986 - DEBUG - 边统计: 正常边 134 条, 异常边 20 条
+2025-04-16 12:32:39,986 - INFO - 时间段 2874-2885 的节点检测统计: 真阳性=11, 假阳性=2, 假阴性=0, 正常节点=6
+2025-04-16 12:32:40,063 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\seg_3_2874_2885.png
+2025-04-16 12:32:40,144 - INFO - 成功保存时间段 2874-2885 的可视化结果
+2025-04-16 12:32:40,144 - INFO - 
+正在处理时间段 5/7: 3012-3025
+2025-04-16 12:32:40,145 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:40,145 - INFO - 正在计算异常分数...
+2025-04-16 12:32:40,149 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:40,149 - INFO - 正在为时间段 3012-3025 生成可视化
+2025-04-16 12:32:40,149 - INFO - 正在为时间段 3012-3025 生成异常图可视化
+2025-04-16 12:32:40,149 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:40,149 - DEBUG - 边统计: 正常边 116 条, 异常边 38 条
+2025-04-16 12:32:40,149 - INFO - 时间段 3012-3025 的节点检测统计: 真阳性=11, 假阳性=2, 假阴性=0, 正常节点=6
+2025-04-16 12:32:40,229 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\seg_4_3012_3025.png
+2025-04-16 12:32:40,306 - INFO - 成功保存时间段 3012-3025 的可视化结果
+2025-04-16 12:32:40,306 - INFO - 
+正在处理时间段 6/7: 3160-3305
+2025-04-16 12:32:40,306 - INFO - 该时间段的真实异常节点: {8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:40,306 - INFO - 正在计算异常分数...
+2025-04-16 12:32:40,352 - INFO - 检测到的异常节点: {3, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:40,352 - INFO - 正在为时间段 3160-3305 生成可视化
+2025-04-16 12:32:40,352 - INFO - 正在为时间段 3160-3305 生成异常图可视化
+2025-04-16 12:32:40,352 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:40,352 - DEBUG - 边统计: 正常边 176 条, 异常边 2 条
+2025-04-16 12:32:40,352 - INFO - 时间段 3160-3305 的节点检测统计: 真阳性=11, 假阳性=4, 假阴性=1, 正常节点=3
+2025-04-16 12:32:40,437 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\seg_5_3160_3305.png
+2025-04-16 12:32:40,569 - INFO - 成功保存时间段 3160-3305 的可视化结果
+2025-04-16 12:32:40,569 - INFO - 
+正在处理时间段 7/7: 3626-3638
+2025-04-16 12:32:40,570 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:40,570 - INFO - 正在计算异常分数...
+2025-04-16 12:32:40,576 - INFO - 检测到的异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:40,576 - INFO - 正在为时间段 3626-3638 生成可视化
+2025-04-16 12:32:40,576 - INFO - 正在为时间段 3626-3638 生成异常图可视化
+2025-04-16 12:32:40,576 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:40,576 - DEBUG - 边统计: 正常边 136 条, 异常边 18 条
+2025-04-16 12:32:40,576 - INFO - 时间段 3626-3638 的节点检测统计: 真阳性=12, 假阳性=1, 假阴性=0, 正常节点=6
+2025-04-16 12:32:40,655 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\seg_6_3626_3638.png
+2025-04-16 12:32:40,743 - INFO - 成功保存时间段 3626-3638 的可视化结果
+2025-04-16 12:32:40,743 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-1 中的图像创建GIF
+2025-04-16 12:32:40,937 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-1\omi-1.gif
+2025-04-16 12:32:40,938 - INFO - 
+==================================================
+2025-04-16 12:32:40,938 - INFO - 开始数据集可视化: omi-10
+2025-04-16 12:32:40,938 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.4, 阈值=4.5
+2025-04-16 12:32:40,938 - INFO - ==================================================
+
+2025-04-16 12:32:40,938 - INFO - 正在加载数据集 omi-10 的数据
+2025-04-16 12:32:40,939 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:40,939 - INFO - 正在计算边缘统计量...
+2025-04-16 12:32:42,758 - INFO - 已计算 136 条边的统计量
+2025-04-16 12:32:42,758 - INFO - 为每个节点使用相关系数阈值 >= 0.4 的邻居
+2025-04-16 12:32:42,758 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-10
+2025-04-16 12:32:42,758 - INFO - 在数据集中发现 8 个异常时间段
+2025-04-16 12:32:42,758 - INFO - 
+正在处理时间段 1/8: 740-780
+2025-04-16 12:32:42,758 - INFO - 该时间段的真实异常节点: {2, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:42,759 - INFO - 正在计算异常分数...
+2025-04-16 12:32:42,785 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:42,786 - INFO - 正在为时间段 740-780 生成可视化
+2025-04-16 12:32:42,786 - INFO - 正在为时间段 740-780 生成异常图可视化
+2025-04-16 12:32:42,786 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:42,786 - DEBUG - 边统计: 正常边 164 条, 异常边 84 条
+2025-04-16 12:32:42,786 - INFO - 时间段 740-780 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=1, 正常节点=1
+2025-04-16 12:32:42,866 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_0_740_780.png
+2025-04-16 12:32:42,950 - INFO - 成功保存时间段 740-780 的可视化结果
+2025-04-16 12:32:42,950 - INFO - 
+正在处理时间段 2/8: 1345-1406
+2025-04-16 12:32:42,950 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 12:32:42,950 - INFO - 正在计算异常分数...
+2025-04-16 12:32:42,990 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:42,990 - INFO - 正在为时间段 1345-1406 生成可视化
+2025-04-16 12:32:42,990 - INFO - 正在为时间段 1345-1406 生成异常图可视化
+2025-04-16 12:32:42,991 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:42,991 - DEBUG - 边统计: 正常边 244 条, 异常边 4 条
+2025-04-16 12:32:42,991 - INFO - 时间段 1345-1406 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-16 12:32:43,072 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_1_1345_1406.png
+2025-04-16 12:32:43,164 - INFO - 成功保存时间段 1345-1406 的可视化结果
+2025-04-16 12:32:43,164 - INFO - 
+正在处理时间段 3/8: 2224-2272
+2025-04-16 12:32:43,164 - INFO - 该时间段的真实异常节点: {4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:43,164 - INFO - 正在计算异常分数...
+2025-04-16 12:32:43,197 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:43,197 - INFO - 正在为时间段 2224-2272 生成可视化
+2025-04-16 12:32:43,197 - INFO - 正在为时间段 2224-2272 生成异常图可视化
+2025-04-16 12:32:43,197 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:43,197 - DEBUG - 边统计: 正常边 240 条, 异常边 8 条
+2025-04-16 12:32:43,197 - INFO - 时间段 2224-2272 的节点检测统计: 真阳性=15, 假阳性=2, 假阴性=0, 正常节点=2
+2025-04-16 12:32:43,277 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_2_2224_2272.png
+2025-04-16 12:32:43,361 - INFO - 成功保存时间段 2224-2272 的可视化结果
+2025-04-16 12:32:43,361 - INFO - 
+正在处理时间段 4/8: 2514-2592
+2025-04-16 12:32:43,362 - INFO - 该时间段的真实异常节点: {16, 4}
+2025-04-16 12:32:43,362 - INFO - 正在计算异常分数...
+2025-04-16 12:32:43,412 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:43,412 - INFO - 正在为时间段 2514-2592 生成可视化
+2025-04-16 12:32:43,412 - INFO - 正在为时间段 2514-2592 生成异常图可视化
+2025-04-16 12:32:43,412 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:43,413 - DEBUG - 边统计: 正常边 248 条, 异常边 0 条
+2025-04-16 12:32:43,413 - INFO - 时间段 2514-2592 的节点检测统计: 真阳性=2, 假阳性=15, 假阴性=0, 正常节点=2
+2025-04-16 12:32:43,492 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_3_2514_2592.png
+2025-04-16 12:32:43,579 - INFO - 成功保存时间段 2514-2592 的可视化结果
+2025-04-16 12:32:43,579 - INFO - 
+正在处理时间段 5/8: 2733-2778
+2025-04-16 12:32:43,579 - INFO - 该时间段的真实异常节点: {11, 14, 15}
+2025-04-16 12:32:43,579 - INFO - 正在计算异常分数...
+2025-04-16 12:32:43,608 - INFO - 检测到的异常节点: {1, 4, 5, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:43,608 - INFO - 正在为时间段 2733-2778 生成可视化
+2025-04-16 12:32:43,609 - INFO - 正在为时间段 2733-2778 生成异常图可视化
+2025-04-16 12:32:43,609 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:43,609 - DEBUG - 边统计: 正常边 214 条, 异常边 2 条
+2025-04-16 12:32:43,609 - INFO - 时间段 2733-2778 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-16 12:32:43,694 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_4_2733_2778.png
+2025-04-16 12:32:43,776 - INFO - 成功保存时间段 2733-2778 的可视化结果
+2025-04-16 12:32:43,776 - INFO - 
+正在处理时间段 6/8: 3401-3405
+2025-04-16 12:32:43,776 - INFO - 该时间段的真实异常节点: {1}
+2025-04-16 12:32:43,776 - INFO - 正在计算异常分数...
+2025-04-16 12:32:43,777 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:43,777 - INFO - 正在为时间段 3401-3405 生成可视化
+2025-04-16 12:32:43,778 - INFO - 正在为时间段 3401-3405 生成异常图可视化
+2025-04-16 12:32:43,778 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:43,778 - DEBUG - 边统计: 正常边 230 条, 异常边 18 条
+2025-04-16 12:32:43,778 - INFO - 时间段 3401-3405 的节点检测统计: 真阳性=1, 假阳性=16, 假阴性=0, 正常节点=2
+2025-04-16 12:32:43,860 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_5_3401_3405.png
+2025-04-16 12:32:43,939 - INFO - 成功保存时间段 3401-3405 的可视化结果
+2025-04-16 12:32:43,939 - INFO - 
+正在处理时间段 7/8: 3414-3459
+2025-04-16 12:32:43,940 - INFO - 该时间段的真实异常节点: {8}
+2025-04-16 12:32:43,940 - INFO - 正在计算异常分数...
+2025-04-16 12:32:43,967 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:43,967 - INFO - 正在为时间段 3414-3459 生成可视化
+2025-04-16 12:32:43,967 - INFO - 正在为时间段 3414-3459 生成异常图可视化
+2025-04-16 12:32:43,967 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:43,968 - DEBUG - 边统计: 正常边 232 条, 异常边 16 条
+2025-04-16 12:32:43,968 - INFO - 时间段 3414-3459 的节点检测统计: 真阳性=1, 假阳性=16, 假阴性=0, 正常节点=2
+2025-04-16 12:32:44,046 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_6_3414_3459.png
+2025-04-16 12:32:44,126 - INFO - 成功保存时间段 3414-3459 的可视化结果
+2025-04-16 12:32:44,126 - INFO - 
+正在处理时间段 8/8: 3700-3744
+2025-04-16 12:32:44,127 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 12:32:44,127 - INFO - 正在计算异常分数...
+2025-04-16 12:32:44,154 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:44,154 - INFO - 正在为时间段 3700-3744 生成可视化
+2025-04-16 12:32:44,154 - INFO - 正在为时间段 3700-3744 生成异常图可视化
+2025-04-16 12:32:44,154 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:44,154 - DEBUG - 边统计: 正常边 220 条, 异常边 28 条
+2025-04-16 12:32:44,154 - INFO - 时间段 3700-3744 的节点检测统计: 真阳性=12, 假阳性=5, 假阴性=0, 正常节点=2
+2025-04-16 12:32:44,235 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\seg_7_3700_3744.png
+2025-04-16 12:32:44,316 - INFO - 成功保存时间段 3700-3744 的可视化结果
+2025-04-16 12:32:44,317 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-10 中的图像创建GIF
+2025-04-16 12:32:44,529 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-10\omi-10.gif
+2025-04-16 12:32:44,529 - INFO - 
+==================================================
+2025-04-16 12:32:44,529 - INFO - 开始数据集可视化: omi-11
+2025-04-16 12:32:44,529 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.2, 阈值=7.0
+2025-04-16 12:32:44,529 - INFO - ==================================================
+
+2025-04-16 12:32:44,529 - INFO - 正在加载数据集 omi-11 的数据
+2025-04-16 12:32:44,530 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:44,530 - INFO - 正在计算边缘统计量...
+2025-04-16 12:32:46,318 - INFO - 已计算 153 条边的统计量
+2025-04-16 12:32:46,318 - INFO - 为每个节点使用相关系数阈值 >= 0.2 的邻居
+2025-04-16 12:32:46,318 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-11
+2025-04-16 12:32:46,319 - INFO - 在数据集中发现 9 个异常时间段
+2025-04-16 12:32:46,319 - INFO - 
+正在处理时间段 1/9: 738-755
+2025-04-16 12:32:46,319 - INFO - 该时间段的真实异常节点: {2}
+2025-04-16 12:32:46,319 - INFO - 正在计算异常分数...
+2025-04-16 12:32:46,328 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:46,328 - INFO - 正在为时间段 738-755 生成可视化
+2025-04-16 12:32:46,328 - INFO - 正在为时间段 738-755 生成异常图可视化
+2025-04-16 12:32:46,328 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:46,329 - DEBUG - 边统计: 正常边 240 条, 异常边 0 条
+2025-04-16 12:32:46,330 - INFO - 时间段 738-755 的节点检测统计: 真阳性=0, 假阳性=16, 假阴性=1, 正常节点=2
+2025-04-16 12:32:46,406 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_0_738_755.png
+2025-04-16 12:32:46,484 - INFO - 成功保存时间段 738-755 的可视化结果
+2025-04-16 12:32:46,484 - INFO - 
+正在处理时间段 2/9: 757-815
+2025-04-16 12:32:46,484 - INFO - 该时间段的真实异常节点: set()
+2025-04-16 12:32:46,484 - INFO - 正在计算异常分数...
+2025-04-16 12:32:46,530 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:46,530 - INFO - 正在为时间段 757-815 生成可视化
+2025-04-16 12:32:46,530 - INFO - 正在为时间段 757-815 生成异常图可视化
+2025-04-16 12:32:46,530 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:46,531 - DEBUG - 边统计: 正常边 248 条, 异常边 24 条
+2025-04-16 12:32:46,531 - INFO - 时间段 757-815 的节点检测统计: 真阳性=0, 假阳性=17, 假阴性=0, 正常节点=2
+2025-04-16 12:32:46,610 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_1_757_815.png
+2025-04-16 12:32:46,691 - INFO - 成功保存时间段 757-815 的可视化结果
+2025-04-16 12:32:46,691 - INFO - 
+正在处理时间段 3/9: 1366-1375
+2025-04-16 12:32:46,691 - INFO - 该时间段的真实异常节点: {4, 5, 8, 17, 19}
+2025-04-16 12:32:46,691 - INFO - 正在计算异常分数...
+2025-04-16 12:32:46,696 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:46,696 - INFO - 正在为时间段 1366-1375 生成可视化
+2025-04-16 12:32:46,696 - INFO - 正在为时间段 1366-1375 生成异常图可视化
+2025-04-16 12:32:46,696 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:46,697 - DEBUG - 边统计: 正常边 210 条, 异常边 62 条
+2025-04-16 12:32:46,697 - INFO - 时间段 1366-1375 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-16 12:32:46,784 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_2_1366_1375.png
+2025-04-16 12:32:46,921 - INFO - 成功保存时间段 1366-1375 的可视化结果
+2025-04-16 12:32:46,921 - INFO - 
+正在处理时间段 4/9: 2301-2314
+2025-04-16 12:32:46,921 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-16 12:32:46,921 - INFO - 正在计算异常分数...
+2025-04-16 12:32:46,931 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:46,931 - INFO - 正在为时间段 2301-2314 生成可视化
+2025-04-16 12:32:46,931 - INFO - 正在为时间段 2301-2314 生成异常图可视化
+2025-04-16 12:32:46,931 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:46,932 - DEBUG - 边统计: 正常边 232 条, 异常边 40 条
+2025-04-16 12:32:46,932 - INFO - 时间段 2301-2314 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 12:32:47,012 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_3_2301_2314.png
+2025-04-16 12:32:47,093 - INFO - 成功保存时间段 2301-2314 的可视化结果
+2025-04-16 12:32:47,093 - INFO - 
+正在处理时间段 5/9: 2365-2381
+2025-04-16 12:32:47,093 - INFO - 该时间段的真实异常节点: {19}
+2025-04-16 12:32:47,093 - INFO - 正在计算异常分数...
+2025-04-16 12:32:47,102 - INFO - 检测到的异常节点: {4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:47,102 - INFO - 正在为时间段 2365-2381 生成可视化
+2025-04-16 12:32:47,102 - INFO - 正在为时间段 2365-2381 生成异常图可视化
+2025-04-16 12:32:47,102 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:47,103 - DEBUG - 边统计: 正常边 168 条, 异常边 42 条
+2025-04-16 12:32:47,103 - INFO - 时间段 2365-2381 的节点检测统计: 真阳性=1, 假阳性=14, 假阴性=0, 正常节点=4
+2025-04-16 12:32:47,184 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_4_2365_2381.png
+2025-04-16 12:32:47,259 - INFO - 成功保存时间段 2365-2381 的可视化结果
+2025-04-16 12:32:47,259 - INFO - 
+正在处理时间段 6/9: 2464-2485
+2025-04-16 12:32:47,259 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-16 12:32:47,259 - INFO - 正在计算异常分数...
+2025-04-16 12:32:47,275 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:47,275 - INFO - 正在为时间段 2464-2485 生成可视化
+2025-04-16 12:32:47,275 - INFO - 正在为时间段 2464-2485 生成异常图可视化
+2025-04-16 12:32:47,275 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:47,276 - DEBUG - 边统计: 正常边 236 条, 异常边 36 条
+2025-04-16 12:32:47,276 - INFO - 时间段 2464-2485 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 12:32:47,356 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_5_2464_2485.png
+2025-04-16 12:32:47,437 - INFO - 成功保存时间段 2464-2485 的可视化结果
+2025-04-16 12:32:47,437 - INFO - 
+正在处理时间段 7/9: 2588-2610
+2025-04-16 12:32:47,437 - INFO - 该时间段的真实异常节点: {17, 19, 4, 5}
+2025-04-16 12:32:47,437 - INFO - 正在计算异常分数...
+2025-04-16 12:32:47,451 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:47,452 - INFO - 正在为时间段 2588-2610 生成可视化
+2025-04-16 12:32:47,452 - INFO - 正在为时间段 2588-2610 生成异常图可视化
+2025-04-16 12:32:47,452 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:47,452 - DEBUG - 边统计: 正常边 216 条, 异常边 56 条
+2025-04-16 12:32:47,452 - INFO - 时间段 2588-2610 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 12:32:47,531 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_6_2588_2610.png
+2025-04-16 12:32:47,608 - INFO - 成功保存时间段 2588-2610 的可视化结果
+2025-04-16 12:32:47,609 - INFO - 
+正在处理时间段 8/9: 2650-2675
+2025-04-16 12:32:47,609 - INFO - 该时间段的真实异常节点: {19}
+2025-04-16 12:32:47,609 - INFO - 正在计算异常分数...
+2025-04-16 12:32:47,626 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:47,626 - INFO - 正在为时间段 2650-2675 生成可视化
+2025-04-16 12:32:47,626 - INFO - 正在为时间段 2650-2675 生成异常图可视化
+2025-04-16 12:32:47,626 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:47,627 - DEBUG - 边统计: 正常边 192 条, 异常边 48 条
+2025-04-16 12:32:47,627 - INFO - 时间段 2650-2675 的节点检测统计: 真阳性=1, 假阳性=15, 假阴性=0, 正常节点=3
+2025-04-16 12:32:47,710 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_7_2650_2675.png
+2025-04-16 12:32:47,790 - INFO - 成功保存时间段 2650-2675 的可视化结果
+2025-04-16 12:32:47,790 - INFO - 
+正在处理时间段 9/9: 3012-3072
+2025-04-16 12:32:47,790 - INFO - 该时间段的真实异常节点: {1, 4, 5, 8, 17, 19}
+2025-04-16 12:32:47,790 - INFO - 正在计算异常分数...
+2025-04-16 12:32:47,839 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:47,839 - INFO - 正在为时间段 3012-3072 生成可视化
+2025-04-16 12:32:47,839 - INFO - 正在为时间段 3012-3072 生成异常图可视化
+2025-04-16 12:32:47,840 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:47,840 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 12:32:47,840 - INFO - 时间段 3012-3072 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=0, 正常节点=2
+2025-04-16 12:32:47,920 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\seg_8_3012_3072.png
+2025-04-16 12:32:48,009 - INFO - 成功保存时间段 3012-3072 的可视化结果
+2025-04-16 12:32:48,009 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-11 中的图像创建GIF
+2025-04-16 12:32:48,256 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-11\omi-11.gif
+2025-04-16 12:32:48,256 - INFO - 
+==================================================
+2025-04-16 12:32:48,256 - INFO - 开始数据集可视化: omi-12
+2025-04-16 12:32:48,256 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.3, 阈值=3.5
+2025-04-16 12:32:48,256 - INFO - ==================================================
+
+2025-04-16 12:32:48,257 - INFO - 正在加载数据集 omi-12 的数据
+2025-04-16 12:32:48,258 - INFO - 数据加载成功。训练集形状: (7291, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:48,258 - INFO - 正在计算边缘统计量...
+2025-04-16 12:32:49,680 - INFO - 已计算 133 条边的统计量
+2025-04-16 12:32:49,680 - INFO - 为每个节点使用相关系数阈值 >= 0.3 的邻居
+2025-04-16 12:32:49,681 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-12
+2025-04-16 12:32:49,682 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-16 12:32:49,682 - INFO - 
+正在处理时间段 1/5: 740-813
+2025-04-16 12:32:49,682 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:49,682 - INFO - 正在计算异常分数...
+2025-04-16 12:32:49,722 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:49,722 - INFO - 正在为时间段 740-813 生成可视化
+2025-04-16 12:32:49,722 - INFO - 正在为时间段 740-813 生成异常图可视化
+2025-04-16 12:32:49,722 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:49,723 - DEBUG - 边统计: 正常边 140 条, 异常边 70 条
+2025-04-16 12:32:49,723 - INFO - 时间段 740-813 的节点检测统计: 真阳性=15, 假阳性=0, 假阴性=1, 正常节点=3
+2025-04-16 12:32:49,801 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-12\seg_0_740_813.png
+2025-04-16 12:32:49,888 - INFO - 成功保存时间段 740-813 的可视化结果
+2025-04-16 12:32:49,888 - INFO - 
+正在处理时间段 2/5: 2486-2493
+2025-04-16 12:32:49,889 - INFO - 该时间段的真实异常节点: {4, 5}
+2025-04-16 12:32:49,889 - INFO - 正在计算异常分数...
+2025-04-16 12:32:49,892 - INFO - 检测到的异常节点: {1, 4, 5, 7, 8, 9, 10, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:49,892 - INFO - 正在为时间段 2486-2493 生成可视化
+2025-04-16 12:32:49,892 - INFO - 正在为时间段 2486-2493 生成异常图可视化
+2025-04-16 12:32:49,892 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:49,892 - DEBUG - 边统计: 正常边 170 条, 异常边 36 条
+2025-04-16 12:32:49,892 - INFO - 时间段 2486-2493 的节点检测统计: 真阳性=2, 假阳性=13, 假阴性=0, 正常节点=4
+2025-04-16 12:32:49,982 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-12\seg_1_2486_2493.png
+2025-04-16 12:32:50,056 - INFO - 成功保存时间段 2486-2493 的可视化结果
+2025-04-16 12:32:50,056 - INFO - 
+正在处理时间段 3/5: 2515-2525
+2025-04-16 12:32:50,056 - INFO - 该时间段的真实异常节点: {1, 4, 5, 7, 8, 9, 17, 18}
+2025-04-16 12:32:50,057 - INFO - 正在计算异常分数...
+2025-04-16 12:32:50,062 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:50,062 - INFO - 正在为时间段 2515-2525 生成可视化
+2025-04-16 12:32:50,062 - INFO - 正在为时间段 2515-2525 生成异常图可视化
+2025-04-16 12:32:50,062 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:50,063 - DEBUG - 边统计: 正常边 190 条, 异常边 76 条
+2025-04-16 12:32:50,063 - INFO - 时间段 2515-2525 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=0, 正常节点=2
+2025-04-16 12:32:50,146 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-12\seg_2_2515_2525.png
+2025-04-16 12:32:50,226 - INFO - 成功保存时间段 2515-2525 的可视化结果
+2025-04-16 12:32:50,226 - INFO - 
+正在处理时间段 4/5: 2721-2723
+2025-04-16 12:32:50,226 - INFO - 该时间段的真实异常节点: {4}
+2025-04-16 12:32:50,226 - INFO - 正在计算异常分数...
+2025-04-16 12:32:50,226 - INFO - 检测到的异常节点: set()
+2025-04-16 12:32:50,226 - INFO - 正在为时间段 2721-2723 生成可视化
+2025-04-16 12:32:50,226 - INFO - 正在为时间段 2721-2723 生成异常图可视化
+2025-04-16 12:32:50,227 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:50,228 - DEBUG - 边统计: 正常边 40 条, 异常边 48 条
+2025-04-16 12:32:50,228 - INFO - 时间段 2721-2723 的节点检测统计: 真阳性=0, 假阳性=0, 假阴性=1, 正常节点=18
+2025-04-16 12:32:50,319 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-12\seg_3_2721_2723.png
+2025-04-16 12:32:50,395 - INFO - 成功保存时间段 2721-2723 的可视化结果
+2025-04-16 12:32:50,396 - INFO - 
+正在处理时间段 5/5: 3500-3535
+2025-04-16 12:32:50,396 - INFO - 该时间段的真实异常节点: {5, 6, 7, 8, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:50,396 - INFO - 正在计算异常分数...
+2025-04-16 12:32:50,410 - INFO - 检测到的异常节点: {5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:50,410 - INFO - 正在为时间段 3500-3535 生成可视化
+2025-04-16 12:32:50,410 - INFO - 正在为时间段 3500-3535 生成异常图可视化
+2025-04-16 12:32:50,410 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:50,411 - DEBUG - 边统计: 正常边 172 条, 异常边 38 条
+2025-04-16 12:32:50,411 - INFO - 时间段 3500-3535 的节点检测统计: 真阳性=13, 假阳性=2, 假阴性=0, 正常节点=4
+2025-04-16 12:32:50,494 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-12\seg_4_3500_3535.png
+2025-04-16 12:32:50,572 - INFO - 成功保存时间段 3500-3535 的可视化结果
+2025-04-16 12:32:50,573 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-12 中的图像创建GIF
+2025-04-16 12:32:50,708 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-12\omi-12.gif
+2025-04-16 12:32:50,708 - INFO - 
+==================================================
+2025-04-16 12:32:50,708 - INFO - 开始数据集可视化: omi-2
+2025-04-16 12:32:50,708 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.4, 阈值=4.0
+2025-04-16 12:32:50,708 - INFO - ==================================================
+
+2025-04-16 12:32:50,709 - INFO - 正在加载数据集 omi-2 的数据
+2025-04-16 12:32:50,709 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:50,709 - INFO - 正在计算边缘统计量...
+2025-04-16 12:32:52,495 - INFO - 已计算 153 条边的统计量
+2025-04-16 12:32:52,495 - INFO - 为每个节点使用相关系数阈值 >= 0.4 的邻居
+2025-04-16 12:32:52,496 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-2
+2025-04-16 12:32:52,496 - INFO - 在数据集中发现 4 个异常时间段
+2025-04-16 12:32:52,496 - INFO - 
+正在处理时间段 1/4: 486-498
+2025-04-16 12:32:52,497 - INFO - 该时间段的真实异常节点: {1, 4, 5}
+2025-04-16 12:32:52,497 - INFO - 正在计算异常分数...
+2025-04-16 12:32:52,504 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:52,504 - INFO - 正在为时间段 486-498 生成可视化
+2025-04-16 12:32:52,504 - INFO - 正在为时间段 486-498 生成异常图可视化
+2025-04-16 12:32:52,505 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:52,505 - DEBUG - 边统计: 正常边 250 条, 异常边 0 条
+2025-04-16 12:32:52,505 - INFO - 时间段 486-498 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 12:32:52,596 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-2\seg_0_486_498.png
+2025-04-16 12:32:52,733 - INFO - 成功保存时间段 486-498 的可视化结果
+2025-04-16 12:32:52,733 - INFO - 
+正在处理时间段 2/4: 740-753
+2025-04-16 12:32:52,734 - INFO - 该时间段的真实异常节点: {2}
+2025-04-16 12:32:52,734 - INFO - 正在计算异常分数...
+2025-04-16 12:32:52,742 - INFO - 检测到的异常节点: {2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:52,742 - INFO - 正在为时间段 740-753 生成可视化
+2025-04-16 12:32:52,742 - INFO - 正在为时间段 740-753 生成异常图可视化
+2025-04-16 12:32:52,742 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:52,742 - DEBUG - 边统计: 正常边 268 条, 异常边 4 条
+2025-04-16 12:32:52,742 - INFO - 时间段 740-753 的节点检测统计: 真阳性=1, 假阳性=16, 假阴性=0, 正常节点=2
+2025-04-16 12:32:52,820 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-2\seg_1_740_753.png
+2025-04-16 12:32:52,896 - INFO - 成功保存时间段 740-753 的可视化结果
+2025-04-16 12:32:52,896 - INFO - 
+正在处理时间段 3/4: 766-783
+2025-04-16 12:32:52,896 - INFO - 该时间段的真实异常节点: {1, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:52,896 - INFO - 正在计算异常分数...
+2025-04-16 12:32:52,904 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:52,904 - INFO - 正在为时间段 766-783 生成可视化
+2025-04-16 12:32:52,904 - INFO - 正在为时间段 766-783 生成异常图可视化
+2025-04-16 12:32:52,904 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:52,904 - DEBUG - 边统计: 正常边 202 条, 异常边 48 条
+2025-04-16 12:32:52,904 - INFO - 时间段 766-783 的节点检测统计: 真阳性=16, 假阳性=1, 假阴性=0, 正常节点=2
+2025-04-16 12:32:52,983 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-2\seg_2_766_783.png
+2025-04-16 12:32:53,071 - INFO - 成功保存时间段 766-783 的可视化结果
+2025-04-16 12:32:53,071 - INFO - 
+正在处理时间段 4/4: 1436-1445
+2025-04-16 12:32:53,071 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 12:32:53,071 - INFO - 正在计算异常分数...
+2025-04-16 12:32:53,077 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:53,077 - INFO - 正在为时间段 1436-1445 生成可视化
+2025-04-16 12:32:53,077 - INFO - 正在为时间段 1436-1445 生成异常图可视化
+2025-04-16 12:32:53,078 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:53,078 - DEBUG - 边统计: 正常边 248 条, 异常边 2 条
+2025-04-16 12:32:53,078 - INFO - 时间段 1436-1445 的节点检测统计: 真阳性=11, 假阳性=6, 假阴性=0, 正常节点=2
+2025-04-16 12:32:53,161 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-2\seg_3_1436_1445.png
+2025-04-16 12:32:53,247 - INFO - 成功保存时间段 1436-1445 的可视化结果
+2025-04-16 12:32:53,247 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-2 中的图像创建GIF
+2025-04-16 12:32:53,355 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-2\omi-2.gif
+2025-04-16 12:32:53,355 - INFO - 
+==================================================
+2025-04-16 12:32:53,355 - INFO - 开始数据集可视化: omi-3
+2025-04-16 12:32:53,355 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.5, 阈值=1.5
+2025-04-16 12:32:53,355 - INFO - ==================================================
+
+2025-04-16 12:32:53,355 - INFO - 正在加载数据集 omi-3 的数据
+2025-04-16 12:32:53,356 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:53,356 - INFO - 正在计算边缘统计量...
+2025-04-16 12:32:55,107 - INFO - 已计算 136 条边的统计量
+2025-04-16 12:32:55,107 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 12:32:55,108 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-3
+2025-04-16 12:32:55,109 - INFO - 在数据集中发现 6 个异常时间段
+2025-04-16 12:32:55,109 - INFO - 
+正在处理时间段 1/6: 760-820
+2025-04-16 12:32:55,109 - INFO - 该时间段的真实异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,109 - INFO - 正在计算异常分数...
+2025-04-16 12:32:55,137 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,138 - INFO - 正在为时间段 760-820 生成可视化
+2025-04-16 12:32:55,138 - INFO - 正在为时间段 760-820 生成异常图可视化
+2025-04-16 12:32:55,138 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:55,138 - DEBUG - 边统计: 正常边 158 条, 异常边 22 条
+2025-04-16 12:32:55,138 - INFO - 时间段 760-820 的节点检测统计: 真阳性=14, 假阳性=0, 假阴性=2, 正常节点=3
+2025-04-16 12:32:55,225 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-3\seg_0_760_820.png
+2025-04-16 12:32:55,305 - INFO - 成功保存时间段 760-820 的可视化结果
+2025-04-16 12:32:55,305 - INFO - 
+正在处理时间段 2/6: 842-860
+2025-04-16 12:32:55,305 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,305 - INFO - 正在计算异常分数...
+2025-04-16 12:32:55,314 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,314 - INFO - 正在为时间段 842-860 生成可视化
+2025-04-16 12:32:55,314 - INFO - 正在为时间段 842-860 生成异常图可视化
+2025-04-16 12:32:55,314 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:55,314 - DEBUG - 边统计: 正常边 164 条, 异常边 16 条
+2025-04-16 12:32:55,314 - INFO - 时间段 842-860 的节点检测统计: 真阳性=13, 假阳性=1, 假阴性=0, 正常节点=5
+2025-04-16 12:32:55,393 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-3\seg_1_842_860.png
+2025-04-16 12:32:55,477 - INFO - 成功保存时间段 842-860 的可视化结果
+2025-04-16 12:32:55,478 - INFO - 
+正在处理时间段 3/6: 1080-1120
+2025-04-16 12:32:55,478 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18}
+2025-04-16 12:32:55,478 - INFO - 正在计算异常分数...
+2025-04-16 12:32:55,498 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,498 - INFO - 正在为时间段 1080-1120 生成可视化
+2025-04-16 12:32:55,498 - INFO - 正在为时间段 1080-1120 生成异常图可视化
+2025-04-16 12:32:55,498 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:55,498 - DEBUG - 边统计: 正常边 180 条, 异常边 0 条
+2025-04-16 12:32:55,498 - INFO - 时间段 1080-1120 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=0, 正常节点=5
+2025-04-16 12:32:55,580 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-3\seg_2_1080_1120.png
+2025-04-16 12:32:55,656 - INFO - 成功保存时间段 1080-1120 的可视化结果
+2025-04-16 12:32:55,656 - INFO - 
+正在处理时间段 4/6: 2188-2201
+2025-04-16 12:32:55,656 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,656 - INFO - 正在计算异常分数...
+2025-04-16 12:32:55,662 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,662 - INFO - 正在为时间段 2188-2201 生成可视化
+2025-04-16 12:32:55,662 - INFO - 正在为时间段 2188-2201 生成异常图可视化
+2025-04-16 12:32:55,662 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:55,663 - DEBUG - 边统计: 正常边 166 条, 异常边 14 条
+2025-04-16 12:32:55,663 - INFO - 时间段 2188-2201 的节点检测统计: 真阳性=12, 假阳性=2, 假阴性=0, 正常节点=5
+2025-04-16 12:32:55,751 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-3\seg_3_2188_2201.png
+2025-04-16 12:32:55,832 - INFO - 成功保存时间段 2188-2201 的可视化结果
+2025-04-16 12:32:55,832 - INFO - 
+正在处理时间段 5/6: 2497-2500
+2025-04-16 12:32:55,832 - INFO - 该时间段的真实异常节点: {6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:55,832 - INFO - 正在计算异常分数...
+2025-04-16 12:32:55,832 - INFO - 检测到的异常节点: set()
+2025-04-16 12:32:55,832 - INFO - 正在为时间段 2497-2500 生成可视化
+2025-04-16 12:32:55,832 - INFO - 正在为时间段 2497-2500 生成异常图可视化
+2025-04-16 12:32:55,832 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:55,832 - DEBUG - 边统计: 正常边 178 条, 异常边 2 条
+2025-04-16 12:32:55,832 - INFO - 时间段 2497-2500 的节点检测统计: 真阳性=0, 假阳性=0, 假阴性=13, 正常节点=6
+2025-04-16 12:32:55,914 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-3\seg_4_2497_2500.png
+2025-04-16 12:32:56,001 - INFO - 成功保存时间段 2497-2500 的可视化结果
+2025-04-16 12:32:56,001 - INFO - 
+正在处理时间段 6/6: 3428-3434
+2025-04-16 12:32:56,001 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:56,002 - INFO - 正在计算异常分数...
+2025-04-16 12:32:56,004 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:56,004 - INFO - 正在为时间段 3428-3434 生成可视化
+2025-04-16 12:32:56,004 - INFO - 正在为时间段 3428-3434 生成异常图可视化
+2025-04-16 12:32:56,004 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:56,004 - DEBUG - 边统计: 正常边 178 条, 异常边 2 条
+2025-04-16 12:32:56,005 - INFO - 时间段 3428-3434 的节点检测统计: 真阳性=13, 假阳性=1, 假阴性=0, 正常节点=5
+2025-04-16 12:32:56,084 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-3\seg_5_3428_3434.png
+2025-04-16 12:32:56,160 - INFO - 成功保存时间段 3428-3434 的可视化结果
+2025-04-16 12:32:56,160 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-3 中的图像创建GIF
+2025-04-16 12:32:56,345 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-3\omi-3.gif
+2025-04-16 12:32:56,345 - INFO - 
+==================================================
+2025-04-16 12:32:56,345 - INFO - 开始数据集可视化: omi-4
+2025-04-16 12:32:56,345 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.5, 阈值=6.5
+2025-04-16 12:32:56,345 - INFO - ==================================================
+
+2025-04-16 12:32:56,346 - INFO - 正在加载数据集 omi-4 的数据
+2025-04-16 12:32:56,347 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:56,347 - INFO - 正在计算边缘统计量...
+2025-04-16 12:32:58,174 - INFO - 已计算 136 条边的统计量
+2025-04-16 12:32:58,174 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 12:32:58,174 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-4
+2025-04-16 12:32:58,175 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-16 12:32:58,175 - INFO - 
+正在处理时间段 1/5: 727-782
+2025-04-16 12:32:58,175 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,175 - INFO - 正在计算异常分数...
+2025-04-16 12:32:58,200 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,200 - INFO - 正在为时间段 727-782 生成可视化
+2025-04-16 12:32:58,200 - INFO - 正在为时间段 727-782 生成异常图可视化
+2025-04-16 12:32:58,201 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:58,201 - DEBUG - 边统计: 正常边 148 条, 异常边 32 条
+2025-04-16 12:32:58,201 - INFO - 时间段 727-782 的节点检测统计: 真阳性=14, 假阳性=0, 假阴性=2, 正常节点=3
+2025-04-16 12:32:58,292 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-4\seg_0_727_782.png
+2025-04-16 12:32:58,371 - INFO - 成功保存时间段 727-782 的可视化结果
+2025-04-16 12:32:58,372 - INFO - 
+正在处理时间段 2/5: 843-857
+2025-04-16 12:32:58,372 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,372 - INFO - 正在计算异常分数...
+2025-04-16 12:32:58,378 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,379 - INFO - 正在为时间段 843-857 生成可视化
+2025-04-16 12:32:58,379 - INFO - 正在为时间段 843-857 生成异常图可视化
+2025-04-16 12:32:58,379 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:58,379 - DEBUG - 边统计: 正常边 176 条, 异常边 4 条
+2025-04-16 12:32:58,379 - INFO - 时间段 843-857 的节点检测统计: 真阳性=14, 假阳性=0, 假阴性=0, 正常节点=5
+2025-04-16 12:32:58,459 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-4\seg_1_843_857.png
+2025-04-16 12:32:58,548 - INFO - 成功保存时间段 843-857 的可视化结果
+2025-04-16 12:32:58,548 - INFO - 
+正在处理时间段 3/5: 2178-2238
+2025-04-16 12:32:58,549 - INFO - 该时间段的真实异常节点: {8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,549 - INFO - 正在计算异常分数...
+2025-04-16 12:32:58,581 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,581 - INFO - 正在为时间段 2178-2238 生成可视化
+2025-04-16 12:32:58,581 - INFO - 正在为时间段 2178-2238 生成异常图可视化
+2025-04-16 12:32:58,581 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:58,581 - DEBUG - 边统计: 正常边 180 条, 异常边 0 条
+2025-04-16 12:32:58,581 - INFO - 时间段 2178-2238 的节点检测统计: 真阳性=12, 假阳性=2, 假阴性=0, 正常节点=5
+2025-04-16 12:32:58,664 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-4\seg_2_2178_2238.png
+2025-04-16 12:32:58,745 - INFO - 成功保存时间段 2178-2238 的可视化结果
+2025-04-16 12:32:58,745 - INFO - 
+正在处理时间段 4/5: 2494-2501
+2025-04-16 12:32:58,746 - INFO - 该时间段的真实异常节点: {7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,746 - INFO - 正在计算异常分数...
+2025-04-16 12:32:58,747 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,748 - INFO - 正在为时间段 2494-2501 生成可视化
+2025-04-16 12:32:58,748 - INFO - 正在为时间段 2494-2501 生成异常图可视化
+2025-04-16 12:32:58,748 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:58,749 - DEBUG - 边统计: 正常边 158 条, 异常边 22 条
+2025-04-16 12:32:58,749 - INFO - 时间段 2494-2501 的节点检测统计: 真阳性=12, 假阳性=2, 假阴性=0, 正常节点=5
+2025-04-16 12:32:58,883 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-4\seg_3_2494_2501.png
+2025-04-16 12:32:58,961 - INFO - 成功保存时间段 2494-2501 的可视化结果
+2025-04-16 12:32:58,961 - INFO - 
+正在处理时间段 5/5: 3425-3435
+2025-04-16 12:32:58,961 - INFO - 该时间段的真实异常节点: {7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,961 - INFO - 正在计算异常分数...
+2025-04-16 12:32:58,965 - INFO - 检测到的异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:32:58,965 - INFO - 正在为时间段 3425-3435 生成可视化
+2025-04-16 12:32:58,965 - INFO - 正在为时间段 3425-3435 生成异常图可视化
+2025-04-16 12:32:58,965 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:32:58,966 - DEBUG - 边统计: 正常边 160 条, 异常边 20 条
+2025-04-16 12:32:58,966 - INFO - 时间段 3425-3435 的节点检测统计: 真阳性=13, 假阳性=1, 假阴性=0, 正常节点=5
+2025-04-16 12:32:59,042 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-4\seg_4_3425_3435.png
+2025-04-16 12:32:59,124 - INFO - 成功保存时间段 3425-3435 的可视化结果
+2025-04-16 12:32:59,125 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-4 中的图像创建GIF
+2025-04-16 12:32:59,259 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-4\omi-4.gif
+2025-04-16 12:32:59,259 - INFO - 
+==================================================
+2025-04-16 12:32:59,259 - INFO - 开始数据集可视化: omi-5
+2025-04-16 12:32:59,259 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.3, 阈值=2.5
+2025-04-16 12:32:59,259 - INFO - ==================================================
+
+2025-04-16 12:32:59,260 - INFO - 正在加载数据集 omi-5 的数据
+2025-04-16 12:32:59,261 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:32:59,261 - INFO - 正在计算边缘统计量...
+2025-04-16 12:33:01,143 - INFO - 已计算 153 条边的统计量
+2025-04-16 12:33:01,144 - INFO - 为每个节点使用相关系数阈值 >= 0.3 的邻居
+2025-04-16 12:33:01,149 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-5
+2025-04-16 12:33:01,150 - INFO - 在数据集中发现 6 个异常时间段
+2025-04-16 12:33:01,150 - INFO - 
+正在处理时间段 1/6: 765-781
+2025-04-16 12:33:01,150 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,150 - INFO - 正在计算异常分数...
+2025-04-16 12:33:01,159 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,159 - INFO - 正在为时间段 765-781 生成可视化
+2025-04-16 12:33:01,160 - INFO - 正在为时间段 765-781 生成异常图可视化
+2025-04-16 12:33:01,160 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:01,160 - DEBUG - 边统计: 正常边 214 条, 异常边 92 条
+2025-04-16 12:33:01,160 - INFO - 时间段 765-781 的节点检测统计: 真阳性=14, 假阳性=4, 假阴性=0, 正常节点=1
+2025-04-16 12:33:01,249 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-5\seg_0_765_781.png
+2025-04-16 12:33:01,324 - INFO - 成功保存时间段 765-781 的可视化结果
+2025-04-16 12:33:01,324 - INFO - 
+正在处理时间段 2/6: 1589-1617
+2025-04-16 12:33:01,324 - INFO - 该时间段的真实异常节点: {17, 2, 4}
+2025-04-16 12:33:01,324 - INFO - 正在计算异常分数...
+2025-04-16 12:33:01,346 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,346 - INFO - 正在为时间段 1589-1617 生成可视化
+2025-04-16 12:33:01,346 - INFO - 正在为时间段 1589-1617 生成异常图可视化
+2025-04-16 12:33:01,346 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:01,347 - DEBUG - 边统计: 正常边 270 条, 异常边 36 条
+2025-04-16 12:33:01,347 - INFO - 时间段 1589-1617 的节点检测统计: 真阳性=3, 假阳性=15, 假阴性=0, 正常节点=1
+2025-04-16 12:33:01,437 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-5\seg_1_1589_1617.png
+2025-04-16 12:33:01,514 - INFO - 成功保存时间段 1589-1617 的可视化结果
+2025-04-16 12:33:01,515 - INFO - 
+正在处理时间段 3/6: 2440-2446
+2025-04-16 12:33:01,515 - INFO - 该时间段的真实异常节点: {8, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,515 - INFO - 正在计算异常分数...
+2025-04-16 12:33:01,517 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,517 - INFO - 正在为时间段 2440-2446 生成可视化
+2025-04-16 12:33:01,517 - INFO - 正在为时间段 2440-2446 生成异常图可视化
+2025-04-16 12:33:01,517 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:01,518 - DEBUG - 边统计: 正常边 246 条, 异常边 60 条
+2025-04-16 12:33:01,518 - INFO - 时间段 2440-2446 的节点检测统计: 真阳性=10, 假阳性=8, 假阴性=0, 正常节点=1
+2025-04-16 12:33:01,598 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-5\seg_2_2440_2446.png
+2025-04-16 12:33:01,680 - INFO - 成功保存时间段 2440-2446 的可视化结果
+2025-04-16 12:33:01,680 - INFO - 
+正在处理时间段 4/6: 3356-3363
+2025-04-16 12:33:01,680 - INFO - 该时间段的真实异常节点: {17, 5, 6}
+2025-04-16 12:33:01,680 - INFO - 正在计算异常分数...
+2025-04-16 12:33:01,683 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,683 - INFO - 正在为时间段 3356-3363 生成可视化
+2025-04-16 12:33:01,683 - INFO - 正在为时间段 3356-3363 生成异常图可视化
+2025-04-16 12:33:01,683 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:01,685 - DEBUG - 边统计: 正常边 260 条, 异常边 46 条
+2025-04-16 12:33:01,685 - INFO - 时间段 3356-3363 的节点检测统计: 真阳性=3, 假阳性=15, 假阴性=0, 正常节点=1
+2025-04-16 12:33:01,760 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-5\seg_3_3356_3363.png
+2025-04-16 12:33:01,843 - INFO - 成功保存时间段 3356-3363 的可视化结果
+2025-04-16 12:33:01,843 - INFO - 
+正在处理时间段 5/6: 3416-3423
+2025-04-16 12:33:01,844 - INFO - 该时间段的真实异常节点: {4, 5, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,844 - INFO - 正在计算异常分数...
+2025-04-16 12:33:01,848 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:01,848 - INFO - 正在为时间段 3416-3423 生成可视化
+2025-04-16 12:33:01,848 - INFO - 正在为时间段 3416-3423 生成异常图可视化
+2025-04-16 12:33:01,848 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:01,849 - DEBUG - 边统计: 正常边 294 条, 异常边 12 条
+2025-04-16 12:33:01,849 - INFO - 时间段 3416-3423 的节点检测统计: 真阳性=14, 假阳性=4, 假阴性=0, 正常节点=1
+2025-04-16 12:33:01,931 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-5\seg_4_3416_3423.png
+2025-04-16 12:33:02,010 - INFO - 成功保存时间段 3416-3423 的可视化结果
+2025-04-16 12:33:02,010 - INFO - 
+正在处理时间段 6/6: 3590-3594
+2025-04-16 12:33:02,010 - INFO - 该时间段的真实异常节点: {1, 8, 17, 18, 19}
+2025-04-16 12:33:02,010 - INFO - 正在计算异常分数...
+2025-04-16 12:33:02,011 - INFO - 检测到的异常节点: {1, 2, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:02,011 - INFO - 正在为时间段 3590-3594 生成可视化
+2025-04-16 12:33:02,011 - INFO - 正在为时间段 3590-3594 生成异常图可视化
+2025-04-16 12:33:02,011 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:02,011 - DEBUG - 边统计: 正常边 232 条, 异常边 74 条
+2025-04-16 12:33:02,011 - INFO - 时间段 3590-3594 的节点检测统计: 真阳性=5, 假阳性=13, 假阴性=0, 正常节点=1
+2025-04-16 12:33:02,092 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-5\seg_5_3590_3594.png
+2025-04-16 12:33:02,168 - INFO - 成功保存时间段 3590-3594 的可视化结果
+2025-04-16 12:33:02,168 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-5 中的图像创建GIF
+2025-04-16 12:33:02,328 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-5\omi-5.gif
+2025-04-16 12:33:02,328 - INFO - 
+==================================================
+2025-04-16 12:33:02,328 - INFO - 开始数据集可视化: omi-6
+2025-04-16 12:33:02,328 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.4, 阈值=0.5
+2025-04-16 12:33:02,328 - INFO - ==================================================
+
+2025-04-16 12:33:02,329 - INFO - 正在加载数据集 omi-6 的数据
+2025-04-16 12:33:02,329 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:33:02,329 - INFO - 正在计算边缘统计量...
+2025-04-16 12:33:04,145 - INFO - 已计算 153 条边的统计量
+2025-04-16 12:33:04,145 - INFO - 为每个节点使用相关系数阈值 >= 0.4 的邻居
+2025-04-16 12:33:04,146 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-6
+2025-04-16 12:33:04,146 - INFO - 在数据集中发现 10 个异常时间段
+2025-04-16 12:33:04,146 - INFO - 
+正在处理时间段 1/10: 357-392
+2025-04-16 12:33:04,146 - INFO - 该时间段的真实异常节点: {19, 4}
+2025-04-16 12:33:04,146 - INFO - 正在计算异常分数...
+2025-04-16 12:33:04,170 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:04,170 - INFO - 正在为时间段 357-392 生成可视化
+2025-04-16 12:33:04,170 - INFO - 正在为时间段 357-392 生成异常图可视化
+2025-04-16 12:33:04,171 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:04,171 - DEBUG - 边统计: 正常边 254 条, 异常边 18 条
+2025-04-16 12:33:04,171 - INFO - 时间段 357-392 的节点检测统计: 真阳性=2, 假阳性=15, 假阴性=0, 正常节点=2
+2025-04-16 12:33:04,254 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_0_357_392.png
+2025-04-16 12:33:04,344 - INFO - 成功保存时间段 357-392 的可视化结果
+2025-04-16 12:33:04,344 - INFO - 
+正在处理时间段 2/10: 750-788
+2025-04-16 12:33:04,346 - INFO - 该时间段的真实异常节点: {2, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:04,346 - INFO - 正在计算异常分数...
+2025-04-16 12:33:04,373 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:04,373 - INFO - 正在为时间段 750-788 生成可视化
+2025-04-16 12:33:04,373 - INFO - 正在为时间段 750-788 生成异常图可视化
+2025-04-16 12:33:04,373 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:04,374 - DEBUG - 边统计: 正常边 184 条, 异常边 88 条
+2025-04-16 12:33:04,374 - INFO - 时间段 750-788 的节点检测统计: 真阳性=14, 假阳性=3, 假阴性=1, 正常节点=1
+2025-04-16 12:33:04,452 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_1_750_788.png
+2025-04-16 12:33:04,537 - INFO - 成功保存时间段 750-788 的可视化结果
+2025-04-16 12:33:04,537 - INFO - 
+正在处理时间段 3/10: 1278-1293
+2025-04-16 12:33:04,538 - INFO - 该时间段的真实异常节点: {4, 5, 6, 8, 17}
+2025-04-16 12:33:04,538 - INFO - 正在计算异常分数...
+2025-04-16 12:33:04,547 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:04,547 - INFO - 正在为时间段 1278-1293 生成可视化
+2025-04-16 12:33:04,547 - INFO - 正在为时间段 1278-1293 生成异常图可视化
+2025-04-16 12:33:04,547 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:04,548 - DEBUG - 边统计: 正常边 270 条, 异常边 2 条
+2025-04-16 12:33:04,548 - INFO - 时间段 1278-1293 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=0, 正常节点=2
+2025-04-16 12:33:04,636 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_2_1278_1293.png
+2025-04-16 12:33:04,709 - INFO - 成功保存时间段 1278-1293 的可视化结果
+2025-04-16 12:33:04,709 - INFO - 
+正在处理时间段 4/10: 1590-1615
+2025-04-16 12:33:04,709 - INFO - 该时间段的真实异常节点: {1, 18, 9}
+2025-04-16 12:33:04,710 - INFO - 正在计算异常分数...
+2025-04-16 12:33:04,727 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:04,727 - INFO - 正在为时间段 1590-1615 生成可视化
+2025-04-16 12:33:04,727 - INFO - 正在为时间段 1590-1615 生成异常图可视化
+2025-04-16 12:33:04,727 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:04,728 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 12:33:04,728 - INFO - 时间段 1590-1615 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 12:33:04,809 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_3_1590_1615.png
+2025-04-16 12:33:04,884 - INFO - 成功保存时间段 1590-1615 的可视化结果
+2025-04-16 12:33:04,884 - INFO - 
+正在处理时间段 5/10: 2592-2604
+2025-04-16 12:33:04,884 - INFO - 该时间段的真实异常节点: {9, 4, 6}
+2025-04-16 12:33:04,884 - INFO - 正在计算异常分数...
+2025-04-16 12:33:04,892 - INFO - 检测到的异常节点: {4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:04,892 - INFO - 正在为时间段 2592-2604 生成可视化
+2025-04-16 12:33:04,892 - INFO - 正在为时间段 2592-2604 生成异常图可视化
+2025-04-16 12:33:04,892 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:04,893 - DEBUG - 边统计: 正常边 236 条, 异常边 4 条
+2025-04-16 12:33:04,893 - INFO - 时间段 2592-2604 的节点检测统计: 真阳性=3, 假阳性=13, 假阴性=0, 正常节点=3
+2025-04-16 12:33:05,026 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_4_2592_2604.png
+2025-04-16 12:33:05,105 - INFO - 成功保存时间段 2592-2604 的可视化结果
+2025-04-16 12:33:05,105 - INFO - 
+正在处理时间段 6/10: 2734-2765
+2025-04-16 12:33:05,106 - INFO - 该时间段的真实异常节点: {8, 19, 4, 6}
+2025-04-16 12:33:05,106 - INFO - 正在计算异常分数...
+2025-04-16 12:33:05,133 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:05,133 - INFO - 正在为时间段 2734-2765 生成可视化
+2025-04-16 12:33:05,133 - INFO - 正在为时间段 2734-2765 生成异常图可视化
+2025-04-16 12:33:05,133 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:05,134 - DEBUG - 边统计: 正常边 270 条, 异常边 2 条
+2025-04-16 12:33:05,134 - INFO - 时间段 2734-2765 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 12:33:05,214 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_5_2734_2765.png
+2025-04-16 12:33:05,287 - INFO - 成功保存时间段 2734-2765 的可视化结果
+2025-04-16 12:33:05,287 - INFO - 
+正在处理时间段 7/10: 3066-3072
+2025-04-16 12:33:05,287 - INFO - 该时间段的真实异常节点: {19, 4, 6}
+2025-04-16 12:33:05,287 - INFO - 正在计算异常分数...
+2025-04-16 12:33:05,290 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:05,290 - INFO - 正在为时间段 3066-3072 生成可视化
+2025-04-16 12:33:05,290 - INFO - 正在为时间段 3066-3072 生成异常图可视化
+2025-04-16 12:33:05,290 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:05,291 - DEBUG - 边统计: 正常边 230 条, 异常边 42 条
+2025-04-16 12:33:05,291 - INFO - 时间段 3066-3072 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 12:33:05,374 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_6_3066_3072.png
+2025-04-16 12:33:05,453 - INFO - 成功保存时间段 3066-3072 的可视化结果
+2025-04-16 12:33:05,453 - INFO - 
+正在处理时间段 8/10: 3596-3605
+2025-04-16 12:33:05,453 - INFO - 该时间段的真实异常节点: {19, 4, 5, 6}
+2025-04-16 12:33:05,453 - INFO - 正在计算异常分数...
+2025-04-16 12:33:05,459 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:05,459 - INFO - 正在为时间段 3596-3605 生成可视化
+2025-04-16 12:33:05,459 - INFO - 正在为时间段 3596-3605 生成异常图可视化
+2025-04-16 12:33:05,459 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:05,459 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 12:33:05,459 - INFO - 时间段 3596-3605 的节点检测统计: 真阳性=4, 假阳性=13, 假阴性=0, 正常节点=2
+2025-04-16 12:33:05,544 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_7_3596_3605.png
+2025-04-16 12:33:05,624 - INFO - 成功保存时间段 3596-3605 的可视化结果
+2025-04-16 12:33:05,624 - INFO - 
+正在处理时间段 9/10: 3610-3622
+2025-04-16 12:33:05,625 - INFO - 该时间段的真实异常节点: {1, 4, 5}
+2025-04-16 12:33:05,625 - INFO - 正在计算异常分数...
+2025-04-16 12:33:05,633 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:05,633 - INFO - 正在为时间段 3610-3622 生成可视化
+2025-04-16 12:33:05,633 - INFO - 正在为时间段 3610-3622 生成异常图可视化
+2025-04-16 12:33:05,633 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:05,634 - DEBUG - 边统计: 正常边 272 条, 异常边 0 条
+2025-04-16 12:33:05,634 - INFO - 时间段 3610-3622 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 12:33:05,721 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_8_3610_3622.png
+2025-04-16 12:33:05,815 - INFO - 成功保存时间段 3610-3622 的可视化结果
+2025-04-16 12:33:05,815 - INFO - 
+正在处理时间段 10/10: 4159-4164
+2025-04-16 12:33:05,816 - INFO - 该时间段的真实异常节点: {4, 5}
+2025-04-16 12:33:05,816 - INFO - 正在计算异常分数...
+2025-04-16 12:33:05,818 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:05,818 - INFO - 正在为时间段 4159-4164 生成可视化
+2025-04-16 12:33:05,818 - INFO - 正在为时间段 4159-4164 生成异常图可视化
+2025-04-16 12:33:05,818 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:05,818 - DEBUG - 边统计: 正常边 248 条, 异常边 24 条
+2025-04-16 12:33:05,819 - INFO - 时间段 4159-4164 的节点检测统计: 真阳性=2, 假阳性=15, 假阴性=0, 正常节点=2
+2025-04-16 12:33:05,895 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\seg_9_4159_4164.png
+2025-04-16 12:33:05,976 - INFO - 成功保存时间段 4159-4164 的可视化结果
+2025-04-16 12:33:05,976 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-6 中的图像创建GIF
+2025-04-16 12:33:06,252 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-6\omi-6.gif
+2025-04-16 12:33:06,252 - INFO - 
+==================================================
+2025-04-16 12:33:06,252 - INFO - 开始数据集可视化: omi-7
+2025-04-16 12:33:06,252 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.5, 阈值=0.5
+2025-04-16 12:33:06,252 - INFO - ==================================================
+
+2025-04-16 12:33:06,252 - INFO - 正在加载数据集 omi-7 的数据
+2025-04-16 12:33:06,253 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:33:06,253 - INFO - 正在计算边缘统计量...
+2025-04-16 12:33:07,958 - INFO - 已计算 136 条边的统计量
+2025-04-16 12:33:07,958 - INFO - 为每个节点使用相关系数阈值 >= 0.5 的邻居
+2025-04-16 12:33:07,958 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-7
+2025-04-16 12:33:07,959 - INFO - 在数据集中发现 3 个异常时间段
+2025-04-16 12:33:07,959 - INFO - 
+正在处理时间段 1/3: 738-778
+2025-04-16 12:33:07,959 - INFO - 该时间段的真实异常节点: {1, 2, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:07,959 - INFO - 正在计算异常分数...
+2025-04-16 12:33:07,972 - INFO - 检测到的异常节点: {4, 6, 7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:07,972 - INFO - 正在为时间段 738-778 生成可视化
+2025-04-16 12:33:07,972 - INFO - 正在为时间段 738-778 生成异常图可视化
+2025-04-16 12:33:07,972 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:07,972 - DEBUG - 边统计: 正常边 58 条, 异常边 56 条
+2025-04-16 12:33:07,972 - INFO - 时间段 738-778 的节点检测统计: 真阳性=14, 假阳性=0, 假阴性=3, 正常节点=2
+2025-04-16 12:33:08,060 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-7\seg_0_738_778.png
+2025-04-16 12:33:08,139 - INFO - 成功保存时间段 738-778 的可视化结果
+2025-04-16 12:33:08,140 - INFO - 
+正在处理时间段 2/3: 1625-1660
+2025-04-16 12:33:08,140 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:08,140 - INFO - 正在计算异常分数...
+2025-04-16 12:33:08,152 - INFO - 检测到的异常节点: {7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:08,152 - INFO - 正在为时间段 1625-1660 生成可视化
+2025-04-16 12:33:08,152 - INFO - 正在为时间段 1625-1660 生成异常图可视化
+2025-04-16 12:33:08,152 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:08,152 - DEBUG - 边统计: 正常边 82 条, 异常边 30 条
+2025-04-16 12:33:08,152 - INFO - 时间段 1625-1660 的节点检测统计: 真阳性=11, 假阳性=1, 假阴性=0, 正常节点=7
+2025-04-16 12:33:08,232 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-7\seg_1_1625_1660.png
+2025-04-16 12:33:08,307 - INFO - 成功保存时间段 1625-1660 的可视化结果
+2025-04-16 12:33:08,307 - INFO - 
+正在处理时间段 3/3: 3311-3320
+2025-04-16 12:33:08,308 - INFO - 该时间段的真实异常节点: {7, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:08,308 - INFO - 正在计算异常分数...
+2025-04-16 12:33:08,310 - INFO - 检测到的异常节点: {7, 8, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:08,310 - INFO - 正在为时间段 3311-3320 生成可视化
+2025-04-16 12:33:08,310 - INFO - 正在为时间段 3311-3320 生成异常图可视化
+2025-04-16 12:33:08,310 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:08,311 - DEBUG - 边统计: 正常边 90 条, 异常边 22 条
+2025-04-16 12:33:08,311 - INFO - 时间段 3311-3320 的节点检测统计: 真阳性=11, 假阳性=1, 假阴性=0, 正常节点=7
+2025-04-16 12:33:08,390 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-7\seg_2_3311_3320.png
+2025-04-16 12:33:08,468 - INFO - 成功保存时间段 3311-3320 的可视化结果
+2025-04-16 12:33:08,468 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-7 中的图像创建GIF
+2025-04-16 12:33:08,542 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-7\omi-7.gif
+2025-04-16 12:33:08,542 - INFO - 
+==================================================
+2025-04-16 12:33:08,542 - INFO - 开始数据集可视化: omi-8
+2025-04-16 12:33:08,542 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.1, 阈值=4.0
+2025-04-16 12:33:08,542 - INFO - ==================================================
+
+2025-04-16 12:33:08,542 - INFO - 正在加载数据集 omi-8 的数据
+2025-04-16 12:33:08,544 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:33:08,544 - INFO - 正在计算边缘统计量...
+2025-04-16 12:33:10,236 - INFO - 已计算 136 条边的统计量
+2025-04-16 12:33:10,236 - INFO - 为每个节点使用相关系数阈值 >= 0.1 的邻居
+2025-04-16 12:33:10,237 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-8
+2025-04-16 12:33:10,237 - INFO - 在数据集中发现 5 个异常时间段
+2025-04-16 12:33:10,237 - INFO - 
+正在处理时间段 1/5: 740-753
+2025-04-16 12:33:10,238 - INFO - 该时间段的真实异常节点: {2, 4}
+2025-04-16 12:33:10,238 - INFO - 正在计算异常分数...
+2025-04-16 12:33:10,245 - INFO - 检测到的异常节点: {1, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:10,245 - INFO - 正在为时间段 740-753 生成可视化
+2025-04-16 12:33:10,245 - INFO - 正在为时间段 740-753 生成异常图可视化
+2025-04-16 12:33:10,245 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:10,246 - DEBUG - 边统计: 正常边 238 条, 异常边 2 条
+2025-04-16 12:33:10,246 - INFO - 时间段 740-753 的节点检测统计: 真阳性=1, 假阳性=15, 假阴性=1, 正常节点=2
+2025-04-16 12:33:10,332 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-8\seg_0_740_753.png
+2025-04-16 12:33:10,420 - INFO - 成功保存时间段 740-753 的可视化结果
+2025-04-16 12:33:10,420 - INFO - 
+正在处理时间段 2/5: 764-780
+2025-04-16 12:33:10,422 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:10,422 - INFO - 正在计算异常分数...
+2025-04-16 12:33:10,428 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:10,428 - INFO - 正在为时间段 764-780 生成可视化
+2025-04-16 12:33:10,428 - INFO - 正在为时间段 764-780 生成异常图可视化
+2025-04-16 12:33:10,428 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:10,429 - DEBUG - 边统计: 正常边 146 条, 异常边 64 条
+2025-04-16 12:33:10,429 - INFO - 时间段 764-780 的节点检测统计: 真阳性=14, 假阳性=1, 假阴性=0, 正常节点=4
+2025-04-16 12:33:10,510 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-8\seg_1_764_780.png
+2025-04-16 12:33:10,591 - INFO - 成功保存时间段 764-780 的可视化结果
+2025-04-16 12:33:10,591 - INFO - 
+正在处理时间段 3/5: 2319-2325
+2025-04-16 12:33:10,591 - INFO - 该时间段的真实异常节点: {4, 5, 6}
+2025-04-16 12:33:10,591 - INFO - 正在计算异常分数...
+2025-04-16 12:33:10,593 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:10,593 - INFO - 正在为时间段 2319-2325 生成可视化
+2025-04-16 12:33:10,593 - INFO - 正在为时间段 2319-2325 生成异常图可视化
+2025-04-16 12:33:10,593 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:10,594 - DEBUG - 边统计: 正常边 228 条, 异常边 44 条
+2025-04-16 12:33:10,594 - INFO - 时间段 2319-2325 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=0, 正常节点=2
+2025-04-16 12:33:10,674 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-8\seg_2_2319_2325.png
+2025-04-16 12:33:10,756 - INFO - 成功保存时间段 2319-2325 的可视化结果
+2025-04-16 12:33:10,756 - INFO - 
+正在处理时间段 4/5: 2586-2675
+2025-04-16 12:33:10,756 - INFO - 该时间段的真实异常节点: {5, 6, 8, 17, 18, 19}
+2025-04-16 12:33:10,756 - INFO - 正在计算异常分数...
+2025-04-16 12:33:10,823 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:10,823 - INFO - 正在为时间段 2586-2675 生成可视化
+2025-04-16 12:33:10,824 - INFO - 正在为时间段 2586-2675 生成异常图可视化
+2025-04-16 12:33:10,824 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:10,824 - DEBUG - 边统计: 正常边 260 条, 异常边 12 条
+2025-04-16 12:33:10,824 - INFO - 时间段 2586-2675 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=0, 正常节点=2
+2025-04-16 12:33:10,968 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-8\seg_3_2586_2675.png
+2025-04-16 12:33:11,042 - INFO - 成功保存时间段 2586-2675 的可视化结果
+2025-04-16 12:33:11,042 - INFO - 
+正在处理时间段 5/5: 2897-2956
+2025-04-16 12:33:11,043 - INFO - 该时间段的真实异常节点: {2, 6, 8, 17, 18, 19}
+2025-04-16 12:33:11,043 - INFO - 正在计算异常分数...
+2025-04-16 12:33:11,079 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:11,079 - INFO - 正在为时间段 2897-2956 生成可视化
+2025-04-16 12:33:11,079 - INFO - 正在为时间段 2897-2956 生成异常图可视化
+2025-04-16 12:33:11,079 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:11,080 - DEBUG - 边统计: 正常边 230 条, 异常边 42 条
+2025-04-16 12:33:11,080 - INFO - 时间段 2897-2956 的节点检测统计: 真阳性=5, 假阳性=12, 假阴性=1, 正常节点=1
+2025-04-16 12:33:11,164 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-8\seg_4_2897_2956.png
+2025-04-16 12:33:11,243 - INFO - 成功保存时间段 2897-2956 的可视化结果
+2025-04-16 12:33:11,244 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-8 中的图像创建GIF
+2025-04-16 12:33:11,379 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-8\omi-8.gif
+2025-04-16 12:33:11,379 - INFO - 
+==================================================
+2025-04-16 12:33:11,380 - INFO - 开始数据集可视化: omi-9
+2025-04-16 12:33:11,380 - INFO - 使用参数: 评分模式=deviation, corr_threshold=0.1, 阈值=2.0
+2025-04-16 12:33:11,380 - INFO - ==================================================
+
+2025-04-16 12:33:11,380 - INFO - 正在加载数据集 omi-9 的数据
+2025-04-16 12:33:11,381 - INFO - 数据加载成功。训练集形状: (8640, 19), 测试集形状: (4320, 19)
+2025-04-16 12:33:11,381 - INFO - 正在计算边缘统计量...
+2025-04-16 12:33:13,000 - INFO - 已计算 136 条边的统计量
+2025-04-16 12:33:13,000 - INFO - 为每个节点使用相关系数阈值 >= 0.1 的邻居
+2025-04-16 12:33:13,001 - INFO - 可视化结果将保存到: ./visual/omi/neighbor_corr_threshold\deviation\omi-9
+2025-04-16 12:33:13,001 - INFO - 在数据集中发现 8 个异常时间段
+2025-04-16 12:33:13,001 - INFO - 
+正在处理时间段 1/8: 738-756
+2025-04-16 12:33:13,001 - INFO - 该时间段的真实异常节点: {2, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,001 - INFO - 正在计算异常分数...
+2025-04-16 12:33:13,009 - INFO - 检测到的异常节点: {1, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,009 - INFO - 正在为时间段 738-756 生成可视化
+2025-04-16 12:33:13,010 - INFO - 正在为时间段 738-756 生成异常图可视化
+2025-04-16 12:33:13,010 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:13,010 - DEBUG - 边统计: 正常边 158 条, 异常边 24 条
+2025-04-16 12:33:13,010 - INFO - 时间段 738-756 的节点检测统计: 真阳性=11, 假阳性=3, 假阴性=1, 正常节点=4
+2025-04-16 12:33:13,095 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_0_738_756.png
+2025-04-16 12:33:13,188 - INFO - 成功保存时间段 738-756 的可视化结果
+2025-04-16 12:33:13,188 - INFO - 
+正在处理时间段 2/8: 763-780
+2025-04-16 12:33:13,188 - INFO - 该时间段的真实异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,188 - INFO - 正在计算异常分数...
+2025-04-16 12:33:13,195 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,195 - INFO - 正在为时间段 763-780 生成可视化
+2025-04-16 12:33:13,195 - INFO - 正在为时间段 763-780 生成异常图可视化
+2025-04-16 12:33:13,195 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:13,196 - DEBUG - 边统计: 正常边 118 条, 异常边 92 条
+2025-04-16 12:33:13,196 - INFO - 时间段 763-780 的节点检测统计: 真阳性=15, 假阳性=0, 假阴性=0, 正常节点=4
+2025-04-16 12:33:13,278 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_1_763_780.png
+2025-04-16 12:33:13,355 - INFO - 成功保存时间段 763-780 的可视化结果
+2025-04-16 12:33:13,355 - INFO - 
+正在处理时间段 3/8: 2514-2524
+2025-04-16 12:33:13,355 - INFO - 该时间段的真实异常节点: {1, 4, 5, 7, 8, 9, 17, 18}
+2025-04-16 12:33:13,355 - INFO - 正在计算异常分数...
+2025-04-16 12:33:13,360 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,360 - INFO - 正在为时间段 2514-2524 生成可视化
+2025-04-16 12:33:13,360 - INFO - 正在为时间段 2514-2524 生成异常图可视化
+2025-04-16 12:33:13,361 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:13,362 - DEBUG - 边统计: 正常边 210 条, 异常边 62 条
+2025-04-16 12:33:13,362 - INFO - 时间段 2514-2524 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=0, 正常节点=2
+2025-04-16 12:33:13,440 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_2_2514_2524.png
+2025-04-16 12:33:13,517 - INFO - 成功保存时间段 2514-2524 的可视化结果
+2025-04-16 12:33:13,517 - INFO - 
+正在处理时间段 4/8: 2603-2668
+2025-04-16 12:33:13,517 - INFO - 该时间段的真实异常节点: {1, 2, 5, 6, 8, 17, 18, 19}
+2025-04-16 12:33:13,517 - INFO - 正在计算异常分数...
+2025-04-16 12:33:13,561 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,561 - INFO - 正在为时间段 2603-2668 生成可视化
+2025-04-16 12:33:13,561 - INFO - 正在为时间段 2603-2668 生成异常图可视化
+2025-04-16 12:33:13,562 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:13,562 - DEBUG - 边统计: 正常边 212 条, 异常边 60 条
+2025-04-16 12:33:13,562 - INFO - 时间段 2603-2668 的节点检测统计: 真阳性=7, 假阳性=10, 假阴性=1, 正常节点=1
+2025-04-16 12:33:13,647 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_3_2603_2668.png
+2025-04-16 12:33:13,731 - INFO - 成功保存时间段 2603-2668 的可视化结果
+2025-04-16 12:33:13,732 - INFO - 
+正在处理时间段 5/8: 2918-2958
+2025-04-16 12:33:13,732 - INFO - 该时间段的真实异常节点: {1, 2, 5, 6, 8, 17, 18, 19}
+2025-04-16 12:33:13,732 - INFO - 正在计算异常分数...
+2025-04-16 12:33:13,755 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,755 - INFO - 正在为时间段 2918-2958 生成可视化
+2025-04-16 12:33:13,755 - INFO - 正在为时间段 2918-2958 生成异常图可视化
+2025-04-16 12:33:13,755 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:13,756 - DEBUG - 边统计: 正常边 200 条, 异常边 72 条
+2025-04-16 12:33:13,756 - INFO - 时间段 2918-2958 的节点检测统计: 真阳性=7, 假阳性=10, 假阴性=1, 正常节点=1
+2025-04-16 12:33:13,835 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_4_2918_2958.png
+2025-04-16 12:33:13,912 - INFO - 成功保存时间段 2918-2958 的可视化结果
+2025-04-16 12:33:13,912 - INFO - 
+正在处理时间段 6/8: 3170-3245
+2025-04-16 12:33:13,912 - INFO - 该时间段的真实异常节点: {1, 2, 6, 8, 17, 18, 19}
+2025-04-16 12:33:13,912 - INFO - 正在计算异常分数...
+2025-04-16 12:33:13,956 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:13,957 - INFO - 正在为时间段 3170-3245 生成可视化
+2025-04-16 12:33:13,957 - INFO - 正在为时间段 3170-3245 生成异常图可视化
+2025-04-16 12:33:13,957 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:13,957 - DEBUG - 边统计: 正常边 226 条, 异常边 46 条
+2025-04-16 12:33:13,957 - INFO - 时间段 3170-3245 的节点检测统计: 真阳性=6, 假阳性=11, 假阴性=1, 正常节点=1
+2025-04-16 12:33:14,037 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_5_3170_3245.png
+2025-04-16 12:33:14,121 - INFO - 成功保存时间段 3170-3245 的可视化结果
+2025-04-16 12:33:14,121 - INFO - 
+正在处理时间段 7/8: 3508-3528
+2025-04-16 12:33:14,121 - INFO - 该时间段的真实异常节点: {8, 2, 19, 6}
+2025-04-16 12:33:14,121 - INFO - 正在计算异常分数...
+2025-04-16 12:33:14,133 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:14,133 - INFO - 正在为时间段 3508-3528 生成可视化
+2025-04-16 12:33:14,133 - INFO - 正在为时间段 3508-3528 生成异常图可视化
+2025-04-16 12:33:14,133 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:14,134 - DEBUG - 边统计: 正常边 208 条, 异常边 64 条
+2025-04-16 12:33:14,134 - INFO - 时间段 3508-3528 的节点检测统计: 真阳性=3, 假阳性=14, 假阴性=1, 正常节点=1
+2025-04-16 12:33:14,213 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_6_3508_3528.png
+2025-04-16 12:33:14,297 - INFO - 成功保存时间段 3508-3528 的可视化结果
+2025-04-16 12:33:14,297 - INFO - 
+正在处理时间段 8/8: 4064-4108
+2025-04-16 12:33:14,297 - INFO - 该时间段的真实异常节点: {1, 2, 6, 7, 8, 9, 17, 18, 19}
+2025-04-16 12:33:14,297 - INFO - 正在计算异常分数...
+2025-04-16 12:33:14,323 - INFO - 检测到的异常节点: {1, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19}
+2025-04-16 12:33:14,323 - INFO - 正在为时间段 4064-4108 生成可视化
+2025-04-16 12:33:14,323 - INFO - 正在为时间段 4064-4108 生成异常图可视化
+2025-04-16 12:33:14,323 - DEBUG - 创建包含 19 个节点的图结构
+2025-04-16 12:33:14,323 - DEBUG - 边统计: 正常边 190 条, 异常边 82 条
+2025-04-16 12:33:14,323 - INFO - 时间段 4064-4108 的节点检测统计: 真阳性=8, 假阳性=9, 假阴性=1, 正常节点=1
+2025-04-16 12:33:14,417 - DEBUG - 正在保存可视化结果到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\seg_7_4064_4108.png
+2025-04-16 12:33:14,498 - INFO - 成功保存时间段 4064-4108 的可视化结果
+2025-04-16 12:33:14,498 - INFO - 正在从 ./visual/omi/neighbor_corr_threshold\deviation\omi-9 中的图像创建GIF
+2025-04-16 12:33:14,721 - INFO - GIF已保存到 ./visual/omi/neighbor_corr_threshold\deviation\omi-9\omi-9.gif
+2025-04-16 12:33:14,721 - INFO - 可视化结果生成完成！
+2025-04-16 12:33:14,721 - INFO - 
+==================================================
+2025-04-16 12:33:14,721 - INFO - 程序运行总耗时: 0:11:09.973121
