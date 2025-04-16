@@ -1,0 +1,94 @@
+
+
+===== Best Results per Dataset =====
+   dataset score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score  logged_neighbor_param
+ omi-1.txt  deviation             0.5              4.0     corr_threshold   0.882979 0.932584  0.907104                    0.5
+omi-10.txt  deviation             0.6              2.5     corr_threshold   0.522727 0.754098  0.617450                    0.6
+omi-11.txt  deviation             0.3              3.0     corr_threshold   0.343373 0.982759  0.508929                    0.3
+omi-12.txt  deviation             0.0              2.0     corr_threshold   0.612903 0.950000  0.745098                    0.0
+ omi-2.txt  deviation             0.4              7.0     corr_threshold   0.455882 1.000000  0.626263                    0.4
+ omi-3.txt  deviation             0.5              2.5     corr_threshold   0.900000 0.807692  0.851351                    0.5
+ omi-4.txt  deviation             0.5              2.5     corr_threshold   0.928571 0.970149  0.948905                    0.5
+ omi-5.txt  deviation             0.0              6.5     corr_threshold   0.453704 1.000000  0.624204                    0.0
+ omi-6.txt  deviation             0.0              4.0     corr_threshold   0.254438 0.977273  0.403756                    0.0
+ omi-7.txt  deviation             0.6              1.5     corr_threshold   1.000000 0.897436  0.945946                    0.6
+ omi-8.txt  deviation             0.3              5.0     corr_threshold   0.353659 0.935484  0.513274                    0.3
+ omi-9.txt  deviation             0.4              5.0     corr_threshold   0.496183 0.915493  0.643564                    0.4
+2025-04-16 15:53:03,482 - INFO - 
+===== Overall Metrics =====
+Precision: 0.5013  Recall: 0.9210  F1: 0.6492
+
+
+===== Best Results per Dataset =====
+   dataset score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score  logged_neighbor_param
+ omi-1.txt mean_ratio             0.5              0.0     corr_threshold   0.882979 0.932584  0.907104                    0.5
+omi-10.txt mean_ratio             0.6              6.0     corr_threshold   0.605263 0.754098  0.671533                    0.6
+omi-11.txt mean_ratio             0.4              6.0     corr_threshold   0.343373 0.982759  0.508929                    0.4
+omi-12.txt mean_ratio             0.4              5.0     corr_threshold   0.666667 0.950000  0.783505                    0.4
+ omi-2.txt mean_ratio             0.5              3.5     corr_threshold   0.581395 0.806452  0.675676                    0.5
+ omi-3.txt mean_ratio             0.5              1.5     corr_threshold   0.913043 0.807692  0.857143                    0.5
+ omi-4.txt mean_ratio             0.5              3.5     corr_threshold   0.942029 0.970149  0.955882                    0.5
+ omi-5.txt mean_ratio             0.2              0.0     corr_threshold   0.475728 1.000000  0.644737                    0.2
+ omi-6.txt mean_ratio             0.4              5.0     corr_threshold   0.260606 0.977273  0.411483                    0.4
+ omi-7.txt mean_ratio             0.1              0.0     corr_threshold   0.904762 0.974359  0.938272                    0.1
+ omi-8.txt mean_ratio             0.6              3.5     corr_threshold   0.434783 0.645161  0.519481                    0.6
+ omi-9.txt mean_ratio             0.0              0.5     corr_threshold   0.496183 0.915493  0.643564                    0.0
+2025-04-16 16:01:34,705 - INFO - 
+===== Overall Metrics =====
+Precision: 0.5348  Recall: 0.8778  F1: 0.6646
+
+
+===== Best Results per Dataset =====
+   dataset  score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score  logged_neighbor_param
+ omi-1.txt range_ratio             0.5              0.0     corr_threshold   0.882979 0.932584  0.907104                    0.5
+omi-10.txt range_ratio             0.6              6.5     corr_threshold   0.605263 0.754098  0.671533                    0.6
+omi-11.txt range_ratio             0.2              7.0     corr_threshold   0.349693 0.982759  0.515837                    0.2
+omi-12.txt range_ratio             0.4              6.5     corr_threshold   0.672727 0.925000  0.778947                    0.4
+ omi-2.txt range_ratio             0.4              7.0     corr_threshold   0.789474 0.967742  0.869565                    0.4
+ omi-3.txt range_ratio             0.5              2.0     corr_threshold   0.913043 0.807692  0.857143                    0.5
+ omi-4.txt range_ratio             0.5              1.5     corr_threshold   0.942029 0.970149  0.955882                    0.5
+ omi-5.txt range_ratio             0.4              0.0     corr_threshold   0.475728 1.000000  0.644737                    0.4
+ omi-6.txt range_ratio             0.4              2.0     corr_threshold   0.270440 0.977273  0.423645                    0.4
+ omi-7.txt range_ratio             0.0              7.0     corr_threshold   0.904762 0.974359  0.938272                    0.0
+ omi-8.txt range_ratio             0.5              7.0     corr_threshold   0.409091 0.870968  0.556701                    0.5
+ omi-9.txt range_ratio             0.4              0.5     corr_threshold   0.496183 0.915493  0.643564                    0.4
+2025-04-16 16:10:07,587 - INFO - 
+===== Overall Metrics =====
+Precision: 0.5472  Recall: 0.9167  F1: 0.6853
+
+
+===== Best Results per Dataset =====
+   dataset    score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score  logged_neighbor_param
+ omi-1.txt robust_zscore             0.5              3.0     corr_threshold   0.892473 0.932584  0.912088                    0.5
+omi-10.txt robust_zscore             0.2              6.0     corr_threshold   0.483871 0.983607  0.648649                    0.2
+omi-11.txt robust_zscore             0.1              0.0     corr_threshold   0.343373 0.982759  0.508929                    0.1
+omi-12.txt robust_zscore             0.4              3.0     corr_threshold   0.612903 0.950000  0.745098                    0.4
+ omi-2.txt robust_zscore             0.5              5.0     corr_threshold   0.575000 0.741935  0.647887                    0.5
+ omi-3.txt robust_zscore             0.5              4.0     corr_threshold   0.913043 0.807692  0.857143                    0.5
+ omi-4.txt robust_zscore             0.5              4.5     corr_threshold   0.942029 0.970149  0.955882                    0.5
+ omi-5.txt robust_zscore             0.2              0.0     corr_threshold   0.475728 1.000000  0.644737                    0.2
+ omi-6.txt robust_zscore             0.1              7.0     corr_threshold   0.263804 0.977273  0.415459                    0.1
+ omi-7.txt robust_zscore             0.2              0.5     corr_threshold   0.904762 0.974359  0.938272                    0.2
+ omi-8.txt robust_zscore             0.1              5.5     corr_threshold   0.358025 0.935484  0.517857                    0.1
+ omi-9.txt robust_zscore             0.1              0.0     corr_threshold   0.496183 0.915493  0.643564                    0.1
+2025-04-16 13:16:36,051 - INFO - 
+===== Overall Metrics =====
+Precision: 0.5119  Recall: 0.9238  F1: 0.6588
+
+===== Best Results per Dataset =====
+   dataset        score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score  logged_neighbor_param
+ omi-1.txt value_times_range             0.5              0.0     corr_threshold   0.882979 0.932584  0.907104                    0.5
+omi-10.txt value_times_range             0.6              7.0     corr_threshold   0.605263 0.754098  0.671533                    0.6
+omi-11.txt value_times_range             0.3              3.0     corr_threshold   0.343373 0.982759  0.508929                    0.3
+omi-12.txt value_times_range             0.4              7.0     corr_threshold   0.698113 0.925000  0.795699                    0.4
+ omi-2.txt value_times_range             0.5              5.0     corr_threshold   0.696970 0.741935  0.718750                    0.5
+ omi-3.txt value_times_range             0.5              2.5     corr_threshold   0.913043 0.807692  0.857143                    0.5
+ omi-4.txt value_times_range             0.5              3.0     corr_threshold   0.942029 0.970149  0.955882                    0.5
+ omi-5.txt value_times_range             0.1              0.0     corr_threshold   0.475728 1.000000  0.644737                    0.1
+ omi-6.txt value_times_range             0.4              5.5     corr_threshold   0.267081 0.977273  0.419512                    0.4
+ omi-7.txt value_times_range             0.0              7.0     corr_threshold   0.904762 0.974359  0.938272                    0.0
+ omi-8.txt value_times_range             0.6              5.0     corr_threshold   0.486486 0.580645  0.529412                    0.6
+ omi-9.txt value_times_range             0.2              5.5     corr_threshold   0.496183 0.915493  0.643564                    0.2
+2025-04-16 16:17:43,269 - INFO - 
+===== Overall Metrics =====
+Precision: 0.5520  Recall: 0.8584  F1: 0.6719

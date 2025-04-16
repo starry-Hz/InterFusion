@@ -2,26 +2,6 @@ Pearson Correlation 未取绝对值
 
 use_topk = True
 
-log\use_topkTrue\omi\deviation\deviation_2025-04-15.log
-===== Best Results per Dataset =====
-   dataset score_mode  top_k  score_threshold  use_topk  precision   recall  f1_score
- omi-1.txt  deviation      6              1.0      True   0.741667 1.000000  0.851675
-omi-10.txt  deviation      1              5.5      True   0.504274 0.967213  0.662921
-omi-11.txt  deviation      1              6.0      True   0.361290 0.965517  0.525822
-omi-12.txt  deviation      1              6.0      True   0.698113 0.925000  0.795699
- omi-2.txt  deviation      3              4.0      True   0.455882 1.000000  0.626263
- omi-3.txt  deviation      4              5.5      True   0.773810 0.833333  0.802469
- omi-4.txt  deviation      5              2.0      True   0.795181 0.985075  0.880000
- omi-5.txt  deviation      1              1.0      True   0.466667 1.000000  0.636364
- omi-6.txt  deviation      1              6.5      True   0.282895 0.977273  0.438776
- omi-7.txt  deviation      6              7.0      True   0.844444 0.974359  0.904762
- omi-8.txt  deviation      1              6.0      True   0.386667 0.935484  0.547170
- omi-9.txt  deviation      1              7.0      True   0.507812 0.915493  0.653266
-2025-04-15 20:32:57,293 - INFO - 
-===== Overall Metrics =====
-Precision: 0.5068  Recall: 0.9539  F1: 0.6619
-
-
 log\use_topkTrue\omi\mean_ratio\mean_ratio_2025-04-15.log
 ===== Best Results per Dataset =====
    dataset score_mode  top_k  score_threshold  use_topk  precision   recall  f1_score
@@ -118,30 +98,32 @@ omi-12.txt value_times_range      6              6.5      True   0.765957 0.9000
 ===== Overall Metrics =====
 Precision: 0.6033  Recall: 0.9160  F1: 0.7275
 
+log/omi/use_topkTrue/value_times_range/value_times_range_2025-04-16.log
+===== Best Results per Dataset =====
+   dataset        score_mode  top_k  score_threshold  use_topk  precision   recall  f1_score
+ omi-1.txt value_times_range      8              1.5      True   0.756757 0.943820  0.840000
+omi-10.txt value_times_range      8              5.0      True   0.495798 0.967213  0.655556
+omi-11.txt value_times_range      2              4.0      True   0.466667 0.844828  0.601227
+omi-12.txt value_times_range      5              3.0      True   0.772727 0.850000  0.809524
+ omi-2.txt value_times_range      7              6.5      True   0.848485 0.903226  0.875000
+ omi-3.txt value_times_range      9              1.5      True   0.820513 0.820513  0.820513
+ omi-4.txt value_times_range      9              5.5      True   0.851351 0.940299  0.893617
+ omi-5.txt value_times_range      9              1.0      True   0.474227 0.938776  0.630137
+ omi-6.txt value_times_range      1              7.0      True   0.533333 0.545455  0.539326
+ omi-7.txt value_times_range      6              1.0      True   0.904762 0.974359  0.938272
+ omi-8.txt value_times_range      5              7.0      True   0.500000 0.870968  0.635294
+ omi-9.txt value_times_range      5              2.5      True   0.512195 0.887324  0.649485
+2025-04-16 17:46:40,256 - INFO - 
+===== Overall Metrics =====
+Precision: 0.6189  Recall: 0.8541  F1: 0.7177
+
 ===== 目前precision最优 =====
 
 ===================================================================================================================================
 
 
 use_topk = False
-log\use_topkFalse\omi\deviation\deviation_2025-04-15.log
-===== Best Results per Dataset =====
-   dataset score_mode top_k  score_threshold  use_topk  precision   recall  f1_score
- omi-1.txt  deviation  None              1.5     False   0.741667 1.000000  0.851675
-omi-10.txt  deviation  None              4.0     False   0.444444 0.983607  0.612245
-omi-11.txt  deviation  None              1.5     False   0.343373 0.982759  0.508929
-omi-12.txt  deviation  None              7.0     False   0.612903 0.950000  0.745098
- omi-2.txt  deviation  None              6.0     False   0.455882 1.000000  0.626263
- omi-3.txt  deviation  None              2.5     False   0.773810 0.833333  0.802469
- omi-4.txt  deviation  None              4.5     False   0.795181 0.985075  0.880000
- omi-5.txt  deviation  None              4.5     False   0.453704 1.000000  0.624204
- omi-6.txt  deviation  None              6.5     False   0.254438 0.977273  0.403756
- omi-7.txt  deviation  None              1.5     False   0.826087 0.974359  0.894118
- omi-8.txt  deviation  None              4.0     False   0.353659 0.935484  0.513274
- omi-9.txt  deviation  None              4.0     False   0.496183 0.915493  0.643564
-2025-04-15 21:27:24,028 - INFO - 
-===== Overall Metrics =====
-Precision: 0.4787  Recall: 0.9585  F1: 0.6385
+
 
 log\use_topkFalse\omi\mean_ratio\mean_ratio_2025-04-15.log
 ===== Best Results per Dataset =====
