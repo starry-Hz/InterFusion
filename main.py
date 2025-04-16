@@ -131,7 +131,8 @@ def calculate_edge_stats(
         if len(vals) == 0:
             continue
             
-        mean_val = np.mean(vals)
+        # mean_val = np.mean(vals)
+        mean_val = np.mean(np.abs(vals))  # 对每个窗口的相关系数先取绝对值
         avg_corr[j, k] = mean_val
         avg_corr[k, j] = mean_val
 
@@ -861,8 +862,8 @@ def main(config=None,logger=None):
 
 if __name__ == "__main__":
     # main()
-    # 测试不同的 use_topk 设置和 score_modes
-    for use_topk in [True, False]:
+    # 测试不同的 use_topk 设置和 score_modes [True, False]
+    for use_topk in [True]:
         for score_mode in [['strict_deviation'],['deviation'], ['mean_ratio'], ['range_ratio'], ['value_times_range'], ['robust_zscore']]:
             print(f"\n{'='*50}")
             print(f"Running with use_topk={use_topk}, score_mode={score_mode}")
