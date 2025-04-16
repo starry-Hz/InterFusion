@@ -21,23 +21,24 @@ warnings.filterwarnings("ignore")
 
 @dataclass
 class ExperimentConfig:
-    dataset: str = 'omi'  # 默认数据集（与文档2一致）
-    window_size: int = 5   # 固定窗口大小（文档2硬编码为5）
-    score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(1.0, 7.1, 0.5))  # 文档2的threshold_list
-    topk_range: range = field(default_factory=lambda: range(1, 10))  # 文档2的topk_list
-    score_modes: List[str] = field(default_factory=lambda: ['value_times_range'])  # 文档2使用分位数偏差逻辑
-    use_topk: bool = True  # 文档2显式使用Top-K邻居
-    data_dir: str = "./data/processed"  # 文档2的data_folder
-    label_dir: str = "./data/interpretation_label"  # 文档2的label_folder
-    log_dir: str = field(init=False)  # 日志目录（动态计算）
-    visual_dir: str = field(init=False)  # 可视化目录（动态计算）
-    num_workers: int = 4  # 默认并行数
-    gif_duration: int = 500  # 默认 GIF 帧间隔（ms）
+    dataset: str = 'omi'
+    window_size: int = 5
+    score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(1.0, 7.1, 0.5))
+    topk_range: range = field(default_factory=lambda: range(1, 10))
+    score_modes: List[str] = field(default_factory=lambda: ['value_times_range'])
+    use_topk: bool = True
+    data_dir: str = "./data/processed"
+    label_dir: str = "./data/interpretation_label"
+    log_dir: str = field(init=False)
+    visual_dir: str = field(init=False)
+    num_workers: int = 4
+    gif_duration: int = 500
+    corr_threshold_range: float = 0.1  # 新增：相关系数阈值范围(如±0.1)
 
     def __post_init__(self):
         """动态计算 log_dir 和 visual_dir"""
-        self.log_dir = f"./log/use_topk{self.use_topk}"
-        self.visual_dir = f"./visual/use_topk{self.use_topk}"
+        self.log_dir = f"./log/{self.dataset}/use_topk{self.use_topk}"  # 更改为dataset在前
+        self.visual_dir = f"./visual/{self.dataset}/use_topk{self.use_topk}"
 # 其他评分模式（可选）：
 # score_modes = ['deviation', 'mean_ratio', 'range_ratio', 'value_times_range', 'robust_zscore']
 
@@ -53,9 +54,9 @@ def load_pickle_data(path: str) -> np.ndarray:
 
 def initialize_logging(config: ExperimentConfig) -> logging.Logger:
     """初始化日志配置"""
-    os.makedirs(f"{config.log_dir}/{config.dataset}/{config.score_modes[0]}", exist_ok=True)
+    os.makedirs(f"{config.log_dir}/{config.score_modes[0]}", exist_ok=True)
     current_date = datetime.datetime.now().strftime('%Y-%m-%d')
-    log_filename = f"{config.log_dir}/{config.dataset}/{config.score_modes[0]}/{config.score_modes[0]}_{current_date}.log"
+    log_filename = f"{config.log_dir}/{config.score_modes[0]}/{config.score_modes[0]}_{current_date}.log"
     
     # 强制重新配置日志系统
     logging.basicConfig(
@@ -74,9 +75,11 @@ def initialize_logging(config: ExperimentConfig) -> logging.Logger:
     logger.info(f"\n Starting experiment with config: {config}")
     return logger
 # ==================== 核心算法 ====================
+
 def calculate_edge_stats(
     train_data: npt.NDArray,
-    window_size: int
+    window_size: int,
+    threshold_range: float = 0.1  # 新增参数：阈值范围
 ) -> Tuple[Dict[Tuple[int, int], Dict[str, Union[float, Tuple[float, float]]]], npt.NDArray]:
     """
     计算边缘统计量和平均相关系数矩阵
@@ -84,6 +87,7 @@ def calculate_edge_stats(
     Args:
         train_data: 训练数据 (n_samples, n_sensors)
         window_size: 滑动窗口大小
+        threshold_range: 相关系数的阈值范围(如±0.1)
         
     Returns:
         edge_stats: 边缘统计信息字典
@@ -98,8 +102,7 @@ def calculate_edge_stats(
         corr = np.corrcoef(window, rowvar=False)
         for j in range(num_sensors):
             for k in range(j + 1, num_sensors):
-                # val = corr[j, k]
-                val = abs(corr[j, k])  # 取绝对值
+                val = corr[j, k]  # 不再取绝对值
                 if not np.isnan(val):
                     edge_corrs[(j, k)].append(val)
 
@@ -111,18 +114,17 @@ def calculate_edge_stats(
             
         median_val = np.median(vals)    # 中位数
         mad = np.median(np.abs(vals - median_val))  # 中位数绝对偏差
-        percentiles = (np.percentile(vals, 5), np.percentile(vals, 95))
         
-        # 确保percentiles是包含两个数值的元组
-        if not (isinstance(percentiles, (tuple, list)) and len(percentiles) == 2):
-            percentiles = (0.0, 0.0)
-            
+        # 修改为使用固定阈值范围
+        low = -threshold_range
+        high = threshold_range
+        
         edge_stats[(j, k)] = {
-            'percentiles': percentiles,
+            'percentiles': (low, high),  # 使用固定阈值范围
             'median': median_val,
             'mad': mad,
             'mean': np.mean(vals),
-            'range': percentiles[1] - percentiles[0]
+            'range': high - low  # 固定范围
         }
     
     # 计算平均相关系数矩阵
@@ -143,7 +145,7 @@ def calculate_abnormal_score(
     edge_stats: Dict[Tuple[int, int], Dict[str, Union[float, Tuple[float, float]]]],
     key: Tuple[int, int],
     score_mode: str,
-    threshold_mode: str = 'percentile'  # 新增参数：阈值模式
+    threshold_mode: str = 'percentile'  # 保留参数但不使用
 ) -> float:
     """
     计算异常分数（仅在超出阈值时返回分数）
@@ -153,12 +155,7 @@ def calculate_abnormal_score(
         edge_stats: 边统计信息字典
         key: 边标识 (i,j)
         score_mode: 分数计算模式 
-            - 'strict_deviation': 仅当超出百分位时返回偏差值
-            - 'deviation': 始终返回偏差值（原逻辑）
-            - 其他模式（mean_ratio/range_ratio等）
-        threshold_mode: 阈值模式
-            - 'percentile': 使用百分位阈值 (low, high)
-            - 'sigma': 使用均值±3标准差 (需要stats中有mean/std)
+        threshold_mode: 保留但不使用
     
     返回:
         异常分数（未超阈值时返回0.0）
@@ -168,17 +165,11 @@ def calculate_abnormal_score(
     
     stats = edge_stats[key]
     
-    # 获取阈值范围
-    if threshold_mode == 'percentile':
-        percentiles = stats.get('percentiles', (0.0, 0.0))
-        if not isinstance(percentiles, (tuple, list)) or len(percentiles) != 2:
-            percentiles = (0.0, 0.0)
-        low, high = percentiles
-    elif threshold_mode == 'sigma' and 'mean' in stats and 'std' in stats:
-        low = stats['mean'] - 3 * stats['std']
-        high = stats['mean'] + 3 * stats['std']
-    else:
-        low, high = 0.0, 0.0  # 默认无阈值限制
+    # 获取阈值范围（现在直接从stats中获取固定范围）
+    percentiles = stats.get('percentiles', (-0.1, 0.1))  # 默认±0.1
+    if not isinstance(percentiles, (tuple, list)) or len(percentiles) != 2:
+        percentiles = (-0.1, 0.1)
+    low, high = percentiles
     
     # 检查是否超出阈值
     is_abnormal = (val < low) or (val > high)
@@ -186,7 +177,7 @@ def calculate_abnormal_score(
     # 如果未超阈值且不是deviation模式，直接返回0
     if not is_abnormal and score_mode != 'deviation':
         return 0.0
-    # print(threshold_mode)
+    
     # 计算分数
     score_modes = {
         'strict_deviation': lambda: max(abs(val - low), abs(val - high)),
@@ -226,7 +217,8 @@ def evaluate_single_dataset(
         (precision, recall, f1_score)
     """
     # 计算边缘统计量和平均相关系数
-    edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
+    # edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
+    edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size, config.corr_threshold_range)
     num_sensors = train_data.shape[1]
 
     # 确定邻居选择方式
@@ -676,7 +668,8 @@ def run_visualization(
 
             # 计算边缘统计量和邻居
             logger.info("正在计算边缘统计量...")
-            edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
+            # edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
+            edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size, config.corr_threshold_range)
             num_sensors = train_data.shape[1]
             logger.info(f"已计算 {len(edge_stats)} 条边的统计量")
 
@@ -694,7 +687,7 @@ def run_visualization(
                 }
 
             # 创建可视化目录
-            visual_dir = os.path.join(config.visual_dir, config.dataset, score_mode, dataset_name)
+            visual_dir = os.path.join(config.visual_dir, score_mode, dataset_name)
             os.makedirs(visual_dir, exist_ok=True)
             logger.info(f"可视化结果将保存到: {visual_dir}")
 
@@ -874,6 +867,8 @@ if __name__ == "__main__":
                 score_modes=score_mode
             )
             logger = initialize_logging(config)
+
             logger.info("pearson correlation 取绝对值")
+
             # 运行主程序
             main(config,logger)

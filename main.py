@@ -21,23 +21,23 @@ warnings.filterwarnings("ignore")
 
 @dataclass
 class ExperimentConfig:
-    dataset: str = 'omi'  # 默认数据集（与文档2一致）
-    window_size: int = 5   # 固定窗口大小（文档2硬编码为5）
-    score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(1.0, 7.1, 0.5))  # 文档2的threshold_list
-    topk_range: range = field(default_factory=lambda: range(1, 10))  # 文档2的topk_list
-    score_modes: List[str] = field(default_factory=lambda: ['value_times_range'])  # 文档2使用分位数偏差逻辑
-    use_topk: bool = True  # 文档2显式使用Top-K邻居
-    data_dir: str = "./data/processed"  # 文档2的data_folder
-    label_dir: str = "./data/interpretation_label"  # 文档2的label_folder
-    log_dir: str = field(init=False)  # 日志目录（动态计算）
-    visual_dir: str = field(init=False)  # 可视化目录（动态计算）
-    num_workers: int = 4  # 默认并行数
-    gif_duration: int = 500  # 默认 GIF 帧间隔（ms）
+    dataset: str = 'omi'
+    window_size: int = 5
+    score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(1.0, 7.1, 0.5))
+    topk_range: range = field(default_factory=lambda: range(1, 10))
+    score_modes: List[str] = field(default_factory=lambda: ['value_times_range'])
+    use_topk: bool = True
+    data_dir: str = "./data/processed"
+    label_dir: str = "./data/interpretation_label"
+    log_dir: str = field(init=False)
+    visual_dir: str = field(init=False)
+    num_workers: int = 4
+    gif_duration: int = 500
 
     def __post_init__(self):
         """动态计算 log_dir 和 visual_dir"""
-        self.log_dir = f"./log/use_topk{self.use_topk}"
-        self.visual_dir = f"./visual/use_topk{self.use_topk}"
+        self.log_dir = f"./log/{self.dataset}/use_topk{self.use_topk}"  # 更改为dataset在前
+        self.visual_dir = f"./visual/{self.dataset}/use_topk{self.use_topk}"
 # 其他评分模式（可选）：
 # score_modes = ['deviation', 'mean_ratio', 'range_ratio', 'value_times_range', 'robust_zscore']
 
@@ -53,9 +53,9 @@ def load_pickle_data(path: str) -> np.ndarray:
 
 def initialize_logging(config: ExperimentConfig) -> logging.Logger:
     """初始化日志配置"""
-    os.makedirs(f"{config.log_dir}/{config.dataset}/{config.score_modes[0]}", exist_ok=True)
+    os.makedirs(f"{config.log_dir}/{config.score_modes[0]}", exist_ok=True)
     current_date = datetime.datetime.now().strftime('%Y-%m-%d')
-    log_filename = f"{config.log_dir}/{config.dataset}/{config.score_modes[0]}/{config.score_modes[0]}_{current_date}.log"
+    log_filename = f"{config.log_dir}/{config.score_modes[0]}/{config.score_modes[0]}_{current_date}.log"
     
     # 强制重新配置日志系统
     logging.basicConfig(
@@ -99,6 +99,7 @@ def calculate_edge_stats(
         for j in range(num_sensors):
             for k in range(j + 1, num_sensors):
                 val = corr[j, k]
+                # val = abs(corr[j, k])  # 取绝对值
                 if not np.isnan(val):
                     edge_corrs[(j, k)].append(val)
 
@@ -693,7 +694,7 @@ def run_visualization(
                 }
 
             # 创建可视化目录
-            visual_dir = os.path.join(config.visual_dir, config.dataset, score_mode, dataset_name)
+            visual_dir = os.path.join(config.visual_dir, score_mode, dataset_name)
             os.makedirs(visual_dir, exist_ok=True)
             logger.info(f"可视化结果将保存到: {visual_dir}")
 
@@ -873,5 +874,8 @@ if __name__ == "__main__":
                 score_modes=score_mode
             )
             logger = initialize_logging(config)
+
+            # logger.info("pearson correlation 取绝对值")
+
             # 运行主程序
             main(config,logger)
