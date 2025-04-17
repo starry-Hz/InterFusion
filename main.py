@@ -16,7 +16,7 @@ from functools import partial
 from tqdm import tqdm
 from PIL import Image
 
-plt.rcParams['font.sans-serif'] = ['Microsoft YaHei']  # 用于显示中文
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 用于显示中文
 warnings.filterwarnings("ignore")
 
 @dataclass
@@ -31,7 +31,7 @@ class ExperimentConfig:
     label_dir: str = "./data/interpretation_label"
     log_dir: str = field(init=False)
     visual_dir: str = field(init=False)
-    num_workers: int = 4
+    num_workers: int = 8
     gif_duration: int = 500
 
     def __post_init__(self):

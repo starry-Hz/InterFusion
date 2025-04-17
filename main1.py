@@ -25,20 +25,25 @@ class ExperimentConfig:
     window_size: int = 5
     score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(1.0, 7.1, 0.5))
     topk_range: range = field(default_factory=lambda: range(1, 10))
+    corr_threshold_range: npt.NDArray = field(default_factory=lambda: np.arange(0.1, 1.0, 0.1))  # 新增的相关系数阈值范围
+    neighbor_selection: str = 'topk'  # 新增: 'topk' 或 'corr_threshold'
     score_modes: List[str] = field(default_factory=lambda: ['value_times_range'])
-    use_topk: bool = True
+    use_topk: bool = True  # 保持向后兼容
     data_dir: str = "./data/processed"
     label_dir: str = "./data/interpretation_label"
     log_dir: str = field(init=False)
     visual_dir: str = field(init=False)
     num_workers: int = 4
     gif_duration: int = 500
-    corr_threshold_range: float = 0.1  # 新增：相关系数阈值范围(如±0.1)
 
     def __post_init__(self):
         """动态计算 log_dir 和 visual_dir"""
-        self.log_dir = f"./log/{self.dataset}/use_topk{self.use_topk}"  # 更改为dataset在前
-        self.visual_dir = f"./visual/{self.dataset}/use_topk{self.use_topk}"
+        # 更新路径以包含邻居选择方式
+        self.log_dir = f"./log/{self.dataset}/neighbor_{self.neighbor_selection}"
+        self.visual_dir = f"./visual/{self.dataset}/neighbor_{self.neighbor_selection}"
+        # 保持向后兼容
+        if hasattr(self, 'use_topk') and not hasattr(self, 'neighbor_selection'):
+            self.neighbor_selection = 'topk' if self.use_topk else 'all'
 # 其他评分模式（可选）：
 # score_modes = ['deviation', 'mean_ratio', 'range_ratio', 'value_times_range', 'robust_zscore']
 
@@ -75,11 +80,9 @@ def initialize_logging(config: ExperimentConfig) -> logging.Logger:
     logger.info(f"\n Starting experiment with config: {config}")
     return logger
 # ==================== 核心算法 ====================
-
 def calculate_edge_stats(
     train_data: npt.NDArray,
-    window_size: int,
-    threshold_range: float = 0.1  # 新增参数：阈值范围
+    window_size: int
 ) -> Tuple[Dict[Tuple[int, int], Dict[str, Union[float, Tuple[float, float]]]], npt.NDArray]:
     """
     计算边缘统计量和平均相关系数矩阵
@@ -87,7 +90,6 @@ def calculate_edge_stats(
     Args:
         train_data: 训练数据 (n_samples, n_sensors)
         window_size: 滑动窗口大小
-        threshold_range: 相关系数的阈值范围(如±0.1)
         
     Returns:
         edge_stats: 边缘统计信息字典
@@ -102,7 +104,8 @@ def calculate_edge_stats(
         corr = np.corrcoef(window, rowvar=False)
         for j in range(num_sensors):
             for k in range(j + 1, num_sensors):
-                val = corr[j, k]  # 不再取绝对值
+                val = corr[j, k]
+                # val = abs(corr[j, k])  # 取绝对值
                 if not np.isnan(val):
                     edge_corrs[(j, k)].append(val)
 
@@ -114,17 +117,18 @@ def calculate_edge_stats(
             
         median_val = np.median(vals)    # 中位数
         mad = np.median(np.abs(vals - median_val))  # 中位数绝对偏差
+        percentiles = (np.percentile(vals, 5), np.percentile(vals, 95))
         
-        # 修改为使用固定阈值范围
-        low = -threshold_range
-        high = threshold_range
-        
+        # 确保percentiles是包含两个数值的元组
+        if not (isinstance(percentiles, (tuple, list)) and len(percentiles) == 2):
+            percentiles = (0.0, 0.0)
+            
         edge_stats[(j, k)] = {
-            'percentiles': (low, high),  # 使用固定阈值范围
+            'percentiles': percentiles,
             'median': median_val,
             'mad': mad,
             'mean': np.mean(vals),
-            'range': high - low  # 固定范围
+            'range': percentiles[1] - percentiles[0]
         }
     
     # 计算平均相关系数矩阵
@@ -146,7 +150,7 @@ def calculate_abnormal_score(
     edge_stats: Dict[Tuple[int, int], Dict[str, Union[float, Tuple[float, float]]]],
     key: Tuple[int, int],
     score_mode: str,
-    threshold_mode: str = 'percentile'  # 保留参数但不使用
+    threshold_mode: str = 'percentile'  # 新增参数：阈值模式
 ) -> float:
     """
     计算异常分数（仅在超出阈值时返回分数）
@@ -156,7 +160,12 @@ def calculate_abnormal_score(
         edge_stats: 边统计信息字典
         key: 边标识 (i,j)
         score_mode: 分数计算模式 
-        threshold_mode: 保留但不使用
+            - 'strict_deviation': 仅当超出百分位时返回偏差值
+            - 'deviation': 始终返回偏差值（原逻辑）
+            - 其他模式（mean_ratio/range_ratio等）
+        threshold_mode: 阈值模式
+            - 'percentile': 使用百分位阈值 (low, high)
+            - 'sigma': 使用均值±3标准差 (需要stats中有mean/std)
     
     返回:
         异常分数（未超阈值时返回0.0）
@@ -166,11 +175,17 @@ def calculate_abnormal_score(
     
     stats = edge_stats[key]
     
-    # 获取阈值范围（现在直接从stats中获取固定范围）
-    percentiles = stats.get('percentiles', (-0.1, 0.1))  # 默认±0.1
-    if not isinstance(percentiles, (tuple, list)) or len(percentiles) != 2:
-        percentiles = (-0.1, 0.1)
-    low, high = percentiles
+    # 获取阈值范围
+    if threshold_mode == 'percentile':
+        percentiles = stats.get('percentiles', (0.0, 0.0))
+        if not isinstance(percentiles, (tuple, list)) or len(percentiles) != 2:
+            percentiles = (0.0, 0.0)
+        low, high = percentiles
+    elif threshold_mode == 'sigma' and 'mean' in stats and 'std' in stats:
+        low = stats['mean'] - 3 * stats['std']
+        high = stats['mean'] + 3 * stats['std']
+    else:
+        low, high = 0.0, 0.0  # 默认无阈值限制
     
     # 检查是否超出阈值
     is_abnormal = (val < low) or (val > high)
@@ -178,7 +193,7 @@ def calculate_abnormal_score(
     # 如果未超阈值且不是deviation模式，直接返回0
     if not is_abnormal and score_mode != 'deviation':
         return 0.0
-    
+    # print(threshold_mode)
     # 计算分数
     score_modes = {
         'strict_deviation': lambda: max(abs(val - low), abs(val - high)),
@@ -199,7 +214,7 @@ def evaluate_single_dataset(
     config: ExperimentConfig,
     score_mode: str,
     threshold: float,
-    top_k: Optional[int] = None
+    neighbor_param: Optional[Union[int, float]] = None  # 可以是top_k或corr_threshold
 ) -> Tuple[float, float, float]:
     """
     评估单个数据集的性能
@@ -212,27 +227,37 @@ def evaluate_single_dataset(
         config: 实验配置
         score_mode: 评分模式
         threshold: 异常分数阈值
-        top_k: 每个节点的top-k邻居数
+        neighbor_param: 邻居选择参数 (top_k或corr_threshold)
         
     Returns:
         (precision, recall, f1_score)
     """
     # 计算边缘统计量和平均相关系数
-    # edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
-    edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size, config.corr_threshold_range)
+    edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
     num_sensors = train_data.shape[1]
 
     # 确定邻居选择方式
-    if config.use_topk:
-        if top_k is None or top_k >= num_sensors:
-            top_k = num_sensors - 1
+    if config.neighbor_selection == 'topk':
+        # TopK邻居选择
+        if neighbor_param is None or neighbor_param >= num_sensors:
+            neighbor_param = num_sensors - 1
         topk_neighbors = {
-            i: set(np.argsort(-avg_corr[i])[:top_k + 1]) - {i}
+            i: set(np.argsort(-avg_corr[i])[:neighbor_param + 1]) - {i}
+            for i in range(num_sensors)
+        }
+    elif config.neighbor_selection == 'corr_threshold':
+        # 相关系数阈值选择
+        if neighbor_param is None:
+            neighbor_param = 0.1  # 默认阈值
+        topk_neighbors = {
+            i: set(j for j in range(num_sensors) 
+                  if j != i and abs(avg_corr[i, j]) >= neighbor_param)
             for i in range(num_sensors)
         }
     else:
+        # 默认选择所有邻居
         topk_neighbors = {
-            i: set(range(num_sensors)) - {i}  # 所有非自身节点
+            i: set(range(num_sensors)) - {i}
             for i in range(num_sensors)
         }
 
@@ -288,7 +313,7 @@ def evaluate_single_dataset(
 
 # ==================== 网格搜索 ====================
 def grid_search_worker(
-    params: Tuple[int, float],
+    params: Tuple[Union[int, float], float],
     train_data: npt.NDArray,
     test_data: npt.NDArray,
     test_labels: npt.NDArray,
@@ -297,17 +322,17 @@ def grid_search_worker(
     score_mode: str
 ) -> Dict[str, Union[str, int, float]]:
     """网格搜索的工作函数"""
-    top_k, threshold = params
+    neighbor_param, threshold = params
     precision, recall, f1 = evaluate_single_dataset(
         train_data, test_data, test_labels, gt_txt_path,
-        config, score_mode, threshold, top_k
+        config, score_mode, threshold, neighbor_param
     )
     
     return {
         'score_mode': score_mode,
-        'top_k': top_k,
+        'neighbor_param': neighbor_param,
         'score_threshold': threshold,
-        'use_topk': config.use_topk,
+        'neighbor_selection': config.neighbor_selection,
         'precision': precision,
         'recall': recall,
         'f1_score': f1
@@ -326,13 +351,18 @@ def grid_search(
     """执行网格搜索"""
     results = []
     
-    if config.use_topk:
+    if config.neighbor_selection == 'topk':
         # 模式1：搜索 top_k 和 threshold
         params = [(top_k, threshold) 
                  for top_k in config.topk_range 
                  for threshold in config.score_thresholds]
+    elif config.neighbor_selection == 'corr_threshold':
+        # 模式2：搜索 corr_threshold 和 threshold
+        params = [(corr_threshold, threshold)
+                 for corr_threshold in config.corr_threshold_range
+                 for threshold in config.score_thresholds]
     else:
-        # 模式2：仅搜索 threshold
+        # 模式3：仅搜索 threshold
         params = [(None, threshold) for threshold in config.score_thresholds]
 
     # 使用多进程加速
@@ -350,8 +380,8 @@ def grid_search(
         for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
             results.append(result)
             logger.info(
-                f"[{dataset_name}] mode={score_mode}, top_k={result['top_k']}, "
-                f"threshold={result['score_threshold']:.1f}, use_topk={config.use_topk}, "
+                f"[{dataset_name}] mode={score_mode}, {config.neighbor_selection}={result['neighbor_param']}, "
+                f"threshold={result['score_threshold']:.1f}, "
                 f"P={result['precision']:.4f}, R={result['recall']:.4f}, F1={result['f1_score']:.4f}"
             )
     
@@ -669,8 +699,7 @@ def run_visualization(
 
             # 计算边缘统计量和邻居
             logger.info("正在计算边缘统计量...")
-            # edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
-            edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size, config.corr_threshold_range)
+            edge_stats, avg_corr = calculate_edge_stats(train_data, config.window_size)
             num_sensors = train_data.shape[1]
             logger.info(f"已计算 {len(edge_stats)} 条边的统计量")
 
@@ -855,21 +884,42 @@ def main(config=None,logger=None):
 
 if __name__ == "__main__":
     # main()
-    # 测试不同的 use_topk 设置和 score_modes
-    for use_topk in [True, False]:
-        for score_mode in [['strict_deviation'],['deviation'], ['mean_ratio'], ['range_ratio'], ['value_times_range'], ['robust_zscore']]:
+    # # 测试不同的 use_topk 设置和 score_modes [True, False]
+    # for use_topk in [True]:
+    #     for score_mode in [['strict_deviation'],['deviation'], ['mean_ratio'], ['range_ratio'], ['value_times_range'], ['robust_zscore']]:
+    #         print(f"\n{'='*50}")
+    #         print(f"Running with use_topk={use_topk}, score_mode={score_mode}")
+    #         print(f"{'='*50}\n")
+            
+    #         # 创建配置实例
+    #         config = ExperimentConfig(
+    #             use_topk=use_topk,
+    #             score_modes=score_mode
+    #         )
+    #         logger = initialize_logging(config)
+
+    #         # logger.info("pearson correlation 取绝对值")
+
+    #         # 运行主程序
+    #         main(config,logger)
+    for neighbor_selection in ['corr_threshold']:
+        for score_mode in ['strict_deviation', 'deviation', 'mean_ratio', 'range_ratio', 'value_times_range', 'robust_zscore']:
             print(f"\n{'='*50}")
-            print(f"Running with use_topk={use_topk}, score_mode={score_mode}")
+            print(f"Running with neighbor_selection={neighbor_selection}, score_mode={score_mode}")
             print(f"{'='*50}\n")
             
             # 创建配置实例
             config = ExperimentConfig(
-                use_topk=use_topk,
-                score_modes=score_mode
+                neighbor_selection=neighbor_selection,
+                score_modes=score_mode,
+                use_topk=False
             )
             logger = initialize_logging(config)
 
-            # logger.info("pearson correlation 取绝对值")
-
             # 运行主程序
-            main(config,logger)
+            main(config, logger)
+
+# 相比于 main.py，主要修改了以下几点：
+    # 1. 新增 neighbor_selection 参数，支持 'topk' 和 'corr_threshold' 两种选择方式。
+    # 即 neighbor_selection='corr_threshold',在构建边的时候，使用相关系数的绝对值来判断邻居。neighbor_selection='topk'，使用 top_k 选择邻居。
+    # 在选择了 corr_threshold = 'topK'之后,也可以继续选择 top_k = true/false 来 选择是否使用 top_k 选择邻居。
