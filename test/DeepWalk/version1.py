@@ -232,11 +232,11 @@ def process_omi_file(txt_file_path, test_data, test_labels):
 
 if __name__ == "__main__":
     # 指定包含 omi- 开头 txt 文件的文件夹(仅处理 omi- 文件)
-    label_folder = r"data\interpretation_label"
+    label_folder = './data/interpretation_label'
     txt_files = [f for f in os.listdir(label_folder)
                  if f.startswith("omi-") and f.endswith(".txt")]
     # print("处理文件列表：", txt_files)
-    txt_files = ['omi-1.txt']
+    txt_files = ['els-1.txt']
     global_expected = 0
     global_true_positive = 0
     global_detected = 0
