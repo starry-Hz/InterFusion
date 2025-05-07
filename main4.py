@@ -197,8 +197,8 @@ def calculate_abnormal_score(
     # print(threshold_mode)
     # 计算分数
     score_modes = {
-        'strict_deviation': lambda: max(abs(val - low), abs(val - high)),
-        'deviation': lambda: max(abs(val - low), abs(val - high)),
+        'strict_deviation': lambda: min(abs(val - low), abs(val - high)),
+        'deviation': lambda: min(abs(val - low), abs(val - high)),
         'mean_ratio': lambda: abs(val / stats['mean']) if stats['mean'] != 0 else 0.0,
         'range_ratio': lambda: abs(val / stats['range']) if stats['range'] != 0 else 0.0,
         'value_times_range': lambda: abs(val * stats['range']),
