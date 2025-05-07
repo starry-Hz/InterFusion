@@ -1,0 +1,1590 @@
+2025-04-17 17:41:04,872 - INFO - 
+ Starting experiment with config: ExperimentConfig(dataset='els', window_size=5, score_thresholds=array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1. , 1.1, 1.2,
+       1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2. , 2.1, 2.2, 2.3, 2.4, 2.5,
+       2.6, 2.7, 2.8, 2.9, 3. , 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8,
+       3.9, 4. , 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5. , 5.1,
+       5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6. , 6.1, 6.2, 6.3, 6.4,
+       6.5, 6.6, 6.7, 6.8, 6.9, 7. ]), topk_range=range(0, 10), corr_threshold_range=array([0. , 0. , 0.1, 0.2, 0.2, 0.2, 0.3, 0.4, 0.4, 0.4, 0.5, 0.6, 0.6,
+       0.6]), neighbor_selection='topk', score_modes=['strict_deviation'], data_dir='./data/processed', label_dir='./data/interpretation_label', log_dir='./log/els/neighbor_topk', visual_dir='./visual/els/neighbor_topk', num_workers=36, gif_duration=500)
+2025-04-17 17:41:04,872 - INFO - 当前评分模式: ['strict_deviation']
+2025-04-17 17:41:04,872 - INFO - 
+==================================================
+2025-04-17 17:41:04,873 - INFO - 开始执行网格搜索...
+2025-04-17 17:41:04,876 - INFO - [els-1] Starting grid search...
+2025-04-17 17:41:05,515 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.0, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,524 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.1, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,524 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.2, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,524 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.3, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,524 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.4, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,525 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.5, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,525 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.6, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,539 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.7, P=0.3200, R=0.2689, F1=0.2922
+2025-04-17 17:41:05,539 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.8, P=0.3232, R=0.2689, F1=0.2936
+2025-04-17 17:41:05,584 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=0.9, P=0.3232, R=0.2689, F1=0.2936
+2025-04-17 17:41:05,647 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.0, P=0.3386, R=0.2689, F1=0.2998
+2025-04-17 17:41:05,648 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.1, P=0.3386, R=0.2689, F1=0.2998
+2025-04-17 17:41:05,648 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.2, P=0.3497, R=0.2689, F1=0.3040
+2025-04-17 17:41:05,662 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.3, P=0.3575, R=0.2689, F1=0.3070
+2025-04-17 17:41:05,665 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.4, P=0.3636, R=0.2689, F1=0.3092
+2025-04-17 17:41:05,688 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.5, P=0.3684, R=0.2647, F1=0.3081
+2025-04-17 17:41:05,688 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.6, P=0.3684, R=0.2647, F1=0.3081
+2025-04-17 17:41:05,688 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.7, P=0.3608, R=0.2395, F1=0.2879
+2025-04-17 17:41:05,688 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.8, P=0.3654, R=0.2395, F1=0.2893
+2025-04-17 17:41:05,692 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=1.9, P=0.3986, R=0.2311, F1=0.2926
+2025-04-17 17:41:05,692 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.0, P=0.3559, R=0.1765, F1=0.2360
+2025-04-17 17:41:05,692 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.1, P=0.3559, R=0.1765, F1=0.2360
+2025-04-17 17:41:05,692 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.2, P=0.3534, R=0.1723, F1=0.2316
+2025-04-17 17:41:05,709 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.3, P=0.3661, R=0.1723, F1=0.2343
+2025-04-17 17:41:05,748 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.4, P=0.3661, R=0.1723, F1=0.2343
+2025-04-17 17:41:05,749 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.5, P=0.3661, R=0.1723, F1=0.2343
+2025-04-17 17:41:05,749 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.6, P=0.3704, R=0.1681, F1=0.2312
+2025-04-17 17:41:05,749 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.7, P=0.3824, R=0.1639, F1=0.2294
+2025-04-17 17:41:05,749 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.8, P=0.3939, R=0.1639, F1=0.2315
+2025-04-17 17:41:05,775 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=2.9, P=0.3939, R=0.1639, F1=0.2315
+2025-04-17 17:41:05,782 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.0, P=0.3939, R=0.1639, F1=0.2315
+2025-04-17 17:41:05,786 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.1, P=0.3939, R=0.1639, F1=0.2315
+2025-04-17 17:41:05,792 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.2, P=0.3939, R=0.1639, F1=0.2315
+2025-04-17 17:41:05,796 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.3, P=0.3814, R=0.1555, F1=0.2209
+2025-04-17 17:41:05,803 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.4, P=0.3814, R=0.1555, F1=0.2209
+2025-04-17 17:41:05,806 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.5, P=0.3814, R=0.1555, F1=0.2209
+2025-04-17 17:41:05,806 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.6, P=0.4022, R=0.1555, F1=0.2242
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.7, P=0.3933, R=0.1471, F1=0.2141
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.8, P=0.4023, R=0.1471, F1=0.2154
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=3.9, P=0.4096, R=0.1429, F1=0.2118
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.0, P=0.4211, R=0.1345, F1=0.2038
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.1, P=0.4133, R=0.1303, F1=0.1981
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.2, P=0.4133, R=0.1303, F1=0.1981
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.3, P=0.4133, R=0.1303, F1=0.1981
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.4, P=0.4133, R=0.1303, F1=0.1981
+2025-04-17 17:41:05,807 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.5, P=0.4247, R=0.1303, F1=0.1994
+2025-04-17 17:41:05,828 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.6, P=0.4306, R=0.1303, F1=0.2000
+2025-04-17 17:41:06,186 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.7, P=0.4429, R=0.1303, F1=0.2013
+2025-04-17 17:41:06,195 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.8, P=0.4429, R=0.1303, F1=0.2013
+2025-04-17 17:41:06,195 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=4.9, P=0.4265, R=0.1218, F1=0.1895
+2025-04-17 17:41:06,195 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.0, P=0.4265, R=0.1218, F1=0.1895
+2025-04-17 17:41:06,250 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.1, P=0.4328, R=0.1218, F1=0.1902
+2025-04-17 17:41:06,250 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.2, P=0.4328, R=0.1218, F1=0.1902
+2025-04-17 17:41:06,250 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.3, P=0.4328, R=0.1218, F1=0.1902
+2025-04-17 17:41:06,250 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.4, P=0.4328, R=0.1218, F1=0.1902
+2025-04-17 17:41:06,250 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.5, P=0.4328, R=0.1218, F1=0.1902
+2025-04-17 17:41:06,250 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.6, P=0.4394, R=0.1218, F1=0.1908
+2025-04-17 17:41:06,250 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.7, P=0.4462, R=0.1218, F1=0.1914
+2025-04-17 17:41:06,350 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.8, P=0.4375, R=0.1176, F1=0.1854
+2025-04-17 17:41:06,350 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=5.9, P=0.4333, R=0.1092, F1=0.1745
+2025-04-17 17:41:06,359 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.0, P=0.4727, R=0.1092, F1=0.1775
+2025-04-17 17:41:06,362 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.1, P=0.4727, R=0.1092, F1=0.1775
+2025-04-17 17:41:06,362 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.2, P=0.4727, R=0.1092, F1=0.1775
+2025-04-17 17:41:06,371 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.3, P=0.4906, R=0.1092, F1=0.1787
+2025-04-17 17:41:06,371 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.4, P=0.4906, R=0.1092, F1=0.1787
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.5, P=0.4808, R=0.1050, F1=0.1724
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.6, P=0.4808, R=0.1050, F1=0.1724
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.7, P=0.4808, R=0.1050, F1=0.1724
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.8, P=0.4808, R=0.1050, F1=0.1724
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=6.9, P=0.4902, R=0.1050, F1=0.1730
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=0, threshold=7.0, P=0.4902, R=0.1050, F1=0.1730
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.0, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.1, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,372 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.2, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,373 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.3, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,459 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.4, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,460 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.5, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,460 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.6, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,482 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.7, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,486 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.8, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,491 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=0.9, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,495 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.0, P=0.3050, R=0.3319, F1=0.3179
+2025-04-17 17:41:06,496 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.1, P=0.3008, R=0.3235, F1=0.3117
+2025-04-17 17:41:06,496 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.2, P=0.3008, R=0.3235, F1=0.3117
+2025-04-17 17:41:06,496 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.3, P=0.3043, R=0.3235, F1=0.3136
+2025-04-17 17:41:06,496 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.4, P=0.3068, R=0.3235, F1=0.3149
+2025-04-17 17:41:06,496 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.5, P=0.3089, R=0.3193, F1=0.3140
+2025-04-17 17:41:06,496 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.6, P=0.3089, R=0.3193, F1=0.3140
+2025-04-17 17:41:06,496 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.7, P=0.3165, R=0.3151, F1=0.3158
+2025-04-17 17:41:06,497 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.8, P=0.3178, R=0.3151, F1=0.3165
+2025-04-17 17:41:06,497 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=1.9, P=0.3474, R=0.3109, F1=0.3282
+2025-04-17 17:41:06,730 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.0, P=0.3480, R=0.2983, F1=0.3213
+2025-04-17 17:41:06,731 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.1, P=0.3532, R=0.2983, F1=0.3235
+2025-04-17 17:41:06,731 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.2, P=0.3518, R=0.2941, F1=0.3204
+2025-04-17 17:41:06,731 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.3, P=0.3571, R=0.2941, F1=0.3226
+2025-04-17 17:41:06,732 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.4, P=0.3571, R=0.2941, F1=0.3226
+2025-04-17 17:41:06,732 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.5, P=0.3545, R=0.2815, F1=0.3138
+2025-04-17 17:41:06,732 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.6, P=0.3564, R=0.2815, F1=0.3146
+2025-04-17 17:41:06,737 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.7, P=0.3497, R=0.2689, F1=0.3040
+2025-04-17 17:41:06,737 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.8, P=0.3516, R=0.2689, F1=0.3048
+2025-04-17 17:41:06,737 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=2.9, P=0.3516, R=0.2689, F1=0.3048
+2025-04-17 17:41:06,763 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.0, P=0.3536, R=0.2689, F1=0.3055
+2025-04-17 17:41:06,763 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.1, P=0.3536, R=0.2689, F1=0.3055
+2025-04-17 17:41:06,764 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.2, P=0.3446, R=0.2563, F1=0.2940
+2025-04-17 17:41:06,764 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.3, P=0.3466, R=0.2563, F1=0.2947
+2025-04-17 17:41:06,764 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.4, P=0.3488, R=0.2521, F1=0.2927
+2025-04-17 17:41:06,789 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.5, P=0.3509, R=0.2521, F1=0.2934
+2025-04-17 17:41:06,789 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.6, P=0.3593, R=0.2521, F1=0.2963
+2025-04-17 17:41:06,944 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.7, P=0.3580, R=0.2437, F1=0.2900
+2025-04-17 17:41:06,944 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.8, P=0.3533, R=0.2227, F1=0.2732
+2025-04-17 17:41:06,945 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=3.9, P=0.3425, R=0.2101, F1=0.2604
+2025-04-17 17:41:06,945 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.0, P=0.3404, R=0.2017, F1=0.2533
+2025-04-17 17:41:06,945 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.1, P=0.3404, R=0.2017, F1=0.2533
+2025-04-17 17:41:06,945 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.2, P=0.3429, R=0.2017, F1=0.2540
+2025-04-17 17:41:06,945 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.3, P=0.3429, R=0.2017, F1=0.2540
+2025-04-17 17:41:07,046 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.4, P=0.3429, R=0.2017, F1=0.2540
+2025-04-17 17:41:07,046 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.5, P=0.3453, R=0.2017, F1=0.2546
+2025-04-17 17:41:07,075 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.6, P=0.3504, R=0.2017, F1=0.2560
+2025-04-17 17:41:07,076 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.7, P=0.3504, R=0.2017, F1=0.2560
+2025-04-17 17:41:07,076 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.8, P=0.3504, R=0.2017, F1=0.2560
+2025-04-17 17:41:07,077 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=4.9, P=0.3507, R=0.1975, F1=0.2527
+2025-04-17 17:41:07,077 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.0, P=0.3588, R=0.1975, F1=0.2547
+2025-04-17 17:41:07,077 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.1, P=0.3566, R=0.1933, F1=0.2507
+2025-04-17 17:41:07,077 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.2, P=0.3566, R=0.1933, F1=0.2507
+2025-04-17 17:41:07,148 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.3, P=0.3571, R=0.1891, F1=0.2473
+2025-04-17 17:41:07,177 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.4, P=0.3629, R=0.1891, F1=0.2486
+2025-04-17 17:41:07,183 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.5, P=0.3659, R=0.1891, F1=0.2493
+2025-04-17 17:41:07,183 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.6, P=0.3667, R=0.1849, F1=0.2458
+2025-04-17 17:41:07,186 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.7, P=0.3793, R=0.1849, F1=0.2486
+2025-04-17 17:41:07,186 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.8, P=0.3793, R=0.1849, F1=0.2486
+2025-04-17 17:41:07,203 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=5.9, P=0.3826, R=0.1849, F1=0.2493
+2025-04-17 17:41:07,203 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.0, P=0.3839, R=0.1807, F1=0.2457
+2025-04-17 17:41:07,203 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.1, P=0.3874, R=0.1807, F1=0.2464
+2025-04-17 17:41:07,203 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.2, P=0.3981, R=0.1807, F1=0.2486
+2025-04-17 17:41:07,203 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.3, P=0.3981, R=0.1807, F1=0.2486
+2025-04-17 17:41:07,204 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.4, P=0.3962, R=0.1765, F1=0.2442
+2025-04-17 17:41:07,204 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.5, P=0.4000, R=0.1765, F1=0.2449
+2025-04-17 17:41:07,204 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.6, P=0.4000, R=0.1765, F1=0.2449
+2025-04-17 17:41:07,252 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.7, P=0.4000, R=0.1765, F1=0.2449
+2025-04-17 17:41:07,252 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.8, P=0.3942, R=0.1723, F1=0.2398
+2025-04-17 17:41:07,252 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=6.9, P=0.4020, R=0.1723, F1=0.2412
+2025-04-17 17:41:07,252 - INFO - [els-1.txt] mode=strict_deviation, topk=1, threshold=7.0, P=0.4020, R=0.1723, F1=0.2412
+2025-04-17 17:41:07,252 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.0, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,252 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.1, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,253 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.2, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,253 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.3, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,253 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.4, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,253 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.5, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,283 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.6, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,284 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.7, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,287 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.8, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,287 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=0.9, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,287 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.0, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,287 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.1, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,288 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.2, P=0.3013, R=0.3824, F1=0.3370
+2025-04-17 17:41:07,288 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.3, P=0.3033, R=0.3824, F1=0.3383
+2025-04-17 17:41:07,288 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.4, P=0.3030, R=0.3782, F1=0.3364
+2025-04-17 17:41:07,288 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.5, P=0.3048, R=0.3739, F1=0.3358
+2025-04-17 17:41:07,288 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.6, P=0.3048, R=0.3739, F1=0.3358
+2025-04-17 17:41:07,362 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.7, P=0.3088, R=0.3697, F1=0.3365
+2025-04-17 17:41:07,657 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.8, P=0.3121, R=0.3697, F1=0.3385
+2025-04-17 17:41:07,657 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=1.9, P=0.3333, R=0.3613, F1=0.3468
+2025-04-17 17:41:07,658 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.0, P=0.3359, R=0.3613, F1=0.3482
+2025-04-17 17:41:07,658 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.1, P=0.3386, R=0.3613, F1=0.3496
+2025-04-17 17:41:07,750 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.2, P=0.3386, R=0.3613, F1=0.3496
+2025-04-17 17:41:07,764 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.3, P=0.3399, R=0.3613, F1=0.3503
+2025-04-17 17:41:07,765 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.4, P=0.3399, R=0.3613, F1=0.3503
+2025-04-17 17:41:07,776 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.5, P=0.3400, R=0.3571, F1=0.3484
+2025-04-17 17:41:07,776 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.6, P=0.3414, R=0.3571, F1=0.3491
+2025-04-17 17:41:07,776 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.7, P=0.3401, R=0.3529, F1=0.3464
+2025-04-17 17:41:07,776 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.8, P=0.3415, R=0.3529, F1=0.3471
+2025-04-17 17:41:07,776 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=2.9, P=0.3333, R=0.3403, F1=0.3368
+2025-04-17 17:41:07,777 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.0, P=0.3333, R=0.3361, F1=0.3347
+2025-04-17 17:41:07,777 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.1, P=0.3347, R=0.3361, F1=0.3354
+2025-04-17 17:41:07,777 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.2, P=0.3347, R=0.3361, F1=0.3354
+2025-04-17 17:41:07,798 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.3, P=0.3376, R=0.3361, F1=0.3368
+2025-04-17 17:41:07,798 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.4, P=0.3391, R=0.3319, F1=0.3355
+2025-04-17 17:41:07,799 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.5, P=0.3465, R=0.3319, F1=0.3391
+2025-04-17 17:41:07,799 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.6, P=0.3529, R=0.3277, F1=0.3399
+2025-04-17 17:41:07,799 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.7, P=0.3532, R=0.3235, F1=0.3377
+2025-04-17 17:41:07,891 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.8, P=0.3649, R=0.3235, F1=0.3430
+2025-04-17 17:41:07,902 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=3.9, P=0.3667, R=0.3235, F1=0.3438
+2025-04-17 17:41:07,902 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.0, P=0.3671, R=0.3193, F1=0.3416
+2025-04-17 17:41:07,902 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.1, P=0.3671, R=0.3193, F1=0.3416
+2025-04-17 17:41:07,903 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.2, P=0.3610, R=0.3109, F1=0.3341
+2025-04-17 17:41:07,903 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.3, P=0.3610, R=0.3109, F1=0.3341
+2025-04-17 17:41:07,903 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.4, P=0.3610, R=0.3109, F1=0.3341
+2025-04-17 17:41:07,926 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.5, P=0.3627, R=0.3109, F1=0.3348
+2025-04-17 17:41:07,926 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.6, P=0.3627, R=0.3109, F1=0.3348
+2025-04-17 17:41:07,926 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.7, P=0.3645, R=0.3109, F1=0.3356
+2025-04-17 17:41:07,926 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.8, P=0.3663, R=0.3109, F1=0.3364
+2025-04-17 17:41:07,927 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=4.9, P=0.3663, R=0.3109, F1=0.3364
+2025-04-17 17:41:07,927 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.0, P=0.3590, R=0.2941, F1=0.3233
+2025-04-17 17:41:07,927 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.1, P=0.3608, R=0.2941, F1=0.3241
+2025-04-17 17:41:07,927 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.2, P=0.3575, R=0.2899, F1=0.3202
+2025-04-17 17:41:07,927 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.3, P=0.3545, R=0.2815, F1=0.3138
+2025-04-17 17:41:07,927 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.4, P=0.3529, R=0.2773, F1=0.3106
+2025-04-17 17:41:07,927 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.5, P=0.3552, R=0.2731, F1=0.3088
+2025-04-17 17:41:07,930 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.6, P=0.3652, R=0.2731, F1=0.3125
+2025-04-17 17:41:07,930 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.7, P=0.3736, R=0.2731, F1=0.3155
+2025-04-17 17:41:08,007 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.8, P=0.3721, R=0.2689, F1=0.3122
+2025-04-17 17:41:08,028 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=5.9, P=0.3728, R=0.2647, F1=0.3096
+2025-04-17 17:41:08,028 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.0, P=0.3614, R=0.2521, F1=0.2970
+2025-04-17 17:41:08,028 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.1, P=0.3636, R=0.2521, F1=0.2978
+2025-04-17 17:41:08,029 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.2, P=0.3659, R=0.2521, F1=0.2985
+2025-04-17 17:41:08,029 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.3, P=0.3659, R=0.2521, F1=0.2985
+2025-04-17 17:41:08,029 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.4, P=0.3681, R=0.2521, F1=0.2993
+2025-04-17 17:41:08,029 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.5, P=0.3704, R=0.2521, F1=0.3000
+2025-04-17 17:41:08,029 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.6, P=0.3704, R=0.2521, F1=0.3000
+2025-04-17 17:41:08,029 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.7, P=0.3665, R=0.2479, F1=0.2957
+2025-04-17 17:41:08,029 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.8, P=0.3711, R=0.2479, F1=0.2972
+2025-04-17 17:41:08,030 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=6.9, P=0.3711, R=0.2479, F1=0.2972
+2025-04-17 17:41:08,033 - INFO - [els-1.txt] mode=strict_deviation, topk=2, threshold=7.0, P=0.3758, R=0.2479, F1=0.2987
+2025-04-17 17:41:08,033 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.0, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,125 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.1, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,125 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.2, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,126 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.3, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,170 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.4, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,239 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.5, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,240 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.6, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,289 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.7, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,290 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.8, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,290 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=0.9, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,290 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.0, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,290 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.1, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,290 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.2, P=0.3010, R=0.3908, F1=0.3400
+2025-04-17 17:41:08,290 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.3, P=0.3029, R=0.3908, F1=0.3413
+2025-04-17 17:41:08,291 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.4, P=0.3049, R=0.3908, F1=0.3425
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.5, P=0.3046, R=0.3866, F1=0.3407
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.6, P=0.3046, R=0.3866, F1=0.3407
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.7, P=0.3043, R=0.3824, F1=0.3389
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.8, P=0.3007, R=0.3739, F1=0.3333
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=1.9, P=0.3132, R=0.3697, F1=0.3391
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.0, P=0.3143, R=0.3697, F1=0.3398
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.1, P=0.3165, R=0.3697, F1=0.3411
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.2, P=0.3165, R=0.3697, F1=0.3411
+2025-04-17 17:41:08,293 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.3, P=0.3177, R=0.3697, F1=0.3417
+2025-04-17 17:41:08,450 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.4, P=0.3177, R=0.3697, F1=0.3417
+2025-04-17 17:41:08,459 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.5, P=0.3175, R=0.3655, F1=0.3398
+2025-04-17 17:41:08,459 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.6, P=0.3187, R=0.3655, F1=0.3405
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.7, P=0.3199, R=0.3655, F1=0.3412
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.8, P=0.3199, R=0.3655, F1=0.3412
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=2.9, P=0.3123, R=0.3529, F1=0.3314
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.0, P=0.3170, R=0.3529, F1=0.3340
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.1, P=0.3182, R=0.3529, F1=0.3347
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.2, P=0.3182, R=0.3529, F1=0.3347
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.3, P=0.3206, R=0.3529, F1=0.3360
+2025-04-17 17:41:08,460 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.4, P=0.3256, R=0.3529, F1=0.3387
+2025-04-17 17:41:08,488 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.5, P=0.3294, R=0.3529, F1=0.3408
+2025-04-17 17:41:08,488 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.6, P=0.3307, R=0.3487, F1=0.3395
+2025-04-17 17:41:08,488 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.7, P=0.3306, R=0.3403, F1=0.3354
+2025-04-17 17:41:08,488 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.8, P=0.3306, R=0.3403, F1=0.3354
+2025-04-17 17:41:08,489 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=3.9, P=0.3320, R=0.3403, F1=0.3361
+2025-04-17 17:41:08,498 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.0, P=0.3320, R=0.3361, F1=0.3340
+2025-04-17 17:41:08,505 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.1, P=0.3320, R=0.3361, F1=0.3340
+2025-04-17 17:41:08,523 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.2, P=0.3320, R=0.3361, F1=0.3340
+2025-04-17 17:41:08,553 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.3, P=0.3320, R=0.3361, F1=0.3340
+2025-04-17 17:41:08,557 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.4, P=0.3320, R=0.3361, F1=0.3340
+2025-04-17 17:41:08,557 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.5, P=0.3305, R=0.3319, F1=0.3312
+2025-04-17 17:41:08,557 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.6, P=0.3305, R=0.3319, F1=0.3312
+2025-04-17 17:41:08,568 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.7, P=0.3291, R=0.3277, F1=0.3284
+2025-04-17 17:41:08,580 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.8, P=0.3291, R=0.3277, F1=0.3284
+2025-04-17 17:41:08,586 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=4.9, P=0.3291, R=0.3277, F1=0.3284
+2025-04-17 17:41:08,587 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.0, P=0.3348, R=0.3277, F1=0.3312
+2025-04-17 17:41:08,611 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.1, P=0.3377, R=0.3277, F1=0.3326
+2025-04-17 17:41:08,623 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.2, P=0.3406, R=0.3277, F1=0.3340
+2025-04-17 17:41:08,623 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.3, P=0.3451, R=0.3277, F1=0.3362
+2025-04-17 17:41:08,635 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.4, P=0.3498, R=0.3277, F1=0.3384
+2025-04-17 17:41:08,650 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.5, P=0.3470, R=0.3193, F1=0.3326
+2025-04-17 17:41:08,666 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.6, P=0.3502, R=0.3193, F1=0.3341
+2025-04-17 17:41:08,678 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.7, P=0.3551, R=0.3193, F1=0.3363
+2025-04-17 17:41:08,683 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.8, P=0.3568, R=0.3193, F1=0.3370
+2025-04-17 17:41:08,683 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=5.9, P=0.3602, R=0.3193, F1=0.3385
+2025-04-17 17:41:08,686 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.0, P=0.3602, R=0.3193, F1=0.3385
+2025-04-17 17:41:08,711 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.1, P=0.3602, R=0.3193, F1=0.3385
+2025-04-17 17:41:08,711 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.2, P=0.3571, R=0.3151, F1=0.3348
+2025-04-17 17:41:08,712 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.3, P=0.3571, R=0.3151, F1=0.3348
+2025-04-17 17:41:08,712 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.4, P=0.3589, R=0.3151, F1=0.3356
+2025-04-17 17:41:08,712 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.5, P=0.3623, R=0.3151, F1=0.3371
+2025-04-17 17:41:08,712 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.6, P=0.3610, R=0.3109, F1=0.3341
+2025-04-17 17:41:08,729 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.7, P=0.3578, R=0.3067, F1=0.3303
+2025-04-17 17:41:08,734 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.8, P=0.3596, R=0.3067, F1=0.3311
+2025-04-17 17:41:08,753 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=6.9, P=0.3650, R=0.3067, F1=0.3333
+2025-04-17 17:41:08,762 - INFO - [els-1.txt] mode=strict_deviation, topk=3, threshold=7.0, P=0.3668, R=0.3067, F1=0.3341
+2025-04-17 17:41:08,789 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.0, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,840 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.1, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,842 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.2, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,870 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.3, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,884 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.4, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,884 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.5, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,889 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.6, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,904 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.7, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,936 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.8, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:08,957 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=0.9, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:09,024 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.0, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:09,024 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.1, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:09,025 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.2, P=0.2956, R=0.3950, F1=0.3381
+2025-04-17 17:41:09,025 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.3, P=0.2975, R=0.3950, F1=0.3394
+2025-04-17 17:41:09,025 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.4, P=0.2994, R=0.3950, F1=0.3406
+2025-04-17 17:41:09,025 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.5, P=0.2990, R=0.3908, F1=0.3388
+2025-04-17 17:41:09,025 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.6, P=0.2990, R=0.3908, F1=0.3388
+2025-04-17 17:41:09,025 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.7, P=0.2987, R=0.3866, F1=0.3370
+2025-04-17 17:41:09,025 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.8, P=0.2951, R=0.3782, F1=0.3315
+2025-04-17 17:41:09,029 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=1.9, P=0.3038, R=0.3739, F1=0.3352
+2025-04-17 17:41:09,035 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.0, P=0.3048, R=0.3739, F1=0.3358
+2025-04-17 17:41:09,058 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.1, P=0.3058, R=0.3739, F1=0.3365
+2025-04-17 17:41:09,058 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.2, P=0.3058, R=0.3739, F1=0.3365
+2025-04-17 17:41:09,070 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.3, P=0.3069, R=0.3739, F1=0.3371
+2025-04-17 17:41:09,078 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.4, P=0.3069, R=0.3739, F1=0.3371
+2025-04-17 17:41:09,087 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.5, P=0.3056, R=0.3697, F1=0.3346
+2025-04-17 17:41:09,087 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.6, P=0.3056, R=0.3697, F1=0.3346
+2025-04-17 17:41:09,099 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.7, P=0.3066, R=0.3697, F1=0.3352
+2025-04-17 17:41:09,099 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.8, P=0.3066, R=0.3697, F1=0.3352
+2025-04-17 17:41:09,099 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=2.9, P=0.3018, R=0.3613, F1=0.3289
+2025-04-17 17:41:09,110 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.0, P=0.3039, R=0.3613, F1=0.3301
+2025-04-17 17:41:09,120 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.1, P=0.3050, R=0.3613, F1=0.3308
+2025-04-17 17:41:09,125 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.2, P=0.3050, R=0.3613, F1=0.3308
+2025-04-17 17:41:09,125 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.3, P=0.3082, R=0.3613, F1=0.3327
+2025-04-17 17:41:09,137 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.4, P=0.3139, R=0.3613, F1=0.3359
+2025-04-17 17:41:09,143 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.5, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:41:09,182 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.6, P=0.3158, R=0.3529, F1=0.3333
+2025-04-17 17:41:09,248 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.7, P=0.3194, R=0.3529, F1=0.3353
+2025-04-17 17:41:09,249 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.8, P=0.3206, R=0.3529, F1=0.3360
+2025-04-17 17:41:09,249 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=3.9, P=0.3218, R=0.3529, F1=0.3367
+2025-04-17 17:41:09,254 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.0, P=0.3217, R=0.3487, F1=0.3347
+2025-04-17 17:41:09,261 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.1, P=0.3217, R=0.3487, F1=0.3347
+2025-04-17 17:41:09,262 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.2, P=0.3217, R=0.3487, F1=0.3347
+2025-04-17 17:41:09,298 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.3, P=0.3217, R=0.3487, F1=0.3347
+2025-04-17 17:41:09,347 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.4, P=0.3217, R=0.3487, F1=0.3347
+2025-04-17 17:41:09,364 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.5, P=0.3230, R=0.3487, F1=0.3354
+2025-04-17 17:41:09,369 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.6, P=0.3230, R=0.3487, F1=0.3354
+2025-04-17 17:41:09,383 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.7, P=0.3242, R=0.3487, F1=0.3360
+2025-04-17 17:41:09,384 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.8, P=0.3242, R=0.3487, F1=0.3360
+2025-04-17 17:41:09,384 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=4.9, P=0.3242, R=0.3487, F1=0.3360
+2025-04-17 17:41:09,402 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.0, P=0.3281, R=0.3487, F1=0.3381
+2025-04-17 17:41:09,545 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.1, P=0.3294, R=0.3487, F1=0.3388
+2025-04-17 17:41:09,546 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.2, P=0.3320, R=0.3487, F1=0.3402
+2025-04-17 17:41:09,546 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.3, P=0.3347, R=0.3487, F1=0.3416
+2025-04-17 17:41:09,546 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.4, P=0.3374, R=0.3487, F1=0.3430
+2025-04-17 17:41:09,546 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.5, P=0.3361, R=0.3445, F1=0.3402
+2025-04-17 17:41:09,546 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.6, P=0.3374, R=0.3445, F1=0.3410
+2025-04-17 17:41:09,546 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.7, P=0.3375, R=0.3403, F1=0.3389
+2025-04-17 17:41:09,546 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.8, P=0.3376, R=0.3361, F1=0.3368
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=5.9, P=0.3376, R=0.3361, F1=0.3368
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.0, P=0.3376, R=0.3361, F1=0.3368
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.1, P=0.3376, R=0.3361, F1=0.3368
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.2, P=0.3347, R=0.3319, F1=0.3333
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.3, P=0.3376, R=0.3319, F1=0.3347
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.4, P=0.3391, R=0.3319, F1=0.3355
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.5, P=0.3405, R=0.3319, F1=0.3362
+2025-04-17 17:41:09,547 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.6, P=0.3391, R=0.3277, F1=0.3333
+2025-04-17 17:41:09,548 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.7, P=0.3406, R=0.3277, F1=0.3340
+2025-04-17 17:41:09,566 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.8, P=0.3421, R=0.3277, F1=0.3348
+2025-04-17 17:41:09,566 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=6.9, P=0.3436, R=0.3277, F1=0.3355
+2025-04-17 17:41:09,566 - INFO - [els-1.txt] mode=strict_deviation, topk=4, threshold=7.0, P=0.3451, R=0.3277, F1=0.3362
+2025-04-17 17:41:09,566 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.0, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,595 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.1, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,596 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.2, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,612 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.3, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,661 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.4, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,822 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.5, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,822 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.6, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,822 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.7, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,822 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.8, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,822 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=0.9, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,823 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.0, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,823 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.1, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,823 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.2, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:09,823 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.3, P=0.2883, R=0.3950, F1=0.3333
+2025-04-17 17:41:09,823 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.4, P=0.2901, R=0.3950, F1=0.3345
+2025-04-17 17:41:09,823 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.5, P=0.2897, R=0.3908, F1=0.3327
+2025-04-17 17:41:09,823 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.6, P=0.2897, R=0.3908, F1=0.3327
+2025-04-17 17:41:09,827 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.7, P=0.2911, R=0.3866, F1=0.3321
+2025-04-17 17:41:09,827 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.8, P=0.2921, R=0.3866, F1=0.3327
+2025-04-17 17:41:09,827 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=1.9, P=0.2987, R=0.3866, F1=0.3370
+2025-04-17 17:41:09,834 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.0, P=0.2987, R=0.3866, F1=0.3370
+2025-04-17 17:41:09,851 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.1, P=0.2997, R=0.3866, F1=0.3376
+2025-04-17 17:41:09,878 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.2, P=0.2997, R=0.3866, F1=0.3376
+2025-04-17 17:41:09,889 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.3, P=0.3007, R=0.3866, F1=0.3382
+2025-04-17 17:41:09,889 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.4, P=0.3007, R=0.3866, F1=0.3382
+2025-04-17 17:41:09,907 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.5, P=0.2993, R=0.3824, F1=0.3358
+2025-04-17 17:41:09,907 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.6, P=0.2993, R=0.3824, F1=0.3358
+2025-04-17 17:41:09,907 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.7, P=0.3003, R=0.3824, F1=0.3364
+2025-04-17 17:41:09,911 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.8, P=0.3003, R=0.3824, F1=0.3364
+2025-04-17 17:41:09,947 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=2.9, P=0.2957, R=0.3739, F1=0.3302
+2025-04-17 17:41:09,948 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.0, P=0.2977, R=0.3739, F1=0.3315
+2025-04-17 17:41:09,989 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.1, P=0.2987, R=0.3739, F1=0.3321
+2025-04-17 17:41:09,990 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.2, P=0.2987, R=0.3739, F1=0.3321
+2025-04-17 17:41:09,990 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.3, P=0.3007, R=0.3739, F1=0.3333
+2025-04-17 17:41:09,990 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.4, P=0.3048, R=0.3739, F1=0.3358
+2025-04-17 17:41:09,990 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.5, P=0.3080, R=0.3739, F1=0.3378
+2025-04-17 17:41:09,990 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.6, P=0.3077, R=0.3697, F1=0.3359
+2025-04-17 17:41:09,990 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.7, P=0.3121, R=0.3697, F1=0.3385
+2025-04-17 17:41:09,995 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.8, P=0.3164, R=0.3655, F1=0.3392
+2025-04-17 17:41:09,997 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=3.9, P=0.3175, R=0.3655, F1=0.3398
+2025-04-17 17:41:10,019 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.0, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:41:10,026 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.1, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:41:10,054 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.2, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:41:10,168 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.3, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:41:10,168 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.4, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:41:10,168 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.5, P=0.3185, R=0.3613, F1=0.3386
+2025-04-17 17:41:10,168 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.6, P=0.3185, R=0.3613, F1=0.3386
+2025-04-17 17:41:10,168 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.7, P=0.3197, R=0.3613, F1=0.3393
+2025-04-17 17:41:10,169 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.8, P=0.3197, R=0.3613, F1=0.3393
+2025-04-17 17:41:10,220 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=4.9, P=0.3209, R=0.3613, F1=0.3399
+2025-04-17 17:41:10,220 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.0, P=0.3245, R=0.3613, F1=0.3419
+2025-04-17 17:41:10,313 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.1, P=0.3258, R=0.3613, F1=0.3426
+2025-04-17 17:41:10,314 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.2, P=0.3295, R=0.3613, F1=0.3447
+2025-04-17 17:41:10,314 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.3, P=0.3320, R=0.3571, F1=0.3441
+2025-04-17 17:41:10,314 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.4, P=0.3268, R=0.3487, F1=0.3374
+2025-04-17 17:41:10,314 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.5, P=0.3294, R=0.3487, F1=0.3388
+2025-04-17 17:41:10,314 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.6, P=0.3294, R=0.3487, F1=0.3388
+2025-04-17 17:41:10,315 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.7, P=0.3267, R=0.3445, F1=0.3354
+2025-04-17 17:41:10,318 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.8, P=0.3280, R=0.3445, F1=0.3361
+2025-04-17 17:41:10,379 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=5.9, P=0.3280, R=0.3445, F1=0.3361
+2025-04-17 17:41:10,379 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.0, P=0.3280, R=0.3445, F1=0.3361
+2025-04-17 17:41:10,379 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.1, P=0.3280, R=0.3445, F1=0.3361
+2025-04-17 17:41:10,379 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.2, P=0.3253, R=0.3403, F1=0.3326
+2025-04-17 17:41:10,379 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.3, P=0.3279, R=0.3403, F1=0.3340
+2025-04-17 17:41:10,379 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.4, P=0.3293, R=0.3403, F1=0.3347
+2025-04-17 17:41:10,389 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.5, P=0.3293, R=0.3403, F1=0.3347
+2025-04-17 17:41:10,389 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.6, P=0.3293, R=0.3403, F1=0.3347
+2025-04-17 17:41:10,393 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.7, P=0.3306, R=0.3403, F1=0.3354
+2025-04-17 17:41:10,393 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.8, P=0.3306, R=0.3403, F1=0.3354
+2025-04-17 17:41:10,393 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=6.9, P=0.3320, R=0.3403, F1=0.3361
+2025-04-17 17:41:10,393 - INFO - [els-1.txt] mode=strict_deviation, topk=5, threshold=7.0, P=0.3347, R=0.3403, F1=0.3375
+2025-04-17 17:41:10,393 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.0, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,410 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.1, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,410 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.2, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,410 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.3, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,411 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.4, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,422 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.5, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,426 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.6, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,460 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.7, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,535 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.8, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,550 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=0.9, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,559 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.0, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,587 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.1, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,592 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.2, P=0.2821, R=0.4244, F1=0.3389
+2025-04-17 17:41:10,611 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.3, P=0.2829, R=0.4244, F1=0.3395
+2025-04-17 17:41:10,611 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.4, P=0.2837, R=0.4244, F1=0.3401
+2025-04-17 17:41:10,632 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.5, P=0.2833, R=0.4202, F1=0.3384
+2025-04-17 17:41:10,639 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.6, P=0.2833, R=0.4202, F1=0.3384
+2025-04-17 17:41:10,639 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.7, P=0.2853, R=0.4076, F1=0.3356
+2025-04-17 17:41:10,639 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.8, P=0.2875, R=0.3950, F1=0.3327
+2025-04-17 17:41:10,651 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=1.9, P=0.2910, R=0.3950, F1=0.3351
+2025-04-17 17:41:10,651 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.0, P=0.2910, R=0.3950, F1=0.3351
+2025-04-17 17:41:10,673 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.1, P=0.2910, R=0.3950, F1=0.3351
+2025-04-17 17:41:10,673 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.2, P=0.2910, R=0.3950, F1=0.3351
+2025-04-17 17:41:10,716 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.3, P=0.2910, R=0.3950, F1=0.3351
+2025-04-17 17:41:10,716 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.4, P=0.2910, R=0.3950, F1=0.3351
+2025-04-17 17:41:10,716 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.5, P=0.2888, R=0.3908, F1=0.3321
+2025-04-17 17:41:10,796 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.6, P=0.2888, R=0.3908, F1=0.3321
+2025-04-17 17:41:10,796 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.7, P=0.2888, R=0.3908, F1=0.3321
+2025-04-17 17:41:10,796 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.8, P=0.2888, R=0.3908, F1=0.3321
+2025-04-17 17:41:10,796 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=2.9, P=0.2866, R=0.3866, F1=0.3292
+2025-04-17 17:41:10,797 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.0, P=0.2875, R=0.3866, F1=0.3297
+2025-04-17 17:41:10,797 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.1, P=0.2893, R=0.3866, F1=0.3309
+2025-04-17 17:41:10,799 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.2, P=0.2893, R=0.3866, F1=0.3309
+2025-04-17 17:41:10,799 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.3, P=0.2902, R=0.3866, F1=0.3315
+2025-04-17 17:41:10,799 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.4, P=0.2930, R=0.3866, F1=0.3333
+2025-04-17 17:41:10,799 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.5, P=0.2955, R=0.3824, F1=0.3333
+2025-04-17 17:41:10,816 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.6, P=0.2970, R=0.3782, F1=0.3327
+2025-04-17 17:41:10,817 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.7, P=0.3000, R=0.3782, F1=0.3346
+2025-04-17 17:41:10,817 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.8, P=0.3014, R=0.3697, F1=0.3321
+2025-04-17 17:41:10,817 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=3.9, P=0.3034, R=0.3697, F1=0.3333
+2025-04-17 17:41:10,823 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.0, P=0.3066, R=0.3697, F1=0.3352
+2025-04-17 17:41:10,828 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.1, P=0.3077, R=0.3697, F1=0.3359
+2025-04-17 17:41:10,832 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.2, P=0.3077, R=0.3697, F1=0.3359
+2025-04-17 17:41:10,865 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.3, P=0.3077, R=0.3697, F1=0.3359
+2025-04-17 17:41:10,947 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.4, P=0.3077, R=0.3697, F1=0.3359
+2025-04-17 17:41:10,965 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.5, P=0.3074, R=0.3655, F1=0.3340
+2025-04-17 17:41:10,974 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.6, P=0.3074, R=0.3655, F1=0.3340
+2025-04-17 17:41:10,983 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.7, P=0.3085, R=0.3655, F1=0.3346
+2025-04-17 17:41:11,034 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.8, P=0.3085, R=0.3655, F1=0.3346
+2025-04-17 17:41:11,034 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=4.9, P=0.3085, R=0.3655, F1=0.3346
+2025-04-17 17:41:11,034 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.0, P=0.3107, R=0.3655, F1=0.3359
+2025-04-17 17:41:11,046 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.1, P=0.3118, R=0.3655, F1=0.3366
+2025-04-17 17:41:11,065 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.2, P=0.3164, R=0.3655, F1=0.3392
+2025-04-17 17:41:11,069 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.3, P=0.3197, R=0.3613, F1=0.3393
+2025-04-17 17:41:11,082 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.4, P=0.3197, R=0.3613, F1=0.3393
+2025-04-17 17:41:11,083 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.5, P=0.3197, R=0.3613, F1=0.3393
+2025-04-17 17:41:11,083 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.6, P=0.3197, R=0.3613, F1=0.3393
+2025-04-17 17:41:11,083 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.7, P=0.3197, R=0.3613, F1=0.3393
+2025-04-17 17:41:11,105 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.8, P=0.3209, R=0.3613, F1=0.3399
+2025-04-17 17:41:11,114 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=5.9, P=0.3209, R=0.3613, F1=0.3399
+2025-04-17 17:41:11,131 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.0, P=0.3209, R=0.3613, F1=0.3399
+2025-04-17 17:41:11,133 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.1, P=0.3209, R=0.3613, F1=0.3399
+2025-04-17 17:41:11,134 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.2, P=0.3209, R=0.3613, F1=0.3399
+2025-04-17 17:41:11,139 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.3, P=0.3221, R=0.3613, F1=0.3406
+2025-04-17 17:41:11,144 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.4, P=0.3233, R=0.3613, F1=0.3413
+2025-04-17 17:41:11,162 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.5, P=0.3245, R=0.3613, F1=0.3419
+2025-04-17 17:41:11,184 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.6, P=0.3245, R=0.3613, F1=0.3419
+2025-04-17 17:41:11,207 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.7, P=0.3258, R=0.3613, F1=0.3426
+2025-04-17 17:41:11,217 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.8, P=0.3282, R=0.3613, F1=0.3440
+2025-04-17 17:41:11,217 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=6.9, P=0.3295, R=0.3613, F1=0.3447
+2025-04-17 17:41:11,275 - INFO - [els-1.txt] mode=strict_deviation, topk=6, threshold=7.0, P=0.3320, R=0.3613, F1=0.3461
+2025-04-17 17:41:11,275 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.0, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,275 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.1, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,275 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.2, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,275 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.3, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,275 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.4, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,276 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.5, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,276 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.6, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,276 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.7, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,282 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.8, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,369 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=0.9, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,472 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.0, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,476 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.1, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,476 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.2, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,476 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.3, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,476 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.4, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:11,476 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.5, P=0.2742, R=0.4286, F1=0.3344
+2025-04-17 17:41:11,476 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.6, P=0.2742, R=0.4286, F1=0.3344
+2025-04-17 17:41:11,539 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.7, P=0.2745, R=0.4118, F1=0.3294
+2025-04-17 17:41:11,544 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.8, P=0.2749, R=0.3950, F1=0.3241
+2025-04-17 17:41:11,544 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=1.9, P=0.2789, R=0.3950, F1=0.3270
+2025-04-17 17:41:11,545 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.0, P=0.2789, R=0.3950, F1=0.3270
+2025-04-17 17:41:11,545 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.1, P=0.2789, R=0.3950, F1=0.3270
+2025-04-17 17:41:11,545 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.2, P=0.2789, R=0.3950, F1=0.3270
+2025-04-17 17:41:11,545 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.3, P=0.2789, R=0.3950, F1=0.3270
+2025-04-17 17:41:11,556 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.4, P=0.2789, R=0.3950, F1=0.3270
+2025-04-17 17:41:11,556 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.5, P=0.2768, R=0.3908, F1=0.3240
+2025-04-17 17:41:11,556 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.6, P=0.2768, R=0.3908, F1=0.3240
+2025-04-17 17:41:11,567 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.7, P=0.2768, R=0.3908, F1=0.3240
+2025-04-17 17:41:11,630 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.8, P=0.2768, R=0.3908, F1=0.3240
+2025-04-17 17:41:11,630 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=2.9, P=0.2746, R=0.3866, F1=0.3211
+2025-04-17 17:41:11,631 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.0, P=0.2754, R=0.3866, F1=0.3217
+2025-04-17 17:41:11,631 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.1, P=0.2763, R=0.3866, F1=0.3222
+2025-04-17 17:41:11,631 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.2, P=0.2771, R=0.3866, F1=0.3228
+2025-04-17 17:41:11,635 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.3, P=0.2796, R=0.3866, F1=0.3245
+2025-04-17 17:41:11,639 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.4, P=0.2840, R=0.3866, F1=0.3274
+2025-04-17 17:41:11,648 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.5, P=0.2835, R=0.3824, F1=0.3256
+2025-04-17 17:41:11,648 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.6, P=0.2857, R=0.3782, F1=0.3255
+2025-04-17 17:41:11,660 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.7, P=0.2894, R=0.3782, F1=0.3279
+2025-04-17 17:41:11,660 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.8, P=0.2904, R=0.3697, F1=0.3253
+2025-04-17 17:41:11,660 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=3.9, P=0.2924, R=0.3697, F1=0.3265
+2025-04-17 17:41:11,661 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.0, P=0.2943, R=0.3697, F1=0.3277
+2025-04-17 17:41:11,674 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.1, P=0.2953, R=0.3697, F1=0.3284
+2025-04-17 17:41:11,781 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.2, P=0.2953, R=0.3697, F1=0.3284
+2025-04-17 17:41:11,793 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.3, P=0.2953, R=0.3697, F1=0.3284
+2025-04-17 17:41:11,793 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.4, P=0.2953, R=0.3697, F1=0.3284
+2025-04-17 17:41:11,793 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.5, P=0.2939, R=0.3655, F1=0.3258
+2025-04-17 17:41:11,794 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.6, P=0.2939, R=0.3655, F1=0.3258
+2025-04-17 17:41:11,808 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.7, P=0.2949, R=0.3655, F1=0.3265
+2025-04-17 17:41:11,851 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.8, P=0.2959, R=0.3655, F1=0.3271
+2025-04-17 17:41:11,851 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=4.9, P=0.2959, R=0.3655, F1=0.3271
+2025-04-17 17:41:11,980 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.0, P=0.2969, R=0.3655, F1=0.3277
+2025-04-17 17:41:11,981 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.1, P=0.2990, R=0.3655, F1=0.3289
+2025-04-17 17:41:12,001 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.2, P=0.3031, R=0.3655, F1=0.3314
+2025-04-17 17:41:12,001 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.3, P=0.3074, R=0.3655, F1=0.3340
+2025-04-17 17:41:12,002 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.4, P=0.3074, R=0.3655, F1=0.3340
+2025-04-17 17:41:12,002 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.5, P=0.3074, R=0.3655, F1=0.3340
+2025-04-17 17:41:12,002 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.6, P=0.3085, R=0.3655, F1=0.3346
+2025-04-17 17:41:12,002 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.7, P=0.3085, R=0.3655, F1=0.3346
+2025-04-17 17:41:12,002 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.8, P=0.3096, R=0.3655, F1=0.3353
+2025-04-17 17:41:12,201 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=5.9, P=0.3096, R=0.3655, F1=0.3353
+2025-04-17 17:41:12,202 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.0, P=0.3096, R=0.3655, F1=0.3353
+2025-04-17 17:41:12,202 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.1, P=0.3096, R=0.3655, F1=0.3353
+2025-04-17 17:41:12,202 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.2, P=0.3096, R=0.3655, F1=0.3353
+2025-04-17 17:41:12,202 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.3, P=0.3096, R=0.3655, F1=0.3353
+2025-04-17 17:41:12,202 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.4, P=0.3107, R=0.3655, F1=0.3359
+2025-04-17 17:41:12,202 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.5, P=0.3107, R=0.3655, F1=0.3359
+2025-04-17 17:41:12,202 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.6, P=0.3118, R=0.3655, F1=0.3366
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.7, P=0.3141, R=0.3655, F1=0.3379
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.8, P=0.3187, R=0.3655, F1=0.3405
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=6.9, P=0.3210, R=0.3655, F1=0.3418
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=7, threshold=7.0, P=0.3222, R=0.3655, F1=0.3425
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.0, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.1, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.2, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.3, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.4, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.5, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.6, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,203 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.7, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,260 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.8, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,260 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=0.9, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,260 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.0, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,314 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.1, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,315 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.2, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,315 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.3, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,320 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.4, P=0.2751, R=0.4370, F1=0.3377
+2025-04-17 17:41:12,402 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.5, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:12,482 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.6, P=0.2747, R=0.4328, F1=0.3361
+2025-04-17 17:41:12,729 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.7, P=0.2740, R=0.4202, F1=0.3317
+2025-04-17 17:41:12,729 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.8, P=0.2704, R=0.4034, F1=0.3238
+2025-04-17 17:41:12,729 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=1.9, P=0.2720, R=0.4034, F1=0.3249
+2025-04-17 17:41:12,729 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.0, P=0.2720, R=0.4034, F1=0.3249
+2025-04-17 17:41:12,730 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.1, P=0.2720, R=0.4034, F1=0.3249
+2025-04-17 17:41:12,768 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.2, P=0.2720, R=0.4034, F1=0.3249
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.3, P=0.2720, R=0.4034, F1=0.3249
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.4, P=0.2720, R=0.4034, F1=0.3249
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.5, P=0.2699, R=0.3992, F1=0.3220
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.6, P=0.2699, R=0.3992, F1=0.3220
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.7, P=0.2699, R=0.3992, F1=0.3220
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.8, P=0.2699, R=0.3992, F1=0.3220
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=2.9, P=0.2699, R=0.3992, F1=0.3220
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.0, P=0.2707, R=0.3992, F1=0.3226
+2025-04-17 17:41:12,769 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.1, P=0.2714, R=0.3992, F1=0.3231
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.2, P=0.2722, R=0.3992, F1=0.3237
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.3, P=0.2741, R=0.3950, F1=0.3236
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.4, P=0.2765, R=0.3950, F1=0.3253
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.5, P=0.2768, R=0.3908, F1=0.3240
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.6, P=0.2810, R=0.3908, F1=0.3269
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.7, P=0.2844, R=0.3908, F1=0.3292
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.8, P=0.2866, R=0.3866, F1=0.3292
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=3.9, P=0.2884, R=0.3866, F1=0.3303
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.0, P=0.2893, R=0.3866, F1=0.3309
+2025-04-17 17:41:12,791 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.1, P=0.2902, R=0.3866, F1=0.3315
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.2, P=0.2902, R=0.3866, F1=0.3315
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.3, P=0.2902, R=0.3866, F1=0.3315
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.4, P=0.2902, R=0.3866, F1=0.3315
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.5, P=0.2889, R=0.3824, F1=0.3291
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.6, P=0.2866, R=0.3782, F1=0.3261
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.7, P=0.2866, R=0.3782, F1=0.3261
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.8, P=0.2866, R=0.3782, F1=0.3261
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=4.9, P=0.2866, R=0.3782, F1=0.3261
+2025-04-17 17:41:12,792 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.0, P=0.2894, R=0.3782, F1=0.3279
+2025-04-17 17:41:12,796 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.1, P=0.2913, R=0.3782, F1=0.3291
+2025-04-17 17:41:12,835 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.2, P=0.2970, R=0.3782, F1=0.3327
+2025-04-17 17:41:12,835 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.3, P=0.3000, R=0.3782, F1=0.3346
+2025-04-17 17:41:12,916 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.4, P=0.3010, R=0.3782, F1=0.3352
+2025-04-17 17:41:12,917 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.5, P=0.3020, R=0.3782, F1=0.3358
+2025-04-17 17:41:12,917 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.6, P=0.3041, R=0.3782, F1=0.3371
+2025-04-17 17:41:13,003 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.7, P=0.3041, R=0.3782, F1=0.3371
+2025-04-17 17:41:13,003 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.8, P=0.3051, R=0.3782, F1=0.3377
+2025-04-17 17:41:13,003 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=5.9, P=0.3051, R=0.3782, F1=0.3377
+2025-04-17 17:41:13,003 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.0, P=0.3051, R=0.3782, F1=0.3377
+2025-04-17 17:41:13,003 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.1, P=0.3051, R=0.3782, F1=0.3377
+2025-04-17 17:41:13,003 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.2, P=0.3051, R=0.3782, F1=0.3377
+2025-04-17 17:41:13,004 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.3, P=0.3051, R=0.3782, F1=0.3377
+2025-04-17 17:41:13,004 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.4, P=0.3072, R=0.3782, F1=0.3390
+2025-04-17 17:41:13,004 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.5, P=0.3072, R=0.3782, F1=0.3390
+2025-04-17 17:41:13,004 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.6, P=0.3082, R=0.3782, F1=0.3396
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.7, P=0.3093, R=0.3782, F1=0.3403
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.8, P=0.3114, R=0.3782, F1=0.3416
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=6.9, P=0.3112, R=0.3739, F1=0.3397
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=8, threshold=7.0, P=0.3134, R=0.3739, F1=0.3410
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.0, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.1, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.2, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,139 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.3, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,246 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.4, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,246 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.5, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,246 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.6, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,246 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.7, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,246 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.8, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,247 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=0.9, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,395 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.0, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,395 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.1, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,395 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.2, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.3, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.4, P=0.2744, R=0.4370, F1=0.3371
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.5, P=0.2739, R=0.4328, F1=0.3355
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.6, P=0.2739, R=0.4328, F1=0.3355
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.7, P=0.2745, R=0.4244, F1=0.3333
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.8, P=0.2755, R=0.4202, F1=0.3328
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=1.9, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.0, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.1, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.2, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,396 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.3, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,397 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.4, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,397 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.5, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,397 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.6, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,397 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.7, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,410 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.8, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,411 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=2.9, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,428 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.0, P=0.2770, R=0.4202, F1=0.3339
+2025-04-17 17:41:13,434 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.1, P=0.2778, R=0.4202, F1=0.3344
+2025-04-17 17:41:13,539 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.2, P=0.2778, R=0.4202, F1=0.3344
+2025-04-17 17:41:13,540 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.3, P=0.2781, R=0.4160, F1=0.3333
+2025-04-17 17:41:13,540 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.4, P=0.2771, R=0.4076, F1=0.3299
+2025-04-17 17:41:13,540 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.5, P=0.2767, R=0.4034, F1=0.3282
+2025-04-17 17:41:13,540 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.6, P=0.2807, R=0.4034, F1=0.3310
+2025-04-17 17:41:13,593 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.7, P=0.2840, R=0.4034, F1=0.3333
+2025-04-17 17:41:13,593 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.8, P=0.2861, R=0.3992, F1=0.3333
+2025-04-17 17:41:13,593 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=3.9, P=0.2870, R=0.3992, F1=0.3339
+2025-04-17 17:41:13,593 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.0, P=0.2870, R=0.3992, F1=0.3339
+2025-04-17 17:41:13,593 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.1, P=0.2879, R=0.3992, F1=0.3345
+2025-04-17 17:41:13,737 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.2, P=0.2857, R=0.3950, F1=0.3316
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.3, P=0.2857, R=0.3950, F1=0.3316
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.4, P=0.2857, R=0.3950, F1=0.3316
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.5, P=0.2844, R=0.3908, F1=0.3292
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.6, P=0.2822, R=0.3866, F1=0.3262
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.7, P=0.2831, R=0.3866, F1=0.3268
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.8, P=0.2831, R=0.3866, F1=0.3268
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=4.9, P=0.2840, R=0.3866, F1=0.3274
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.0, P=0.2866, R=0.3866, F1=0.3292
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.1, P=0.2862, R=0.3824, F1=0.3273
+2025-04-17 17:41:13,738 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.2, P=0.2926, R=0.3824, F1=0.3315
+2025-04-17 17:41:13,739 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.3, P=0.2955, R=0.3824, F1=0.3333
+2025-04-17 17:41:13,739 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.4, P=0.2941, R=0.3782, F1=0.3309
+2025-04-17 17:41:13,739 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.5, P=0.2951, R=0.3782, F1=0.3315
+2025-04-17 17:41:13,750 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.6, P=0.2961, R=0.3782, F1=0.3321
+2025-04-17 17:41:13,755 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.7, P=0.2980, R=0.3782, F1=0.3333
+2025-04-17 17:41:13,763 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.8, P=0.2990, R=0.3782, F1=0.3340
+2025-04-17 17:41:13,772 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=5.9, P=0.2990, R=0.3782, F1=0.3340
+2025-04-17 17:41:13,820 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.0, P=0.2990, R=0.3782, F1=0.3340
+2025-04-17 17:41:13,829 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.1, P=0.2990, R=0.3782, F1=0.3340
+2025-04-17 17:41:13,837 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.2, P=0.2990, R=0.3782, F1=0.3340
+2025-04-17 17:41:13,837 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.3, P=0.2990, R=0.3782, F1=0.3340
+2025-04-17 17:41:13,837 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.4, P=0.3000, R=0.3782, F1=0.3346
+2025-04-17 17:41:13,857 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.5, P=0.3010, R=0.3782, F1=0.3352
+2025-04-17 17:41:13,857 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.6, P=0.3020, R=0.3782, F1=0.3358
+2025-04-17 17:41:13,857 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.7, P=0.3041, R=0.3782, F1=0.3371
+2025-04-17 17:41:13,857 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.8, P=0.3051, R=0.3782, F1=0.3377
+2025-04-17 17:41:13,899 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=6.9, P=0.3072, R=0.3782, F1=0.3390
+2025-04-17 17:41:13,908 - INFO - [els-1.txt] mode=strict_deviation, topk=9, threshold=7.0, P=0.3103, R=0.3782, F1=0.3409
+2025-04-17 17:41:13,938 - INFO - 
+==================================================
+2025-04-17 17:41:13,938 - INFO - 开始汇总结果...
+2025-04-17 17:41:13,946 - INFO - 
+===== Best Results per Dataset =====
+  dataset       score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score
+els-1.txt strict_deviation               2              2.4               topk   0.339921 0.361345  0.350305
+2025-04-17 17:41:13,946 - INFO - 
+===== Overall Metrics =====
+Precision: 0.3401  Recall: 0.3610  F1: 0.3503
+2025-04-17 17:41:13,946 - INFO - 
+【原始汇总指标】
+2025-04-17 17:41:13,946 - INFO - 精确率(Precision): 0.3401
+2025-04-17 17:41:13,946 - INFO - 召回率(Recall):    0.3610
+2025-04-17 17:41:13,946 - INFO - F1值:             0.3503
+2025-04-17 17:41:13,947 - INFO - 
+==================================================
+2025-04-17 17:41:13,947 - INFO - 开始生成可视化结果...
+2025-04-17 17:41:13,947 - INFO - 
+==================================================
+2025-04-17 17:41:13,947 - INFO - 开始数据集可视化: els-1
+2025-04-17 17:41:13,947 - INFO - 使用参数: 评分模式=strict_deviation, topk=2, 阈值=2.4000000000000004
+2025-04-17 17:41:13,947 - INFO - ==================================================
+
+2025-04-17 17:41:13,947 - INFO - 正在加载数据集 els-1 的数据
+2025-04-17 17:41:13,950 - INFO - 数据加载成功。训练集形状: (993, 16), 测试集形状: (8928, 16)
+2025-04-17 17:41:13,950 - INFO - 正在计算边缘统计量...
+2025-04-17 17:41:14,229 - INFO - 已计算 105 条边的统计量
+2025-04-17 17:41:14,230 - INFO - 为每个节点使用 top-2 邻居
+2025-04-17 17:41:14,230 - INFO - 可视化结果将保存到: ./visual/els/neighbor_topk/strict_deviation/els-1
+2025-04-17 17:41:14,250 - INFO - 在数据集中发现 77 个异常时间段
+2025-04-17 17:41:14,250 - INFO - 
+正在处理时间段 1/77: 433-437
+2025-04-17 17:41:14,250 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:14,250 - INFO - 正在计算异常分数...
+2025-04-17 17:41:14,251 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:14,251 - INFO - 正在为时间段 433-437 生成可视化
+2025-04-17 17:41:14,251 - INFO - 正在为时间段 433-437 生成异常图可视化
+2025-04-17 17:41:14,252 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:14,331 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_0_433_437.png
+2025-04-17 17:41:14,661 - INFO - 成功保存时间段 433-437 的可视化结果
+2025-04-17 17:41:14,661 - INFO - 
+正在处理时间段 2/77: 738-738
+2025-04-17 17:41:14,662 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12}
+2025-04-17 17:41:14,662 - INFO - 正在计算异常分数...
+2025-04-17 17:41:14,662 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:14,662 - INFO - 正在为时间段 738-738 生成可视化
+2025-04-17 17:41:14,662 - INFO - 正在为时间段 738-738 生成异常图可视化
+2025-04-17 17:41:14,662 - INFO - 单个点位异常段 738-738，扩展为 734-738 (window_size=5)
+2025-04-17 17:41:14,662 - DEBUG - 边统计: 正常边 31 条, 异常边 14 条
+2025-04-17 17:41:14,719 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_1_738_738.png
+2025-04-17 17:41:15,040 - INFO - 成功保存时间段 738-738 的可视化结果
+2025-04-17 17:41:15,040 - INFO - 
+正在处理时间段 3/77: 762-762
+2025-04-17 17:41:15,040 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:15,040 - INFO - 正在计算异常分数...
+2025-04-17 17:41:15,041 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:15,041 - INFO - 正在为时间段 762-762 生成可视化
+2025-04-17 17:41:15,041 - INFO - 正在为时间段 762-762 生成异常图可视化
+2025-04-17 17:41:15,041 - INFO - 单个点位异常段 762-762，扩展为 758-762 (window_size=5)
+2025-04-17 17:41:15,041 - DEBUG - 边统计: 正常边 41 条, 异常边 1 条
+2025-04-17 17:41:15,094 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_2_762_762.png
+2025-04-17 17:41:15,402 - INFO - 成功保存时间段 762-762 的可视化结果
+2025-04-17 17:41:15,402 - INFO - 
+正在处理时间段 4/77: 1065-1070
+2025-04-17 17:41:15,403 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:15,403 - INFO - 正在计算异常分数...
+2025-04-17 17:41:15,403 - INFO - 检测到的异常节点: {np.int64(6), np.int64(7), 8, np.int64(9), np.int64(10), 14}
+2025-04-17 17:41:15,403 - INFO - 正在为时间段 1065-1070 生成可视化
+2025-04-17 17:41:15,403 - INFO - 正在为时间段 1065-1070 生成异常图可视化
+2025-04-17 17:41:15,404 - DEBUG - 边统计: 正常边 42 条, 异常边 3 条
+2025-04-17 17:41:15,458 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_3_1065_1070.png
+2025-04-17 17:41:15,763 - INFO - 成功保存时间段 1065-1070 的可视化结果
+2025-04-17 17:41:15,763 - INFO - 
+正在处理时间段 5/77: 1348-1351
+2025-04-17 17:41:15,763 - INFO - 该时间段的真实异常节点: {8, 9, 6, 7}
+2025-04-17 17:41:15,763 - INFO - 正在计算异常分数...
+2025-04-17 17:41:15,763 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:15,763 - INFO - 正在为时间段 1348-1351 生成可视化
+2025-04-17 17:41:15,763 - INFO - 正在为时间段 1348-1351 生成异常图可视化
+2025-04-17 17:41:15,764 - DEBUG - 边统计: 正常边 33 条, 异常边 12 条
+2025-04-17 17:41:15,818 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_4_1348_1351.png
+2025-04-17 17:41:16,122 - INFO - 成功保存时间段 1348-1351 的可视化结果
+2025-04-17 17:41:16,122 - INFO - 
+正在处理时间段 6/77: 1366-1368
+2025-04-17 17:41:16,122 - INFO - 该时间段的真实异常节点: {8, 9, 6, 7}
+2025-04-17 17:41:16,122 - INFO - 正在计算异常分数...
+2025-04-17 17:41:16,122 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:16,122 - INFO - 正在为时间段 1366-1368 生成可视化
+2025-04-17 17:41:16,122 - INFO - 正在为时间段 1366-1368 生成异常图可视化
+2025-04-17 17:41:16,123 - DEBUG - 边统计: 正常边 21 条, 异常边 21 条
+2025-04-17 17:41:16,176 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_5_1366_1368.png
+2025-04-17 17:41:16,478 - INFO - 成功保存时间段 1366-1368 的可视化结果
+2025-04-17 17:41:16,479 - INFO - 
+正在处理时间段 7/77: 1591-1602
+2025-04-17 17:41:16,479 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:16,479 - INFO - 正在计算异常分数...
+2025-04-17 17:41:16,481 - INFO - 检测到的异常节点: {3, 4, np.int64(5), np.int64(6), 7, 8, 9, np.int64(10), np.int64(11), np.int64(12), 14}
+2025-04-17 17:41:16,481 - INFO - 正在为时间段 1591-1602 生成可视化
+2025-04-17 17:41:16,481 - INFO - 正在为时间段 1591-1602 生成异常图可视化
+2025-04-17 17:41:16,481 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:41:16,534 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_6_1591_1602.png
+2025-04-17 17:41:16,836 - INFO - 成功保存时间段 1591-1602 的可视化结果
+2025-04-17 17:41:16,836 - INFO - 
+正在处理时间段 8/77: 1634-1638
+2025-04-17 17:41:16,836 - INFO - 该时间段的真实异常节点: {8, 9, 6, 7}
+2025-04-17 17:41:16,836 - INFO - 正在计算异常分数...
+2025-04-17 17:41:16,837 - INFO - 检测到的异常节点: {np.int64(9), 11, 7}
+2025-04-17 17:41:16,837 - INFO - 正在为时间段 1634-1638 生成可视化
+2025-04-17 17:41:16,837 - INFO - 正在为时间段 1634-1638 生成异常图可视化
+2025-04-17 17:41:16,837 - DEBUG - 边统计: 正常边 39 条, 异常边 6 条
+2025-04-17 17:41:16,891 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_7_1634_1638.png
+2025-04-17 17:41:17,197 - INFO - 成功保存时间段 1634-1638 的可视化结果
+2025-04-17 17:41:17,197 - INFO - 
+正在处理时间段 9/77: 1864-1868
+2025-04-17 17:41:17,197 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:17,197 - INFO - 正在计算异常分数...
+2025-04-17 17:41:17,198 - INFO - 检测到的异常节点: {3, 4, np.int64(6), 7, 8, np.int64(9), np.int64(10), np.int64(12)}
+2025-04-17 17:41:17,198 - INFO - 正在为时间段 1864-1868 生成可视化
+2025-04-17 17:41:17,198 - INFO - 正在为时间段 1864-1868 生成异常图可视化
+2025-04-17 17:41:17,198 - DEBUG - 边统计: 正常边 27 条, 异常边 18 条
+2025-04-17 17:41:17,327 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_8_1864_1868.png
+2025-04-17 17:41:17,632 - INFO - 成功保存时间段 1864-1868 的可视化结果
+2025-04-17 17:41:17,632 - INFO - 
+正在处理时间段 10/77: 1882-1882
+2025-04-17 17:41:17,633 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:17,633 - INFO - 正在计算异常分数...
+2025-04-17 17:41:17,633 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:17,633 - INFO - 正在为时间段 1882-1882 生成可视化
+2025-04-17 17:41:17,633 - INFO - 正在为时间段 1882-1882 生成异常图可视化
+2025-04-17 17:41:17,633 - INFO - 单个点位异常段 1882-1882，扩展为 1878-1882 (window_size=5)
+2025-04-17 17:41:17,633 - DEBUG - 边统计: 正常边 33 条, 异常边 9 条
+2025-04-17 17:41:17,685 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_9_1882_1882.png
+2025-04-17 17:41:17,988 - INFO - 成功保存时间段 1882-1882 的可视化结果
+2025-04-17 17:41:17,988 - INFO - 
+正在处理时间段 11/77: 2415-2418
+2025-04-17 17:41:17,988 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:41:17,988 - INFO - 正在计算异常分数...
+2025-04-17 17:41:17,988 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:17,988 - INFO - 正在为时间段 2415-2418 生成可视化
+2025-04-17 17:41:17,988 - INFO - 正在为时间段 2415-2418 生成异常图可视化
+2025-04-17 17:41:17,989 - DEBUG - 边统计: 正常边 40 条, 异常边 5 条
+2025-04-17 17:41:18,042 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_10_2415_2418.png
+2025-04-17 17:41:18,360 - INFO - 成功保存时间段 2415-2418 的可视化结果
+2025-04-17 17:41:18,360 - INFO - 
+正在处理时间段 12/77: 2461-2461
+2025-04-17 17:41:18,361 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:18,361 - INFO - 正在计算异常分数...
+2025-04-17 17:41:18,361 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:18,361 - INFO - 正在为时间段 2461-2461 生成可视化
+2025-04-17 17:41:18,361 - INFO - 正在为时间段 2461-2461 生成异常图可视化
+2025-04-17 17:41:18,361 - INFO - 单个点位异常段 2461-2461，扩展为 2457-2461 (window_size=5)
+2025-04-17 17:41:18,362 - DEBUG - 边统计: 正常边 41 条, 异常边 4 条
+2025-04-17 17:41:18,419 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_11_2461_2461.png
+2025-04-17 17:41:18,731 - INFO - 成功保存时间段 2461-2461 的可视化结果
+2025-04-17 17:41:18,731 - INFO - 
+正在处理时间段 13/77: 2506-2506
+2025-04-17 17:41:18,731 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:18,731 - INFO - 正在计算异常分数...
+2025-04-17 17:41:18,731 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:18,731 - INFO - 正在为时间段 2506-2506 生成可视化
+2025-04-17 17:41:18,731 - INFO - 正在为时间段 2506-2506 生成异常图可视化
+2025-04-17 17:41:18,731 - INFO - 单个点位异常段 2506-2506，扩展为 2502-2506 (window_size=5)
+2025-04-17 17:41:18,732 - DEBUG - 边统计: 正常边 44 条, 异常边 1 条
+2025-04-17 17:41:18,785 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_12_2506_2506.png
+2025-04-17 17:41:19,091 - INFO - 成功保存时间段 2506-2506 的可视化结果
+2025-04-17 17:41:19,091 - INFO - 
+正在处理时间段 14/77: 2515-2515
+2025-04-17 17:41:19,091 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:19,091 - INFO - 正在计算异常分数...
+2025-04-17 17:41:19,091 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:19,091 - INFO - 正在为时间段 2515-2515 生成可视化
+2025-04-17 17:41:19,091 - INFO - 正在为时间段 2515-2515 生成异常图可视化
+2025-04-17 17:41:19,091 - INFO - 单个点位异常段 2515-2515，扩展为 2511-2515 (window_size=5)
+2025-04-17 17:41:19,092 - DEBUG - 边统计: 正常边 38 条, 异常边 7 条
+2025-04-17 17:41:19,146 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_13_2515_2515.png
+2025-04-17 17:41:19,449 - INFO - 成功保存时间段 2515-2515 的可视化结果
+2025-04-17 17:41:19,449 - INFO - 
+正在处理时间段 15/77: 2520-2520
+2025-04-17 17:41:19,449 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:19,449 - INFO - 正在计算异常分数...
+2025-04-17 17:41:19,449 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:19,449 - INFO - 正在为时间段 2520-2520 生成可视化
+2025-04-17 17:41:19,449 - INFO - 正在为时间段 2520-2520 生成异常图可视化
+2025-04-17 17:41:19,449 - INFO - 单个点位异常段 2520-2520，扩展为 2516-2520 (window_size=5)
+2025-04-17 17:41:19,450 - DEBUG - 边统计: 正常边 39 条, 异常边 6 条
+2025-04-17 17:41:19,504 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_14_2520_2520.png
+2025-04-17 17:41:19,810 - INFO - 成功保存时间段 2520-2520 的可视化结果
+2025-04-17 17:41:19,811 - INFO - 
+正在处理时间段 16/77: 2796-2808
+2025-04-17 17:41:19,811 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:19,811 - INFO - 正在计算异常分数...
+2025-04-17 17:41:19,813 - INFO - 检测到的异常节点: {np.int64(1), 7, 8, np.int64(9), np.int64(10), 11, np.int64(12), np.int64(13), 15}
+2025-04-17 17:41:19,813 - INFO - 正在为时间段 2796-2808 生成可视化
+2025-04-17 17:41:19,813 - INFO - 正在为时间段 2796-2808 生成异常图可视化
+2025-04-17 17:41:19,814 - DEBUG - 边统计: 正常边 38 条, 异常边 7 条
+2025-04-17 17:41:19,868 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_15_2796_2808.png
+2025-04-17 17:41:20,173 - INFO - 成功保存时间段 2796-2808 的可视化结果
+2025-04-17 17:41:20,173 - INFO - 
+正在处理时间段 17/77: 3276-3277
+2025-04-17 17:41:20,173 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:20,173 - INFO - 正在计算异常分数...
+2025-04-17 17:41:20,174 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:20,174 - INFO - 正在为时间段 3276-3277 生成可视化
+2025-04-17 17:41:20,174 - INFO - 正在为时间段 3276-3277 生成异常图可视化
+2025-04-17 17:41:20,174 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:41:20,227 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_16_3276_3277.png
+2025-04-17 17:41:20,530 - INFO - 成功保存时间段 3276-3277 的可视化结果
+2025-04-17 17:41:20,530 - INFO - 
+正在处理时间段 18/77: 3321-3322
+2025-04-17 17:41:20,530 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:20,530 - INFO - 正在计算异常分数...
+2025-04-17 17:41:20,530 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:20,530 - INFO - 正在为时间段 3321-3322 生成可视化
+2025-04-17 17:41:20,530 - INFO - 正在为时间段 3321-3322 生成异常图可视化
+2025-04-17 17:41:20,530 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:41:20,583 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_17_3321_3322.png
+2025-04-17 17:41:20,885 - INFO - 成功保存时间段 3321-3322 的可视化结果
+2025-04-17 17:41:20,885 - INFO - 
+正在处理时间段 19/77: 3339-3345
+2025-04-17 17:41:20,885 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:41:20,885 - INFO - 正在计算异常分数...
+2025-04-17 17:41:20,886 - INFO - 检测到的异常节点: {np.int64(5), 7, 8, np.int64(9), np.int64(10), 15}
+2025-04-17 17:41:20,886 - INFO - 正在为时间段 3339-3345 生成可视化
+2025-04-17 17:41:20,886 - INFO - 正在为时间段 3339-3345 生成异常图可视化
+2025-04-17 17:41:20,887 - DEBUG - 边统计: 正常边 44 条, 异常边 1 条
+2025-04-17 17:41:20,940 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_18_3339_3345.png
+2025-04-17 17:41:21,246 - INFO - 成功保存时间段 3339-3345 的可视化结果
+2025-04-17 17:41:21,246 - INFO - 
+正在处理时间段 20/77: 3360-3362
+2025-04-17 17:41:21,246 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:21,246 - INFO - 正在计算异常分数...
+2025-04-17 17:41:21,246 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:21,246 - INFO - 正在为时间段 3360-3362 生成可视化
+2025-04-17 17:41:21,246 - INFO - 正在为时间段 3360-3362 生成异常图可视化
+2025-04-17 17:41:21,246 - DEBUG - 边统计: 正常边 16 条, 异常边 26 条
+2025-04-17 17:41:21,298 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_19_3360_3362.png
+2025-04-17 17:41:21,601 - INFO - 成功保存时间段 3360-3362 的可视化结果
+2025-04-17 17:41:21,601 - INFO - 
+正在处理时间段 21/77: 3378-3378
+2025-04-17 17:41:21,602 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:21,602 - INFO - 正在计算异常分数...
+2025-04-17 17:41:21,602 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:21,602 - INFO - 正在为时间段 3378-3378 生成可视化
+2025-04-17 17:41:21,602 - INFO - 正在为时间段 3378-3378 生成异常图可视化
+2025-04-17 17:41:21,602 - INFO - 单个点位异常段 3378-3378，扩展为 3374-3378 (window_size=5)
+2025-04-17 17:41:21,602 - DEBUG - 边统计: 正常边 31 条, 异常边 14 条
+2025-04-17 17:41:21,745 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_20_3378_3378.png
+2025-04-17 17:41:22,057 - INFO - 成功保存时间段 3378-3378 的可视化结果
+2025-04-17 17:41:22,057 - INFO - 
+正在处理时间段 22/77: 3564-3564
+2025-04-17 17:41:22,058 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:22,058 - INFO - 正在计算异常分数...
+2025-04-17 17:41:22,058 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:22,058 - INFO - 正在为时间段 3564-3564 生成可视化
+2025-04-17 17:41:22,058 - INFO - 正在为时间段 3564-3564 生成异常图可视化
+2025-04-17 17:41:22,058 - INFO - 单个点位异常段 3564-3564，扩展为 3560-3564 (window_size=5)
+2025-04-17 17:41:22,058 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:41:22,111 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_21_3564_3564.png
+2025-04-17 17:41:22,412 - INFO - 成功保存时间段 3564-3564 的可视化结果
+2025-04-17 17:41:22,413 - INFO - 
+正在处理时间段 23/77: 3583-3584
+2025-04-17 17:41:22,413 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:22,413 - INFO - 正在计算异常分数...
+2025-04-17 17:41:22,413 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:22,413 - INFO - 正在为时间段 3583-3584 生成可视化
+2025-04-17 17:41:22,413 - INFO - 正在为时间段 3583-3584 生成异常图可视化
+2025-04-17 17:41:22,413 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:41:22,465 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_22_3583_3584.png
+2025-04-17 17:41:22,766 - INFO - 成功保存时间段 3583-3584 的可视化结果
+2025-04-17 17:41:22,766 - INFO - 
+正在处理时间段 24/77: 3592-3592
+2025-04-17 17:41:22,766 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:22,766 - INFO - 正在计算异常分数...
+2025-04-17 17:41:22,766 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:22,766 - INFO - 正在为时间段 3592-3592 生成可视化
+2025-04-17 17:41:22,766 - INFO - 正在为时间段 3592-3592 生成异常图可视化
+2025-04-17 17:41:22,766 - INFO - 单个点位异常段 3592-3592，扩展为 3588-3592 (window_size=5)
+2025-04-17 17:41:22,767 - DEBUG - 边统计: 正常边 33 条, 异常边 9 条
+2025-04-17 17:41:22,819 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_23_3592_3592.png
+2025-04-17 17:41:23,121 - INFO - 成功保存时间段 3592-3592 的可视化结果
+2025-04-17 17:41:23,121 - INFO - 
+正在处理时间段 25/77: 3611-3611
+2025-04-17 17:41:23,121 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:23,121 - INFO - 正在计算异常分数...
+2025-04-17 17:41:23,121 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:23,121 - INFO - 正在为时间段 3611-3611 生成可视化
+2025-04-17 17:41:23,121 - INFO - 正在为时间段 3611-3611 生成异常图可视化
+2025-04-17 17:41:23,121 - INFO - 单个点位异常段 3611-3611，扩展为 3607-3611 (window_size=5)
+2025-04-17 17:41:23,122 - DEBUG - 边统计: 正常边 42 条, 异常边 3 条
+2025-04-17 17:41:23,175 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_24_3611_3611.png
+2025-04-17 17:41:23,481 - INFO - 成功保存时间段 3611-3611 的可视化结果
+2025-04-17 17:41:23,482 - INFO - 
+正在处理时间段 26/77: 3646-3646
+2025-04-17 17:41:23,482 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:23,482 - INFO - 正在计算异常分数...
+2025-04-17 17:41:23,482 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:23,482 - INFO - 正在为时间段 3646-3646 生成可视化
+2025-04-17 17:41:23,482 - INFO - 正在为时间段 3646-3646 生成异常图可视化
+2025-04-17 17:41:23,482 - INFO - 单个点位异常段 3646-3646，扩展为 3642-3646 (window_size=5)
+2025-04-17 17:41:23,482 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:41:23,534 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_25_3646_3646.png
+2025-04-17 17:41:23,834 - INFO - 成功保存时间段 3646-3646 的可视化结果
+2025-04-17 17:41:23,834 - INFO - 
+正在处理时间段 27/77: 3653-3657
+2025-04-17 17:41:23,834 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:23,834 - INFO - 正在计算异常分数...
+2025-04-17 17:41:23,835 - INFO - 检测到的异常节点: {7, 8, np.int64(9), np.int64(10), 11, np.int64(12), np.int64(13)}
+2025-04-17 17:41:23,835 - INFO - 正在为时间段 3653-3657 生成可视化
+2025-04-17 17:41:23,835 - INFO - 正在为时间段 3653-3657 生成异常图可视化
+2025-04-17 17:41:23,835 - DEBUG - 边统计: 正常边 26 条, 异常边 19 条
+2025-04-17 17:41:23,887 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_26_3653_3657.png
+2025-04-17 17:41:24,189 - INFO - 成功保存时间段 3653-3657 的可视化结果
+2025-04-17 17:41:24,189 - INFO - 
+正在处理时间段 28/77: 3896-3898
+2025-04-17 17:41:24,189 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:24,189 - INFO - 正在计算异常分数...
+2025-04-17 17:41:24,190 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:24,190 - INFO - 正在为时间段 3896-3898 生成可视化
+2025-04-17 17:41:24,190 - INFO - 正在为时间段 3896-3898 生成异常图可视化
+2025-04-17 17:41:24,190 - DEBUG - 边统计: 正常边 26 条, 异常边 16 条
+2025-04-17 17:41:24,242 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_27_3896_3898.png
+2025-04-17 17:41:24,544 - INFO - 成功保存时间段 3896-3898 的可视化结果
+2025-04-17 17:41:24,544 - INFO - 
+正在处理时间段 29/77: 4224-4239
+2025-04-17 17:41:24,545 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:24,545 - INFO - 正在计算异常分数...
+2025-04-17 17:41:24,548 - INFO - 检测到的异常节点: {2, 3, np.int64(4), np.int64(5), np.int64(6), 7, 8, np.int64(9), np.int64(10), np.int64(12), 14}
+2025-04-17 17:41:24,548 - INFO - 正在为时间段 4224-4239 生成可视化
+2025-04-17 17:41:24,548 - INFO - 正在为时间段 4224-4239 生成异常图可视化
+2025-04-17 17:41:24,548 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:24,601 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_28_4224_4239.png
+2025-04-17 17:41:24,904 - INFO - 成功保存时间段 4224-4239 的可视化结果
+2025-04-17 17:41:24,904 - INFO - 
+正在处理时间段 30/77: 4451-4454
+2025-04-17 17:41:24,904 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:24,905 - INFO - 正在计算异常分数...
+2025-04-17 17:41:24,905 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:24,905 - INFO - 正在为时间段 4451-4454 生成可视化
+2025-04-17 17:41:24,905 - INFO - 正在为时间段 4451-4454 生成异常图可视化
+2025-04-17 17:41:24,905 - DEBUG - 边统计: 正常边 37 条, 异常边 5 条
+2025-04-17 17:41:24,957 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_29_4451_4454.png
+2025-04-17 17:41:25,257 - INFO - 成功保存时间段 4451-4454 的可视化结果
+2025-04-17 17:41:25,257 - INFO - 
+正在处理时间段 31/77: 4474-4474
+2025-04-17 17:41:25,257 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:25,257 - INFO - 正在计算异常分数...
+2025-04-17 17:41:25,257 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:25,257 - INFO - 正在为时间段 4474-4474 生成可视化
+2025-04-17 17:41:25,257 - INFO - 正在为时间段 4474-4474 生成异常图可视化
+2025-04-17 17:41:25,258 - INFO - 单个点位异常段 4474-4474，扩展为 4470-4474 (window_size=5)
+2025-04-17 17:41:25,258 - DEBUG - 边统计: 正常边 40 条, 异常边 5 条
+2025-04-17 17:41:25,311 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_30_4474_4474.png
+2025-04-17 17:41:25,617 - INFO - 成功保存时间段 4474-4474 的可视化结果
+2025-04-17 17:41:25,617 - INFO - 
+正在处理时间段 32/77: 4533-4537
+2025-04-17 17:41:25,617 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:25,617 - INFO - 正在计算异常分数...
+2025-04-17 17:41:25,618 - INFO - 检测到的异常节点: {np.int64(9), 7}
+2025-04-17 17:41:25,618 - INFO - 正在为时间段 4533-4537 生成可视化
+2025-04-17 17:41:25,618 - INFO - 正在为时间段 4533-4537 生成异常图可视化
+2025-04-17 17:41:25,618 - DEBUG - 边统计: 正常边 43 条, 异常边 2 条
+2025-04-17 17:41:25,743 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_31_4533_4537.png
+2025-04-17 17:41:26,052 - INFO - 成功保存时间段 4533-4537 的可视化结果
+2025-04-17 17:41:26,052 - INFO - 
+正在处理时间段 33/77: 4778-4796
+2025-04-17 17:41:26,052 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:26,052 - INFO - 正在计算异常分数...
+2025-04-17 17:41:26,056 - INFO - 检测到的异常节点: {1, 3, np.int64(4), np.int64(6), np.int64(7), 8, np.int64(9), np.int64(10), 11, np.int64(12), 14, 15}
+2025-04-17 17:41:26,056 - INFO - 正在为时间段 4778-4796 生成可视化
+2025-04-17 17:41:26,056 - INFO - 正在为时间段 4778-4796 生成异常图可视化
+2025-04-17 17:41:26,056 - DEBUG - 边统计: 正常边 40 条, 异常边 5 条
+2025-04-17 17:41:26,109 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_32_4778_4796.png
+2025-04-17 17:41:26,426 - INFO - 成功保存时间段 4778-4796 的可视化结果
+2025-04-17 17:41:26,426 - INFO - 
+正在处理时间段 34/77: 5077-5081
+2025-04-17 17:41:26,426 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:26,426 - INFO - 正在计算异常分数...
+2025-04-17 17:41:26,427 - INFO - 检测到的异常节点: {3, np.int64(6)}
+2025-04-17 17:41:26,427 - INFO - 正在为时间段 5077-5081 生成可视化
+2025-04-17 17:41:26,427 - INFO - 正在为时间段 5077-5081 生成异常图可视化
+2025-04-17 17:41:26,427 - DEBUG - 边统计: 正常边 43 条, 异常边 2 条
+2025-04-17 17:41:26,485 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_33_5077_5081.png
+2025-04-17 17:41:26,795 - INFO - 成功保存时间段 5077-5081 的可视化结果
+2025-04-17 17:41:26,795 - INFO - 
+正在处理时间段 35/77: 5287-5289
+2025-04-17 17:41:26,796 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:41:26,796 - INFO - 正在计算异常分数...
+2025-04-17 17:41:26,796 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:26,796 - INFO - 正在为时间段 5287-5289 生成可视化
+2025-04-17 17:41:26,796 - INFO - 正在为时间段 5287-5289 生成异常图可视化
+2025-04-17 17:41:26,796 - DEBUG - 边统计: 正常边 25 条, 异常边 17 条
+2025-04-17 17:41:26,849 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_34_5287_5289.png
+2025-04-17 17:41:27,149 - INFO - 成功保存时间段 5287-5289 的可视化结果
+2025-04-17 17:41:27,149 - INFO - 
+正在处理时间段 36/77: 5291-5291
+2025-04-17 17:41:27,149 - INFO - 该时间段的真实异常节点: {9, 11, 12}
+2025-04-17 17:41:27,149 - INFO - 正在计算异常分数...
+2025-04-17 17:41:27,149 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:27,149 - INFO - 正在为时间段 5291-5291 生成可视化
+2025-04-17 17:41:27,149 - INFO - 正在为时间段 5291-5291 生成异常图可视化
+2025-04-17 17:41:27,149 - INFO - 单个点位异常段 5291-5291，扩展为 5287-5291 (window_size=5)
+2025-04-17 17:41:27,150 - DEBUG - 边统计: 正常边 32 条, 异常边 10 条
+2025-04-17 17:41:27,203 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_35_5291_5291.png
+2025-04-17 17:41:27,506 - INFO - 成功保存时间段 5291-5291 的可视化结果
+2025-04-17 17:41:27,506 - INFO - 
+正在处理时间段 37/77: 5337-5337
+2025-04-17 17:41:27,506 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:27,506 - INFO - 正在计算异常分数...
+2025-04-17 17:41:27,506 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:27,506 - INFO - 正在为时间段 5337-5337 生成可视化
+2025-04-17 17:41:27,506 - INFO - 正在为时间段 5337-5337 生成异常图可视化
+2025-04-17 17:41:27,506 - INFO - 单个点位异常段 5337-5337，扩展为 5333-5337 (window_size=5)
+2025-04-17 17:41:27,507 - DEBUG - 边统计: 正常边 31 条, 异常边 11 条
+2025-04-17 17:41:27,559 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_36_5337_5337.png
+2025-04-17 17:41:27,863 - INFO - 成功保存时间段 5337-5337 的可视化结果
+2025-04-17 17:41:27,863 - INFO - 
+正在处理时间段 38/77: 5576-5576
+2025-04-17 17:41:27,863 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:27,863 - INFO - 正在计算异常分数...
+2025-04-17 17:41:27,863 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:27,863 - INFO - 正在为时间段 5576-5576 生成可视化
+2025-04-17 17:41:27,863 - INFO - 正在为时间段 5576-5576 生成异常图可视化
+2025-04-17 17:41:27,863 - INFO - 单个点位异常段 5576-5576，扩展为 5572-5576 (window_size=5)
+2025-04-17 17:41:27,864 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:41:27,917 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_37_5576_5576.png
+2025-04-17 17:41:28,219 - INFO - 成功保存时间段 5576-5576 的可视化结果
+2025-04-17 17:41:28,219 - INFO - 
+正在处理时间段 39/77: 5582-5582
+2025-04-17 17:41:28,219 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:28,219 - INFO - 正在计算异常分数...
+2025-04-17 17:41:28,219 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:28,219 - INFO - 正在为时间段 5582-5582 生成可视化
+2025-04-17 17:41:28,219 - INFO - 正在为时间段 5582-5582 生成异常图可视化
+2025-04-17 17:41:28,219 - INFO - 单个点位异常段 5582-5582，扩展为 5578-5582 (window_size=5)
+2025-04-17 17:41:28,220 - DEBUG - 边统计: 正常边 37 条, 异常边 8 条
+2025-04-17 17:41:28,273 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_38_5582_5582.png
+2025-04-17 17:41:28,576 - INFO - 成功保存时间段 5582-5582 的可视化结果
+2025-04-17 17:41:28,576 - INFO - 
+正在处理时间段 40/77: 5591-5591
+2025-04-17 17:41:28,577 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:28,577 - INFO - 正在计算异常分数...
+2025-04-17 17:41:28,577 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:28,577 - INFO - 正在为时间段 5591-5591 生成可视化
+2025-04-17 17:41:28,577 - INFO - 正在为时间段 5591-5591 生成异常图可视化
+2025-04-17 17:41:28,577 - INFO - 单个点位异常段 5591-5591，扩展为 5587-5591 (window_size=5)
+2025-04-17 17:41:28,577 - DEBUG - 边统计: 正常边 35 条, 异常边 7 条
+2025-04-17 17:41:28,628 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_39_5591_5591.png
+2025-04-17 17:41:28,931 - INFO - 成功保存时间段 5591-5591 的可视化结果
+2025-04-17 17:41:28,931 - INFO - 
+正在处理时间段 41/77: 5606-5606
+2025-04-17 17:41:28,931 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:28,931 - INFO - 正在计算异常分数...
+2025-04-17 17:41:28,931 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:28,931 - INFO - 正在为时间段 5606-5606 生成可视化
+2025-04-17 17:41:28,931 - INFO - 正在为时间段 5606-5606 生成异常图可视化
+2025-04-17 17:41:28,931 - INFO - 单个点位异常段 5606-5606，扩展为 5602-5606 (window_size=5)
+2025-04-17 17:41:28,932 - DEBUG - 边统计: 正常边 41 条, 异常边 4 条
+2025-04-17 17:41:28,985 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_40_5606_5606.png
+2025-04-17 17:41:29,289 - INFO - 成功保存时间段 5606-5606 的可视化结果
+2025-04-17 17:41:29,289 - INFO - 
+正在处理时间段 42/77: 5621-5621
+2025-04-17 17:41:29,290 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:29,290 - INFO - 正在计算异常分数...
+2025-04-17 17:41:29,290 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:29,290 - INFO - 正在为时间段 5621-5621 生成可视化
+2025-04-17 17:41:29,290 - INFO - 正在为时间段 5621-5621 生成异常图可视化
+2025-04-17 17:41:29,290 - INFO - 单个点位异常段 5621-5621，扩展为 5617-5621 (window_size=5)
+2025-04-17 17:41:29,290 - DEBUG - 边统计: 正常边 33 条, 异常边 9 条
+2025-04-17 17:41:29,343 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_41_5621_5621.png
+2025-04-17 17:41:29,640 - INFO - 成功保存时间段 5621-5621 的可视化结果
+2025-04-17 17:41:29,640 - INFO - 
+正在处理时间段 43/77: 5627-5627
+2025-04-17 17:41:29,640 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:29,640 - INFO - 正在计算异常分数...
+2025-04-17 17:41:29,640 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:29,640 - INFO - 正在为时间段 5627-5627 生成可视化
+2025-04-17 17:41:29,640 - INFO - 正在为时间段 5627-5627 生成异常图可视化
+2025-04-17 17:41:29,640 - INFO - 单个点位异常段 5627-5627，扩展为 5623-5627 (window_size=5)
+2025-04-17 17:41:29,641 - DEBUG - 边统计: 正常边 40 条, 异常边 5 条
+2025-04-17 17:41:29,694 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_42_5627_5627.png
+2025-04-17 17:41:29,995 - INFO - 成功保存时间段 5627-5627 的可视化结果
+2025-04-17 17:41:29,995 - INFO - 
+正在处理时间段 44/77: 5963-5981
+2025-04-17 17:41:29,995 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:29,995 - INFO - 正在计算异常分数...
+2025-04-17 17:41:29,999 - INFO - 检测到的异常节点: {1, 2, 3, np.int64(4), 5, np.int64(6), 7, 8, np.int64(9), np.int64(10), 11, np.int64(12), np.int64(13), 14, 15}
+2025-04-17 17:41:29,999 - INFO - 正在为时间段 5963-5981 生成可视化
+2025-04-17 17:41:29,999 - INFO - 正在为时间段 5963-5981 生成异常图可视化
+2025-04-17 17:41:30,000 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:30,142 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_43_5963_5981.png
+2025-04-17 17:41:30,446 - INFO - 成功保存时间段 5963-5981 的可视化结果
+2025-04-17 17:41:30,446 - INFO - 
+正在处理时间段 45/77: 6157-6161
+2025-04-17 17:41:30,446 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:30,446 - INFO - 正在计算异常分数...
+2025-04-17 17:41:30,447 - INFO - 检测到的异常节点: {9, np.int64(10)}
+2025-04-17 17:41:30,447 - INFO - 正在为时间段 6157-6161 生成可视化
+2025-04-17 17:41:30,447 - INFO - 正在为时间段 6157-6161 生成异常图可视化
+2025-04-17 17:41:30,447 - DEBUG - 边统计: 正常边 37 条, 异常边 5 条
+2025-04-17 17:41:30,498 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_44_6157_6161.png
+2025-04-17 17:41:30,792 - INFO - 成功保存时间段 6157-6161 的可视化结果
+2025-04-17 17:41:30,792 - INFO - 
+正在处理时间段 46/77: 6197-6200
+2025-04-17 17:41:30,792 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:30,792 - INFO - 正在计算异常分数...
+2025-04-17 17:41:30,792 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:30,792 - INFO - 正在为时间段 6197-6200 生成可视化
+2025-04-17 17:41:30,792 - INFO - 正在为时间段 6197-6200 生成异常图可视化
+2025-04-17 17:41:30,793 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:41:30,844 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_45_6197_6200.png
+2025-04-17 17:41:31,138 - INFO - 成功保存时间段 6197-6200 的可视化结果
+2025-04-17 17:41:31,138 - INFO - 
+正在处理时间段 47/77: 6233-6254
+2025-04-17 17:41:31,138 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:41:31,139 - INFO - 正在计算异常分数...
+2025-04-17 17:41:31,143 - INFO - 检测到的异常节点: {1, 2, np.int64(3), np.int64(4), 5, np.int64(6), 7, 8, np.int64(9), np.int64(10), 11, np.int64(12), np.int64(13), 14, 15}
+2025-04-17 17:41:31,143 - INFO - 正在为时间段 6233-6254 生成可视化
+2025-04-17 17:41:31,143 - INFO - 正在为时间段 6233-6254 生成异常图可视化
+2025-04-17 17:41:31,143 - DEBUG - 边统计: 正常边 43 条, 异常边 2 条
+2025-04-17 17:41:31,196 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_46_6233_6254.png
+2025-04-17 17:41:31,493 - INFO - 成功保存时间段 6233-6254 的可视化结果
+2025-04-17 17:41:31,493 - INFO - 
+正在处理时间段 48/77: 6440-6449
+2025-04-17 17:41:31,493 - INFO - 该时间段的真实异常节点: {9, 10, 12}
+2025-04-17 17:41:31,493 - INFO - 正在计算异常分数...
+2025-04-17 17:41:31,495 - INFO - 检测到的异常节点: {1, 4, np.int64(6), np.int64(7), 9, np.int64(10), 13, 14}
+2025-04-17 17:41:31,495 - INFO - 正在为时间段 6440-6449 生成可视化
+2025-04-17 17:41:31,495 - INFO - 正在为时间段 6440-6449 生成异常图可视化
+2025-04-17 17:41:31,495 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:31,547 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_47_6440_6449.png
+2025-04-17 17:41:31,845 - INFO - 成功保存时间段 6440-6449 的可视化结果
+2025-04-17 17:41:31,845 - INFO - 
+正在处理时间段 49/77: 6457-6457
+2025-04-17 17:41:31,846 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:31,846 - INFO - 正在计算异常分数...
+2025-04-17 17:41:31,846 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:31,846 - INFO - 正在为时间段 6457-6457 生成可视化
+2025-04-17 17:41:31,846 - INFO - 正在为时间段 6457-6457 生成异常图可视化
+2025-04-17 17:41:31,846 - INFO - 单个点位异常段 6457-6457，扩展为 6453-6457 (window_size=5)
+2025-04-17 17:41:31,846 - DEBUG - 边统计: 正常边 41 条, 异常边 4 条
+2025-04-17 17:41:31,898 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_48_6457_6457.png
+2025-04-17 17:41:32,199 - INFO - 成功保存时间段 6457-6457 的可视化结果
+2025-04-17 17:41:32,199 - INFO - 
+正在处理时间段 50/77: 6471-6491
+2025-04-17 17:41:32,200 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:32,200 - INFO - 正在计算异常分数...
+2025-04-17 17:41:32,203 - INFO - 检测到的异常节点: {1, 2, np.int64(3), np.int64(4), 5, np.int64(6), 7, 8, 9, np.int64(10), np.int64(11), np.int64(12), 13, 14}
+2025-04-17 17:41:32,204 - INFO - 正在为时间段 6471-6491 生成可视化
+2025-04-17 17:41:32,204 - INFO - 正在为时间段 6471-6491 生成异常图可视化
+2025-04-17 17:41:32,204 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:32,256 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_49_6471_6491.png
+2025-04-17 17:41:32,554 - INFO - 成功保存时间段 6471-6491 的可视化结果
+2025-04-17 17:41:32,554 - INFO - 
+正在处理时间段 51/77: 6500-6500
+2025-04-17 17:41:32,554 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:32,554 - INFO - 正在计算异常分数...
+2025-04-17 17:41:32,554 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:32,555 - INFO - 正在为时间段 6500-6500 生成可视化
+2025-04-17 17:41:32,555 - INFO - 正在为时间段 6500-6500 生成异常图可视化
+2025-04-17 17:41:32,555 - INFO - 单个点位异常段 6500-6500，扩展为 6496-6500 (window_size=5)
+2025-04-17 17:41:32,555 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:41:32,606 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_50_6500_6500.png
+2025-04-17 17:41:32,903 - INFO - 成功保存时间段 6500-6500 的可视化结果
+2025-04-17 17:41:32,903 - INFO - 
+正在处理时间段 52/77: 6513-6515
+2025-04-17 17:41:32,904 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:32,904 - INFO - 正在计算异常分数...
+2025-04-17 17:41:32,904 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:32,904 - INFO - 正在为时间段 6513-6515 生成可视化
+2025-04-17 17:41:32,904 - INFO - 正在为时间段 6513-6515 生成异常图可视化
+2025-04-17 17:41:32,904 - DEBUG - 边统计: 正常边 26 条, 异常边 19 条
+2025-04-17 17:41:32,956 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_51_6513_6515.png
+2025-04-17 17:41:33,257 - INFO - 成功保存时间段 6513-6515 的可视化结果
+2025-04-17 17:41:33,258 - INFO - 
+正在处理时间段 53/77: 6531-6545
+2025-04-17 17:41:33,258 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:33,258 - INFO - 正在计算异常分数...
+2025-04-17 17:41:33,260 - INFO - 检测到的异常节点: {1, 2, np.int64(3), np.int64(4), 5, np.int64(6), np.int64(7), 8, np.int64(9), np.int64(10), 11, np.int64(12), np.int64(13)}
+2025-04-17 17:41:33,260 - INFO - 正在为时间段 6531-6545 生成可视化
+2025-04-17 17:41:33,260 - INFO - 正在为时间段 6531-6545 生成异常图可视化
+2025-04-17 17:41:33,261 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:41:33,312 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_52_6531_6545.png
+2025-04-17 17:41:33,606 - INFO - 成功保存时间段 6531-6545 的可视化结果
+2025-04-17 17:41:33,607 - INFO - 
+正在处理时间段 54/77: 6549-6563
+2025-04-17 17:41:33,607 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:33,607 - INFO - 正在计算异常分数...
+2025-04-17 17:41:33,609 - INFO - 检测到的异常节点: {1, 2, 3, np.int64(4), np.int64(5), np.int64(6), np.int64(7), 8, np.int64(9), np.int64(10), np.int64(12), 13, 14, 15}
+2025-04-17 17:41:33,610 - INFO - 正在为时间段 6549-6563 生成可视化
+2025-04-17 17:41:33,610 - INFO - 正在为时间段 6549-6563 生成异常图可视化
+2025-04-17 17:41:33,610 - DEBUG - 边统计: 正常边 44 条, 异常边 1 条
+2025-04-17 17:41:33,661 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_53_6549_6563.png
+2025-04-17 17:41:33,960 - INFO - 成功保存时间段 6549-6563 的可视化结果
+2025-04-17 17:41:33,961 - INFO - 
+正在处理时间段 55/77: 6726-6730
+2025-04-17 17:41:33,961 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:33,961 - INFO - 正在计算异常分数...
+2025-04-17 17:41:33,961 - INFO - 检测到的异常节点: {4, np.int64(13), np.int64(6)}
+2025-04-17 17:41:33,961 - INFO - 正在为时间段 6726-6730 生成可视化
+2025-04-17 17:41:33,961 - INFO - 正在为时间段 6726-6730 生成异常图可视化
+2025-04-17 17:41:33,962 - DEBUG - 边统计: 正常边 34 条, 异常边 8 条
+2025-04-17 17:41:34,012 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_54_6726_6730.png
+2025-04-17 17:41:34,308 - INFO - 成功保存时间段 6726-6730 的可视化结果
+2025-04-17 17:41:34,309 - INFO - 
+正在处理时间段 56/77: 6824-6825
+2025-04-17 17:41:34,309 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:34,309 - INFO - 正在计算异常分数...
+2025-04-17 17:41:34,309 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:34,309 - INFO - 正在为时间段 6824-6825 生成可视化
+2025-04-17 17:41:34,309 - INFO - 正在为时间段 6824-6825 生成异常图可视化
+2025-04-17 17:41:34,309 - DEBUG - 边统计: 正常边 0 条, 异常边 36 条
+2025-04-17 17:41:34,436 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_55_6824_6825.png
+2025-04-17 17:41:34,738 - INFO - 成功保存时间段 6824-6825 的可视化结果
+2025-04-17 17:41:34,738 - INFO - 
+正在处理时间段 57/77: 7302-7302
+2025-04-17 17:41:34,738 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:34,738 - INFO - 正在计算异常分数...
+2025-04-17 17:41:34,739 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:34,739 - INFO - 正在为时间段 7302-7302 生成可视化
+2025-04-17 17:41:34,739 - INFO - 正在为时间段 7302-7302 生成异常图可视化
+2025-04-17 17:41:34,739 - INFO - 单个点位异常段 7302-7302，扩展为 7298-7302 (window_size=5)
+2025-04-17 17:41:34,739 - DEBUG - 边统计: 正常边 37 条, 异常边 8 条
+2025-04-17 17:41:34,791 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_56_7302_7302.png
+2025-04-17 17:41:35,091 - INFO - 成功保存时间段 7302-7302 的可视化结果
+2025-04-17 17:41:35,091 - INFO - 
+正在处理时间段 58/77: 7337-7337
+2025-04-17 17:41:35,091 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:35,091 - INFO - 正在计算异常分数...
+2025-04-17 17:41:35,091 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:35,091 - INFO - 正在为时间段 7337-7337 生成可视化
+2025-04-17 17:41:35,091 - INFO - 正在为时间段 7337-7337 生成异常图可视化
+2025-04-17 17:41:35,091 - INFO - 单个点位异常段 7337-7337，扩展为 7333-7337 (window_size=5)
+2025-04-17 17:41:35,092 - DEBUG - 边统计: 正常边 38 条, 异常边 7 条
+2025-04-17 17:41:35,144 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_57_7337_7337.png
+2025-04-17 17:41:35,442 - INFO - 成功保存时间段 7337-7337 的可视化结果
+2025-04-17 17:41:35,443 - INFO - 
+正在处理时间段 59/77: 7384-7414
+2025-04-17 17:41:35,443 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:41:35,443 - INFO - 正在计算异常分数...
+2025-04-17 17:41:35,449 - INFO - 检测到的异常节点: {1, 2, np.int64(3), np.int64(4), 5, np.int64(6), 7, 8, np.int64(9), np.int64(10), 11, np.int64(12), 13, 14, 15}
+2025-04-17 17:41:35,449 - INFO - 正在为时间段 7384-7414 生成可视化
+2025-04-17 17:41:35,449 - INFO - 正在为时间段 7384-7414 生成异常图可视化
+2025-04-17 17:41:35,449 - DEBUG - 边统计: 正常边 42 条, 异常边 3 条
+2025-04-17 17:41:35,501 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_58_7384_7414.png
+2025-04-17 17:41:35,789 - INFO - 成功保存时间段 7384-7414 的可视化结果
+2025-04-17 17:41:35,789 - INFO - 
+正在处理时间段 60/77: 7591-7592
+2025-04-17 17:41:35,789 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:41:35,789 - INFO - 正在计算异常分数...
+2025-04-17 17:41:35,789 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:35,789 - INFO - 正在为时间段 7591-7592 生成可视化
+2025-04-17 17:41:35,789 - INFO - 正在为时间段 7591-7592 生成异常图可视化
+2025-04-17 17:41:35,789 - DEBUG - 边统计: 正常边 0 条, 异常边 36 条
+2025-04-17 17:41:35,837 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_59_7591_7592.png
+2025-04-17 17:41:36,123 - INFO - 成功保存时间段 7591-7592 的可视化结果
+2025-04-17 17:41:36,123 - INFO - 
+正在处理时间段 61/77: 7596-7598
+2025-04-17 17:41:36,123 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 12}
+2025-04-17 17:41:36,123 - INFO - 正在计算异常分数...
+2025-04-17 17:41:36,123 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:36,123 - INFO - 正在为时间段 7596-7598 生成可视化
+2025-04-17 17:41:36,123 - INFO - 正在为时间段 7596-7598 生成异常图可视化
+2025-04-17 17:41:36,124 - DEBUG - 边统计: 正常边 24 条, 异常边 18 条
+2025-04-17 17:41:36,173 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_60_7596_7598.png
+2025-04-17 17:41:36,462 - INFO - 成功保存时间段 7596-7598 的可视化结果
+2025-04-17 17:41:36,462 - INFO - 
+正在处理时间段 62/77: 7640-7640
+2025-04-17 17:41:36,462 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:36,462 - INFO - 正在计算异常分数...
+2025-04-17 17:41:36,462 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:36,462 - INFO - 正在为时间段 7640-7640 生成可视化
+2025-04-17 17:41:36,462 - INFO - 正在为时间段 7640-7640 生成异常图可视化
+2025-04-17 17:41:36,462 - INFO - 单个点位异常段 7640-7640，扩展为 7636-7640 (window_size=5)
+2025-04-17 17:41:36,463 - DEBUG - 边统计: 正常边 38 条, 异常边 7 条
+2025-04-17 17:41:36,515 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_61_7640_7640.png
+2025-04-17 17:41:36,808 - INFO - 成功保存时间段 7640-7640 的可视化结果
+2025-04-17 17:41:36,808 - INFO - 
+正在处理时间段 63/77: 7691-7691
+2025-04-17 17:41:36,808 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:36,808 - INFO - 正在计算异常分数...
+2025-04-17 17:41:36,808 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:36,808 - INFO - 正在为时间段 7691-7691 生成可视化
+2025-04-17 17:41:36,808 - INFO - 正在为时间段 7691-7691 生成异常图可视化
+2025-04-17 17:41:36,808 - INFO - 单个点位异常段 7691-7691，扩展为 7687-7691 (window_size=5)
+2025-04-17 17:41:36,808 - DEBUG - 边统计: 正常边 31 条, 异常边 11 条
+2025-04-17 17:41:36,858 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_62_7691_7691.png
+2025-04-17 17:41:37,146 - INFO - 成功保存时间段 7691-7691 的可视化结果
+2025-04-17 17:41:37,147 - INFO - 
+正在处理时间段 64/77: 7700-7707
+2025-04-17 17:41:37,147 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:37,147 - INFO - 正在计算异常分数...
+2025-04-17 17:41:37,148 - INFO - 检测到的异常节点: {1, 4, np.int64(6), 7, 8, np.int64(9), np.int64(10), np.int64(12)}
+2025-04-17 17:41:37,148 - INFO - 正在为时间段 7700-7707 生成可视化
+2025-04-17 17:41:37,148 - INFO - 正在为时间段 7700-7707 生成异常图可视化
+2025-04-17 17:41:37,148 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:37,198 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_63_7700_7707.png
+2025-04-17 17:41:37,487 - INFO - 成功保存时间段 7700-7707 的可视化结果
+2025-04-17 17:41:37,487 - INFO - 
+正在处理时间段 65/77: 7885-7886
+2025-04-17 17:41:37,487 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:37,487 - INFO - 正在计算异常分数...
+2025-04-17 17:41:37,487 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:37,487 - INFO - 正在为时间段 7885-7886 生成可视化
+2025-04-17 17:41:37,487 - INFO - 正在为时间段 7885-7886 生成异常图可视化
+2025-04-17 17:41:37,488 - DEBUG - 边统计: 正常边 0 条, 异常边 37 条
+2025-04-17 17:41:37,538 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_64_7885_7886.png
+2025-04-17 17:41:37,828 - INFO - 成功保存时间段 7885-7886 的可视化结果
+2025-04-17 17:41:37,828 - INFO - 
+正在处理时间段 66/77: 7963-7963
+2025-04-17 17:41:37,828 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 12}
+2025-04-17 17:41:37,828 - INFO - 正在计算异常分数...
+2025-04-17 17:41:37,828 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:37,828 - INFO - 正在为时间段 7963-7963 生成可视化
+2025-04-17 17:41:37,829 - INFO - 正在为时间段 7963-7963 生成异常图可视化
+2025-04-17 17:41:37,829 - INFO - 单个点位异常段 7963-7963，扩展为 7959-7963 (window_size=5)
+2025-04-17 17:41:37,829 - DEBUG - 边统计: 正常边 41 条, 异常边 4 条
+2025-04-17 17:41:37,880 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_65_7963_7963.png
+2025-04-17 17:41:38,169 - INFO - 成功保存时间段 7963-7963 的可视化结果
+2025-04-17 17:41:38,169 - INFO - 
+正在处理时间段 67/77: 7991-7995
+2025-04-17 17:41:38,169 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:38,169 - INFO - 正在计算异常分数...
+2025-04-17 17:41:38,169 - INFO - 检测到的异常节点: {8, np.int64(9), np.int64(10), 7}
+2025-04-17 17:41:38,169 - INFO - 正在为时间段 7991-7995 生成可视化
+2025-04-17 17:41:38,169 - INFO - 正在为时间段 7991-7995 生成异常图可视化
+2025-04-17 17:41:38,170 - DEBUG - 边统计: 正常边 35 条, 异常边 10 条
+2025-04-17 17:41:38,220 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_66_7991_7995.png
+2025-04-17 17:41:38,509 - INFO - 成功保存时间段 7991-7995 的可视化结果
+2025-04-17 17:41:38,509 - INFO - 
+正在处理时间段 68/77: 8214-8216
+2025-04-17 17:41:38,509 - INFO - 该时间段的真实异常节点: {9, 12}
+2025-04-17 17:41:38,509 - INFO - 正在计算异常分数...
+2025-04-17 17:41:38,509 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:38,509 - INFO - 正在为时间段 8214-8216 生成可视化
+2025-04-17 17:41:38,509 - INFO - 正在为时间段 8214-8216 生成异常图可视化
+2025-04-17 17:41:38,510 - DEBUG - 边统计: 正常边 27 条, 异常边 15 条
+2025-04-17 17:41:38,631 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_67_8214_8216.png
+2025-04-17 17:41:38,928 - INFO - 成功保存时间段 8214-8216 的可视化结果
+2025-04-17 17:41:38,928 - INFO - 
+正在处理时间段 69/77: 8280-8291
+2025-04-17 17:41:38,929 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:38,929 - INFO - 正在计算异常分数...
+2025-04-17 17:41:38,931 - INFO - 检测到的异常节点: {np.int64(4), 5, np.int64(6), 7, 8, np.int64(9), np.int64(10), np.int64(12), 13, 14}
+2025-04-17 17:41:38,931 - INFO - 正在为时间段 8280-8291 生成可视化
+2025-04-17 17:41:38,931 - INFO - 正在为时间段 8280-8291 生成异常图可视化
+2025-04-17 17:41:38,931 - DEBUG - 边统计: 正常边 42 条, 异常边 3 条
+2025-04-17 17:41:38,984 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_68_8280_8291.png
+2025-04-17 17:41:39,283 - INFO - 成功保存时间段 8280-8291 的可视化结果
+2025-04-17 17:41:39,284 - INFO - 
+正在处理时间段 70/77: 8432-8451
+2025-04-17 17:41:39,284 - INFO - 该时间段的真实异常节点: {8, 11, 6, 7}
+2025-04-17 17:41:39,284 - INFO - 正在计算异常分数...
+2025-04-17 17:41:39,287 - INFO - 检测到的异常节点: {1, 2, np.int64(3), 4, np.int64(5), np.int64(6), np.int64(7), 8, np.int64(9), np.int64(10), 11, np.int64(12), 13, 14}
+2025-04-17 17:41:39,288 - INFO - 正在为时间段 8432-8451 生成可视化
+2025-04-17 17:41:39,288 - INFO - 正在为时间段 8432-8451 生成异常图可视化
+2025-04-17 17:41:39,288 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:39,339 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_69_8432_8451.png
+2025-04-17 17:41:39,627 - INFO - 成功保存时间段 8432-8451 的可视化结果
+2025-04-17 17:41:39,627 - INFO - 
+正在处理时间段 71/77: 8459-8461
+2025-04-17 17:41:39,627 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:39,627 - INFO - 正在计算异常分数...
+2025-04-17 17:41:39,627 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:39,627 - INFO - 正在为时间段 8459-8461 生成可视化
+2025-04-17 17:41:39,627 - INFO - 正在为时间段 8459-8461 生成异常图可视化
+2025-04-17 17:41:39,628 - DEBUG - 边统计: 正常边 24 条, 异常边 18 条
+2025-04-17 17:41:39,677 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_70_8459_8461.png
+2025-04-17 17:41:39,971 - INFO - 成功保存时间段 8459-8461 的可视化结果
+2025-04-17 17:41:39,971 - INFO - 
+正在处理时间段 72/77: 8504-8508
+2025-04-17 17:41:39,972 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:39,972 - INFO - 正在计算异常分数...
+2025-04-17 17:41:39,972 - INFO - 检测到的异常节点: {11}
+2025-04-17 17:41:39,972 - INFO - 正在为时间段 8504-8508 生成可视化
+2025-04-17 17:41:39,972 - INFO - 正在为时间段 8504-8508 生成异常图可视化
+2025-04-17 17:41:39,972 - DEBUG - 边统计: 正常边 42 条, 异常边 3 条
+2025-04-17 17:41:40,026 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_71_8504_8508.png
+2025-04-17 17:41:40,319 - INFO - 成功保存时间段 8504-8508 的可视化结果
+2025-04-17 17:41:40,319 - INFO - 
+正在处理时间段 73/77: 8542-8553
+2025-04-17 17:41:40,319 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:40,319 - INFO - 正在计算异常分数...
+2025-04-17 17:41:40,321 - INFO - 检测到的异常节点: {1, 2, np.int64(3), np.int64(4), 5, np.int64(6), 7, 9, 11, np.int64(12)}
+2025-04-17 17:41:40,321 - INFO - 正在为时间段 8542-8553 生成可视化
+2025-04-17 17:41:40,321 - INFO - 正在为时间段 8542-8553 生成异常图可视化
+2025-04-17 17:41:40,322 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:41:40,371 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_72_8542_8553.png
+2025-04-17 17:41:40,657 - INFO - 成功保存时间段 8542-8553 的可视化结果
+2025-04-17 17:41:40,657 - INFO - 
+正在处理时间段 74/77: 8564-8571
+2025-04-17 17:41:40,657 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 12}
+2025-04-17 17:41:40,657 - INFO - 正在计算异常分数...
+2025-04-17 17:41:40,658 - INFO - 检测到的异常节点: {1, 2, np.int64(5), 7, 8, np.int64(9), np.int64(10), np.int64(11), np.int64(12), 14, 15}
+2025-04-17 17:41:40,658 - INFO - 正在为时间段 8564-8571 生成可视化
+2025-04-17 17:41:40,658 - INFO - 正在为时间段 8564-8571 生成异常图可视化
+2025-04-17 17:41:40,659 - DEBUG - 边统计: 正常边 41 条, 异常边 4 条
+2025-04-17 17:41:40,711 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_73_8564_8571.png
+2025-04-17 17:41:41,012 - INFO - 成功保存时间段 8564-8571 的可视化结果
+2025-04-17 17:41:41,012 - INFO - 
+正在处理时间段 75/77: 8724-8737
+2025-04-17 17:41:41,012 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:41,012 - INFO - 正在计算异常分数...
+2025-04-17 17:41:41,015 - INFO - 检测到的异常节点: {1, 2, np.int64(3), 4, np.int64(6), 7, 8, np.int64(9), np.int64(10), np.int64(11), np.int64(13), 14}
+2025-04-17 17:41:41,015 - INFO - 正在为时间段 8724-8737 生成可视化
+2025-04-17 17:41:41,015 - INFO - 正在为时间段 8724-8737 生成异常图可视化
+2025-04-17 17:41:41,015 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:41,066 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_74_8724_8737.png
+2025-04-17 17:41:41,354 - INFO - 成功保存时间段 8724-8737 的可视化结果
+2025-04-17 17:41:41,354 - INFO - 
+正在处理时间段 76/77: 8815-8821
+2025-04-17 17:41:41,354 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:41:41,354 - INFO - 正在计算异常分数...
+2025-04-17 17:41:41,355 - INFO - 检测到的异常节点: {1, 7, 8, np.int64(9), np.int64(10), np.int64(12), 15}
+2025-04-17 17:41:41,355 - INFO - 正在为时间段 8815-8821 生成可视化
+2025-04-17 17:41:41,355 - INFO - 正在为时间段 8815-8821 生成异常图可视化
+2025-04-17 17:41:41,355 - DEBUG - 边统计: 正常边 45 条, 异常边 0 条
+2025-04-17 17:41:41,404 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_75_8815_8821.png
+2025-04-17 17:41:41,693 - INFO - 成功保存时间段 8815-8821 的可视化结果
+2025-04-17 17:41:41,693 - INFO - 
+正在处理时间段 77/77: 8859-8860
+2025-04-17 17:41:41,694 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:41:41,694 - INFO - 正在计算异常分数...
+2025-04-17 17:41:41,694 - INFO - 检测到的异常节点: set()
+2025-04-17 17:41:41,694 - INFO - 正在为时间段 8859-8860 生成可视化
+2025-04-17 17:41:41,694 - INFO - 正在为时间段 8859-8860 生成异常图可视化
+2025-04-17 17:41:41,694 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:41:41,742 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_topk/strict_deviation/els-1/seg_76_8859_8860.png
+2025-04-17 17:41:42,032 - INFO - 成功保存时间段 8859-8860 的可视化结果
+2025-04-17 17:41:42,032 - INFO - 正在生成所有异常段的综合可视化图像: ./visual/els/neighbor_topk/strict_deviation/els-1/all_segments.png
+2025-04-17 17:41:42,032 - INFO - 生成全屏优化的可视化图表
+2025-04-17 17:41:42,789 - INFO - 单个点位异常段 738-738，扩展为 734-738 (window_size=5)
+2025-04-17 17:41:42,800 - INFO - 单个点位异常段 762-762，扩展为 758-762 (window_size=5)
+2025-04-17 17:41:42,872 - INFO - 单个点位异常段 1882-1882，扩展为 1878-1882 (window_size=5)
+2025-04-17 17:41:42,892 - INFO - 单个点位异常段 2461-2461，扩展为 2457-2461 (window_size=5)
+2025-04-17 17:41:42,902 - INFO - 单个点位异常段 2506-2506，扩展为 2502-2506 (window_size=5)
+2025-04-17 17:41:42,913 - INFO - 单个点位异常段 2515-2515，扩展为 2511-2515 (window_size=5)
+2025-04-17 17:41:42,923 - INFO - 单个点位异常段 2520-2520，扩展为 2516-2520 (window_size=5)
+2025-04-17 17:41:42,986 - INFO - 单个点位异常段 3378-3378，扩展为 3374-3378 (window_size=5)
+2025-04-17 17:41:42,997 - INFO - 单个点位异常段 3564-3564，扩展为 3560-3564 (window_size=5)
+2025-04-17 17:41:43,017 - INFO - 单个点位异常段 3592-3592，扩展为 3588-3592 (window_size=5)
+2025-04-17 17:41:43,028 - INFO - 单个点位异常段 3611-3611，扩展为 3607-3611 (window_size=5)
+2025-04-17 17:41:43,038 - INFO - 单个点位异常段 3646-3646，扩展为 3642-3646 (window_size=5)
+2025-04-17 17:41:43,093 - INFO - 单个点位异常段 4474-4474，扩展为 4470-4474 (window_size=5)
+2025-04-17 17:41:43,144 - INFO - 单个点位异常段 5291-5291，扩展为 5287-5291 (window_size=5)
+2025-04-17 17:41:43,155 - INFO - 单个点位异常段 5337-5337，扩展为 5333-5337 (window_size=5)
+2025-04-17 17:41:43,165 - INFO - 单个点位异常段 5576-5576，扩展为 5572-5576 (window_size=5)
+2025-04-17 17:41:43,175 - INFO - 单个点位异常段 5582-5582，扩展为 5578-5582 (window_size=5)
+2025-04-17 17:41:43,186 - INFO - 单个点位异常段 5591-5591，扩展为 5587-5591 (window_size=5)
+2025-04-17 17:41:43,196 - INFO - 单个点位异常段 5606-5606，扩展为 5602-5606 (window_size=5)
+2025-04-17 17:41:43,207 - INFO - 单个点位异常段 5621-5621，扩展为 5617-5621 (window_size=5)
+2025-04-17 17:41:43,326 - INFO - 单个点位异常段 5627-5627，扩展为 5623-5627 (window_size=5)
+2025-04-17 17:41:43,393 - INFO - 单个点位异常段 6457-6457，扩展为 6453-6457 (window_size=5)
+2025-04-17 17:41:43,413 - INFO - 单个点位异常段 6500-6500，扩展为 6496-6500 (window_size=5)
+2025-04-17 17:41:43,474 - INFO - 单个点位异常段 7302-7302，扩展为 7298-7302 (window_size=5)
+2025-04-17 17:41:43,484 - INFO - 单个点位异常段 7337-7337，扩展为 7333-7337 (window_size=5)
+2025-04-17 17:41:43,525 - INFO - 单个点位异常段 7640-7640，扩展为 7636-7640 (window_size=5)
+2025-04-17 17:41:43,535 - INFO - 单个点位异常段 7691-7691，扩展为 7687-7691 (window_size=5)
+2025-04-17 17:41:43,565 - INFO - 单个点位异常段 7963-7963，扩展为 7959-7963 (window_size=5)
+2025-04-17 17:41:48,772 - INFO - 已生成全屏优化的可视化图表: ./visual/els/neighbor_topk/strict_deviation/els-1/all_segments.png
+2025-04-17 17:41:48,772 - INFO - 正在从 ./visual/els/neighbor_topk/strict_deviation/els-1 中的图像创建GIF
+2025-04-17 17:42:03,940 - INFO - GIF已保存到 ./visual/els/neighbor_topk/strict_deviation/els-1/els-1.gif
+2025-04-17 17:42:03,941 - INFO - 可视化结果生成完成！
+2025-04-17 17:42:03,941 - INFO - 
+==================================================
+2025-04-17 17:42:03,941 - INFO - 程序运行总耗时: 0:00:59.068916 
+

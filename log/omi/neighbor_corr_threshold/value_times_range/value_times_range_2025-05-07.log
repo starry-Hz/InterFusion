@@ -1,0 +1,181 @@
+2025-05-07 10:30:29,566 - INFO - 
+ Starting experiment with config: ExperimentConfig(dataset='omi', window_size=5, score_thresholds=array([0. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5, 5. , 5.5, 6. ,
+       6.5, 7. ]), topk_range=range(1, 10), corr_threshold_range=array([0. , 0. , 0.1, 0.2, 0.2, 0.2, 0.3, 0.4, 0.4, 0.4, 0.5, 0.6, 0.6,
+       0.6]), neighbor_selection='corr_threshold', score_modes=['value_times_range'], data_dir='./data/processed', label_dir='./data/interpretation_label', log_dir='./log/omi/neighbor_corr_threshold', visual_dir='./visual/omi/neighbor_corr_threshold', num_workers=36, gif_duration=500)
+2025-05-07 10:30:29,566 - INFO - 当前评分模式: ['value_times_range']
+2025-05-07 10:30:29,566 - INFO - 
+==================================================
+2025-05-07 10:30:29,566 - INFO - 开始执行网格搜索...
+2025-05-07 10:30:29,568 - INFO - [omi-12] Starting grid search...
+2025-05-07 10:30:32,391 - ERROR - Error processing omi-12: too many values to unpack (expected 6)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/hz/code/InterFusion/main4_1.py", line 407, in grid_search_worker
+    precision, recall, f1, ips, true_anomalies, segment_lengths = evaluate_single_dataset(
+ValueError: too many values to unpack (expected 6)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hz/code/InterFusion/main4_1.py", line 499, in run_full_grid_search
+    df = grid_search(
+  File "/home/hz/code/InterFusion/main4_1.py", line 462, in grid_search
+    for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: too many values to unpack (expected 6)
+2025-05-07 10:30:32,394 - INFO - [omi-1] Starting grid search...
+2025-05-07 10:30:36,498 - ERROR - Error processing omi-1: too many values to unpack (expected 6)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/hz/code/InterFusion/main4_1.py", line 407, in grid_search_worker
+    precision, recall, f1, ips, true_anomalies, segment_lengths = evaluate_single_dataset(
+ValueError: too many values to unpack (expected 6)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hz/code/InterFusion/main4_1.py", line 499, in run_full_grid_search
+    df = grid_search(
+  File "/home/hz/code/InterFusion/main4_1.py", line 462, in grid_search
+    for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: too many values to unpack (expected 6)
+2025-05-07 10:30:36,500 - INFO - [omi-5] Starting grid search...
+2025-05-07 10:30:40,575 - ERROR - Error processing omi-5: too many values to unpack (expected 6)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/hz/code/InterFusion/main4_1.py", line 407, in grid_search_worker
+    precision, recall, f1, ips, true_anomalies, segment_lengths = evaluate_single_dataset(
+ValueError: too many values to unpack (expected 6)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hz/code/InterFusion/main4_1.py", line 499, in run_full_grid_search
+    df = grid_search(
+  File "/home/hz/code/InterFusion/main4_1.py", line 462, in grid_search
+    for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: too many values to unpack (expected 6)
+2025-05-07 10:30:40,578 - INFO - [omi-6] Starting grid search...
+2025-05-07 10:30:47,242 - ERROR - Error processing omi-6: too many values to unpack (expected 6)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/hz/code/InterFusion/main4_1.py", line 407, in grid_search_worker
+    precision, recall, f1, ips, true_anomalies, segment_lengths = evaluate_single_dataset(
+ValueError: too many values to unpack (expected 6)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hz/code/InterFusion/main4_1.py", line 499, in run_full_grid_search
+    df = grid_search(
+  File "/home/hz/code/InterFusion/main4_1.py", line 462, in grid_search
+    for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: too many values to unpack (expected 6)
+2025-05-07 10:30:47,244 - INFO - [omi-7] Starting grid search...
+2025-05-07 10:30:50,639 - ERROR - Error processing omi-7: too many values to unpack (expected 6)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/hz/code/InterFusion/main4_1.py", line 407, in grid_search_worker
+    precision, recall, f1, ips, true_anomalies, segment_lengths = evaluate_single_dataset(
+ValueError: too many values to unpack (expected 6)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hz/code/InterFusion/main4_1.py", line 499, in run_full_grid_search
+    df = grid_search(
+  File "/home/hz/code/InterFusion/main4_1.py", line 462, in grid_search
+    for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: too many values to unpack (expected 6)
+2025-05-07 10:30:50,642 - INFO - [omi-9] Starting grid search...
+2025-05-07 10:30:54,237 - ERROR - Error processing omi-9: too many values to unpack (expected 6)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/hz/code/InterFusion/main4_1.py", line 407, in grid_search_worker
+    precision, recall, f1, ips, true_anomalies, segment_lengths = evaluate_single_dataset(
+ValueError: too many values to unpack (expected 6)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hz/code/InterFusion/main4_1.py", line 499, in run_full_grid_search
+    df = grid_search(
+  File "/home/hz/code/InterFusion/main4_1.py", line 462, in grid_search
+    for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: too many values to unpack (expected 6)
+2025-05-07 10:30:54,240 - INFO - [omi-8] Starting grid search...
+2025-05-07 10:30:58,559 - ERROR - Error processing omi-8: too many values to unpack (expected 6)
+multiprocessing.pool.RemoteTraceback: 
+"""
+Traceback (most recent call last):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+  File "/home/hz/code/InterFusion/main4_1.py", line 407, in grid_search_worker
+    precision, recall, f1, ips, true_anomalies, segment_lengths = evaluate_single_dataset(
+ValueError: too many values to unpack (expected 6)
+"""
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/hz/code/InterFusion/main4_1.py", line 499, in run_full_grid_search
+    df = grid_search(
+  File "/home/hz/code/InterFusion/main4_1.py", line 462, in grid_search
+    for result in tqdm(pool.imap(worker, params), total=len(params), desc=f"Grid search {dataset_name}"):
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/site-packages/tqdm/std.py", line 1181, in __iter__
+    for obj in iterable:
+  File "/home/hz/anaconda3/envs/py310/lib/python3.10/multiprocessing/pool.py", line 873, in next
+    raise value
+ValueError: too many values to unpack (expected 6)
+2025-05-07 10:30:58,561 - INFO - [omi-2] Starting grid search...
+2025-05-07 10:30:59,192 - INFO - 
+==================================================
+2025-05-07 10:30:59,193 - INFO - 程序运行总耗时: 0:00:29.626297 
+

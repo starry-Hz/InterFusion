@@ -1,0 +1,1874 @@
+2025-04-17 17:49:03,684 - INFO - 
+ Starting experiment with config: ExperimentConfig(dataset='els', window_size=5, score_thresholds=array([0. , 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1. , 1.1, 1.2,
+       1.3, 1.4, 1.5, 1.6, 1.7, 1.8, 1.9, 2. , 2.1, 2.2, 2.3, 2.4, 2.5,
+       2.6, 2.7, 2.8, 2.9, 3. , 3.1, 3.2, 3.3, 3.4, 3.5, 3.6, 3.7, 3.8,
+       3.9, 4. , 4.1, 4.2, 4.3, 4.4, 4.5, 4.6, 4.7, 4.8, 4.9, 5. , 5.1,
+       5.2, 5.3, 5.4, 5.5, 5.6, 5.7, 5.8, 5.9, 6. , 6.1, 6.2, 6.3, 6.4,
+       6.5, 6.6, 6.7, 6.8, 6.9, 7. ]), topk_range=range(0, 10), corr_threshold_range=array([0. , 0. , 0.1, 0.2, 0.2, 0.2, 0.3, 0.4, 0.4, 0.4, 0.5, 0.6, 0.6,
+       0.6]), neighbor_selection='corr_threshold', score_modes=['mean_ratio'], data_dir='./data/processed', label_dir='./data/interpretation_label', log_dir='./log/els/neighbor_corr_threshold', visual_dir='./visual/els/neighbor_corr_threshold', num_workers=36, gif_duration=500)
+2025-04-17 17:49:03,685 - INFO - 当前评分模式: ['mean_ratio']
+2025-04-17 17:49:03,685 - INFO - 
+==================================================
+2025-04-17 17:49:03,685 - INFO - 开始执行网格搜索...
+2025-04-17 17:49:03,688 - INFO - [els-1] Starting grid search...
+2025-04-17 17:49:04,507 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,618 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,619 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,631 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,666 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,666 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,676 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,707 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:04,707 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:04,716 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,752 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,763 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,922 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,924 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,932 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:04,940 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,941 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,944 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,948 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,948 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,961 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,964 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,971 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,972 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:04,972 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,057 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,057 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,058 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,058 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,058 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,059 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,376 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,544 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,565 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,565 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,585 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,598 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,598 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,613 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,624 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,624 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,663 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,669 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,670 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,708 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,708 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,708 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,708 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,708 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,709 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,837 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,848 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,848 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:05,849 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,849 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,863 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,865 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,881 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:05,902 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:05,905 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:06,070 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:06,071 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:06,071 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:06,071 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:06,071 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:06,072 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:06,072 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,072 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,072 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,072 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,459 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,481 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,481 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,496 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,509 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,509 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,509 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,525 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,539 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,539 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,539 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,618 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,618 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,619 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,619 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,619 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,620 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,765 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,766 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,825 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,826 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,827 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,827 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,827 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.0, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:06,827 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,827 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,828 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,828 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,828 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,845 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,845 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,846 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:06,859 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:07,166 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,166 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,167 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,167 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,168 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,330 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,330 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,383 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,383 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,383 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,384 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,384 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,384 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,384 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,384 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,384 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,506 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,507 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,507 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,507 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,507 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,507 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,508 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,508 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,508 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,508 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,508 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,658 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,659 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,659 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,659 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,660 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,660 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,686 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,686 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,687 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,932 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,933 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,933 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,933 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,935 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.1, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:07,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:07,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:07,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,945 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:07,952 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,342 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,342 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,343 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,343 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,343 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,343 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,343 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,344 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,344 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,344 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,344 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,344 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,344 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,344 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:08,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,511 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,512 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,512 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,512 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,512 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,513 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,780 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,781 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,782 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,783 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,783 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,783 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,783 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,783 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,783 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,957 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,958 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,986 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,986 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,986 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,986 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,986 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,986 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,987 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,987 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,987 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,987 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:08,987 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,161 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,162 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,162 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,164 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,164 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,164 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,308 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,309 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,309 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,309 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,309 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,309 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,311 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,450 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,451 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,452 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,739 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,740 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,740 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,741 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,770 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,770 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,770 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,771 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,771 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,771 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,835 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,836 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,933 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,934 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,936 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,937 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,939 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,946 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:09,988 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,050 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,056 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,060 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,107 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,115 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,156 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,163 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,234 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,320 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,320 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:10,320 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,320 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,320 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,321 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,321 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,366 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,366 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,467 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,467 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,467 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,467 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,468 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,468 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,468 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,469 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,469 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,469 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,470 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,521 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,521 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,521 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,563 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,589 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,602 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,619 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,635 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,649 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,654 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,674 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,674 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,761 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,761 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,761 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,761 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,762 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,762 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,762 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.2, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:10,762 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,035 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,035 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,035 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,035 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,036 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,036 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,037 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,059 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,059 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,060 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,060 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,060 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,060 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,067 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,068 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,091 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,091 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,095 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:11,101 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,125 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,157 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,157 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,157 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,217 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,473 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,473 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,630 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,630 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,630 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,630 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,630 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,630 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,630 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,631 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,812 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,824 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,824 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,824 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,825 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,903 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,904 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,905 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,905 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:11,905 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,053 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.3, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,056 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:12,056 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:12,056 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,352 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,353 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,353 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,353 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,409 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,409 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,410 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,472 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,473 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,474 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,580 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,580 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,581 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,581 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,581 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,639 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,640 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,759 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,878 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,879 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,880 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:12,880 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,154 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,154 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,154 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,154 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,155 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,155 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,155 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,228 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,229 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,229 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,229 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,229 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,264 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,265 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,265 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:13,265 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,266 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,266 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,266 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,266 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,266 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,267 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,268 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,269 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,269 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,269 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,269 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,662 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,662 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,662 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,662 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,663 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,663 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,663 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,663 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,664 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,664 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,665 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,665 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,665 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,665 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,665 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,665 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,690 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,690 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,690 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,690 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,721 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,721 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,722 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,723 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,723 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,723 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,723 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,723 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,723 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,859 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,860 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,860 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,860 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,860 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,944 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,948 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,948 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,948 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,948 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:13,948 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.0, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.1, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.2, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.3, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.4, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.5, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.6, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.7, P=0.2701, R=0.4370, F1=0.3339
+2025-04-17 17:49:13,949 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.8, P=0.2689, R=0.4328, F1=0.3317
+2025-04-17 17:49:13,950 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=0.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,969 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,970 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,976 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,976 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,996 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:13,999 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,003 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.6, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,006 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.7, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,119 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.8, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,119 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=1.9, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,120 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.0, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,120 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.1, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,120 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.2, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,121 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.3, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,137 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.4, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,177 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.5, P=0.2696, R=0.4328, F1=0.3323
+2025-04-17 17:49:14,237 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,237 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,237 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,238 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=2.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,238 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,241 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,242 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,242 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,248 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,291 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,292 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,292 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,292 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,294 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=3.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,372 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,373 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,373 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,373 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,402 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,409 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,419 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,435 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,438 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,441 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=4.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,459 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,459 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,461 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,462 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,493 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,493 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,512 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,517 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,530 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,570 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=5.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,675 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,675 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.1, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,675 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.2, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,675 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.3, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,675 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.4, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,675 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.5, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,684 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.6, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,685 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.7, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,692 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.8, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,694 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=6.9, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,699 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.4, threshold=7.0, P=0.2703, R=0.4328, F1=0.3328
+2025-04-17 17:49:14,699 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.0, P=0.3046, R=0.3866, F1=0.3407
+2025-04-17 17:49:14,699 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.1, P=0.3046, R=0.3866, F1=0.3407
+2025-04-17 17:49:14,699 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.2, P=0.3056, R=0.3866, F1=0.3414
+2025-04-17 17:49:14,704 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.3, P=0.3056, R=0.3866, F1=0.3414
+2025-04-17 17:49:14,704 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.4, P=0.3056, R=0.3866, F1=0.3414
+2025-04-17 17:49:14,705 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.5, P=0.3056, R=0.3866, F1=0.3414
+2025-04-17 17:49:14,797 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.6, P=0.3056, R=0.3866, F1=0.3414
+2025-04-17 17:49:14,798 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.7, P=0.3056, R=0.3866, F1=0.3414
+2025-04-17 17:49:14,861 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.8, P=0.3043, R=0.3824, F1=0.3389
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=0.9, P=0.3064, R=0.3824, F1=0.3402
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.0, P=0.3064, R=0.3824, F1=0.3402
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.1, P=0.3074, R=0.3824, F1=0.3408
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.2, P=0.3074, R=0.3824, F1=0.3408
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.3, P=0.3074, R=0.3824, F1=0.3408
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.4, P=0.3074, R=0.3824, F1=0.3408
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.5, P=0.3074, R=0.3824, F1=0.3408
+2025-04-17 17:49:14,862 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.6, P=0.3074, R=0.3824, F1=0.3408
+2025-04-17 17:49:14,864 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.7, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:14,864 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.8, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:14,877 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=1.9, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:14,916 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.0, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:14,917 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.1, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:14,917 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.2, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:14,920 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.3, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:14,961 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.4, P=0.3095, R=0.3824, F1=0.3421
+2025-04-17 17:49:15,029 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.5, P=0.3138, R=0.3824, F1=0.3447
+2025-04-17 17:49:15,039 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.6, P=0.3149, R=0.3824, F1=0.3454
+2025-04-17 17:49:15,049 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.7, P=0.3160, R=0.3824, F1=0.3460
+2025-04-17 17:49:15,063 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.8, P=0.3171, R=0.3824, F1=0.3467
+2025-04-17 17:49:15,063 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=2.9, P=0.3182, R=0.3824, F1=0.3473
+2025-04-17 17:49:15,067 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.0, P=0.3180, R=0.3782, F1=0.3455
+2025-04-17 17:49:15,068 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.1, P=0.3191, R=0.3782, F1=0.3462
+2025-04-17 17:49:15,087 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.2, P=0.3191, R=0.3782, F1=0.3462
+2025-04-17 17:49:15,093 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.3, P=0.3191, R=0.3782, F1=0.3462
+2025-04-17 17:49:15,116 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.4, P=0.3191, R=0.3782, F1=0.3462
+2025-04-17 17:49:15,117 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.5, P=0.3143, R=0.3697, F1=0.3398
+2025-04-17 17:49:15,124 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.6, P=0.3143, R=0.3697, F1=0.3398
+2025-04-17 17:49:15,124 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.7, P=0.3143, R=0.3697, F1=0.3398
+2025-04-17 17:49:15,124 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.8, P=0.3143, R=0.3697, F1=0.3398
+2025-04-17 17:49:15,124 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=3.9, P=0.3165, R=0.3697, F1=0.3411
+2025-04-17 17:49:15,124 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.0, P=0.3141, R=0.3655, F1=0.3379
+2025-04-17 17:49:15,126 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.1, P=0.3152, R=0.3655, F1=0.3385
+2025-04-17 17:49:15,143 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.2, P=0.3175, R=0.3655, F1=0.3398
+2025-04-17 17:49:15,184 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.3, P=0.3175, R=0.3655, F1=0.3398
+2025-04-17 17:49:15,186 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.4, P=0.3150, R=0.3613, F1=0.3366
+2025-04-17 17:49:15,208 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.5, P=0.3150, R=0.3613, F1=0.3366
+2025-04-17 17:49:15,211 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.6, P=0.3150, R=0.3613, F1=0.3366
+2025-04-17 17:49:15,226 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.7, P=0.3150, R=0.3613, F1=0.3366
+2025-04-17 17:49:15,235 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.8, P=0.3150, R=0.3613, F1=0.3366
+2025-04-17 17:49:15,294 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=4.9, P=0.3150, R=0.3613, F1=0.3366
+2025-04-17 17:49:15,294 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.0, P=0.3162, R=0.3613, F1=0.3373
+2025-04-17 17:49:15,294 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.1, P=0.3162, R=0.3613, F1=0.3373
+2025-04-17 17:49:15,294 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.2, P=0.3162, R=0.3613, F1=0.3373
+2025-04-17 17:49:15,387 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.3, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:49:15,387 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.4, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:49:15,387 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.5, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:49:15,388 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.6, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:49:15,388 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.7, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:49:15,388 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.8, P=0.3173, R=0.3613, F1=0.3379
+2025-04-17 17:49:15,389 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=5.9, P=0.3185, R=0.3613, F1=0.3386
+2025-04-17 17:49:15,389 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.0, P=0.3185, R=0.3613, F1=0.3386
+2025-04-17 17:49:15,424 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.1, P=0.3185, R=0.3613, F1=0.3386
+2025-04-17 17:49:15,447 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.2, P=0.3185, R=0.3613, F1=0.3386
+2025-04-17 17:49:15,459 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.3, P=0.3160, R=0.3571, F1=0.3353
+2025-04-17 17:49:15,459 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.4, P=0.3160, R=0.3571, F1=0.3353
+2025-04-17 17:49:15,478 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.5, P=0.3160, R=0.3571, F1=0.3353
+2025-04-17 17:49:15,478 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.6, P=0.3134, R=0.3529, F1=0.3320
+2025-04-17 17:49:15,479 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.7, P=0.3134, R=0.3529, F1=0.3320
+2025-04-17 17:49:15,500 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.8, P=0.3134, R=0.3529, F1=0.3320
+2025-04-17 17:49:15,512 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=6.9, P=0.3109, R=0.3487, F1=0.3287
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.5, threshold=7.0, P=0.3109, R=0.3487, F1=0.3287
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.0, P=0.3527, R=0.3319, F1=0.3420
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.1, P=0.3559, R=0.3319, F1=0.3435
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.2, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.3, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.4, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.5, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.6, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:15,632 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.7, P=0.3628, R=0.3277, F1=0.3444
+2025-04-17 17:49:15,633 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.8, P=0.3632, R=0.3235, F1=0.3422
+2025-04-17 17:49:15,634 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.9, P=0.3667, R=0.3235, F1=0.3438
+2025-04-17 17:49:15,695 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.0, P=0.3667, R=0.3235, F1=0.3438
+2025-04-17 17:49:15,695 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.1, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:15,695 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.2, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:15,695 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.3, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:15,695 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.4, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:15,695 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.5, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:15,695 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.6, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:15,696 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.7, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:15,696 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.8, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:15,696 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.9, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:15,696 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.0, P=0.3738, R=0.3235, F1=0.3468
+2025-04-17 17:49:15,696 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.1, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:15,696 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.2, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:15,726 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.3, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:15,726 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.4, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:15,828 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.5, P=0.3838, R=0.3193, F1=0.3486
+2025-04-17 17:49:15,830 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.6, P=0.3878, R=0.3193, F1=0.3502
+2025-04-17 17:49:15,830 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.7, P=0.3918, R=0.3193, F1=0.3519
+2025-04-17 17:49:15,830 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.8, P=0.4064, R=0.3193, F1=0.3576
+2025-04-17 17:49:15,830 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.9, P=0.4153, R=0.3193, F1=0.3610
+2025-04-17 17:49:15,830 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.0, P=0.4171, R=0.3067, F1=0.3535
+2025-04-17 17:49:15,838 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.1, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:15,857 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.2, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:15,858 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.3, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:15,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.4, P=0.4162, R=0.3025, F1=0.3504
+2025-04-17 17:49:15,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.5, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:15,943 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.6, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:15,943 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.7, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:15,943 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.8, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:15,943 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.9, P=0.4167, R=0.2941, F1=0.3448
+2025-04-17 17:49:15,943 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.0, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:15,943 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.1, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:15,943 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.2, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:15,944 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.3, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:15,946 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.4, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:15,956 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.5, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:15,956 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.6, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:15,969 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.7, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:15,983 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.8, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:15,993 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.9, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:15,998 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.0, P=0.4224, R=0.2857, F1=0.3409
+2025-04-17 17:49:16,053 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.1, P=0.4224, R=0.2857, F1=0.3409
+2025-04-17 17:49:16,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.2, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.3, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,054 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.4, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.5, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,055 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.6, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,068 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.7, P=0.4277, R=0.2857, F1=0.3426
+2025-04-17 17:49:16,084 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.8, P=0.4331, R=0.2857, F1=0.3443
+2025-04-17 17:49:16,102 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.9, P=0.4331, R=0.2857, F1=0.3443
+2025-04-17 17:49:16,159 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.0, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:16,159 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.1, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:16,166 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.2, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:16,183 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.3, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:16,190 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.4, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:16,216 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.5, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:16,217 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.6, P=0.4314, R=0.2773, F1=0.3376
+2025-04-17 17:49:16,217 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.7, P=0.4276, R=0.2731, F1=0.3333
+2025-04-17 17:49:16,227 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.8, P=0.4238, R=0.2689, F1=0.3290
+2025-04-17 17:49:16,228 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.9, P=0.4161, R=0.2605, F1=0.3204
+2025-04-17 17:49:16,260 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=7.0, P=0.4122, R=0.2563, F1=0.3161
+2025-04-17 17:49:16,260 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.0, P=0.3527, R=0.3319, F1=0.3420
+2025-04-17 17:49:16,272 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.1, P=0.3559, R=0.3319, F1=0.3435
+2025-04-17 17:49:16,272 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.2, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:16,273 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.3, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:16,278 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.4, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:16,282 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.5, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:16,298 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.6, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:16,310 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.7, P=0.3628, R=0.3277, F1=0.3444
+2025-04-17 17:49:16,317 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.8, P=0.3632, R=0.3235, F1=0.3422
+2025-04-17 17:49:16,317 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.9, P=0.3667, R=0.3235, F1=0.3438
+2025-04-17 17:49:16,326 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.0, P=0.3667, R=0.3235, F1=0.3438
+2025-04-17 17:49:16,326 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.1, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:16,336 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.2, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:16,347 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.3, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:16,366 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.4, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:16,370 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.5, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:16,404 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.6, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:16,440 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.7, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:16,440 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.8, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:16,440 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.9, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:16,441 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.0, P=0.3738, R=0.3235, F1=0.3468
+2025-04-17 17:49:16,441 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.1, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:16,449 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.2, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:16,456 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.3, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:16,465 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.4, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:16,518 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.5, P=0.3838, R=0.3193, F1=0.3486
+2025-04-17 17:49:16,526 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.6, P=0.3878, R=0.3193, F1=0.3502
+2025-04-17 17:49:16,626 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.7, P=0.3918, R=0.3193, F1=0.3519
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.8, P=0.4064, R=0.3193, F1=0.3576
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.9, P=0.4153, R=0.3193, F1=0.3610
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.0, P=0.4171, R=0.3067, F1=0.3535
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.1, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.2, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.3, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.4, P=0.4162, R=0.3025, F1=0.3504
+2025-04-17 17:49:16,882 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.5, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:16,883 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.6, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:16,883 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.7, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:16,883 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.8, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:16,884 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.9, P=0.4167, R=0.2941, F1=0.3448
+2025-04-17 17:49:16,885 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.0, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:16,885 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.1, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:16,885 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.2, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:16,885 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.3, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:16,885 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.4, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:16,886 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.5, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:16,886 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.6, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:16,886 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.7, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:16,978 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.8, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:16,978 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.9, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:16,978 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.0, P=0.4224, R=0.2857, F1=0.3409
+2025-04-17 17:49:16,978 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.1, P=0.4224, R=0.2857, F1=0.3409
+2025-04-17 17:49:16,978 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.2, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,979 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.3, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,979 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.4, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,979 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.5, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,979 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.6, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:16,979 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.7, P=0.4277, R=0.2857, F1=0.3426
+2025-04-17 17:49:16,980 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.8, P=0.4331, R=0.2857, F1=0.3443
+2025-04-17 17:49:16,980 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.9, P=0.4331, R=0.2857, F1=0.3443
+2025-04-17 17:49:16,980 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.0, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:16,980 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.1, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:16,980 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.2, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:16,981 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.3, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:16,981 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.4, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:16,981 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.5, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:16,981 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.6, P=0.4314, R=0.2773, F1=0.3376
+2025-04-17 17:49:16,981 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.7, P=0.4276, R=0.2731, F1=0.3333
+2025-04-17 17:49:16,981 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.8, P=0.4238, R=0.2689, F1=0.3290
+2025-04-17 17:49:16,994 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.9, P=0.4161, R=0.2605, F1=0.3204
+2025-04-17 17:49:17,003 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=7.0, P=0.4122, R=0.2563, F1=0.3161
+2025-04-17 17:49:17,006 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.0, P=0.3527, R=0.3319, F1=0.3420
+2025-04-17 17:49:17,010 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.1, P=0.3559, R=0.3319, F1=0.3435
+2025-04-17 17:49:17,011 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.2, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:17,012 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.3, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:17,018 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.4, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:17,093 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.5, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:17,093 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.6, P=0.3578, R=0.3277, F1=0.3421
+2025-04-17 17:49:17,094 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.7, P=0.3628, R=0.3277, F1=0.3444
+2025-04-17 17:49:17,094 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.8, P=0.3632, R=0.3235, F1=0.3422
+2025-04-17 17:49:17,094 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=0.9, P=0.3667, R=0.3235, F1=0.3438
+2025-04-17 17:49:17,094 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.0, P=0.3667, R=0.3235, F1=0.3438
+2025-04-17 17:49:17,096 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.1, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:17,096 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.2, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:17,104 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.3, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:17,230 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.4, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:17,230 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.5, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:17,230 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.6, P=0.3684, R=0.3235, F1=0.3445
+2025-04-17 17:49:17,230 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.7, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:17,231 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.8, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:17,231 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=1.9, P=0.3720, R=0.3235, F1=0.3461
+2025-04-17 17:49:17,231 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.0, P=0.3738, R=0.3235, F1=0.3468
+2025-04-17 17:49:17,246 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.1, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:17,247 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.2, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:17,263 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.3, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:17,263 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.4, P=0.3725, R=0.3193, F1=0.3439
+2025-04-17 17:49:17,278 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.5, P=0.3838, R=0.3193, F1=0.3486
+2025-04-17 17:49:17,278 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.6, P=0.3878, R=0.3193, F1=0.3502
+2025-04-17 17:49:17,279 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.7, P=0.3918, R=0.3193, F1=0.3519
+2025-04-17 17:49:17,302 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.8, P=0.4064, R=0.3193, F1=0.3576
+2025-04-17 17:49:17,355 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=2.9, P=0.4153, R=0.3193, F1=0.3610
+2025-04-17 17:49:17,355 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.0, P=0.4171, R=0.3067, F1=0.3535
+2025-04-17 17:49:17,506 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.1, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:17,506 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.2, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:17,507 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.3, P=0.4138, R=0.3025, F1=0.3495
+2025-04-17 17:49:17,575 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.4, P=0.4162, R=0.3025, F1=0.3504
+2025-04-17 17:49:17,575 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.5, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:17,575 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.6, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:17,576 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.7, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:17,576 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.8, P=0.4094, R=0.2941, F1=0.3423
+2025-04-17 17:49:17,576 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=3.9, P=0.4167, R=0.2941, F1=0.3448
+2025-04-17 17:49:17,576 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.0, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:17,576 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.1, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:17,577 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.2, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:17,577 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.3, P=0.4157, R=0.2899, F1=0.3416
+2025-04-17 17:49:17,628 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.4, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:17,629 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.5, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:17,629 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.6, P=0.4146, R=0.2857, F1=0.3383
+2025-04-17 17:49:17,629 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.7, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:17,629 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.8, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=4.9, P=0.4172, R=0.2857, F1=0.3392
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.0, P=0.4224, R=0.2857, F1=0.3409
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.1, P=0.4224, R=0.2857, F1=0.3409
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.2, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.3, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.4, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.5, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.6, P=0.4250, R=0.2857, F1=0.3417
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.7, P=0.4277, R=0.2857, F1=0.3426
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.8, P=0.4331, R=0.2857, F1=0.3443
+2025-04-17 17:49:17,644 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=5.9, P=0.4331, R=0.2857, F1=0.3443
+2025-04-17 17:49:17,645 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.0, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:17,645 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.1, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:17,645 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.2, P=0.4359, R=0.2857, F1=0.3452
+2025-04-17 17:49:17,645 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.3, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:17,656 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.4, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:17,705 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.5, P=0.4351, R=0.2815, F1=0.3418
+2025-04-17 17:49:17,770 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.6, P=0.4314, R=0.2773, F1=0.3376
+2025-04-17 17:49:17,770 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.7, P=0.4276, R=0.2731, F1=0.3333
+2025-04-17 17:49:17,770 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.8, P=0.4238, R=0.2689, F1=0.3290
+2025-04-17 17:49:17,770 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=6.9, P=0.4161, R=0.2605, F1=0.3204
+2025-04-17 17:49:17,771 - INFO - [els-1.txt] mode=mean_ratio, corr_threshold=0.6, threshold=7.0, P=0.4122, R=0.2563, F1=0.3161
+2025-04-17 17:49:17,827 - INFO - 
+==================================================
+2025-04-17 17:49:17,827 - INFO - 开始汇总结果...
+2025-04-17 17:49:17,834 - INFO - 
+===== Best Results per Dataset =====
+  dataset score_mode  neighbor_param  score_threshold neighbor_selection  precision   recall  f1_score
+els-1.txt mean_ratio             0.6              2.9     corr_threshold   0.415301 0.319328  0.361045
+2025-04-17 17:49:17,834 - INFO - 
+===== Overall Metrics =====
+Precision: 0.4149  Recall: 0.3195  F1: 0.3610
+2025-04-17 17:49:17,834 - INFO - 
+【原始汇总指标】
+2025-04-17 17:49:17,834 - INFO - 精确率(Precision): 0.4149
+2025-04-17 17:49:17,834 - INFO - 召回率(Recall):    0.3195
+2025-04-17 17:49:17,834 - INFO - F1值:             0.3610
+2025-04-17 17:49:17,834 - INFO - 
+==================================================
+2025-04-17 17:49:17,834 - INFO - 开始生成可视化结果...
+2025-04-17 17:49:17,834 - INFO - 
+==================================================
+2025-04-17 17:49:17,834 - INFO - 开始数据集可视化: els-1
+2025-04-17 17:49:17,834 - INFO - 使用参数: 评分模式=mean_ratio, corr_threshold=0.6, 阈值=2.9000000000000004
+2025-04-17 17:49:17,834 - INFO - ==================================================
+
+2025-04-17 17:49:17,835 - INFO - 正在加载数据集 els-1 的数据
+2025-04-17 17:49:17,837 - INFO - 数据加载成功。训练集形状: (993, 16), 测试集形状: (8928, 16)
+2025-04-17 17:49:17,837 - INFO - 正在计算边缘统计量...
+2025-04-17 17:49:18,092 - INFO - 已计算 105 条边的统计量
+2025-04-17 17:49:18,092 - INFO - 为每个节点使用相关系数阈值 >= 0.6 的邻居
+2025-04-17 17:49:18,092 - INFO - 可视化结果将保存到: ./visual/els/neighbor_corr_threshold/mean_ratio/els-1
+2025-04-17 17:49:18,111 - INFO - 在数据集中发现 77 个异常时间段
+2025-04-17 17:49:18,111 - INFO - 
+正在处理时间段 1/77: 433-437
+2025-04-17 17:49:18,112 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:18,112 - INFO - 正在计算异常分数...
+2025-04-17 17:49:18,112 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:18,112 - INFO - 正在为时间段 433-437 生成可视化
+2025-04-17 17:49:18,112 - INFO - 正在为时间段 433-437 生成异常图可视化
+2025-04-17 17:49:18,113 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:18,167 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_0_433_437.png
+2025-04-17 17:49:18,452 - INFO - 成功保存时间段 433-437 的可视化结果
+2025-04-17 17:49:18,452 - INFO - 
+正在处理时间段 2/77: 738-738
+2025-04-17 17:49:18,452 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11, 12}
+2025-04-17 17:49:18,452 - INFO - 正在计算异常分数...
+2025-04-17 17:49:18,452 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:18,452 - INFO - 正在为时间段 738-738 生成可视化
+2025-04-17 17:49:18,452 - INFO - 正在为时间段 738-738 生成异常图可视化
+2025-04-17 17:49:18,452 - INFO - 单个点位异常段 738-738，扩展为 734-738 (window_size=5)
+2025-04-17 17:49:18,453 - DEBUG - 边统计: 正常边 30 条, 异常边 12 条
+2025-04-17 17:49:18,501 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_1_738_738.png
+2025-04-17 17:49:18,783 - INFO - 成功保存时间段 738-738 的可视化结果
+2025-04-17 17:49:18,783 - INFO - 
+正在处理时间段 3/77: 762-762
+2025-04-17 17:49:18,783 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:18,783 - INFO - 正在计算异常分数...
+2025-04-17 17:49:18,783 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:18,783 - INFO - 正在为时间段 762-762 生成可视化
+2025-04-17 17:49:18,783 - INFO - 正在为时间段 762-762 生成异常图可视化
+2025-04-17 17:49:18,783 - INFO - 单个点位异常段 762-762，扩展为 758-762 (window_size=5)
+2025-04-17 17:49:18,784 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:18,832 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_2_762_762.png
+2025-04-17 17:49:19,115 - INFO - 成功保存时间段 762-762 的可视化结果
+2025-04-17 17:49:19,115 - INFO - 
+正在处理时间段 4/77: 1065-1070
+2025-04-17 17:49:19,115 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:19,115 - INFO - 正在计算异常分数...
+2025-04-17 17:49:19,116 - INFO - 检测到的异常节点: {8, 9, 10, 7}
+2025-04-17 17:49:19,116 - INFO - 正在为时间段 1065-1070 生成可视化
+2025-04-17 17:49:19,116 - INFO - 正在为时间段 1065-1070 生成异常图可视化
+2025-04-17 17:49:19,116 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:49:19,164 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_3_1065_1070.png
+2025-04-17 17:49:19,439 - INFO - 成功保存时间段 1065-1070 的可视化结果
+2025-04-17 17:49:19,440 - INFO - 
+正在处理时间段 5/77: 1348-1351
+2025-04-17 17:49:19,440 - INFO - 该时间段的真实异常节点: {8, 9, 6, 7}
+2025-04-17 17:49:19,440 - INFO - 正在计算异常分数...
+2025-04-17 17:49:19,440 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:19,440 - INFO - 正在为时间段 1348-1351 生成可视化
+2025-04-17 17:49:19,440 - INFO - 正在为时间段 1348-1351 生成异常图可视化
+2025-04-17 17:49:19,440 - DEBUG - 边统计: 正常边 34 条, 异常边 8 条
+2025-04-17 17:49:19,488 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_4_1348_1351.png
+2025-04-17 17:49:19,762 - INFO - 成功保存时间段 1348-1351 的可视化结果
+2025-04-17 17:49:19,762 - INFO - 
+正在处理时间段 6/77: 1366-1368
+2025-04-17 17:49:19,763 - INFO - 该时间段的真实异常节点: {8, 9, 6, 7}
+2025-04-17 17:49:19,763 - INFO - 正在计算异常分数...
+2025-04-17 17:49:19,763 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:19,763 - INFO - 正在为时间段 1366-1368 生成可视化
+2025-04-17 17:49:19,763 - INFO - 正在为时间段 1366-1368 生成异常图可视化
+2025-04-17 17:49:19,763 - DEBUG - 边统计: 正常边 18 条, 异常边 24 条
+2025-04-17 17:49:19,811 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_5_1366_1368.png
+2025-04-17 17:49:20,092 - INFO - 成功保存时间段 1366-1368 的可视化结果
+2025-04-17 17:49:20,093 - INFO - 
+正在处理时间段 7/77: 1591-1602
+2025-04-17 17:49:20,093 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:20,093 - INFO - 正在计算异常分数...
+2025-04-17 17:49:20,094 - INFO - 检测到的异常节点: {3, 5, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:20,095 - INFO - 正在为时间段 1591-1602 生成可视化
+2025-04-17 17:49:20,095 - INFO - 正在为时间段 1591-1602 生成异常图可视化
+2025-04-17 17:49:20,095 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:49:20,143 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_6_1591_1602.png
+2025-04-17 17:49:20,420 - INFO - 成功保存时间段 1591-1602 的可视化结果
+2025-04-17 17:49:20,420 - INFO - 
+正在处理时间段 8/77: 1634-1638
+2025-04-17 17:49:20,420 - INFO - 该时间段的真实异常节点: {8, 9, 6, 7}
+2025-04-17 17:49:20,420 - INFO - 正在计算异常分数...
+2025-04-17 17:49:20,421 - INFO - 检测到的异常节点: {8, 9, 7}
+2025-04-17 17:49:20,421 - INFO - 正在为时间段 1634-1638 生成可视化
+2025-04-17 17:49:20,421 - INFO - 正在为时间段 1634-1638 生成异常图可视化
+2025-04-17 17:49:20,421 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:20,469 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_7_1634_1638.png
+2025-04-17 17:49:20,749 - INFO - 成功保存时间段 1634-1638 的可视化结果
+2025-04-17 17:49:20,749 - INFO - 
+正在处理时间段 9/77: 1864-1868
+2025-04-17 17:49:20,749 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:20,749 - INFO - 正在计算异常分数...
+2025-04-17 17:49:20,749 - INFO - 检测到的异常节点: {3, 6, 7, 8, 9, 10, 12}
+2025-04-17 17:49:20,749 - INFO - 正在为时间段 1864-1868 生成可视化
+2025-04-17 17:49:20,749 - INFO - 正在为时间段 1864-1868 生成异常图可视化
+2025-04-17 17:49:20,750 - DEBUG - 边统计: 正常边 20 条, 异常边 22 条
+2025-04-17 17:49:20,798 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_8_1864_1868.png
+2025-04-17 17:49:21,075 - INFO - 成功保存时间段 1864-1868 的可视化结果
+2025-04-17 17:49:21,075 - INFO - 
+正在处理时间段 10/77: 1882-1882
+2025-04-17 17:49:21,076 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:21,076 - INFO - 正在计算异常分数...
+2025-04-17 17:49:21,076 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:21,076 - INFO - 正在为时间段 1882-1882 生成可视化
+2025-04-17 17:49:21,076 - INFO - 正在为时间段 1882-1882 生成异常图可视化
+2025-04-17 17:49:21,076 - INFO - 单个点位异常段 1882-1882，扩展为 1878-1882 (window_size=5)
+2025-04-17 17:49:21,076 - DEBUG - 边统计: 正常边 26 条, 异常边 16 条
+2025-04-17 17:49:21,444 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_9_1882_1882.png
+2025-04-17 17:49:21,723 - INFO - 成功保存时间段 1882-1882 的可视化结果
+2025-04-17 17:49:21,723 - INFO - 
+正在处理时间段 11/77: 2415-2418
+2025-04-17 17:49:21,724 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:49:21,724 - INFO - 正在计算异常分数...
+2025-04-17 17:49:21,724 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:21,724 - INFO - 正在为时间段 2415-2418 生成可视化
+2025-04-17 17:49:21,724 - INFO - 正在为时间段 2415-2418 生成异常图可视化
+2025-04-17 17:49:21,724 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:21,772 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_10_2415_2418.png
+2025-04-17 17:49:22,046 - INFO - 成功保存时间段 2415-2418 的可视化结果
+2025-04-17 17:49:22,046 - INFO - 
+正在处理时间段 12/77: 2461-2461
+2025-04-17 17:49:22,046 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:22,046 - INFO - 正在计算异常分数...
+2025-04-17 17:49:22,046 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:22,046 - INFO - 正在为时间段 2461-2461 生成可视化
+2025-04-17 17:49:22,046 - INFO - 正在为时间段 2461-2461 生成异常图可视化
+2025-04-17 17:49:22,046 - INFO - 单个点位异常段 2461-2461，扩展为 2457-2461 (window_size=5)
+2025-04-17 17:49:22,047 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:22,095 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_11_2461_2461.png
+2025-04-17 17:49:22,377 - INFO - 成功保存时间段 2461-2461 的可视化结果
+2025-04-17 17:49:22,377 - INFO - 
+正在处理时间段 13/77: 2506-2506
+2025-04-17 17:49:22,377 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:22,377 - INFO - 正在计算异常分数...
+2025-04-17 17:49:22,377 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:22,377 - INFO - 正在为时间段 2506-2506 生成可视化
+2025-04-17 17:49:22,377 - INFO - 正在为时间段 2506-2506 生成异常图可视化
+2025-04-17 17:49:22,377 - INFO - 单个点位异常段 2506-2506，扩展为 2502-2506 (window_size=5)
+2025-04-17 17:49:22,378 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:22,426 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_12_2506_2506.png
+2025-04-17 17:49:22,704 - INFO - 成功保存时间段 2506-2506 的可视化结果
+2025-04-17 17:49:22,705 - INFO - 
+正在处理时间段 14/77: 2515-2515
+2025-04-17 17:49:22,705 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:22,705 - INFO - 正在计算异常分数...
+2025-04-17 17:49:22,705 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:22,705 - INFO - 正在为时间段 2515-2515 生成可视化
+2025-04-17 17:49:22,705 - INFO - 正在为时间段 2515-2515 生成异常图可视化
+2025-04-17 17:49:22,705 - INFO - 单个点位异常段 2515-2515，扩展为 2511-2515 (window_size=5)
+2025-04-17 17:49:22,705 - DEBUG - 边统计: 正常边 34 条, 异常边 8 条
+2025-04-17 17:49:22,754 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_13_2515_2515.png
+2025-04-17 17:49:23,032 - INFO - 成功保存时间段 2515-2515 的可视化结果
+2025-04-17 17:49:23,032 - INFO - 
+正在处理时间段 15/77: 2520-2520
+2025-04-17 17:49:23,032 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:23,032 - INFO - 正在计算异常分数...
+2025-04-17 17:49:23,032 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:23,032 - INFO - 正在为时间段 2520-2520 生成可视化
+2025-04-17 17:49:23,033 - INFO - 正在为时间段 2520-2520 生成异常图可视化
+2025-04-17 17:49:23,033 - INFO - 单个点位异常段 2520-2520，扩展为 2516-2520 (window_size=5)
+2025-04-17 17:49:23,033 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:23,081 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_14_2520_2520.png
+2025-04-17 17:49:23,363 - INFO - 成功保存时间段 2520-2520 的可视化结果
+2025-04-17 17:49:23,363 - INFO - 
+正在处理时间段 16/77: 2796-2808
+2025-04-17 17:49:23,363 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:23,363 - INFO - 正在计算异常分数...
+2025-04-17 17:49:23,366 - INFO - 检测到的异常节点: {7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:23,366 - INFO - 正在为时间段 2796-2808 生成可视化
+2025-04-17 17:49:23,366 - INFO - 正在为时间段 2796-2808 生成异常图可视化
+2025-04-17 17:49:23,366 - DEBUG - 边统计: 正常边 30 条, 异常边 12 条
+2025-04-17 17:49:23,414 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_15_2796_2808.png
+2025-04-17 17:49:23,694 - INFO - 成功保存时间段 2796-2808 的可视化结果
+2025-04-17 17:49:23,694 - INFO - 
+正在处理时间段 17/77: 3276-3277
+2025-04-17 17:49:23,694 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:23,695 - INFO - 正在计算异常分数...
+2025-04-17 17:49:23,695 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:23,695 - INFO - 正在为时间段 3276-3277 生成可视化
+2025-04-17 17:49:23,695 - INFO - 正在为时间段 3276-3277 生成异常图可视化
+2025-04-17 17:49:23,695 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:49:23,743 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_16_3276_3277.png
+2025-04-17 17:49:24,019 - INFO - 成功保存时间段 3276-3277 的可视化结果
+2025-04-17 17:49:24,019 - INFO - 
+正在处理时间段 18/77: 3321-3322
+2025-04-17 17:49:24,019 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:24,020 - INFO - 正在计算异常分数...
+2025-04-17 17:49:24,020 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:24,020 - INFO - 正在为时间段 3321-3322 生成可视化
+2025-04-17 17:49:24,020 - INFO - 正在为时间段 3321-3322 生成异常图可视化
+2025-04-17 17:49:24,020 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:49:24,066 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_17_3321_3322.png
+2025-04-17 17:49:24,344 - INFO - 成功保存时间段 3321-3322 的可视化结果
+2025-04-17 17:49:24,344 - INFO - 
+正在处理时间段 19/77: 3339-3345
+2025-04-17 17:49:24,344 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:49:24,344 - INFO - 正在计算异常分数...
+2025-04-17 17:49:24,345 - INFO - 检测到的异常节点: {8, 9, 10, 7}
+2025-04-17 17:49:24,345 - INFO - 正在为时间段 3339-3345 生成可视化
+2025-04-17 17:49:24,345 - INFO - 正在为时间段 3339-3345 生成异常图可视化
+2025-04-17 17:49:24,346 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:24,394 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_18_3339_3345.png
+2025-04-17 17:49:24,671 - INFO - 成功保存时间段 3339-3345 的可视化结果
+2025-04-17 17:49:24,671 - INFO - 
+正在处理时间段 20/77: 3360-3362
+2025-04-17 17:49:24,671 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:24,671 - INFO - 正在计算异常分数...
+2025-04-17 17:49:24,671 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:24,671 - INFO - 正在为时间段 3360-3362 生成可视化
+2025-04-17 17:49:24,671 - INFO - 正在为时间段 3360-3362 生成异常图可视化
+2025-04-17 17:49:24,672 - DEBUG - 边统计: 正常边 8 条, 异常边 34 条
+2025-04-17 17:49:24,720 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_19_3360_3362.png
+2025-04-17 17:49:24,997 - INFO - 成功保存时间段 3360-3362 的可视化结果
+2025-04-17 17:49:24,997 - INFO - 
+正在处理时间段 21/77: 3378-3378
+2025-04-17 17:49:24,997 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:24,997 - INFO - 正在计算异常分数...
+2025-04-17 17:49:24,997 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:24,997 - INFO - 正在为时间段 3378-3378 生成可视化
+2025-04-17 17:49:24,997 - INFO - 正在为时间段 3378-3378 生成异常图可视化
+2025-04-17 17:49:24,997 - INFO - 单个点位异常段 3378-3378，扩展为 3374-3378 (window_size=5)
+2025-04-17 17:49:24,998 - DEBUG - 边统计: 正常边 24 条, 异常边 18 条
+2025-04-17 17:49:25,045 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_20_3378_3378.png
+2025-04-17 17:49:25,326 - INFO - 成功保存时间段 3378-3378 的可视化结果
+2025-04-17 17:49:25,326 - INFO - 
+正在处理时间段 22/77: 3564-3564
+2025-04-17 17:49:25,326 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:25,326 - INFO - 正在计算异常分数...
+2025-04-17 17:49:25,326 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:25,326 - INFO - 正在为时间段 3564-3564 生成可视化
+2025-04-17 17:49:25,326 - INFO - 正在为时间段 3564-3564 生成异常图可视化
+2025-04-17 17:49:25,326 - INFO - 单个点位异常段 3564-3564，扩展为 3560-3564 (window_size=5)
+2025-04-17 17:49:25,326 - DEBUG - 边统计: 正常边 34 条, 异常边 8 条
+2025-04-17 17:49:25,446 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_21_3564_3564.png
+2025-04-17 17:49:25,728 - INFO - 成功保存时间段 3564-3564 的可视化结果
+2025-04-17 17:49:25,728 - INFO - 
+正在处理时间段 23/77: 3583-3584
+2025-04-17 17:49:25,728 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:25,728 - INFO - 正在计算异常分数...
+2025-04-17 17:49:25,728 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:25,728 - INFO - 正在为时间段 3583-3584 生成可视化
+2025-04-17 17:49:25,728 - INFO - 正在为时间段 3583-3584 生成异常图可视化
+2025-04-17 17:49:25,728 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:49:25,776 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_22_3583_3584.png
+2025-04-17 17:49:26,051 - INFO - 成功保存时间段 3583-3584 的可视化结果
+2025-04-17 17:49:26,052 - INFO - 
+正在处理时间段 24/77: 3592-3592
+2025-04-17 17:49:26,052 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:26,052 - INFO - 正在计算异常分数...
+2025-04-17 17:49:26,052 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:26,052 - INFO - 正在为时间段 3592-3592 生成可视化
+2025-04-17 17:49:26,052 - INFO - 正在为时间段 3592-3592 生成异常图可视化
+2025-04-17 17:49:26,052 - INFO - 单个点位异常段 3592-3592，扩展为 3588-3592 (window_size=5)
+2025-04-17 17:49:26,052 - DEBUG - 边统计: 正常边 26 条, 异常边 16 条
+2025-04-17 17:49:26,100 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_23_3592_3592.png
+2025-04-17 17:49:26,377 - INFO - 成功保存时间段 3592-3592 的可视化结果
+2025-04-17 17:49:26,377 - INFO - 
+正在处理时间段 25/77: 3611-3611
+2025-04-17 17:49:26,377 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:26,377 - INFO - 正在计算异常分数...
+2025-04-17 17:49:26,377 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:26,377 - INFO - 正在为时间段 3611-3611 生成可视化
+2025-04-17 17:49:26,377 - INFO - 正在为时间段 3611-3611 生成异常图可视化
+2025-04-17 17:49:26,377 - INFO - 单个点位异常段 3611-3611，扩展为 3607-3611 (window_size=5)
+2025-04-17 17:49:26,378 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:26,425 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_24_3611_3611.png
+2025-04-17 17:49:26,706 - INFO - 成功保存时间段 3611-3611 的可视化结果
+2025-04-17 17:49:26,707 - INFO - 
+正在处理时间段 26/77: 3646-3646
+2025-04-17 17:49:26,707 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:26,707 - INFO - 正在计算异常分数...
+2025-04-17 17:49:26,707 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:26,707 - INFO - 正在为时间段 3646-3646 生成可视化
+2025-04-17 17:49:26,707 - INFO - 正在为时间段 3646-3646 生成异常图可视化
+2025-04-17 17:49:26,707 - INFO - 单个点位异常段 3646-3646，扩展为 3642-3646 (window_size=5)
+2025-04-17 17:49:26,707 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:26,755 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_25_3646_3646.png
+2025-04-17 17:49:27,035 - INFO - 成功保存时间段 3646-3646 的可视化结果
+2025-04-17 17:49:27,035 - INFO - 
+正在处理时间段 27/77: 3653-3657
+2025-04-17 17:49:27,035 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:27,035 - INFO - 正在计算异常分数...
+2025-04-17 17:49:27,035 - INFO - 检测到的异常节点: {7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:27,035 - INFO - 正在为时间段 3653-3657 生成可视化
+2025-04-17 17:49:27,035 - INFO - 正在为时间段 3653-3657 生成异常图可视化
+2025-04-17 17:49:27,036 - DEBUG - 边统计: 正常边 14 条, 异常边 28 条
+2025-04-17 17:49:27,083 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_26_3653_3657.png
+2025-04-17 17:49:27,359 - INFO - 成功保存时间段 3653-3657 的可视化结果
+2025-04-17 17:49:27,359 - INFO - 
+正在处理时间段 28/77: 3896-3898
+2025-04-17 17:49:27,359 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:27,359 - INFO - 正在计算异常分数...
+2025-04-17 17:49:27,359 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:27,359 - INFO - 正在为时间段 3896-3898 生成可视化
+2025-04-17 17:49:27,359 - INFO - 正在为时间段 3896-3898 生成异常图可视化
+2025-04-17 17:49:27,359 - DEBUG - 边统计: 正常边 22 条, 异常边 20 条
+2025-04-17 17:49:27,407 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_27_3896_3898.png
+2025-04-17 17:49:27,687 - INFO - 成功保存时间段 3896-3898 的可视化结果
+2025-04-17 17:49:27,687 - INFO - 
+正在处理时间段 29/77: 4224-4239
+2025-04-17 17:49:27,687 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:27,688 - INFO - 正在计算异常分数...
+2025-04-17 17:49:27,690 - INFO - 检测到的异常节点: {2, 5, 7, 8, 9, 10, 12}
+2025-04-17 17:49:27,690 - INFO - 正在为时间段 4224-4239 生成可视化
+2025-04-17 17:49:27,690 - INFO - 正在为时间段 4224-4239 生成异常图可视化
+2025-04-17 17:49:27,691 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:27,739 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_28_4224_4239.png
+2025-04-17 17:49:28,015 - INFO - 成功保存时间段 4224-4239 的可视化结果
+2025-04-17 17:49:28,015 - INFO - 
+正在处理时间段 30/77: 4451-4454
+2025-04-17 17:49:28,015 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:28,015 - INFO - 正在计算异常分数...
+2025-04-17 17:49:28,015 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:28,015 - INFO - 正在为时间段 4451-4454 生成可视化
+2025-04-17 17:49:28,015 - INFO - 正在为时间段 4451-4454 生成异常图可视化
+2025-04-17 17:49:28,015 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:28,063 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_29_4451_4454.png
+2025-04-17 17:49:28,337 - INFO - 成功保存时间段 4451-4454 的可视化结果
+2025-04-17 17:49:28,337 - INFO - 
+正在处理时间段 31/77: 4474-4474
+2025-04-17 17:49:28,337 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:28,337 - INFO - 正在计算异常分数...
+2025-04-17 17:49:28,337 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:28,338 - INFO - 正在为时间段 4474-4474 生成可视化
+2025-04-17 17:49:28,338 - INFO - 正在为时间段 4474-4474 生成异常图可视化
+2025-04-17 17:49:28,338 - INFO - 单个点位异常段 4474-4474，扩展为 4470-4474 (window_size=5)
+2025-04-17 17:49:28,338 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:28,385 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_30_4474_4474.png
+2025-04-17 17:49:28,661 - INFO - 成功保存时间段 4474-4474 的可视化结果
+2025-04-17 17:49:28,661 - INFO - 
+正在处理时间段 32/77: 4533-4537
+2025-04-17 17:49:28,661 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:28,661 - INFO - 正在计算异常分数...
+2025-04-17 17:49:28,662 - INFO - 检测到的异常节点: {9, 7}
+2025-04-17 17:49:28,662 - INFO - 正在为时间段 4533-4537 生成可视化
+2025-04-17 17:49:28,662 - INFO - 正在为时间段 4533-4537 生成异常图可视化
+2025-04-17 17:49:28,662 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:28,710 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_31_4533_4537.png
+2025-04-17 17:49:28,989 - INFO - 成功保存时间段 4533-4537 的可视化结果
+2025-04-17 17:49:28,989 - INFO - 
+正在处理时间段 33/77: 4778-4796
+2025-04-17 17:49:28,989 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:28,989 - INFO - 正在计算异常分数...
+2025-04-17 17:49:28,992 - INFO - 检测到的异常节点: {1, 3, 4, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:28,992 - INFO - 正在为时间段 4778-4796 生成可视化
+2025-04-17 17:49:28,992 - INFO - 正在为时间段 4778-4796 生成异常图可视化
+2025-04-17 17:49:28,993 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:29,039 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_32_4778_4796.png
+2025-04-17 17:49:29,315 - INFO - 成功保存时间段 4778-4796 的可视化结果
+2025-04-17 17:49:29,315 - INFO - 
+正在处理时间段 34/77: 5077-5081
+2025-04-17 17:49:29,315 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:29,315 - INFO - 正在计算异常分数...
+2025-04-17 17:49:29,316 - INFO - 检测到的异常节点: {3, 6}
+2025-04-17 17:49:29,316 - INFO - 正在为时间段 5077-5081 生成可视化
+2025-04-17 17:49:29,316 - INFO - 正在为时间段 5077-5081 生成异常图可视化
+2025-04-17 17:49:29,316 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:29,364 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_33_5077_5081.png
+2025-04-17 17:49:29,638 - INFO - 成功保存时间段 5077-5081 的可视化结果
+2025-04-17 17:49:29,638 - INFO - 
+正在处理时间段 35/77: 5287-5289
+2025-04-17 17:49:29,639 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:49:29,639 - INFO - 正在计算异常分数...
+2025-04-17 17:49:29,639 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:29,639 - INFO - 正在为时间段 5287-5289 生成可视化
+2025-04-17 17:49:29,639 - INFO - 正在为时间段 5287-5289 生成异常图可视化
+2025-04-17 17:49:29,639 - DEBUG - 边统计: 正常边 30 条, 异常边 12 条
+2025-04-17 17:49:29,757 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_34_5287_5289.png
+2025-04-17 17:49:30,038 - INFO - 成功保存时间段 5287-5289 的可视化结果
+2025-04-17 17:49:30,038 - INFO - 
+正在处理时间段 36/77: 5291-5291
+2025-04-17 17:49:30,038 - INFO - 该时间段的真实异常节点: {9, 11, 12}
+2025-04-17 17:49:30,038 - INFO - 正在计算异常分数...
+2025-04-17 17:49:30,038 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:30,038 - INFO - 正在为时间段 5291-5291 生成可视化
+2025-04-17 17:49:30,038 - INFO - 正在为时间段 5291-5291 生成异常图可视化
+2025-04-17 17:49:30,038 - INFO - 单个点位异常段 5291-5291，扩展为 5287-5291 (window_size=5)
+2025-04-17 17:49:30,039 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:30,087 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_35_5291_5291.png
+2025-04-17 17:49:30,366 - INFO - 成功保存时间段 5291-5291 的可视化结果
+2025-04-17 17:49:30,366 - INFO - 
+正在处理时间段 37/77: 5337-5337
+2025-04-17 17:49:30,366 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:30,366 - INFO - 正在计算异常分数...
+2025-04-17 17:49:30,366 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:30,367 - INFO - 正在为时间段 5337-5337 生成可视化
+2025-04-17 17:49:30,367 - INFO - 正在为时间段 5337-5337 生成异常图可视化
+2025-04-17 17:49:30,367 - INFO - 单个点位异常段 5337-5337，扩展为 5333-5337 (window_size=5)
+2025-04-17 17:49:30,367 - DEBUG - 边统计: 正常边 28 条, 异常边 14 条
+2025-04-17 17:49:30,414 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_36_5337_5337.png
+2025-04-17 17:49:30,691 - INFO - 成功保存时间段 5337-5337 的可视化结果
+2025-04-17 17:49:30,692 - INFO - 
+正在处理时间段 38/77: 5576-5576
+2025-04-17 17:49:30,692 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:30,692 - INFO - 正在计算异常分数...
+2025-04-17 17:49:30,692 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:30,692 - INFO - 正在为时间段 5576-5576 生成可视化
+2025-04-17 17:49:30,692 - INFO - 正在为时间段 5576-5576 生成异常图可视化
+2025-04-17 17:49:30,692 - INFO - 单个点位异常段 5576-5576，扩展为 5572-5576 (window_size=5)
+2025-04-17 17:49:30,692 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:30,740 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_37_5576_5576.png
+2025-04-17 17:49:31,021 - INFO - 成功保存时间段 5576-5576 的可视化结果
+2025-04-17 17:49:31,021 - INFO - 
+正在处理时间段 39/77: 5582-5582
+2025-04-17 17:49:31,021 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:31,021 - INFO - 正在计算异常分数...
+2025-04-17 17:49:31,021 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:31,021 - INFO - 正在为时间段 5582-5582 生成可视化
+2025-04-17 17:49:31,021 - INFO - 正在为时间段 5582-5582 生成异常图可视化
+2025-04-17 17:49:31,021 - INFO - 单个点位异常段 5582-5582，扩展为 5578-5582 (window_size=5)
+2025-04-17 17:49:31,022 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:31,070 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_38_5582_5582.png
+2025-04-17 17:49:31,348 - INFO - 成功保存时间段 5582-5582 的可视化结果
+2025-04-17 17:49:31,348 - INFO - 
+正在处理时间段 40/77: 5591-5591
+2025-04-17 17:49:31,348 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:31,348 - INFO - 正在计算异常分数...
+2025-04-17 17:49:31,348 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:31,348 - INFO - 正在为时间段 5591-5591 生成可视化
+2025-04-17 17:49:31,348 - INFO - 正在为时间段 5591-5591 生成异常图可视化
+2025-04-17 17:49:31,348 - INFO - 单个点位异常段 5591-5591，扩展为 5587-5591 (window_size=5)
+2025-04-17 17:49:31,349 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:31,396 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_39_5591_5591.png
+2025-04-17 17:49:31,671 - INFO - 成功保存时间段 5591-5591 的可视化结果
+2025-04-17 17:49:31,671 - INFO - 
+正在处理时间段 41/77: 5606-5606
+2025-04-17 17:49:31,671 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:31,671 - INFO - 正在计算异常分数...
+2025-04-17 17:49:31,671 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:31,671 - INFO - 正在为时间段 5606-5606 生成可视化
+2025-04-17 17:49:31,671 - INFO - 正在为时间段 5606-5606 生成异常图可视化
+2025-04-17 17:49:31,671 - INFO - 单个点位异常段 5606-5606，扩展为 5602-5606 (window_size=5)
+2025-04-17 17:49:31,671 - DEBUG - 边统计: 正常边 34 条, 异常边 8 条
+2025-04-17 17:49:31,719 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_40_5606_5606.png
+2025-04-17 17:49:31,997 - INFO - 成功保存时间段 5606-5606 的可视化结果
+2025-04-17 17:49:31,997 - INFO - 
+正在处理时间段 42/77: 5621-5621
+2025-04-17 17:49:31,997 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:31,997 - INFO - 正在计算异常分数...
+2025-04-17 17:49:31,997 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:31,997 - INFO - 正在为时间段 5621-5621 生成可视化
+2025-04-17 17:49:31,997 - INFO - 正在为时间段 5621-5621 生成异常图可视化
+2025-04-17 17:49:31,997 - INFO - 单个点位异常段 5621-5621，扩展为 5617-5621 (window_size=5)
+2025-04-17 17:49:31,997 - DEBUG - 边统计: 正常边 32 条, 异常边 10 条
+2025-04-17 17:49:32,046 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_41_5621_5621.png
+2025-04-17 17:49:32,325 - INFO - 成功保存时间段 5621-5621 的可视化结果
+2025-04-17 17:49:32,325 - INFO - 
+正在处理时间段 43/77: 5627-5627
+2025-04-17 17:49:32,326 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:32,326 - INFO - 正在计算异常分数...
+2025-04-17 17:49:32,326 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:32,326 - INFO - 正在为时间段 5627-5627 生成可视化
+2025-04-17 17:49:32,326 - INFO - 正在为时间段 5627-5627 生成异常图可视化
+2025-04-17 17:49:32,326 - INFO - 单个点位异常段 5627-5627，扩展为 5623-5627 (window_size=5)
+2025-04-17 17:49:32,326 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:49:32,374 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_42_5627_5627.png
+2025-04-17 17:49:32,650 - INFO - 成功保存时间段 5627-5627 的可视化结果
+2025-04-17 17:49:32,650 - INFO - 
+正在处理时间段 44/77: 5963-5981
+2025-04-17 17:49:32,650 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:32,650 - INFO - 正在计算异常分数...
+2025-04-17 17:49:32,653 - INFO - 检测到的异常节点: {2, 3, 4, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:32,653 - INFO - 正在为时间段 5963-5981 生成可视化
+2025-04-17 17:49:32,653 - INFO - 正在为时间段 5963-5981 生成异常图可视化
+2025-04-17 17:49:32,653 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:32,701 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_43_5963_5981.png
+2025-04-17 17:49:32,976 - INFO - 成功保存时间段 5963-5981 的可视化结果
+2025-04-17 17:49:32,976 - INFO - 
+正在处理时间段 45/77: 6157-6161
+2025-04-17 17:49:32,976 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:32,976 - INFO - 正在计算异常分数...
+2025-04-17 17:49:32,976 - INFO - 检测到的异常节点: {9, 10}
+2025-04-17 17:49:32,976 - INFO - 正在为时间段 6157-6161 生成可视化
+2025-04-17 17:49:32,976 - INFO - 正在为时间段 6157-6161 生成异常图可视化
+2025-04-17 17:49:32,977 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:49:33,024 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_44_6157_6161.png
+2025-04-17 17:49:33,304 - INFO - 成功保存时间段 6157-6161 的可视化结果
+2025-04-17 17:49:33,304 - INFO - 
+正在处理时间段 46/77: 6197-6200
+2025-04-17 17:49:33,304 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:33,304 - INFO - 正在计算异常分数...
+2025-04-17 17:49:33,304 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:33,304 - INFO - 正在为时间段 6197-6200 生成可视化
+2025-04-17 17:49:33,305 - INFO - 正在为时间段 6197-6200 生成异常图可视化
+2025-04-17 17:49:33,305 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:33,352 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_45_6197_6200.png
+2025-04-17 17:49:33,627 - INFO - 成功保存时间段 6197-6200 的可视化结果
+2025-04-17 17:49:33,627 - INFO - 
+正在处理时间段 47/77: 6233-6254
+2025-04-17 17:49:33,627 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:49:33,627 - INFO - 正在计算异常分数...
+2025-04-17 17:49:33,631 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:33,631 - INFO - 正在为时间段 6233-6254 生成可视化
+2025-04-17 17:49:33,631 - INFO - 正在为时间段 6233-6254 生成异常图可视化
+2025-04-17 17:49:33,631 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:33,680 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_46_6233_6254.png
+2025-04-17 17:49:33,966 - INFO - 成功保存时间段 6233-6254 的可视化结果
+2025-04-17 17:49:33,966 - INFO - 
+正在处理时间段 48/77: 6440-6449
+2025-04-17 17:49:33,967 - INFO - 该时间段的真实异常节点: {9, 10, 12}
+2025-04-17 17:49:33,967 - INFO - 正在计算异常分数...
+2025-04-17 17:49:33,968 - INFO - 检测到的异常节点: {9, 10, 13, 7}
+2025-04-17 17:49:33,968 - INFO - 正在为时间段 6440-6449 生成可视化
+2025-04-17 17:49:33,968 - INFO - 正在为时间段 6440-6449 生成异常图可视化
+2025-04-17 17:49:33,968 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:34,087 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_47_6440_6449.png
+2025-04-17 17:49:34,369 - INFO - 成功保存时间段 6440-6449 的可视化结果
+2025-04-17 17:49:34,369 - INFO - 
+正在处理时间段 49/77: 6457-6457
+2025-04-17 17:49:34,370 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:34,370 - INFO - 正在计算异常分数...
+2025-04-17 17:49:34,370 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:34,370 - INFO - 正在为时间段 6457-6457 生成可视化
+2025-04-17 17:49:34,370 - INFO - 正在为时间段 6457-6457 生成异常图可视化
+2025-04-17 17:49:34,370 - INFO - 单个点位异常段 6457-6457，扩展为 6453-6457 (window_size=5)
+2025-04-17 17:49:34,370 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:34,418 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_48_6457_6457.png
+2025-04-17 17:49:34,695 - INFO - 成功保存时间段 6457-6457 的可视化结果
+2025-04-17 17:49:34,695 - INFO - 
+正在处理时间段 50/77: 6471-6491
+2025-04-17 17:49:34,695 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:34,695 - INFO - 正在计算异常分数...
+2025-04-17 17:49:34,698 - INFO - 检测到的异常节点: {2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:34,698 - INFO - 正在为时间段 6471-6491 生成可视化
+2025-04-17 17:49:34,698 - INFO - 正在为时间段 6471-6491 生成异常图可视化
+2025-04-17 17:49:34,699 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:34,747 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_49_6471_6491.png
+2025-04-17 17:49:35,021 - INFO - 成功保存时间段 6471-6491 的可视化结果
+2025-04-17 17:49:35,022 - INFO - 
+正在处理时间段 51/77: 6500-6500
+2025-04-17 17:49:35,022 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:35,022 - INFO - 正在计算异常分数...
+2025-04-17 17:49:35,022 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:35,022 - INFO - 正在为时间段 6500-6500 生成可视化
+2025-04-17 17:49:35,022 - INFO - 正在为时间段 6500-6500 生成异常图可视化
+2025-04-17 17:49:35,022 - INFO - 单个点位异常段 6500-6500，扩展为 6496-6500 (window_size=5)
+2025-04-17 17:49:35,022 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:35,070 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_50_6500_6500.png
+2025-04-17 17:49:35,352 - INFO - 成功保存时间段 6500-6500 的可视化结果
+2025-04-17 17:49:35,352 - INFO - 
+正在处理时间段 52/77: 6513-6515
+2025-04-17 17:49:35,353 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:35,353 - INFO - 正在计算异常分数...
+2025-04-17 17:49:35,353 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:35,353 - INFO - 正在为时间段 6513-6515 生成可视化
+2025-04-17 17:49:35,353 - INFO - 正在为时间段 6513-6515 生成异常图可视化
+2025-04-17 17:49:35,353 - DEBUG - 边统计: 正常边 22 条, 异常边 20 条
+2025-04-17 17:49:35,401 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_51_6513_6515.png
+2025-04-17 17:49:35,678 - INFO - 成功保存时间段 6513-6515 的可视化结果
+2025-04-17 17:49:35,678 - INFO - 
+正在处理时间段 53/77: 6531-6545
+2025-04-17 17:49:35,678 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:35,678 - INFO - 正在计算异常分数...
+2025-04-17 17:49:35,680 - INFO - 检测到的异常节点: {1, 3, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:35,680 - INFO - 正在为时间段 6531-6545 生成可视化
+2025-04-17 17:49:35,680 - INFO - 正在为时间段 6531-6545 生成异常图可视化
+2025-04-17 17:49:35,681 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:35,729 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_52_6531_6545.png
+2025-04-17 17:49:36,018 - INFO - 成功保存时间段 6531-6545 的可视化结果
+2025-04-17 17:49:36,019 - INFO - 
+正在处理时间段 54/77: 6549-6563
+2025-04-17 17:49:36,019 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:36,019 - INFO - 正在计算异常分数...
+2025-04-17 17:49:36,021 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:36,021 - INFO - 正在为时间段 6549-6563 生成可视化
+2025-04-17 17:49:36,021 - INFO - 正在为时间段 6549-6563 生成异常图可视化
+2025-04-17 17:49:36,022 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:36,069 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_53_6549_6563.png
+2025-04-17 17:49:36,346 - INFO - 成功保存时间段 6549-6563 的可视化结果
+2025-04-17 17:49:36,346 - INFO - 
+正在处理时间段 55/77: 6726-6730
+2025-04-17 17:49:36,346 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:36,346 - INFO - 正在计算异常分数...
+2025-04-17 17:49:36,346 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:36,346 - INFO - 正在为时间段 6726-6730 生成可视化
+2025-04-17 17:49:36,346 - INFO - 正在为时间段 6726-6730 生成异常图可视化
+2025-04-17 17:49:36,347 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:49:36,396 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_54_6726_6730.png
+2025-04-17 17:49:36,674 - INFO - 成功保存时间段 6726-6730 的可视化结果
+2025-04-17 17:49:36,675 - INFO - 
+正在处理时间段 56/77: 6824-6825
+2025-04-17 17:49:36,675 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:36,675 - INFO - 正在计算异常分数...
+2025-04-17 17:49:36,675 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:36,675 - INFO - 正在为时间段 6824-6825 生成可视化
+2025-04-17 17:49:36,675 - INFO - 正在为时间段 6824-6825 生成异常图可视化
+2025-04-17 17:49:36,675 - DEBUG - 边统计: 正常边 0 条, 异常边 38 条
+2025-04-17 17:49:36,722 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_55_6824_6825.png
+2025-04-17 17:49:36,998 - INFO - 成功保存时间段 6824-6825 的可视化结果
+2025-04-17 17:49:36,998 - INFO - 
+正在处理时间段 57/77: 7302-7302
+2025-04-17 17:49:36,998 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:36,998 - INFO - 正在计算异常分数...
+2025-04-17 17:49:36,998 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:36,998 - INFO - 正在为时间段 7302-7302 生成可视化
+2025-04-17 17:49:36,998 - INFO - 正在为时间段 7302-7302 生成异常图可视化
+2025-04-17 17:49:36,998 - INFO - 单个点位异常段 7302-7302，扩展为 7298-7302 (window_size=5)
+2025-04-17 17:49:36,999 - DEBUG - 边统计: 正常边 32 条, 异常边 10 条
+2025-04-17 17:49:37,045 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_56_7302_7302.png
+2025-04-17 17:49:37,324 - INFO - 成功保存时间段 7302-7302 的可视化结果
+2025-04-17 17:49:37,324 - INFO - 
+正在处理时间段 58/77: 7337-7337
+2025-04-17 17:49:37,324 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:37,324 - INFO - 正在计算异常分数...
+2025-04-17 17:49:37,324 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:37,324 - INFO - 正在为时间段 7337-7337 生成可视化
+2025-04-17 17:49:37,324 - INFO - 正在为时间段 7337-7337 生成异常图可视化
+2025-04-17 17:49:37,324 - INFO - 单个点位异常段 7337-7337，扩展为 7333-7337 (window_size=5)
+2025-04-17 17:49:37,325 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:49:37,372 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_57_7337_7337.png
+2025-04-17 17:49:37,655 - INFO - 成功保存时间段 7337-7337 的可视化结果
+2025-04-17 17:49:37,655 - INFO - 
+正在处理时间段 59/77: 7384-7414
+2025-04-17 17:49:37,655 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 10, 11}
+2025-04-17 17:49:37,655 - INFO - 正在计算异常分数...
+2025-04-17 17:49:37,660 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:37,661 - INFO - 正在为时间段 7384-7414 生成可视化
+2025-04-17 17:49:37,661 - INFO - 正在为时间段 7384-7414 生成异常图可视化
+2025-04-17 17:49:37,661 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:37,709 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_58_7384_7414.png
+2025-04-17 17:49:37,986 - INFO - 成功保存时间段 7384-7414 的可视化结果
+2025-04-17 17:49:37,986 - INFO - 
+正在处理时间段 60/77: 7591-7592
+2025-04-17 17:49:37,986 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11, 12}
+2025-04-17 17:49:37,986 - INFO - 正在计算异常分数...
+2025-04-17 17:49:37,986 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:37,986 - INFO - 正在为时间段 7591-7592 生成可视化
+2025-04-17 17:49:37,986 - INFO - 正在为时间段 7591-7592 生成异常图可视化
+2025-04-17 17:49:37,987 - DEBUG - 边统计: 正常边 0 条, 异常边 32 条
+2025-04-17 17:49:38,103 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_59_7591_7592.png
+2025-04-17 17:49:38,377 - INFO - 成功保存时间段 7591-7592 的可视化结果
+2025-04-17 17:49:38,377 - INFO - 
+正在处理时间段 61/77: 7596-7598
+2025-04-17 17:49:38,377 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 12}
+2025-04-17 17:49:38,377 - INFO - 正在计算异常分数...
+2025-04-17 17:49:38,377 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:38,377 - INFO - 正在为时间段 7596-7598 生成可视化
+2025-04-17 17:49:38,377 - INFO - 正在为时间段 7596-7598 生成异常图可视化
+2025-04-17 17:49:38,378 - DEBUG - 边统计: 正常边 20 条, 异常边 22 条
+2025-04-17 17:49:38,425 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_60_7596_7598.png
+2025-04-17 17:49:38,706 - INFO - 成功保存时间段 7596-7598 的可视化结果
+2025-04-17 17:49:38,706 - INFO - 
+正在处理时间段 62/77: 7640-7640
+2025-04-17 17:49:38,707 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:38,707 - INFO - 正在计算异常分数...
+2025-04-17 17:49:38,707 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:38,707 - INFO - 正在为时间段 7640-7640 生成可视化
+2025-04-17 17:49:38,707 - INFO - 正在为时间段 7640-7640 生成异常图可视化
+2025-04-17 17:49:38,707 - INFO - 单个点位异常段 7640-7640，扩展为 7636-7640 (window_size=5)
+2025-04-17 17:49:38,707 - DEBUG - 边统计: 正常边 34 条, 异常边 8 条
+2025-04-17 17:49:38,756 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_61_7640_7640.png
+2025-04-17 17:49:39,035 - INFO - 成功保存时间段 7640-7640 的可视化结果
+2025-04-17 17:49:39,035 - INFO - 
+正在处理时间段 63/77: 7691-7691
+2025-04-17 17:49:39,035 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:39,035 - INFO - 正在计算异常分数...
+2025-04-17 17:49:39,035 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:39,035 - INFO - 正在为时间段 7691-7691 生成可视化
+2025-04-17 17:49:39,035 - INFO - 正在为时间段 7691-7691 生成异常图可视化
+2025-04-17 17:49:39,035 - INFO - 单个点位异常段 7691-7691，扩展为 7687-7691 (window_size=5)
+2025-04-17 17:49:39,036 - DEBUG - 边统计: 正常边 32 条, 异常边 10 条
+2025-04-17 17:49:39,084 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_62_7691_7691.png
+2025-04-17 17:49:39,363 - INFO - 成功保存时间段 7691-7691 的可视化结果
+2025-04-17 17:49:39,363 - INFO - 
+正在处理时间段 64/77: 7700-7707
+2025-04-17 17:49:39,363 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:39,363 - INFO - 正在计算异常分数...
+2025-04-17 17:49:39,364 - INFO - 检测到的异常节点: {7, 8, 9, 10, 12}
+2025-04-17 17:49:39,364 - INFO - 正在为时间段 7700-7707 生成可视化
+2025-04-17 17:49:39,364 - INFO - 正在为时间段 7700-7707 生成异常图可视化
+2025-04-17 17:49:39,364 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:39,411 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_63_7700_7707.png
+2025-04-17 17:49:39,689 - INFO - 成功保存时间段 7700-7707 的可视化结果
+2025-04-17 17:49:39,690 - INFO - 
+正在处理时间段 65/77: 7885-7886
+2025-04-17 17:49:39,690 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:39,690 - INFO - 正在计算异常分数...
+2025-04-17 17:49:39,690 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:39,690 - INFO - 正在为时间段 7885-7886 生成可视化
+2025-04-17 17:49:39,690 - INFO - 正在为时间段 7885-7886 生成异常图可视化
+2025-04-17 17:49:39,690 - DEBUG - 边统计: 正常边 0 条, 异常边 38 条
+2025-04-17 17:49:39,739 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_64_7885_7886.png
+2025-04-17 17:49:40,015 - INFO - 成功保存时间段 7885-7886 的可视化结果
+2025-04-17 17:49:40,016 - INFO - 
+正在处理时间段 66/77: 7963-7963
+2025-04-17 17:49:40,016 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 12}
+2025-04-17 17:49:40,016 - INFO - 正在计算异常分数...
+2025-04-17 17:49:40,016 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:40,016 - INFO - 正在为时间段 7963-7963 生成可视化
+2025-04-17 17:49:40,016 - INFO - 正在为时间段 7963-7963 生成异常图可视化
+2025-04-17 17:49:40,016 - INFO - 单个点位异常段 7963-7963，扩展为 7959-7963 (window_size=5)
+2025-04-17 17:49:40,016 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:40,065 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_65_7963_7963.png
+2025-04-17 17:49:40,342 - INFO - 成功保存时间段 7963-7963 的可视化结果
+2025-04-17 17:49:40,342 - INFO - 
+正在处理时间段 67/77: 7991-7995
+2025-04-17 17:49:40,343 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:40,343 - INFO - 正在计算异常分数...
+2025-04-17 17:49:40,343 - INFO - 检测到的异常节点: {8, 9, 10, 7}
+2025-04-17 17:49:40,343 - INFO - 正在为时间段 7991-7995 生成可视化
+2025-04-17 17:49:40,343 - INFO - 正在为时间段 7991-7995 生成异常图可视化
+2025-04-17 17:49:40,343 - DEBUG - 边统计: 正常边 28 条, 异常边 14 条
+2025-04-17 17:49:40,392 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_66_7991_7995.png
+2025-04-17 17:49:40,668 - INFO - 成功保存时间段 7991-7995 的可视化结果
+2025-04-17 17:49:40,668 - INFO - 
+正在处理时间段 68/77: 8214-8216
+2025-04-17 17:49:40,668 - INFO - 该时间段的真实异常节点: {9, 12}
+2025-04-17 17:49:40,668 - INFO - 正在计算异常分数...
+2025-04-17 17:49:40,668 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:40,668 - INFO - 正在为时间段 8214-8216 生成可视化
+2025-04-17 17:49:40,668 - INFO - 正在为时间段 8214-8216 生成异常图可视化
+2025-04-17 17:49:40,668 - DEBUG - 边统计: 正常边 28 条, 异常边 14 条
+2025-04-17 17:49:40,716 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_67_8214_8216.png
+2025-04-17 17:49:40,998 - INFO - 成功保存时间段 8214-8216 的可视化结果
+2025-04-17 17:49:40,998 - INFO - 
+正在处理时间段 69/77: 8280-8291
+2025-04-17 17:49:40,998 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:40,998 - INFO - 正在计算异常分数...
+2025-04-17 17:49:41,000 - INFO - 检测到的异常节点: {4, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:41,000 - INFO - 正在为时间段 8280-8291 生成可视化
+2025-04-17 17:49:41,000 - INFO - 正在为时间段 8280-8291 生成异常图可视化
+2025-04-17 17:49:41,001 - DEBUG - 边统计: 正常边 36 条, 异常边 6 条
+2025-04-17 17:49:41,048 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_68_8280_8291.png
+2025-04-17 17:49:41,325 - INFO - 成功保存时间段 8280-8291 的可视化结果
+2025-04-17 17:49:41,325 - INFO - 
+正在处理时间段 70/77: 8432-8451
+2025-04-17 17:49:41,326 - INFO - 该时间段的真实异常节点: {8, 11, 6, 7}
+2025-04-17 17:49:41,326 - INFO - 正在计算异常分数...
+2025-04-17 17:49:41,329 - INFO - 检测到的异常节点: {2, 3, 4, 5, 6, 7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:41,329 - INFO - 正在为时间段 8432-8451 生成可视化
+2025-04-17 17:49:41,329 - INFO - 正在为时间段 8432-8451 生成异常图可视化
+2025-04-17 17:49:41,329 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:41,376 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_69_8432_8451.png
+2025-04-17 17:49:41,652 - INFO - 成功保存时间段 8432-8451 的可视化结果
+2025-04-17 17:49:41,652 - INFO - 
+正在处理时间段 71/77: 8459-8461
+2025-04-17 17:49:41,652 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:41,652 - INFO - 正在计算异常分数...
+2025-04-17 17:49:41,652 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:41,652 - INFO - 正在为时间段 8459-8461 生成可视化
+2025-04-17 17:49:41,652 - INFO - 正在为时间段 8459-8461 生成异常图可视化
+2025-04-17 17:49:41,653 - DEBUG - 边统计: 正常边 30 条, 异常边 12 条
+2025-04-17 17:49:41,699 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_70_8459_8461.png
+2025-04-17 17:49:41,981 - INFO - 成功保存时间段 8459-8461 的可视化结果
+2025-04-17 17:49:41,981 - INFO - 
+正在处理时间段 72/77: 8504-8508
+2025-04-17 17:49:41,981 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:41,981 - INFO - 正在计算异常分数...
+2025-04-17 17:49:41,981 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:41,982 - INFO - 正在为时间段 8504-8508 生成可视化
+2025-04-17 17:49:41,982 - INFO - 正在为时间段 8504-8508 生成异常图可视化
+2025-04-17 17:49:41,982 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:42,031 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_71_8504_8508.png
+2025-04-17 17:49:42,307 - INFO - 成功保存时间段 8504-8508 的可视化结果
+2025-04-17 17:49:42,307 - INFO - 
+正在处理时间段 73/77: 8542-8553
+2025-04-17 17:49:42,308 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:42,308 - INFO - 正在计算异常分数...
+2025-04-17 17:49:42,309 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 12}
+2025-04-17 17:49:42,309 - INFO - 正在为时间段 8542-8553 生成可视化
+2025-04-17 17:49:42,309 - INFO - 正在为时间段 8542-8553 生成异常图可视化
+2025-04-17 17:49:42,310 - DEBUG - 边统计: 正常边 40 条, 异常边 2 条
+2025-04-17 17:49:42,427 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_72_8542_8553.png
+2025-04-17 17:49:42,704 - INFO - 成功保存时间段 8542-8553 的可视化结果
+2025-04-17 17:49:42,704 - INFO - 
+正在处理时间段 74/77: 8564-8571
+2025-04-17 17:49:42,704 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 12}
+2025-04-17 17:49:42,704 - INFO - 正在计算异常分数...
+2025-04-17 17:49:42,705 - INFO - 检测到的异常节点: {7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:42,705 - INFO - 正在为时间段 8564-8571 生成可视化
+2025-04-17 17:49:42,705 - INFO - 正在为时间段 8564-8571 生成异常图可视化
+2025-04-17 17:49:42,706 - DEBUG - 边统计: 正常边 38 条, 异常边 4 条
+2025-04-17 17:49:42,753 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_73_8564_8571.png
+2025-04-17 17:49:43,034 - INFO - 成功保存时间段 8564-8571 的可视化结果
+2025-04-17 17:49:43,035 - INFO - 
+正在处理时间段 75/77: 8724-8737
+2025-04-17 17:49:43,035 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:43,035 - INFO - 正在计算异常分数...
+2025-04-17 17:49:43,037 - INFO - 检测到的异常节点: {1, 6, 7, 8, 9, 10, 13}
+2025-04-17 17:49:43,037 - INFO - 正在为时间段 8724-8737 生成可视化
+2025-04-17 17:49:43,037 - INFO - 正在为时间段 8724-8737 生成异常图可视化
+2025-04-17 17:49:43,037 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:43,085 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_74_8724_8737.png
+2025-04-17 17:49:43,362 - INFO - 成功保存时间段 8724-8737 的可视化结果
+2025-04-17 17:49:43,362 - INFO - 
+正在处理时间段 76/77: 8815-8821
+2025-04-17 17:49:43,362 - INFO - 该时间段的真实异常节点: {6, 7, 8, 9, 11}
+2025-04-17 17:49:43,362 - INFO - 正在计算异常分数...
+2025-04-17 17:49:43,363 - INFO - 检测到的异常节点: {7, 8, 9, 10, 12, 13}
+2025-04-17 17:49:43,363 - INFO - 正在为时间段 8815-8821 生成可视化
+2025-04-17 17:49:43,363 - INFO - 正在为时间段 8815-8821 生成异常图可视化
+2025-04-17 17:49:43,363 - DEBUG - 边统计: 正常边 42 条, 异常边 0 条
+2025-04-17 17:49:43,410 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_75_8815_8821.png
+2025-04-17 17:49:43,684 - INFO - 成功保存时间段 8815-8821 的可视化结果
+2025-04-17 17:49:43,684 - INFO - 
+正在处理时间段 77/77: 8859-8860
+2025-04-17 17:49:43,684 - INFO - 该时间段的真实异常节点: {12}
+2025-04-17 17:49:43,684 - INFO - 正在计算异常分数...
+2025-04-17 17:49:43,684 - INFO - 检测到的异常节点: set()
+2025-04-17 17:49:43,685 - INFO - 正在为时间段 8859-8860 生成可视化
+2025-04-17 17:49:43,685 - INFO - 正在为时间段 8859-8860 生成异常图可视化
+2025-04-17 17:49:43,685 - DEBUG - 边统计: 正常边 0 条, 异常边 42 条
+2025-04-17 17:49:43,732 - DEBUG - 正在保存可视化结果到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/seg_76_8859_8860.png
+2025-04-17 17:49:44,020 - INFO - 成功保存时间段 8859-8860 的可视化结果
+2025-04-17 17:49:44,021 - INFO - 正在生成所有异常段的综合可视化图像: ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/all_segments.png
+2025-04-17 17:49:44,021 - INFO - 生成全屏优化的可视化图表
+2025-04-17 17:49:44,617 - INFO - 单个点位异常段 738-738，扩展为 734-738 (window_size=5)
+2025-04-17 17:49:44,627 - INFO - 单个点位异常段 762-762，扩展为 758-762 (window_size=5)
+2025-04-17 17:49:44,755 - INFO - 单个点位异常段 1882-1882，扩展为 1878-1882 (window_size=5)
+2025-04-17 17:49:44,775 - INFO - 单个点位异常段 2461-2461，扩展为 2457-2461 (window_size=5)
+2025-04-17 17:49:44,785 - INFO - 单个点位异常段 2506-2506，扩展为 2502-2506 (window_size=5)
+2025-04-17 17:49:44,794 - INFO - 单个点位异常段 2515-2515，扩展为 2511-2515 (window_size=5)
+2025-04-17 17:49:44,804 - INFO - 单个点位异常段 2520-2520，扩展为 2516-2520 (window_size=5)
+2025-04-17 17:49:44,861 - INFO - 单个点位异常段 3378-3378，扩展为 3374-3378 (window_size=5)
+2025-04-17 17:49:44,870 - INFO - 单个点位异常段 3564-3564，扩展为 3560-3564 (window_size=5)
+2025-04-17 17:49:44,890 - INFO - 单个点位异常段 3592-3592，扩展为 3588-3592 (window_size=5)
+2025-04-17 17:49:44,899 - INFO - 单个点位异常段 3611-3611，扩展为 3607-3611 (window_size=5)
+2025-04-17 17:49:44,909 - INFO - 单个点位异常段 3646-3646，扩展为 3642-3646 (window_size=5)
+2025-04-17 17:49:44,957 - INFO - 单个点位异常段 4474-4474，扩展为 4470-4474 (window_size=5)
+2025-04-17 17:49:45,006 - INFO - 单个点位异常段 5291-5291，扩展为 5287-5291 (window_size=5)
+2025-04-17 17:49:45,015 - INFO - 单个点位异常段 5337-5337，扩展为 5333-5337 (window_size=5)
+2025-04-17 17:49:45,025 - INFO - 单个点位异常段 5576-5576，扩展为 5572-5576 (window_size=5)
+2025-04-17 17:49:45,035 - INFO - 单个点位异常段 5582-5582，扩展为 5578-5582 (window_size=5)
+2025-04-17 17:49:45,045 - INFO - 单个点位异常段 5591-5591，扩展为 5587-5591 (window_size=5)
+2025-04-17 17:49:45,055 - INFO - 单个点位异常段 5606-5606，扩展为 5602-5606 (window_size=5)
+2025-04-17 17:49:45,064 - INFO - 单个点位异常段 5621-5621，扩展为 5617-5621 (window_size=5)
+2025-04-17 17:49:45,074 - INFO - 单个点位异常段 5627-5627，扩展为 5623-5627 (window_size=5)
+2025-04-17 17:49:45,133 - INFO - 单个点位异常段 6457-6457，扩展为 6453-6457 (window_size=5)
+2025-04-17 17:49:45,153 - INFO - 单个点位异常段 6500-6500，扩展为 6496-6500 (window_size=5)
+2025-04-17 17:49:45,214 - INFO - 单个点位异常段 7302-7302，扩展为 7298-7302 (window_size=5)
+2025-04-17 17:49:45,225 - INFO - 单个点位异常段 7337-7337，扩展为 7333-7337 (window_size=5)
+2025-04-17 17:49:45,263 - INFO - 单个点位异常段 7640-7640，扩展为 7636-7640 (window_size=5)
+2025-04-17 17:49:45,274 - INFO - 单个点位异常段 7691-7691，扩展为 7687-7691 (window_size=5)
+2025-04-17 17:49:45,303 - INFO - 单个点位异常段 7963-7963，扩展为 7959-7963 (window_size=5)
+2025-04-17 17:49:50,226 - INFO - 已生成全屏优化的可视化图表: ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/all_segments.png
+2025-04-17 17:49:50,226 - INFO - 正在从 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1 中的图像创建GIF
+2025-04-17 17:50:05,003 - INFO - GIF已保存到 ./visual/els/neighbor_corr_threshold/mean_ratio/els-1/els-1.gif
+2025-04-17 17:50:05,004 - INFO - 可视化结果生成完成！
+2025-04-17 17:50:05,004 - INFO - 
+==================================================
+2025-04-17 17:50:05,004 - INFO - 程序运行总耗时: 0:01:01.319197 
+
