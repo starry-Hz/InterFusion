@@ -21,7 +21,7 @@ warnings.filterwarnings("ignore")
 
 @dataclass
 class ExperimentConfig:
-    dataset: str = 'omi'
+    dataset: str = 'machine'
     window_size: int = 5
     score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(0.0, 7.1, 0.5))
     topk_range: range = field(default_factory=lambda: range(1, 10))

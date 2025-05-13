@@ -25,8 +25,8 @@ warnings.filterwarnings("ignore")
 class ExperimentConfig:
     dataset: str = 'els'
     window_size: int = 5
-    score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(0.0, 7.1, 0.5))
-    topk_range: range = field(default_factory=lambda: range(1, 10))
+    score_thresholds: npt.NDArray = field(default_factory=lambda: np.arange(1, 7.1, 0.5))
+    topk_range: range = field(default_factory=lambda: range(1, 6))
     # corr_threshold_range: npt.NDArray = field(default_factory=lambda: np.arange(0.1, 0.51, 0.1))
     corr_threshold_range: npt.NDArray = field(
         default_factory=lambda: np.round(np.linspace(0.0, 0.65, 14), 1)  # 修正后的阈值范围
@@ -543,7 +543,6 @@ def optimize_metrics(results_df: pd.DataFrame, logger: logging.Logger) -> Tuple[
 
 
 # ==================== 可视化 ====================
-
 def visualize_anomaly_graph(
     test_data: npt.NDArray,
     start: int,
@@ -553,21 +552,57 @@ def visualize_anomaly_graph(
     ground_truth_nodes: Set[int],
     detected_nodes: Set[int],
     save_path: str,
-    logger: logging.Logger
+    logger: logging.Logger,
+    window_size: int = 5
 ):
-    """优化后的异常图可视化函数"""
+    """
+    完整的异常图可视化函数，支持处理单个点位异常段
+    
+    参数:
+        test_data: 测试数据 (n_samples, n_sensors)
+        start: 异常段开始索引
+        end: 异常段结束索引
+        edge_stats: 边缘统计信息字典
+        topk_neighbors: 每个节点的邻居集合
+        ground_truth_nodes: 真实异常节点集合
+        detected_nodes: 检测到的异常节点集合
+        save_path: 图片保存路径
+        logger: 日志记录器
+        window_size: 滑动窗口大小 (默认5)
+    """
     logger.info(f"正在为时间段 {start}-{end} 生成异常图可视化")
     
-    window = test_data[start:end+1]
-    corr = np.corrcoef(window, rowvar=False)
-    num_sensors = corr.shape[0]
+    # 1. 处理单个点位异常段 - 向前扩展窗口
+    if start == end:
+        actual_start = max(0, end - window_size + 1)  # 确保不超出数据范围
+        logger.info(f"单个点位异常段 {start}-{end}，扩展为 {actual_start}-{end} (window_size={window_size})")
+    else:
+        actual_start = start
     
-    logger.debug(f"创建包含 {num_sensors} 个节点的图结构")
+    window = test_data[actual_start:end+1]
+    
+    # 2. 安全计算相关系数矩阵
+    num_sensors = test_data.shape[1]
+    if window.shape[0] < 2:
+        logger.warning(f"窗口太小({window.shape[0]}), 无法计算相关系数。使用单位矩阵替代")
+        corr = np.eye(num_sensors)
+    else:
+        try:
+            corr = np.corrcoef(window, rowvar=False)
+            if corr.shape[0] != num_sensors:
+                logger.warning(f"相关系数矩阵形状不匹配({corr.shape[0]}!={num_sensors})。使用单位矩阵替代")
+                corr = np.eye(num_sensors)
+        except Exception as e:
+            logger.error(f"计算相关系数矩阵失败: {str(e)}")
+            logger.warning("使用单位矩阵作为替代")
+            corr = np.eye(num_sensors)
+    
+    # 3. 创建图结构
     G = nx.Graph()
     for i in range(num_sensors):
-        G.add_node(i + 1)
+        G.add_node(i + 1)  # 节点编号从1开始
 
-    # 统计边缘信息
+    # 4. 添加边并统计异常情况
     normal_edges = 0
     abnormal_edges = 0
     
@@ -576,16 +611,19 @@ def visualize_anomaly_graph(
             key = (min(j, k), max(j, k))
             if key not in edge_stats:
                 continue
+                
             val = corr[j, k] if j < k else corr[k, j]
             if np.isnan(val):
                 continue
             
+            # 获取阈值范围
             percentiles = edge_stats[key].get('percentiles', (0, 0))
             if isinstance(percentiles, (list, tuple)) and len(percentiles) == 2:
                 low, high = percentiles
             else:
                 low, high = 0, 0
                 
+            # 判断是否异常
             is_abnormal = val < low or val > high
             if is_abnormal:
                 abnormal_edges += 1
@@ -596,66 +634,77 @@ def visualize_anomaly_graph(
 
     logger.debug(f"边统计: 正常边 {normal_edges} 条, 异常边 {abnormal_edges} 条")
     
-    # 节点颜色统计
+    # 5. 节点着色
     node_colors = []
     for node in G.nodes():
         if node in ground_truth_nodes and node in detected_nodes:
-            node_colors.append('purple')
+            node_colors.append('purple')  # 正确检测(TP)
         elif node in ground_truth_nodes:
-            node_colors.append('blue')
+            node_colors.append('blue')    # 漏检(FN)
         elif node in detected_nodes:
-            node_colors.append('orange')
+            node_colors.append('orange')  # 误报(FP)
         else:
-            node_colors.append('lightgray')
+            node_colors.append('lightgray') # 正常(TN)
 
-    # 创建图形（优化部分）
-    fig, ax = plt.subplots(figsize=(8, 6))
+    # 6. 绘图设置
+    plt.figure(figsize=(10, 8))
     
-    # 优化布局参数
-    pos = nx.spring_layout(G, seed=42, k=0.8, iterations=50)
+    # 使用弹簧布局，增加节点间距
+    pos = nx.spring_layout(G, seed=42, k=1.5)
     
-    # 绘制图形
-    nx.draw_networkx(
-        G, 
-        pos=pos, 
-        ax=ax,
-        with_labels=True, 
-        node_color=node_colors, 
-        edge_color=[G[u][v]['color'] for u, v in G.edges()],
-        node_size=300,  # 减小节点大小
-        font_size=8,    # 减小字体大小
-        width=1.5       # 减小边宽度
+    # 7. 绘制图形元素
+    nx.draw_networkx_nodes(
+        G, pos,
+        node_color=node_colors,
+        node_size=400,
+        edgecolors='black',
+        linewidths=0.8,
+        alpha=0.9
     )
     
-    ax.set_title(f"异常时间段 {start}-{end}", fontsize=10)
+    nx.draw_networkx_edges(
+        G, pos,
+        edge_color=[G[u][v]['color'] for u, v in G.edges()],
+        width=2.0,
+        alpha=0.7
+    )
     
-    # 设置紧凑布局
-    plt.tight_layout()
+    nx.draw_networkx_labels(
+        G, pos,
+        font_size=10,
+        font_weight='bold',
+        font_family='sans-serif'
+    )
     
-    # 设置轴限制（优化部分）
-    pos_array = np.array(list(pos.values()))
-    x_min, y_min = np.min(pos_array, axis=0)
-    x_max, y_max = np.max(pos_array, axis=0)
+    # 8. 设置标题和轴
+    title = f"异常时间段 {start}-{end}" if start != end else f"点位 {end} (扩展窗口 {actual_start}-{end})"
+    plt.title(title, fontsize=12, pad=20)
+    plt.axis('off')
     
-    x_margin = (x_max - x_min) * 0.1
-    y_margin = (y_max - y_min) * 0.1
-    ax.set_xlim(x_min - x_margin, x_max + x_margin)
-    ax.set_ylim(y_min - y_margin, y_max + y_margin)
-    
-    # 图例
+    # 9. 添加专业图例
     legend_elements = [
-        mpatches.Patch(color='orange', label='检测到的异常'),
-        mpatches.Patch(color='blue', label='真实异常'),
-        mpatches.Patch(color='purple', label='正确检测'),
-        mpatches.Patch(color='lightgray', label='正常节点'),
-        mpatches.Patch(color='red', label='异常边'),
-        mpatches.Patch(color='gray', label='正常边')
+        Patch(facecolor='orange', edgecolor='black', label='检测到的异常(FP)'),
+        Patch(facecolor='blue', edgecolor='black', label='真实异常(FN)'),
+        Patch(facecolor='purple', edgecolor='black', label='正确检测(TP)'),
+        Patch(facecolor='lightgray', edgecolor='black', label='正常节点(TN)'),
+        Line2D([], [], color='red', linewidth=2, label='异常边'),
+        Line2D([], [], color='gray', linewidth=2, label='正常边')
     ]
-    ax.legend(handles=legend_elements, loc='best', fontsize=8)
-
+    
+    plt.legend(
+        handles=legend_elements,
+        loc='upper center',
+        bbox_to_anchor=(0.5, -0.05),
+        ncol=3,
+        fontsize=10,
+        framealpha=1.0
+    )
+    
+    # 10. 调整布局并保存
+    plt.tight_layout()
     logger.debug(f"正在保存可视化结果到 {save_path}")
-    plt.savefig(save_path, dpi=150, bbox_inches='tight')  # 增加dpi和bbox_inches参数
-    plt.close(fig)
+    plt.savefig(save_path, dpi=200, bbox_inches='tight', facecolor='white')
+    plt.close()
     logger.info(f"成功保存时间段 {start}-{end} 的可视化结果")
 
 def visualize_all_anomaly_segments(
@@ -667,14 +716,32 @@ def visualize_all_anomaly_segments(
     detected_nodes_dict: Dict[Tuple[int, int], Set[int]],
     save_path: str,
     logger: logging.Logger,
-    figsize: Tuple[int, int] = (32, 20),  # 大幅增加画布尺寸
-    dpi: int = 150,                       # 更高分辨率
-    node_size: int = 300,                 # 显著增大节点
-    font_size: int = 12,                  # 增大标签
-    title_fontsize: int = 14              # 单独控制标题字号
+    figsize: Tuple[int, int] = (32, 20),
+    dpi: int = 150,
+    node_size: int = 300,
+    font_size: int = 12,
+    title_fontsize: int = 14,
+    window_size: int = 5
 ):
     """
     终极优化版 - 解决拥挤问题，最大化利用画面空间
+    新增处理单个点位异常段的功能
+    
+    参数:
+        test_data: 测试数据 (n_samples, n_sensors)
+        segments: 异常时间段列表 [(start1, end1), ...]
+        edge_stats: 边缘统计信息字典
+        topk_neighbors: 每个节点的邻居集合
+        ground_truth_nodes_dict: 真实异常节点字典 {(start,end): {nodes}}
+        detected_nodes_dict: 检测到的异常节点字典 {(start,end): {nodes}}
+        save_path: 图片保存路径
+        logger: 日志记录器
+        figsize: 图形大小
+        dpi: 图像分辨率
+        node_size: 节点大小
+        font_size: 字体大小
+        title_fontsize: 标题字体大小
+        window_size: 滑动窗口大小
     """
     logger.info("生成全屏优化的可视化图表")
     
@@ -687,20 +754,20 @@ def visualize_all_anomaly_segments(
     cols = min(4, int(np.ceil(num_segments / 2)))  # 每行最多4个子图
     rows = int(np.ceil(num_segments / cols))
     
-    # 创建超大画布（根据您的图片有8个时间段）
+    # 创建超大画布
     fig, axes = plt.subplots(rows, cols, figsize=figsize, dpi=dpi)
     
-    # 极端宽松的边距设置（关键调整！）
+    # 宽松的边距设置
     plt.subplots_adjust(
-        left=0.03, right=0.97,  # 左右边距从5%→3%
-        top=0.92, bottom=0.18,   # 底部留更多空间给图例
-        wspace=0.5, hspace=0.6   # 子图间距增大50%
+        left=0.03, right=0.97,
+        top=0.92, bottom=0.18,
+        wspace=0.5, hspace=0.6
     )
     
     if num_segments == 1:
         axes = np.array([[axes]])
     
-    # 颜色配置（与您图片完全匹配）
+    # 颜色配置
     color_map = {
         'detected_only': 'orange',
         'truth_only': 'blue',
@@ -716,26 +783,41 @@ def visualize_all_anomaly_segments(
         col = idx % cols
         ax = axes[row, col] if rows > 1 else axes[col]
         
+        # 处理单个点位的情况：向前扩展窗口
+        if start == end:
+            new_start = max(0, start - window_size + 1)
+            logger.info(f"单个点位异常段 {start}-{end}，扩展为 {new_start}-{end} (window_size={window_size})")
+            start = new_start
+        
         # 准备数据
         gt_nodes = ground_truth_nodes_dict.get((start, end), set())
         detected_nodes = detected_nodes_dict.get((start, end), set())
         window = test_data[start:end+1]
-        corr = np.corrcoef(window, rowvar=False)
-        num_sensors = corr.shape[0]
+        
+        # 计算相关系数矩阵
+        try:
+            corr = np.corrcoef(window, rowvar=False)
+            num_sensors = corr.shape[0]
+        except Exception as e:
+            logger.error(f"计算相关系数失败: {str(e)}，使用单位矩阵替代")
+            num_sensors = test_data.shape[1]
+            corr = np.eye(num_sensors)
         
         # 构建网络图
         G = nx.Graph()
         G.add_nodes_from(range(1, num_sensors+1))
         
-        # 添加边（根据您图片中的连接关系）
+        # 添加边（根据相关系数）
         edge_colors = []
         for j in range(num_sensors):
             for k in topk_neighbors[j]:
                 key = (min(j, k), max(j, k))
-                if key not in edge_stats: continue
+                if key not in edge_stats: 
+                    continue
                 
                 val = corr[j, k] if j < k else corr[k, j]
-                if np.isnan(val): continue
+                if np.isnan(val): 
+                    continue
                 
                 percentiles = edge_stats[key].get('percentiles', (0, 0))
                 low, high = (percentiles if isinstance(percentiles, (tuple, list)) 
@@ -746,7 +828,7 @@ def visualize_all_anomaly_segments(
                 G.add_edge(j+1, k+1, color=edge_color)
                 edge_colors.append(edge_color)
         
-        # 节点着色（精确匹配您图片的颜色方案）
+        # 节点着色
         node_colors = []
         for node in G.nodes():
             if node in gt_nodes and node in detected_nodes:
@@ -759,7 +841,7 @@ def visualize_all_anomaly_segments(
                 node_colors.append(color_map['normal'])
         
         # 优化绘图参数
-        pos = nx.spring_layout(G, seed=42, k=1.5)  # 增加节点间距参数k
+        pos = nx.spring_layout(G, seed=42, k=1.5)
         
         nx.draw_networkx_nodes(
             G, pos, ax=ax,
@@ -782,27 +864,11 @@ def visualize_all_anomaly_segments(
             font_weight='bold'
         )
         
-        # 优化标题（与您图片中的格式一致）
-        ax.set_title(f"时间段 {start}-{end}", 
-                    fontsize=title_fontsize, 
-                    pad=20)  # 增加标题间距
+        # 设置标题
+        title = f"时间段 {start}-{end}" if start != end else f"点位 {end} (扩展窗口)"
+        ax.set_title(title, fontsize=title_fontsize, pad=20)
         ax.set_axis_off()
     
-    # 在绘制完所有子图后，添加分割线
-    for ax in axes.flatten():
-        # 添加红色矩形边框（线宽=2，透明度=0.7）
-        for spine in ax.spines.values():
-            spine.set_visible(True)
-            spine.set_color('red')
-            spine.set_linewidth(2)
-            spine.set_alpha(0.7)
-    
-    # 调整子图间距（增大空白区域）
-    plt.subplots_adjust(
-        wspace=0.6,  # 列间距增大60%
-        hspace=0.8   # 行间距增大80%
-    )
-
     # 隐藏空白子图
     for idx in range(num_segments, rows*cols):
         row, col = idx // cols, idx % cols
@@ -811,23 +877,20 @@ def visualize_all_anomaly_segments(
         else:
             axes[col].axis('off')
     
-    # 专业级图例设计（完全匹配您图片的图例）
+    # 专业级图例设计
     legend_elements = [
-        # 节点分类
-        Patch(facecolor='orange', edgecolor='black', label='检测到的异常'),  # FP (False Positive)
-        Patch(facecolor='blue', edgecolor='black', label='真实异常'),        # FN (False Negative)
-        Patch(facecolor='purple', edgecolor='black', label='正确检测'),      # TP (True Positive)
-        Patch(facecolor='lightgray', edgecolor='black', label='正常节点'),   # TN (True Negative)
-        
-        # 边分类
-        Line2D([], [], color='red', linewidth=2, label='异常边'),          # 异常相关性
-        Line2D([], [], color='gray', linewidth=2, label='正常边')           # 正常相关性
+        Patch(facecolor='orange', edgecolor='black', label='检测到的异常(FP)'),
+        Patch(facecolor='blue', edgecolor='black', label='真实异常(FN)'),
+        Patch(facecolor='purple', edgecolor='black', label='正确检测(TP)'),
+        Patch(facecolor='lightgray', edgecolor='black', label='正常节点(TN)'),
+        Line2D([], [], color='red', linewidth=2, label='异常边'),
+        Line2D([], [], color='gray', linewidth=2, label='正常边')
     ]
     
     fig.legend(
         handles=legend_elements,
         loc='lower center',
-        bbox_to_anchor=(0.5, 0.01),  # 精确控制图例位置
+        bbox_to_anchor=(0.5, 0.01),
         ncol=6,
         fontsize=14,
         framealpha=1,
@@ -1125,13 +1188,13 @@ if __name__ == "__main__":
     #         main(config, logger)
 
     all_score_modes = ['strict_deviation', 'deviation', 'mean_ratio', 'range_ratio', 'value_times_range', 'robust_zscore']
-    # all_score_modes = ['strict_deviation', 'value_times_range']
+    all_score_modes = ['value_times_range']
     
     # 设置邻居选择方式为相关系数阈值
     # neighbor_selection = 'corr_threshold' ['topk', 'corr_threshold', 'all']
     
     # 遍历每种评分模式
-    for neighbor_selection in ['topk', 'corr_threshold', 'all']:
+    for neighbor_selection in ['topk']:
         for score_mode in all_score_modes:
             print(f"\n{'='*50}")
             print(f"Running with neighbor_selection={neighbor_selection}, score_mode={score_mode}")
@@ -1147,5 +1210,6 @@ if __name__ == "__main__":
             # 运行主程序
             main(config, logger)
 
-# main4.py已经实现了可以让omi正常运行
-# main5.py 新增兼容了当异常段只有单点的问题
+# 相比于 main.py，主要修改了以下几点：
+    # 1. 现在使用三种邻居选择方式：topk、相关系数阈值和所有邻居。
+    # 当选择 corr_threshold 时，邻居选择方式为相关系数阈值 [0.1, 0.2, 0.3, 0.4, 0.5]。
