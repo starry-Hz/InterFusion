@@ -1,0 +1,2065 @@
+2025-05-08 03:12:33,787 - INFO - 
+ Starting experiment with config: ExperimentConfig(dataset='machine', window_size=5, score_thresholds=array([0. , 0.5, 1. , 1.5, 2. , 2.5, 3. , 3.5, 4. , 4.5, 5. , 5.5, 6. ,
+       6.5, 7. ]), topk_range=range(1, 10), corr_threshold_range=array([0. , 0. , 0.1, 0.2, 0.2, 0.2, 0.3, 0.4, 0.4, 0.4, 0.5, 0.6, 0.6,
+       0.6]), neighbor_selection='all', score_modes=['robust_zscore'], data_dir='./data/processed', label_dir='./data/interpretation_label', log_dir='./log/machine/neighbor_all', visual_dir='./visual/machine/neighbor_all', num_workers=36, gif_duration=500)
+2025-05-08 03:12:33,787 - INFO - 当前评分模式: ['robust_zscore']
+2025-05-08 03:12:33,787 - INFO - 
+==================================================
+2025-05-08 03:12:33,787 - INFO - 开始执行网格搜索...
+2025-05-08 03:12:33,795 - INFO - [machine-1-1] Starting grid search...
+2025-05-08 03:13:21,084 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,085 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,086 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,086 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,648 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,649 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,649 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,649 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,650 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,650 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,650 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,650 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,650 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,650 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,650 - INFO - [machine-1-1.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.4333, R=0.8228, F1=0.5677
+2025-05-08 03:13:21,725 - INFO - [machine-1-7] Starting grid search...
+2025-05-08 03:14:01,047 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,684 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,785 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,785 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,786 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,786 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,786 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,786 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,786 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.3825, R=0.9769, F1=0.5498
+2025-05-08 03:14:01,786 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.3848, R=0.9769, F1=0.5522
+2025-05-08 03:14:01,786 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.3848, R=0.9769, F1=0.5522
+2025-05-08 03:14:01,879 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.3848, R=0.9769, F1=0.5522
+2025-05-08 03:14:01,880 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.3848, R=0.9769, F1=0.5522
+2025-05-08 03:14:01,880 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.3848, R=0.9769, F1=0.5522
+2025-05-08 03:14:02,240 - INFO - [machine-1-7.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.3848, R=0.9769, F1=0.5522
+2025-05-08 03:14:02,336 - INFO - [machine-2-7] Starting grid search...
+2025-05-08 03:14:34,964 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.2000, R=0.5930, F1=0.2991
+2025-05-08 03:14:35,052 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.2000, R=0.5930, F1=0.2991
+2025-05-08 03:14:35,287 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.2000, R=0.5930, F1=0.2991
+2025-05-08 03:14:35,287 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.2000, R=0.5930, F1=0.2991
+2025-05-08 03:14:36,143 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.2000, R=0.5930, F1=0.2991
+2025-05-08 03:14:36,144 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.2000, R=0.5930, F1=0.2991
+2025-05-08 03:14:36,144 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.2000, R=0.5930, F1=0.2991
+2025-05-08 03:14:36,144 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.2008, R=0.5930, F1=0.3000
+2025-05-08 03:14:36,144 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.2024, R=0.5930, F1=0.3018
+2025-05-08 03:14:36,144 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.2116, R=0.5930, F1=0.3119
+2025-05-08 03:14:36,306 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.2092, R=0.5814, F1=0.3077
+2025-05-08 03:14:36,306 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.2092, R=0.5814, F1=0.3077
+2025-05-08 03:14:36,307 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.2092, R=0.5814, F1=0.3077
+2025-05-08 03:14:36,307 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.2101, R=0.5814, F1=0.3086
+2025-05-08 03:14:36,307 - INFO - [machine-2-7.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.2119, R=0.5814, F1=0.3106
+2025-05-08 03:14:36,394 - INFO - [machine-3-6] Starting grid search...
+2025-05-08 03:15:17,219 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:17,221 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,496 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,497 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,923 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,923 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,923 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,924 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,924 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,924 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,924 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,924 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,924 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,925 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:18,925 - INFO - [machine-3-6.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.2867, R=0.9130, F1=0.4364
+2025-05-08 03:15:19,022 - INFO - [machine-3-3] Starting grid search...
+2025-05-08 03:15:56,575 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,708 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,708 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.1738, R=0.3675, F1=0.2360
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.1748, R=0.3675, F1=0.2369
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.1748, R=0.3675, F1=0.2369
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.1748, R=0.3675, F1=0.2369
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.1748, R=0.3675, F1=0.2369
+2025-05-08 03:15:56,709 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.1748, R=0.3675, F1=0.2369
+2025-05-08 03:15:57,223 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.1753, R=0.3675, F1=0.2374
+2025-05-08 03:15:57,224 - INFO - [machine-3-3.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.1753, R=0.3675, F1=0.2374
+2025-05-08 03:15:57,315 - INFO - [machine-3-4] Starting grid search...
+2025-05-08 03:16:32,090 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.1340, R=0.8667, F1=0.2321
+2025-05-08 03:16:32,429 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.1340, R=0.8667, F1=0.2321
+2025-05-08 03:16:32,458 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.1340, R=0.8667, F1=0.2321
+2025-05-08 03:16:33,203 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.1340, R=0.8667, F1=0.2321
+2025-05-08 03:16:33,204 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.1340, R=0.8667, F1=0.2321
+2025-05-08 03:16:33,204 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.1361, R=0.8667, F1=0.2353
+2025-05-08 03:16:33,488 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.1390, R=0.8667, F1=0.2396
+2025-05-08 03:16:33,489 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.1390, R=0.8667, F1=0.2396
+2025-05-08 03:16:33,489 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.1398, R=0.8667, F1=0.2407
+2025-05-08 03:16:33,632 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.1413, R=0.8667, F1=0.2430
+2025-05-08 03:16:33,633 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.1429, R=0.8667, F1=0.2453
+2025-05-08 03:16:33,633 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.1429, R=0.8667, F1=0.2453
+2025-05-08 03:16:33,633 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.1381, R=0.8333, F1=0.2370
+2025-05-08 03:16:33,634 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.1389, R=0.8333, F1=0.2381
+2025-05-08 03:16:33,634 - INFO - [machine-3-4.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.1389, R=0.8333, F1=0.2381
+2025-05-08 03:16:33,727 - INFO - [machine-3-8] Starting grid search...
+2025-05-08 03:17:14,416 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,417 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,417 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,417 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,417 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,417 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,523 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,523 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,523 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,523 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,523 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,523 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,765 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,765 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,765 - INFO - [machine-3-8.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.3235, R=0.9821, F1=0.4867
+2025-05-08 03:17:14,848 - INFO - [machine-2-1] Starting grid search...
+2025-05-08 03:17:49,186 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,187 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,187 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,187 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,187 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,188 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,188 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,188 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,188 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,822 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,823 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,823 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,823 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,823 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,823 - INFO - [machine-2-1.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.2248, R=0.9886, F1=0.3663
+2025-05-08 03:17:49,918 - INFO - [machine-1-6] Starting grid search...
+2025-05-08 03:18:32,075 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.3810, R=0.9422, F1=0.5426
+2025-05-08 03:18:33,065 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.3810, R=0.9422, F1=0.5426
+2025-05-08 03:18:33,066 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.3810, R=0.9422, F1=0.5426
+2025-05-08 03:18:33,066 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.3810, R=0.9422, F1=0.5426
+2025-05-08 03:18:33,066 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.3810, R=0.9422, F1=0.5426
+2025-05-08 03:18:33,083 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.3831, R=0.9422, F1=0.5447
+2025-05-08 03:18:33,107 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.3842, R=0.9422, F1=0.5458
+2025-05-08 03:18:33,108 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.3842, R=0.9422, F1=0.5458
+2025-05-08 03:18:33,196 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.3853, R=0.9422, F1=0.5469
+2025-05-08 03:18:33,307 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.3904, R=0.9388, F1=0.5514
+2025-05-08 03:18:33,308 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.3901, R=0.9354, F1=0.5506
+2025-05-08 03:18:33,308 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.3906, R=0.9354, F1=0.5511
+2025-05-08 03:18:34,715 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.3912, R=0.9354, F1=0.5517
+2025-05-08 03:18:34,716 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.3917, R=0.9354, F1=0.5522
+2025-05-08 03:18:34,716 - INFO - [machine-1-6.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.3934, R=0.9354, F1=0.5539
+2025-05-08 03:18:34,805 - INFO - [machine-2-2] Starting grid search...
+2025-05-08 03:19:11,266 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.2405, R=0.8507, F1=0.3750
+2025-05-08 03:19:11,267 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.2405, R=0.8507, F1=0.3750
+2025-05-08 03:19:11,267 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.2405, R=0.8507, F1=0.3750
+2025-05-08 03:19:11,267 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.2405, R=0.8507, F1=0.3750
+2025-05-08 03:19:11,268 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.2405, R=0.8507, F1=0.3750
+2025-05-08 03:19:11,268 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.2405, R=0.8507, F1=0.3750
+2025-05-08 03:19:11,434 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:11,488 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:11,520 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:11,643 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:11,644 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:11,644 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:11,956 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:12,976 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:12,977 - INFO - [machine-2-2.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.2415, R=0.8507, F1=0.3762
+2025-05-08 03:19:13,069 - INFO - [machine-2-8] Starting grid search...
+2025-05-08 03:19:43,874 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=0.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:44,876 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=0.5, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,328 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=1.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,329 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=1.5, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,329 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=2.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=2.5, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=3.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=3.5, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=4.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=4.5, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=5.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=5.5, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,330 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=6.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,331 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=6.5, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,331 - INFO - [machine-2-8.txt] mode=robust_zscore, all=None, threshold=7.0, P=1.0000, R=0.9118, F1=0.9538
+2025-05-08 03:19:45,429 - INFO - [machine-3-11] Starting grid search...
+2025-05-08 03:20:21,313 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=0.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,314 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=0.5, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,314 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=1.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,315 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=1.5, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,315 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=2.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,315 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=2.5, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,315 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=3.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,315 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=3.5, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,315 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=4.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,315 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=4.5, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,316 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=5.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,316 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=5.5, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,357 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=6.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,423 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=6.5, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,424 - INFO - [machine-3-11.txt] mode=robust_zscore, all=None, threshold=7.0, P=0.5256, R=0.9111, F1=0.6667
+2025-05-08 03:20:21,505 - INFO - 
+==================================================
+2025-05-08 03:20:21,505 - INFO - 开始汇总结果...
+2025-05-08 03:20:21,514 - INFO - 
+===== Best Results per Dataset =====
+         dataset  precision   recall  f1_score  ips_score
+ machine-1-1.txt   0.433333 0.822785  0.567686   0.983047
+ machine-1-6.txt   0.393419 0.935374  0.553877   0.994172
+ machine-1-7.txt   0.384848 0.976923  0.552174   0.996682
+ machine-2-1.txt   0.224806 0.988636  0.366316   0.997802
+ machine-2-2.txt   0.241525 0.850746  0.376238   0.995781
+ machine-2-7.txt   0.211618 0.593023  0.311927   0.877411
+ machine-2-8.txt   1.000000 0.911765  0.953846   0.911765
+machine-3-11.txt   0.525641 0.911111  0.666667   0.922010
+ machine-3-3.txt   0.175287 0.367470  0.237354   0.897898
+ machine-3-4.txt   0.142857 0.866667  0.245283   0.995939
+ machine-3-6.txt   0.286689 0.913043  0.436364   0.995067
+ machine-3-8.txt   0.323529 0.982143  0.486726   0.992600
+2025-05-08 03:20:21,515 - INFO - 
+===== Overall Metrics =====
+Precision: 0.3052  Recall: 0.8226  F1: 0.4453  IPS: 0.9854
+TP: 960  FP: 2185  FN: 207
+2025-05-08 03:20:21,515 - INFO - 
+【原始汇总指标】
+2025-05-08 03:20:21,515 - INFO - 精确率(Precision): 0.3052
+2025-05-08 03:20:21,515 - INFO - 召回率(Recall):    0.8226
+2025-05-08 03:20:21,515 - INFO - F1值:             0.4453
+2025-05-08 03:20:21,515 - INFO - 
+==================================================
+2025-05-08 03:20:21,515 - INFO - 开始生成可视化结果...
+2025-05-08 03:20:21,515 - INFO - 
+==================================================
+2025-05-08 03:20:21,515 - INFO - 开始数据集可视化: machine-1-1
+2025-05-08 03:20:21,515 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=6.0
+2025-05-08 03:20:21,515 - INFO - ==================================================
+
+2025-05-08 03:20:21,515 - INFO - 正在加载数据集 machine-1-1 的数据
+2025-05-08 03:20:21,521 - INFO - 数据加载成功。训练集形状: (28479, 38), 测试集形状: (28479, 38)
+2025-05-08 03:20:21,521 - INFO - 正在计算边缘统计量...
+2025-05-08 03:20:54,950 - INFO - 已计算 435 条边的统计量
+2025-05-08 03:20:54,951 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:20:54,951 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-1-1
+2025-05-08 03:20:55,044 - INFO - 在数据集中发现 8 个异常时间段
+2025-05-08 03:20:55,044 - INFO - 
+正在处理时间段 1/8: 15849-16394
+2025-05-08 03:20:55,044 - INFO - 该时间段的真实异常节点: {1, 9, 10, 12, 13, 14, 15}
+2025-05-08 03:20:55,044 - INFO - 正在计算异常分数...
+2025-05-08 03:20:56,466 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:20:56,466 - INFO - 正在为时间段 15849-16394 生成可视化
+2025-05-08 03:20:56,466 - INFO - 正在为时间段 15849-16394 生成异常图可视化
+2025-05-08 03:20:56,466 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:20:56,470 - DEBUG - 边统计: 正常边 644 条, 异常边 226 条
+2025-05-08 03:20:56,602 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_0_15849_16394.png
+2025-05-08 03:20:56,875 - INFO - 成功保存时间段 15849-16394 的可视化结果
+2025-05-08 03:20:56,875 - INFO - 
+正在处理时间段 2/8: 16963-17516
+2025-05-08 03:20:56,875 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:20:56,875 - INFO - 正在计算异常分数...
+2025-05-08 03:20:58,396 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:20:58,396 - INFO - 正在为时间段 16963-17516 生成可视化
+2025-05-08 03:20:58,396 - INFO - 正在为时间段 16963-17516 生成异常图可视化
+2025-05-08 03:20:58,397 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:20:58,400 - DEBUG - 边统计: 正常边 758 条, 异常边 112 条
+2025-05-08 03:20:58,467 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_1_16963_17516.png
+2025-05-08 03:20:58,730 - INFO - 成功保存时间段 16963-17516 的可视化结果
+2025-05-08 03:20:58,730 - INFO - 
+正在处理时间段 3/8: 18071-18527
+2025-05-08 03:20:58,730 - INFO - 该时间段的真实异常节点: {1, 2, 9, 10, 12, 13, 14, 15}
+2025-05-08 03:20:58,730 - INFO - 正在计算异常分数...
+2025-05-08 03:20:59,961 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:20:59,961 - INFO - 正在为时间段 18071-18527 生成可视化
+2025-05-08 03:20:59,961 - INFO - 正在为时间段 18071-18527 生成异常图可视化
+2025-05-08 03:20:59,961 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:20:59,964 - DEBUG - 边统计: 正常边 656 条, 异常边 214 条
+2025-05-08 03:21:00,132 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_2_18071_18527.png
+2025-05-08 03:21:00,394 - INFO - 成功保存时间段 18071-18527 的可视化结果
+2025-05-08 03:21:00,394 - INFO - 
+正在处理时间段 4/8: 19367-20087
+2025-05-08 03:21:00,394 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 9, 10, 11, 12, 13, 14, 15, 16, 25, 28}
+2025-05-08 03:21:00,395 - INFO - 正在计算异常分数...
+2025-05-08 03:21:02,294 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:21:02,294 - INFO - 正在为时间段 19367-20087 生成可视化
+2025-05-08 03:21:02,294 - INFO - 正在为时间段 19367-20087 生成异常图可视化
+2025-05-08 03:21:02,294 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:02,297 - DEBUG - 边统计: 正常边 642 条, 异常边 228 条
+2025-05-08 03:21:02,364 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_3_19367_20087.png
+2025-05-08 03:21:02,629 - INFO - 成功保存时间段 19367-20087 的可视化结果
+2025-05-08 03:21:02,629 - INFO - 
+正在处理时间段 5/8: 20786-21194
+2025-05-08 03:21:02,629 - INFO - 该时间段的真实异常节点: {1, 9, 10, 12, 13, 14, 15}
+2025-05-08 03:21:02,629 - INFO - 正在计算异常分数...
+2025-05-08 03:21:03,690 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:21:03,690 - INFO - 正在为时间段 20786-21194 生成可视化
+2025-05-08 03:21:03,690 - INFO - 正在为时间段 20786-21194 生成异常图可视化
+2025-05-08 03:21:03,690 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:03,693 - DEBUG - 边统计: 正常边 606 条, 异常边 264 条
+2025-05-08 03:21:03,762 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_4_20786_21194.png
+2025-05-08 03:21:04,029 - INFO - 成功保存时间段 20786-21194 的可视化结果
+2025-05-08 03:21:04,029 - INFO - 
+正在处理时间段 6/8: 24679-24681
+2025-05-08 03:21:04,029 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:21:04,029 - INFO - 正在计算异常分数...
+2025-05-08 03:21:04,029 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:04,029 - INFO - 正在为时间段 24679-24681 生成可视化
+2025-05-08 03:21:04,029 - INFO - 正在为时间段 24679-24681 生成异常图可视化
+2025-05-08 03:21:04,029 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:04,032 - DEBUG - 边统计: 正常边 442 条, 异常边 314 条
+2025-05-08 03:21:04,102 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_5_24679_24681.png
+2025-05-08 03:21:04,413 - INFO - 成功保存时间段 24679-24681 的可视化结果
+2025-05-08 03:21:04,414 - INFO - 
+正在处理时间段 7/8: 26114-26115
+2025-05-08 03:21:04,414 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:21:04,414 - INFO - 正在计算异常分数...
+2025-05-08 03:21:04,414 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:04,414 - INFO - 正在为时间段 26114-26115 生成可视化
+2025-05-08 03:21:04,414 - INFO - 正在为时间段 26114-26115 生成异常图可视化
+2025-05-08 03:21:04,414 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:04,418 - DEBUG - 边统计: 正常边 0 条, 异常边 756 条
+2025-05-08 03:21:04,492 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_6_26114_26115.png
+2025-05-08 03:21:04,756 - INFO - 成功保存时间段 26114-26115 的可视化结果
+2025-05-08 03:21:04,756 - INFO - 
+正在处理时间段 8/8: 27554-27555
+2025-05-08 03:21:04,756 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:21:04,756 - INFO - 正在计算异常分数...
+2025-05-08 03:21:04,756 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:04,757 - INFO - 正在为时间段 27554-27555 生成可视化
+2025-05-08 03:21:04,757 - INFO - 正在为时间段 27554-27555 生成异常图可视化
+2025-05-08 03:21:04,757 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:04,760 - DEBUG - 边统计: 正常边 0 条, 异常边 702 条
+2025-05-08 03:21:04,828 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/seg_7_27554_27555.png
+2025-05-08 03:21:05,091 - INFO - 成功保存时间段 27554-27555 的可视化结果
+2025-05-08 03:21:05,091 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-1-1 中的图像创建GIF
+2025-05-08 03:21:05,618 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-1-1/machine-1-1.gif
+2025-05-08 03:21:05,619 - INFO - 
+==================================================
+2025-05-08 03:21:05,620 - INFO - 开始数据集可视化: machine-1-6
+2025-05-08 03:21:05,620 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=7.0
+2025-05-08 03:21:05,620 - INFO - ==================================================
+
+2025-05-08 03:21:05,620 - INFO - 正在加载数据集 machine-1-6 的数据
+2025-05-08 03:21:05,624 - INFO - 数据加载成功。训练集形状: (23688, 38), 测试集形状: (23689, 38)
+2025-05-08 03:21:05,624 - INFO - 正在计算边缘统计量...
+2025-05-08 03:21:31,687 - INFO - 已计算 525 条边的统计量
+2025-05-08 03:21:31,687 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:21:31,688 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-1-6
+2025-05-08 03:21:31,765 - INFO - 在数据集中发现 30 个异常时间段
+2025-05-08 03:21:31,765 - INFO - 
+正在处理时间段 1/30: 246-251
+2025-05-08 03:21:31,765 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 15}
+2025-05-08 03:21:31,765 - INFO - 正在计算异常分数...
+2025-05-08 03:21:31,771 - INFO - 检测到的异常节点: {1, 2, 3, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:31,771 - INFO - 正在为时间段 246-251 生成可视化
+2025-05-08 03:21:31,772 - INFO - 正在为时间段 246-251 生成异常图可视化
+2025-05-08 03:21:31,772 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:31,775 - DEBUG - 边统计: 正常边 740 条, 异常边 72 条
+2025-05-08 03:21:31,849 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_0_246_251.png
+2025-05-08 03:21:32,113 - INFO - 成功保存时间段 246-251 的可视化结果
+2025-05-08 03:21:32,113 - INFO - 
+正在处理时间段 2/30: 653-657
+2025-05-08 03:21:32,113 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 15, 19, 20, 21, 22, 26, 28, 30, 31, 32}
+2025-05-08 03:21:32,113 - INFO - 正在计算异常分数...
+2025-05-08 03:21:32,116 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:32,116 - INFO - 正在为时间段 653-657 生成可视化
+2025-05-08 03:21:32,116 - INFO - 正在为时间段 653-657 生成异常图可视化
+2025-05-08 03:21:32,117 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:32,120 - DEBUG - 边统计: 正常边 644 条, 异常边 168 条
+2025-05-08 03:21:32,187 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_1_653_657.png
+2025-05-08 03:21:32,474 - INFO - 成功保存时间段 653-657 的可视化结果
+2025-05-08 03:21:32,474 - INFO - 
+正在处理时间段 3/30: 2092-2099
+2025-05-08 03:21:32,474 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 15, 19, 20, 21, 22, 26, 28, 30, 31, 32}
+2025-05-08 03:21:32,474 - INFO - 正在计算异常分数...
+2025-05-08 03:21:32,487 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:32,487 - INFO - 正在为时间段 2092-2099 生成可视化
+2025-05-08 03:21:32,487 - INFO - 正在为时间段 2092-2099 生成异常图可视化
+2025-05-08 03:21:32,487 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:32,490 - DEBUG - 边统计: 正常边 670 条, 异常边 142 条
+2025-05-08 03:21:32,659 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_2_2092_2099.png
+2025-05-08 03:21:32,922 - INFO - 成功保存时间段 2092-2099 的可视化结果
+2025-05-08 03:21:32,922 - INFO - 
+正在处理时间段 4/30: 2884-2887
+2025-05-08 03:21:32,922 - INFO - 该时间段的真实异常节点: {6}
+2025-05-08 03:21:32,922 - INFO - 正在计算异常分数...
+2025-05-08 03:21:32,922 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:32,922 - INFO - 正在为时间段 2884-2887 生成可视化
+2025-05-08 03:21:32,922 - INFO - 正在为时间段 2884-2887 生成异常图可视化
+2025-05-08 03:21:32,922 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:32,925 - DEBUG - 边统计: 正常边 706 条, 异常边 106 条
+2025-05-08 03:21:33,016 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_3_2884_2887.png
+2025-05-08 03:21:33,289 - INFO - 成功保存时间段 2884-2887 的可视化结果
+2025-05-08 03:21:33,289 - INFO - 
+正在处理时间段 5/30: 3534-3538
+2025-05-08 03:21:33,290 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 15, 19, 20, 21, 22}
+2025-05-08 03:21:33,290 - INFO - 正在计算异常分数...
+2025-05-08 03:21:33,293 - INFO - 检测到的异常节点: {1, 2, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 20, 21, 22, 23, 25, 28, 30, 31, 34, 35, 36}
+2025-05-08 03:21:33,293 - INFO - 正在为时间段 3534-3538 生成可视化
+2025-05-08 03:21:33,293 - INFO - 正在为时间段 3534-3538 生成异常图可视化
+2025-05-08 03:21:33,294 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:33,297 - DEBUG - 边统计: 正常边 756 条, 异常边 114 条
+2025-05-08 03:21:33,364 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_4_3534_3538.png
+2025-05-08 03:21:33,640 - INFO - 成功保存时间段 3534-3538 的可视化结果
+2025-05-08 03:21:33,640 - INFO - 
+正在处理时间段 6/30: 4647-5044
+2025-05-08 03:21:33,641 - INFO - 该时间段的真实异常节点: {33, 34, 5, 6, 9, 10, 11, 13, 17}
+2025-05-08 03:21:33,641 - INFO - 正在计算异常分数...
+2025-05-08 03:21:34,915 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:21:34,915 - INFO - 正在为时间段 4647-5044 生成可视化
+2025-05-08 03:21:34,915 - INFO - 正在为时间段 4647-5044 生成异常图可视化
+2025-05-08 03:21:34,916 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:34,920 - DEBUG - 边统计: 正常边 1038 条, 异常边 12 条
+2025-05-08 03:21:35,006 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_5_4647_5044.png
+2025-05-08 03:21:35,280 - INFO - 成功保存时间段 4647-5044 的可视化结果
+2025-05-08 03:21:35,280 - INFO - 
+正在处理时间段 7/30: 5167-5171
+2025-05-08 03:21:35,280 - INFO - 该时间段的真实异常节点: {9, 10, 11, 13, 18}
+2025-05-08 03:21:35,280 - INFO - 正在计算异常分数...
+2025-05-08 03:21:35,283 - INFO - 检测到的异常节点: {1, 2, 3, 6, 9, 10, 11, 12, 13, 16, 18, 20, 21, 23, 24, 25, 28, 30}
+2025-05-08 03:21:35,283 - INFO - 正在为时间段 5167-5171 生成可视化
+2025-05-08 03:21:35,283 - INFO - 正在为时间段 5167-5171 生成异常图可视化
+2025-05-08 03:21:35,283 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:35,287 - DEBUG - 边统计: 正常边 800 条, 异常边 70 条
+2025-05-08 03:21:35,354 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_6_5167_5171.png
+2025-05-08 03:21:35,621 - INFO - 成功保存时间段 5167-5171 的可视化结果
+2025-05-08 03:21:35,622 - INFO - 
+正在处理时间段 8/30: 5708-5712
+2025-05-08 03:21:35,622 - INFO - 该时间段的真实异常节点: {9, 10, 11, 13}
+2025-05-08 03:21:35,622 - INFO - 正在计算异常分数...
+2025-05-08 03:21:35,625 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 18, 22, 23, 24, 25, 26, 28, 30, 31, 34, 35, 36}
+2025-05-08 03:21:35,625 - INFO - 正在为时间段 5708-5712 生成可视化
+2025-05-08 03:21:35,625 - INFO - 正在为时间段 5708-5712 生成异常图可视化
+2025-05-08 03:21:35,625 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:35,628 - DEBUG - 边统计: 正常边 736 条, 异常边 134 条
+2025-05-08 03:21:35,702 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_7_5708_5712.png
+2025-05-08 03:21:35,973 - INFO - 成功保存时间段 5708-5712 的可视化结果
+2025-05-08 03:21:35,973 - INFO - 
+正在处理时间段 9/30: 5873-5884
+2025-05-08 03:21:35,973 - INFO - 该时间段的真实异常节点: {32, 2, 3, 6, 9, 10, 11, 13, 19, 20, 21, 22, 28, 31}
+2025-05-08 03:21:35,973 - INFO - 正在计算异常分数...
+2025-05-08 03:21:35,997 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:35,997 - INFO - 正在为时间段 5873-5884 生成可视化
+2025-05-08 03:21:35,997 - INFO - 正在为时间段 5873-5884 生成异常图可视化
+2025-05-08 03:21:35,997 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:36,001 - DEBUG - 边统计: 正常边 688 条, 异常边 124 条
+2025-05-08 03:21:36,068 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_8_5873_5884.png
+2025-05-08 03:21:36,332 - INFO - 成功保存时间段 5873-5884 的可视化结果
+2025-05-08 03:21:36,332 - INFO - 
+正在处理时间段 10/30: 6022-6026
+2025-05-08 03:21:36,332 - INFO - 该时间段的真实异常节点: {33, 34}
+2025-05-08 03:21:36,332 - INFO - 正在计算异常分数...
+2025-05-08 03:21:36,335 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34}
+2025-05-08 03:21:36,335 - INFO - 正在为时间段 6022-6026 生成可视化
+2025-05-08 03:21:36,335 - INFO - 正在为时间段 6022-6026 生成异常图可视化
+2025-05-08 03:21:36,336 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:36,339 - DEBUG - 边统计: 正常边 654 条, 异常边 216 条
+2025-05-08 03:21:36,418 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_9_6022_6026.png
+2025-05-08 03:21:36,712 - INFO - 成功保存时间段 6022-6026 的可视化结果
+2025-05-08 03:21:36,713 - INFO - 
+正在处理时间段 11/30: 6412-6418
+2025-05-08 03:21:36,713 - INFO - 该时间段的真实异常节点: {1, 2, 3, 6, 9, 10, 11, 13, 15, 19, 20, 21, 22, 28, 30, 31, 32, 35, 36}
+2025-05-08 03:21:36,713 - INFO - 正在计算异常分数...
+2025-05-08 03:21:36,726 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:36,726 - INFO - 正在为时间段 6412-6418 生成可视化
+2025-05-08 03:21:36,726 - INFO - 正在为时间段 6412-6418 生成异常图可视化
+2025-05-08 03:21:36,726 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:36,730 - DEBUG - 边统计: 正常边 618 条, 异常边 252 条
+2025-05-08 03:21:36,803 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_10_6412_6418.png
+2025-05-08 03:21:37,080 - INFO - 成功保存时间段 6412-6418 的可视化结果
+2025-05-08 03:21:37,081 - INFO - 
+正在处理时间段 12/30: 7851-7855
+2025-05-08 03:21:37,081 - INFO - 该时间段的真实异常节点: {32, 1, 2, 9, 10, 11, 13, 19, 20, 21, 22, 23, 28, 30, 31}
+2025-05-08 03:21:37,081 - INFO - 正在计算异常分数...
+2025-05-08 03:21:37,085 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 35, 36}
+2025-05-08 03:21:37,085 - INFO - 正在为时间段 7851-7855 生成可视化
+2025-05-08 03:21:37,085 - INFO - 正在为时间段 7851-7855 生成异常图可视化
+2025-05-08 03:21:37,085 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:37,089 - DEBUG - 边统计: 正常边 626 条, 异常边 186 条
+2025-05-08 03:21:37,284 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_11_7851_7855.png
+2025-05-08 03:21:37,549 - INFO - 成功保存时间段 7851-7855 的可视化结果
+2025-05-08 03:21:37,549 - INFO - 
+正在处理时间段 13/30: 9291-9297
+2025-05-08 03:21:37,549 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 9, 10, 11, 13, 19, 20, 21, 22, 23, 28, 30, 31}
+2025-05-08 03:21:37,549 - INFO - 正在计算异常分数...
+2025-05-08 03:21:37,560 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:37,560 - INFO - 正在为时间段 9291-9297 生成可视化
+2025-05-08 03:21:37,561 - INFO - 正在为时间段 9291-9297 生成异常图可视化
+2025-05-08 03:21:37,561 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:37,564 - DEBUG - 边统计: 正常边 628 条, 异常边 184 条
+2025-05-08 03:21:37,631 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_12_9291_9297.png
+2025-05-08 03:21:37,900 - INFO - 成功保存时间段 9291-9297 的可视化结果
+2025-05-08 03:21:37,900 - INFO - 
+正在处理时间段 14/30: 10731-10735
+2025-05-08 03:21:37,900 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 9, 10, 11, 13, 19, 20, 21, 22, 23, 28, 30, 31}
+2025-05-08 03:21:37,900 - INFO - 正在计算异常分数...
+2025-05-08 03:21:37,904 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:37,904 - INFO - 正在为时间段 10731-10735 生成可视化
+2025-05-08 03:21:37,904 - INFO - 正在为时间段 10731-10735 生成异常图可视化
+2025-05-08 03:21:37,904 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:37,908 - DEBUG - 边统计: 正常边 638 条, 异常边 174 条
+2025-05-08 03:21:37,978 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_13_10731_10735.png
+2025-05-08 03:21:38,241 - INFO - 成功保存时间段 10731-10735 的可视化结果
+2025-05-08 03:21:38,242 - INFO - 
+正在处理时间段 15/30: 11467-11470
+2025-05-08 03:21:38,242 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 6, 9, 10, 11, 13, 19, 20, 21, 22, 23, 28, 30, 31}
+2025-05-08 03:21:38,242 - INFO - 正在计算异常分数...
+2025-05-08 03:21:38,242 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:38,242 - INFO - 正在为时间段 11467-11470 生成可视化
+2025-05-08 03:21:38,242 - INFO - 正在为时间段 11467-11470 生成异常图可视化
+2025-05-08 03:21:38,242 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:38,246 - DEBUG - 边统计: 正常边 612 条, 异常边 200 条
+2025-05-08 03:21:38,312 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_14_11467_11470.png
+2025-05-08 03:21:38,575 - INFO - 成功保存时间段 11467-11470 的可视化结果
+2025-05-08 03:21:38,575 - INFO - 
+正在处理时间段 16/30: 12171-12175
+2025-05-08 03:21:38,575 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 6, 9, 10, 11, 13, 19, 20, 21, 22, 23, 28, 30, 31}
+2025-05-08 03:21:38,575 - INFO - 正在计算异常分数...
+2025-05-08 03:21:38,579 - INFO - 检测到的异常节点: {1, 2, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34}
+2025-05-08 03:21:38,579 - INFO - 正在为时间段 12171-12175 生成可视化
+2025-05-08 03:21:38,579 - INFO - 正在为时间段 12171-12175 生成异常图可视化
+2025-05-08 03:21:38,579 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:38,583 - DEBUG - 边统计: 正常边 662 条, 异常边 150 条
+2025-05-08 03:21:38,650 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_15_12171_12175.png
+2025-05-08 03:21:38,930 - INFO - 成功保存时间段 12171-12175 的可视化结果
+2025-05-08 03:21:38,930 - INFO - 
+正在处理时间段 17/30: 13069-13072
+2025-05-08 03:21:38,930 - INFO - 该时间段的真实异常节点: {33, 34}
+2025-05-08 03:21:38,930 - INFO - 正在计算异常分数...
+2025-05-08 03:21:38,931 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:38,931 - INFO - 正在为时间段 13069-13072 生成可视化
+2025-05-08 03:21:38,931 - INFO - 正在为时间段 13069-13072 生成异常图可视化
+2025-05-08 03:21:38,931 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:38,935 - DEBUG - 边统计: 正常边 688 条, 异常边 182 条
+2025-05-08 03:21:39,009 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_16_13069_13072.png
+2025-05-08 03:21:39,276 - INFO - 成功保存时间段 13069-13072 的可视化结果
+2025-05-08 03:21:39,277 - INFO - 
+正在处理时间段 18/30: 13277-13279
+2025-05-08 03:21:39,277 - INFO - 该时间段的真实异常节点: {17}
+2025-05-08 03:21:39,277 - INFO - 正在计算异常分数...
+2025-05-08 03:21:39,277 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:39,277 - INFO - 正在为时间段 13277-13279 生成可视化
+2025-05-08 03:21:39,277 - INFO - 正在为时间段 13277-13279 生成异常图可视化
+2025-05-08 03:21:39,277 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:39,281 - DEBUG - 边统计: 正常边 630 条, 异常边 300 条
+2025-05-08 03:21:39,350 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_17_13277_13279.png
+2025-05-08 03:21:39,614 - INFO - 成功保存时间段 13277-13279 的可视化结果
+2025-05-08 03:21:39,614 - INFO - 
+正在处理时间段 19/30: 13613-13618
+2025-05-08 03:21:39,614 - INFO - 该时间段的真实异常节点: {1, 2, 9, 10, 11, 12, 13, 30}
+2025-05-08 03:21:39,614 - INFO - 正在计算异常分数...
+2025-05-08 03:21:39,622 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:39,623 - INFO - 正在为时间段 13613-13618 生成可视化
+2025-05-08 03:21:39,623 - INFO - 正在为时间段 13613-13618 生成异常图可视化
+2025-05-08 03:21:39,623 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:39,626 - DEBUG - 边统计: 正常边 516 条, 异常边 296 条
+2025-05-08 03:21:39,692 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_18_13613_13618.png
+2025-05-08 03:21:39,993 - INFO - 成功保存时间段 13613-13618 的可视化结果
+2025-05-08 03:21:39,994 - INFO - 
+正在处理时间段 20/30: 14603-14606
+2025-05-08 03:21:39,994 - INFO - 该时间段的真实异常节点: {32, 37, 9, 10, 11, 13, 19, 20, 21, 22}
+2025-05-08 03:21:39,994 - INFO - 正在计算异常分数...
+2025-05-08 03:21:39,995 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:39,995 - INFO - 正在为时间段 14603-14606 生成可视化
+2025-05-08 03:21:39,995 - INFO - 正在为时间段 14603-14606 生成异常图可视化
+2025-05-08 03:21:39,996 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:40,001 - DEBUG - 边统计: 正常边 560 条, 异常边 252 条
+2025-05-08 03:21:40,081 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_19_14603_14606.png
+2025-05-08 03:21:40,349 - INFO - 成功保存时间段 14603-14606 的可视化结果
+2025-05-08 03:21:40,349 - INFO - 
+正在处理时间段 21/30: 15052-15054
+2025-05-08 03:21:40,349 - INFO - 该时间段的真实异常节点: {9, 10, 11, 13}
+2025-05-08 03:21:40,349 - INFO - 正在计算异常分数...
+2025-05-08 03:21:40,349 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:40,349 - INFO - 正在为时间段 15052-15054 生成可视化
+2025-05-08 03:21:40,349 - INFO - 正在为时间段 15052-15054 生成异常图可视化
+2025-05-08 03:21:40,349 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:40,353 - DEBUG - 边统计: 正常边 460 条, 异常边 352 条
+2025-05-08 03:21:40,578 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_20_15052_15054.png
+2025-05-08 03:21:40,840 - INFO - 成功保存时间段 15052-15054 的可视化结果
+2025-05-08 03:21:40,840 - INFO - 
+正在处理时间段 22/30: 15397-15400
+2025-05-08 03:21:40,840 - INFO - 该时间段的真实异常节点: {9, 12, 13}
+2025-05-08 03:21:40,840 - INFO - 正在计算异常分数...
+2025-05-08 03:21:40,840 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:40,840 - INFO - 正在为时间段 15397-15400 生成可视化
+2025-05-08 03:21:40,840 - INFO - 正在为时间段 15397-15400 生成异常图可视化
+2025-05-08 03:21:40,840 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:40,844 - DEBUG - 边统计: 正常边 486 条, 异常边 326 条
+2025-05-08 03:21:40,912 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_21_15397_15400.png
+2025-05-08 03:21:41,180 - INFO - 成功保存时间段 15397-15400 的可视化结果
+2025-05-08 03:21:41,180 - INFO - 
+正在处理时间段 23/30: 15802-15804
+2025-05-08 03:21:41,180 - INFO - 该时间段的真实异常节点: {9, 10, 11, 13}
+2025-05-08 03:21:41,180 - INFO - 正在计算异常分数...
+2025-05-08 03:21:41,180 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:41,180 - INFO - 正在为时间段 15802-15804 生成可视化
+2025-05-08 03:21:41,180 - INFO - 正在为时间段 15802-15804 生成异常图可视化
+2025-05-08 03:21:41,180 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:41,185 - DEBUG - 边统计: 正常边 368 条, 异常边 444 条
+2025-05-08 03:21:41,252 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_22_15802_15804.png
+2025-05-08 03:21:41,514 - INFO - 成功保存时间段 15802-15804 的可视化结果
+2025-05-08 03:21:41,514 - INFO - 
+正在处理时间段 24/30: 16491-16498
+2025-05-08 03:21:41,515 - INFO - 该时间段的真实异常节点: {1, 2, 3, 9, 10, 11, 13, 15}
+2025-05-08 03:21:41,515 - INFO - 正在计算异常分数...
+2025-05-08 03:21:41,530 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:41,530 - INFO - 正在为时间段 16491-16498 生成可视化
+2025-05-08 03:21:41,530 - INFO - 正在为时间段 16491-16498 生成异常图可视化
+2025-05-08 03:21:41,530 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:41,534 - DEBUG - 边统计: 正常边 636 条, 异常边 176 条
+2025-05-08 03:21:41,601 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_23_16491_16498.png
+2025-05-08 03:21:41,862 - INFO - 成功保存时间段 16491-16498 的可视化结果
+2025-05-08 03:21:41,862 - INFO - 
+正在处理时间段 25/30: 16718-16720
+2025-05-08 03:21:41,862 - INFO - 该时间段的真实异常节点: {9, 10, 11, 13}
+2025-05-08 03:21:41,862 - INFO - 正在计算异常分数...
+2025-05-08 03:21:41,862 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:41,862 - INFO - 正在为时间段 16718-16720 生成可视化
+2025-05-08 03:21:41,862 - INFO - 正在为时间段 16718-16720 生成异常图可视化
+2025-05-08 03:21:41,863 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:41,866 - DEBUG - 边统计: 正常边 412 条, 异常边 400 条
+2025-05-08 03:21:41,931 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_24_16718_16720.png
+2025-05-08 03:21:42,197 - INFO - 成功保存时间段 16718-16720 的可视化结果
+2025-05-08 03:21:42,197 - INFO - 
+正在处理时间段 26/30: 16972-16975
+2025-05-08 03:21:42,197 - INFO - 该时间段的真实异常节点: {9, 12, 13, 15}
+2025-05-08 03:21:42,197 - INFO - 正在计算异常分数...
+2025-05-08 03:21:42,197 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:42,197 - INFO - 正在为时间段 16972-16975 生成可视化
+2025-05-08 03:21:42,197 - INFO - 正在为时间段 16972-16975 生成异常图可视化
+2025-05-08 03:21:42,197 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:42,201 - DEBUG - 边统计: 正常边 566 条, 异常边 246 条
+2025-05-08 03:21:42,268 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_25_16972_16975.png
+2025-05-08 03:21:42,547 - INFO - 成功保存时间段 16972-16975 的可视化结果
+2025-05-08 03:21:42,547 - INFO - 
+正在处理时间段 27/30: 17931-17938
+2025-05-08 03:21:42,548 - INFO - 该时间段的真实异常节点: {1, 2, 3, 6, 9, 10, 11, 12, 13, 15, 19, 20, 21, 22, 23, 28, 30, 31, 32}
+2025-05-08 03:21:42,548 - INFO - 正在计算异常分数...
+2025-05-08 03:21:42,563 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:42,563 - INFO - 正在为时间段 17931-17938 生成可视化
+2025-05-08 03:21:42,563 - INFO - 正在为时间段 17931-17938 生成异常图可视化
+2025-05-08 03:21:42,563 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:42,567 - DEBUG - 边统计: 正常边 630 条, 异常边 182 条
+2025-05-08 03:21:42,641 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_26_17931_17938.png
+2025-05-08 03:21:42,909 - INFO - 成功保存时间段 17931-17938 的可视化结果
+2025-05-08 03:21:42,909 - INFO - 
+正在处理时间段 28/30: 18600-21760
+2025-05-08 03:21:42,909 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 23, 25, 28, 30, 31, 32, 35, 36}
+2025-05-08 03:21:42,909 - INFO - 正在计算异常分数...
+2025-05-08 03:21:52,010 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:21:52,010 - INFO - 正在为时间段 18600-21760 生成可视化
+2025-05-08 03:21:52,010 - INFO - 正在为时间段 18600-21760 生成异常图可视化
+2025-05-08 03:21:52,011 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:52,016 - DEBUG - 边统计: 正常边 1040 条, 异常边 10 条
+2025-05-08 03:21:52,093 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_27_18600_21760.png
+2025-05-08 03:21:52,368 - INFO - 成功保存时间段 18600-21760 的可视化结果
+2025-05-08 03:21:52,369 - INFO - 
+正在处理时间段 29/30: 22252-22259
+2025-05-08 03:21:52,369 - INFO - 该时间段的真实异常节点: {9, 13, 15}
+2025-05-08 03:21:52,369 - INFO - 正在计算异常分数...
+2025-05-08 03:21:52,381 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:21:52,381 - INFO - 正在为时间段 22252-22259 生成可视化
+2025-05-08 03:21:52,381 - INFO - 正在为时间段 22252-22259 生成异常图可视化
+2025-05-08 03:21:52,382 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:52,385 - DEBUG - 边统计: 正常边 700 条, 异常边 112 条
+2025-05-08 03:21:52,455 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_28_22252_22259.png
+2025-05-08 03:21:52,757 - INFO - 成功保存时间段 22252-22259 的可视化结果
+2025-05-08 03:21:52,757 - INFO - 
+正在处理时间段 30/30: 22417-22419
+2025-05-08 03:21:52,757 - INFO - 该时间段的真实异常节点: {11, 13}
+2025-05-08 03:21:52,757 - INFO - 正在计算异常分数...
+2025-05-08 03:21:52,757 - INFO - 检测到的异常节点: set()
+2025-05-08 03:21:52,757 - INFO - 正在为时间段 22417-22419 生成可视化
+2025-05-08 03:21:52,757 - INFO - 正在为时间段 22417-22419 生成异常图可视化
+2025-05-08 03:21:52,757 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:21:52,761 - DEBUG - 边统计: 正常边 562 条, 异常边 250 条
+2025-05-08 03:21:52,932 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/seg_29_22417_22419.png
+2025-05-08 03:21:53,202 - INFO - 成功保存时间段 22417-22419 的可视化结果
+2025-05-08 03:21:53,202 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-1-6 中的图像创建GIF
+2025-05-08 03:21:54,986 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-1-6/machine-1-6.gif
+2025-05-08 03:21:54,986 - INFO - 
+==================================================
+2025-05-08 03:21:54,986 - INFO - 开始数据集可视化: machine-1-7
+2025-05-08 03:21:54,987 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=6.5
+2025-05-08 03:21:54,987 - INFO - ==================================================
+
+2025-05-08 03:21:54,987 - INFO - 正在加载数据集 machine-1-7 的数据
+2025-05-08 03:21:54,991 - INFO - 数据加载成功。训练集形状: (23697, 38), 测试集形状: (23697, 38)
+2025-05-08 03:21:54,991 - INFO - 正在计算边缘统计量...
+2025-05-08 03:22:23,158 - INFO - 已计算 561 条边的统计量
+2025-05-08 03:22:23,158 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:22:23,159 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-1-7
+2025-05-08 03:22:23,248 - INFO - 在数据集中发现 13 个异常时间段
+2025-05-08 03:22:23,248 - INFO - 
+正在处理时间段 1/13: 837-857
+2025-05-08 03:22:23,248 - INFO - 该时间段的真实异常节点: {1, 6, 9, 12, 13, 14, 15, 16}
+2025-05-08 03:22:23,248 - INFO - 正在计算异常分数...
+2025-05-08 03:22:23,305 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:23,305 - INFO - 正在为时间段 837-857 生成可视化
+2025-05-08 03:22:23,305 - INFO - 正在为时间段 837-857 生成异常图可视化
+2025-05-08 03:22:23,305 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:23,309 - DEBUG - 边统计: 正常边 826 条, 异常边 44 条
+2025-05-08 03:22:23,386 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_0_837_857.png
+2025-05-08 03:22:23,657 - INFO - 成功保存时间段 837-857 的可视化结果
+2025-05-08 03:22:23,657 - INFO - 
+正在处理时间段 2/13: 2959-4173
+2025-05-08 03:22:23,658 - INFO - 该时间段的真实异常节点: {33, 34, 6, 9, 12, 13, 14, 15, 16}
+2025-05-08 03:22:23,658 - INFO - 正在计算异常分数...
+2025-05-08 03:22:27,432 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:27,432 - INFO - 正在为时间段 2959-4173 生成可视化
+2025-05-08 03:22:27,432 - INFO - 正在为时间段 2959-4173 生成异常图可视化
+2025-05-08 03:22:27,432 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:27,436 - DEBUG - 边统计: 正常边 830 条, 异常边 40 条
+2025-05-08 03:22:27,504 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_1_2959_4173.png
+2025-05-08 03:22:27,767 - INFO - 成功保存时间段 2959-4173 的可视化结果
+2025-05-08 03:22:27,767 - INFO - 
+正在处理时间段 3/13: 5849-5939
+2025-05-08 03:22:27,767 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 13, 15, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 35, 36}
+2025-05-08 03:22:27,767 - INFO - 正在计算异常分数...
+2025-05-08 03:22:28,058 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:28,058 - INFO - 正在为时间段 5849-5939 生成可视化
+2025-05-08 03:22:28,058 - INFO - 正在为时间段 5849-5939 生成异常图可视化
+2025-05-08 03:22:28,058 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:28,062 - DEBUG - 边统计: 正常边 870 条, 异常边 60 条
+2025-05-08 03:22:28,129 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_2_5849_5939.png
+2025-05-08 03:22:28,391 - INFO - 成功保存时间段 5849-5939 的可视化结果
+2025-05-08 03:22:28,391 - INFO - 
+正在处理时间段 4/13: 6031-6033
+2025-05-08 03:22:28,391 - INFO - 该时间段的真实异常节点: {33, 34}
+2025-05-08 03:22:28,391 - INFO - 正在计算异常分数...
+2025-05-08 03:22:28,391 - INFO - 检测到的异常节点: set()
+2025-05-08 03:22:28,391 - INFO - 正在为时间段 6031-6033 生成可视化
+2025-05-08 03:22:28,391 - INFO - 正在为时间段 6031-6033 生成异常图可视化
+2025-05-08 03:22:28,391 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:28,395 - DEBUG - 边统计: 正常边 536 条, 异常边 276 条
+2025-05-08 03:22:28,461 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_3_6031_6033.png
+2025-05-08 03:22:28,721 - INFO - 成功保存时间段 6031-6033 的可视化结果
+2025-05-08 03:22:28,721 - INFO - 
+正在处理时间段 5/13: 7099-7999
+2025-05-08 03:22:28,722 - INFO - 该时间段的真实异常节点: {1, 9, 12, 13, 14, 15, 17, 18}
+2025-05-08 03:22:28,722 - INFO - 正在计算异常分数...
+2025-05-08 03:22:31,591 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:31,591 - INFO - 正在为时间段 7099-7999 生成可视化
+2025-05-08 03:22:31,591 - INFO - 正在为时间段 7099-7999 生成异常图可视化
+2025-05-08 03:22:31,591 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:31,597 - DEBUG - 边统计: 正常边 1006 条, 异常边 50 条
+2025-05-08 03:22:31,664 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_4_7099_7999.png
+2025-05-08 03:22:31,929 - INFO - 成功保存时间段 7099-7999 的可视化结果
+2025-05-08 03:22:31,929 - INFO - 
+正在处理时间段 6/13: 8564-8579
+2025-05-08 03:22:31,929 - INFO - 该时间段的真实异常节点: {32, 1, 35, 36, 9, 10, 11, 13, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31}
+2025-05-08 03:22:31,929 - INFO - 正在计算异常分数...
+2025-05-08 03:22:31,971 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:22:31,971 - INFO - 正在为时间段 8564-8579 生成可视化
+2025-05-08 03:22:31,971 - INFO - 正在为时间段 8564-8579 生成异常图可视化
+2025-05-08 03:22:31,971 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:31,975 - DEBUG - 边统计: 正常边 736 条, 异常边 76 条
+2025-05-08 03:22:32,039 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_5_8564_8579.png
+2025-05-08 03:22:32,306 - INFO - 成功保存时间段 8564-8579 的可视化结果
+2025-05-08 03:22:32,306 - INFO - 
+正在处理时间段 7/13: 12359-12373
+2025-05-08 03:22:32,307 - INFO - 该时间段的真实异常节点: {1, 9, 12, 13, 14, 15, 16}
+2025-05-08 03:22:32,307 - INFO - 正在计算异常分数...
+2025-05-08 03:22:32,345 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:22:32,345 - INFO - 正在为时间段 12359-12373 生成可视化
+2025-05-08 03:22:32,345 - INFO - 正在为时间段 12359-12373 生成异常图可视化
+2025-05-08 03:22:32,345 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:32,349 - DEBUG - 边统计: 正常边 796 条, 异常边 16 条
+2025-05-08 03:22:32,416 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_6_12359_12373.png
+2025-05-08 03:22:32,676 - INFO - 成功保存时间段 12359-12373 的可视化结果
+2025-05-08 03:22:32,676 - INFO - 
+正在处理时间段 8/13: 13799-13824
+2025-05-08 03:22:32,676 - INFO - 该时间段的真实异常节点: {9, 12, 13, 14, 15, 16}
+2025-05-08 03:22:32,676 - INFO - 正在计算异常分数...
+2025-05-08 03:22:32,749 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:32,749 - INFO - 正在为时间段 13799-13824 生成可视化
+2025-05-08 03:22:32,749 - INFO - 正在为时间段 13799-13824 生成异常图可视化
+2025-05-08 03:22:32,749 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:32,752 - DEBUG - 边统计: 正常边 862 条, 异常边 8 条
+2025-05-08 03:22:32,817 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_7_13799_13824.png
+2025-05-08 03:22:33,079 - INFO - 成功保存时间段 13799-13824 的可视化结果
+2025-05-08 03:22:33,079 - INFO - 
+正在处理时间段 9/13: 15239-15269
+2025-05-08 03:22:33,079 - INFO - 该时间段的真实异常节点: {1, 6, 9, 12, 13, 14, 15, 16}
+2025-05-08 03:22:33,079 - INFO - 正在计算异常分数...
+2025-05-08 03:22:33,167 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:33,167 - INFO - 正在为时间段 15239-15269 生成可视化
+2025-05-08 03:22:33,167 - INFO - 正在为时间段 15239-15269 生成异常图可视化
+2025-05-08 03:22:33,167 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:33,171 - DEBUG - 边统计: 正常边 836 条, 异常边 34 条
+2025-05-08 03:22:33,336 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_8_15239_15269.png
+2025-05-08 03:22:33,601 - INFO - 成功保存时间段 15239-15269 的可视化结果
+2025-05-08 03:22:33,601 - INFO - 
+正在处理时间段 10/13: 15960-15962
+2025-05-08 03:22:33,602 - INFO - 该时间段的真实异常节点: {17}
+2025-05-08 03:22:33,602 - INFO - 正在计算异常分数...
+2025-05-08 03:22:33,602 - INFO - 检测到的异常节点: set()
+2025-05-08 03:22:33,602 - INFO - 正在为时间段 15960-15962 生成可视化
+2025-05-08 03:22:33,602 - INFO - 正在为时间段 15960-15962 生成异常图可视化
+2025-05-08 03:22:33,602 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:33,606 - DEBUG - 边统计: 正常边 608 条, 异常边 262 条
+2025-05-08 03:22:33,673 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_9_15960_15962.png
+2025-05-08 03:22:33,933 - INFO - 成功保存时间段 15960-15962 的可视化结果
+2025-05-08 03:22:33,933 - INFO - 
+正在处理时间段 11/13: 18109-18149
+2025-05-08 03:22:33,933 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 36}
+2025-05-08 03:22:33,933 - INFO - 正在计算异常分数...
+2025-05-08 03:22:34,057 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:34,057 - INFO - 正在为时间段 18109-18149 生成可视化
+2025-05-08 03:22:34,057 - INFO - 正在为时间段 18109-18149 生成异常图可视化
+2025-05-08 03:22:34,058 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:34,062 - DEBUG - 边统计: 正常边 1010 条, 异常边 46 条
+2025-05-08 03:22:34,126 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_10_18109_18149.png
+2025-05-08 03:22:34,390 - INFO - 成功保存时间段 18109-18149 的可视化结果
+2025-05-08 03:22:34,390 - INFO - 
+正在处理时间段 12/13: 19442-19445
+2025-05-08 03:22:34,390 - INFO - 该时间段的真实异常节点: {33, 34}
+2025-05-08 03:22:34,390 - INFO - 正在计算异常分数...
+2025-05-08 03:22:34,390 - INFO - 检测到的异常节点: set()
+2025-05-08 03:22:34,390 - INFO - 正在为时间段 19442-19445 生成可视化
+2025-05-08 03:22:34,390 - INFO - 正在为时间段 19442-19445 生成异常图可视化
+2025-05-08 03:22:34,391 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:34,394 - DEBUG - 边统计: 正常边 592 条, 异常边 220 条
+2025-05-08 03:22:34,463 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_11_19442_19445.png
+2025-05-08 03:22:34,726 - INFO - 成功保存时间段 19442-19445 的可视化结果
+2025-05-08 03:22:34,726 - INFO - 
+正在处理时间段 13/13: 19559-19589
+2025-05-08 03:22:34,726 - INFO - 该时间段的真实异常节点: {1, 6, 9, 12, 13, 14, 15, 16}
+2025-05-08 03:22:34,726 - INFO - 正在计算异常分数...
+2025-05-08 03:22:34,815 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:22:34,815 - INFO - 正在为时间段 19559-19589 生成可视化
+2025-05-08 03:22:34,815 - INFO - 正在为时间段 19559-19589 生成异常图可视化
+2025-05-08 03:22:34,816 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:22:34,819 - DEBUG - 边统计: 正常边 732 条, 异常边 138 条
+2025-05-08 03:22:34,884 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/seg_12_19559_19589.png
+2025-05-08 03:22:35,146 - INFO - 成功保存时间段 19559-19589 的可视化结果
+2025-05-08 03:22:35,146 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-1-7 中的图像创建GIF
+2025-05-08 03:22:35,899 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-1-7/machine-1-7.gif
+2025-05-08 03:22:35,900 - INFO - 
+==================================================
+2025-05-08 03:22:35,900 - INFO - 开始数据集可视化: machine-2-1
+2025-05-08 03:22:35,900 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=0.0
+2025-05-08 03:22:35,900 - INFO - ==================================================
+
+2025-05-08 03:22:35,900 - INFO - 正在加载数据集 machine-2-1 的数据
+2025-05-08 03:22:35,903 - INFO - 数据加载成功。训练集形状: (23693, 38), 测试集形状: (23694, 38)
+2025-05-08 03:22:35,903 - INFO - 正在计算边缘统计量...
+2025-05-08 03:23:02,734 - INFO - 已计算 523 条边的统计量
+2025-05-08 03:23:02,735 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:23:02,735 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-2-1
+2025-05-08 03:23:02,826 - INFO - 在数据集中发现 13 个异常时间段
+2025-05-08 03:23:02,826 - INFO - 
+正在处理时间段 1/13: 6506-6527
+2025-05-08 03:23:02,826 - INFO - 该时间段的真实异常节点: {32, 35, 36, 23, 25}
+2025-05-08 03:23:02,826 - INFO - 正在计算异常分数...
+2025-05-08 03:23:02,881 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:23:02,881 - INFO - 正在为时间段 6506-6527 生成可视化
+2025-05-08 03:23:02,881 - INFO - 正在为时间段 6506-6527 生成异常图可视化
+2025-05-08 03:23:02,881 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:02,885 - DEBUG - 边统计: 正常边 742 条, 异常边 14 条
+2025-05-08 03:23:02,958 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_0_6506_6527.png
+2025-05-08 03:23:03,220 - INFO - 成功保存时间段 6506-6527 的可视化结果
+2025-05-08 03:23:03,221 - INFO - 
+正在处理时间段 2/13: 7907-7960
+2025-05-08 03:23:03,221 - INFO - 该时间段的真实异常节点: {32, 9, 10, 11, 13}
+2025-05-08 03:23:03,221 - INFO - 正在计算异常分数...
+2025-05-08 03:23:03,371 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:23:03,372 - INFO - 正在为时间段 7907-7960 生成可视化
+2025-05-08 03:23:03,372 - INFO - 正在为时间段 7907-7960 生成异常图可视化
+2025-05-08 03:23:03,372 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:03,375 - DEBUG - 边统计: 正常边 854 条, 异常边 16 条
+2025-05-08 03:23:03,441 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_1_7907_7960.png
+2025-05-08 03:23:03,701 - INFO - 成功保存时间段 7907-7960 的可视化结果
+2025-05-08 03:23:03,701 - INFO - 
+正在处理时间段 3/13: 9340-9385
+2025-05-08 03:23:03,701 - INFO - 该时间段的真实异常节点: {32, 33, 34, 9, 10, 11, 13}
+2025-05-08 03:23:03,701 - INFO - 正在计算异常分数...
+2025-05-08 03:23:03,832 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:03,832 - INFO - 正在为时间段 9340-9385 生成可视化
+2025-05-08 03:23:03,832 - INFO - 正在为时间段 9340-9385 生成异常图可视化
+2025-05-08 03:23:03,832 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:03,836 - DEBUG - 边统计: 正常边 854 条, 异常边 16 条
+2025-05-08 03:23:03,902 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_2_9340_9385.png
+2025-05-08 03:23:04,164 - INFO - 成功保存时间段 9340-9385 的可视化结果
+2025-05-08 03:23:04,164 - INFO - 
+正在处理时间段 4/13: 9779-9804
+2025-05-08 03:23:04,164 - INFO - 该时间段的真实异常节点: {33, 34, 5}
+2025-05-08 03:23:04,164 - INFO - 正在计算异常分数...
+2025-05-08 03:23:04,232 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:04,232 - INFO - 正在为时间段 9779-9804 生成可视化
+2025-05-08 03:23:04,232 - INFO - 正在为时间段 9779-9804 生成异常图可视化
+2025-05-08 03:23:04,232 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:04,236 - DEBUG - 边统计: 正常边 802 条, 异常边 10 条
+2025-05-08 03:23:04,393 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_3_9779_9804.png
+2025-05-08 03:23:04,658 - INFO - 成功保存时间段 9779-9804 的可视化结果
+2025-05-08 03:23:04,659 - INFO - 
+正在处理时间段 5/13: 12173-12180
+2025-05-08 03:23:04,659 - INFO - 该时间段的真实异常节点: {19, 20, 21, 22, 28}
+2025-05-08 03:23:04,659 - INFO - 正在计算异常分数...
+2025-05-08 03:23:04,672 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:23:04,672 - INFO - 正在为时间段 12173-12180 生成可视化
+2025-05-08 03:23:04,672 - INFO - 正在为时间段 12173-12180 生成异常图可视化
+2025-05-08 03:23:04,673 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:04,676 - DEBUG - 边统计: 正常边 706 条, 异常边 50 条
+2025-05-08 03:23:04,742 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_4_12173_12180.png
+2025-05-08 03:23:05,011 - INFO - 成功保存时间段 12173-12180 的可视化结果
+2025-05-08 03:23:05,011 - INFO - 
+正在处理时间段 6/13: 16136-16587
+2025-05-08 03:23:05,011 - INFO - 该时间段的真实异常节点: {24, 9, 10, 26}
+2025-05-08 03:23:05,011 - INFO - 正在计算异常分数...
+2025-05-08 03:23:06,345 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:06,345 - INFO - 正在为时间段 16136-16587 生成可视化
+2025-05-08 03:23:06,345 - INFO - 正在为时间段 16136-16587 生成异常图可视化
+2025-05-08 03:23:06,345 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:06,350 - DEBUG - 边统计: 正常边 1030 条, 异常边 16 条
+2025-05-08 03:23:06,417 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_5_16136_16587.png
+2025-05-08 03:23:06,685 - INFO - 成功保存时间段 16136-16587 的可视化结果
+2025-05-08 03:23:06,685 - INFO - 
+正在处理时间段 7/13: 17365-17381
+2025-05-08 03:23:06,685 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 9, 14, 15, 16, 18, 24, 26}
+2025-05-08 03:23:06,686 - INFO - 正在计算异常分数...
+2025-05-08 03:23:06,729 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:23:06,729 - INFO - 正在为时间段 17365-17381 生成可视化
+2025-05-08 03:23:06,729 - INFO - 正在为时间段 17365-17381 生成异常图可视化
+2025-05-08 03:23:06,729 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:06,733 - DEBUG - 边统计: 正常边 856 条, 异常边 14 条
+2025-05-08 03:23:06,801 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_6_17365_17381.png
+2025-05-08 03:23:07,070 - INFO - 成功保存时间段 17365-17381 的可视化结果
+2025-05-08 03:23:07,070 - INFO - 
+正在处理时间段 8/13: 17995-18027
+2025-05-08 03:23:07,071 - INFO - 该时间段的真实异常节点: {9, 10, 11, 13, 15}
+2025-05-08 03:23:07,071 - INFO - 正在计算异常分数...
+2025-05-08 03:23:07,161 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:07,161 - INFO - 正在为时间段 17995-18027 生成可视化
+2025-05-08 03:23:07,161 - INFO - 正在为时间段 17995-18027 生成异常图可视化
+2025-05-08 03:23:07,161 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:07,165 - DEBUG - 边统计: 正常边 854 条, 异常边 16 条
+2025-05-08 03:23:07,231 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_7_17995_18027.png
+2025-05-08 03:23:07,492 - INFO - 成功保存时间段 17995-18027 的可视化结果
+2025-05-08 03:23:07,493 - INFO - 
+正在处理时间段 9/13: 18575-18649
+2025-05-08 03:23:07,493 - INFO - 该时间段的真实异常节点: {1, 19, 20, 21, 22}
+2025-05-08 03:23:07,493 - INFO - 正在计算异常分数...
+2025-05-08 03:23:07,712 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:07,712 - INFO - 正在为时间段 18575-18649 生成可视化
+2025-05-08 03:23:07,712 - INFO - 正在为时间段 18575-18649 生成异常图可视化
+2025-05-08 03:23:07,712 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:07,716 - DEBUG - 边统计: 正常边 868 条, 异常边 2 条
+2025-05-08 03:23:07,782 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_8_18575_18649.png
+2025-05-08 03:23:08,043 - INFO - 成功保存时间段 18575-18649 的可视化结果
+2025-05-08 03:23:08,043 - INFO - 
+正在处理时间段 10/13: 20020-20035
+2025-05-08 03:23:08,043 - INFO - 该时间段的真实异常节点: {1, 6, 7}
+2025-05-08 03:23:08,043 - INFO - 正在计算异常分数...
+2025-05-08 03:23:08,083 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:23:08,083 - INFO - 正在为时间段 20020-20035 生成可视化
+2025-05-08 03:23:08,083 - INFO - 正在为时间段 20020-20035 生成异常图可视化
+2025-05-08 03:23:08,084 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:08,087 - DEBUG - 边统计: 正常边 838 条, 异常边 32 条
+2025-05-08 03:23:08,155 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_9_20020_20035.png
+2025-05-08 03:23:08,428 - INFO - 成功保存时间段 20020-20035 的可视化结果
+2025-05-08 03:23:08,428 - INFO - 
+正在处理时间段 11/13: 20340-20351
+2025-05-08 03:23:08,428 - INFO - 该时间段的真实异常节点: {32, 9, 10, 11, 13}
+2025-05-08 03:23:08,428 - INFO - 正在计算异常分数...
+2025-05-08 03:23:08,453 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:23:08,453 - INFO - 正在为时间段 20340-20351 生成可视化
+2025-05-08 03:23:08,453 - INFO - 正在为时间段 20340-20351 生成异常图可视化
+2025-05-08 03:23:08,453 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:08,457 - DEBUG - 边统计: 正常边 728 条, 异常边 28 条
+2025-05-08 03:23:08,523 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_10_20340_20351.png
+2025-05-08 03:23:08,783 - INFO - 成功保存时间段 20340-20351 的可视化结果
+2025-05-08 03:23:08,783 - INFO - 
+正在处理时间段 12/13: 20891-20911
+2025-05-08 03:23:08,783 - INFO - 该时间段的真实异常节点: {10, 13}
+2025-05-08 03:23:08,784 - INFO - 正在计算异常分数...
+2025-05-08 03:23:08,836 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:23:08,836 - INFO - 正在为时间段 20891-20911 生成可视化
+2025-05-08 03:23:08,836 - INFO - 正在为时间段 20891-20911 生成异常图可视化
+2025-05-08 03:23:08,836 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:08,840 - DEBUG - 边统计: 正常边 852 条, 异常边 18 条
+2025-05-08 03:23:08,904 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_11_20891_20911.png
+2025-05-08 03:23:09,166 - INFO - 成功保存时间段 20891-20911 的可视化结果
+2025-05-08 03:23:09,166 - INFO - 
+正在处理时间段 13/13: 22907-23294
+2025-05-08 03:23:09,166 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 35, 36}
+2025-05-08 03:23:09,166 - INFO - 正在计算异常分数...
+2025-05-08 03:23:10,369 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:23:10,369 - INFO - 正在为时间段 22907-23294 生成可视化
+2025-05-08 03:23:10,369 - INFO - 正在为时间段 22907-23294 生成异常图可视化
+2025-05-08 03:23:10,369 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:10,373 - DEBUG - 边统计: 正常边 972 条, 异常边 14 条
+2025-05-08 03:23:10,519 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/seg_12_22907_23294.png
+2025-05-08 03:23:10,788 - INFO - 成功保存时间段 22907-23294 的可视化结果
+2025-05-08 03:23:10,789 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-2-1 中的图像创建GIF
+2025-05-08 03:23:11,541 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-2-1/machine-2-1.gif
+2025-05-08 03:23:11,541 - INFO - 
+==================================================
+2025-05-08 03:23:11,541 - INFO - 开始数据集可视化: machine-2-2
+2025-05-08 03:23:11,541 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=3.0
+2025-05-08 03:23:11,541 - INFO - ==================================================
+
+2025-05-08 03:23:11,542 - INFO - 正在加载数据集 machine-2-2 的数据
+2025-05-08 03:23:11,545 - INFO - 数据加载成功。训练集形状: (23699, 38), 测试集形状: (23700, 38)
+2025-05-08 03:23:11,545 - INFO - 正在计算边缘统计量...
+2025-05-08 03:23:37,709 - INFO - 已计算 464 条边的统计量
+2025-05-08 03:23:37,709 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:23:37,710 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-2-2
+2025-05-08 03:23:37,798 - INFO - 在数据集中发现 11 个异常时间段
+2025-05-08 03:23:37,799 - INFO - 
+正在处理时间段 1/11: 12760-12770
+2025-05-08 03:23:37,799 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 4, 33, 6, 7, 34, 35, 36, 23, 24, 25, 26, 31}
+2025-05-08 03:23:37,799 - INFO - 正在计算异常分数...
+2025-05-08 03:23:37,826 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:37,826 - INFO - 正在为时间段 12760-12770 生成可视化
+2025-05-08 03:23:37,826 - INFO - 正在为时间段 12760-12770 生成异常图可视化
+2025-05-08 03:23:37,826 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:37,829 - DEBUG - 边统计: 正常边 682 条, 异常边 130 条
+2025-05-08 03:23:37,898 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_0_12760_12770.png
+2025-05-08 03:23:38,160 - INFO - 成功保存时间段 12760-12770 的可视化结果
+2025-05-08 03:23:38,160 - INFO - 
+正在处理时间段 2/11: 14511-14520
+2025-05-08 03:23:38,161 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 4, 35, 6, 7, 36, 23, 24, 25, 26, 31}
+2025-05-08 03:23:38,161 - INFO - 正在计算异常分数...
+2025-05-08 03:23:38,182 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:38,182 - INFO - 正在为时间段 14511-14520 生成可视化
+2025-05-08 03:23:38,182 - INFO - 正在为时间段 14511-14520 生成异常图可视化
+2025-05-08 03:23:38,182 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:38,185 - DEBUG - 边统计: 正常边 740 条, 异常边 130 条
+2025-05-08 03:23:38,253 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_1_14511_14520.png
+2025-05-08 03:23:38,516 - INFO - 成功保存时间段 14511-14520 的可视化结果
+2025-05-08 03:23:38,516 - INFO - 
+正在处理时间段 3/11: 15630-16501
+2025-05-08 03:23:38,516 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:23:38,516 - INFO - 正在计算异常分数...
+2025-05-08 03:23:41,082 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:41,082 - INFO - 正在为时间段 15630-16501 生成可视化
+2025-05-08 03:23:41,082 - INFO - 正在为时间段 15630-16501 生成异常图可视化
+2025-05-08 03:23:41,082 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:41,086 - DEBUG - 边统计: 正常边 850 条, 异常边 78 条
+2025-05-08 03:23:41,154 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_2_15630_16501.png
+2025-05-08 03:23:41,423 - INFO - 成功保存时间段 15630-16501 的可视化结果
+2025-05-08 03:23:41,423 - INFO - 
+正在处理时间段 4/11: 17090-17941
+2025-05-08 03:23:41,423 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:23:41,423 - INFO - 正在计算异常分数...
+2025-05-08 03:23:43,958 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:43,958 - INFO - 正在为时间段 17090-17941 生成可视化
+2025-05-08 03:23:43,958 - INFO - 正在为时间段 17090-17941 生成异常图可视化
+2025-05-08 03:23:43,958 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:43,962 - DEBUG - 边统计: 正常边 804 条, 异常边 66 条
+2025-05-08 03:23:44,031 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_3_17090_17941.png
+2025-05-08 03:23:44,301 - INFO - 成功保存时间段 17090-17941 的可视化结果
+2025-05-08 03:23:44,301 - INFO - 
+正在处理时间段 5/11: 18541-19381
+2025-05-08 03:23:44,301 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:23:44,301 - INFO - 正在计算异常分数...
+2025-05-08 03:23:46,751 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:46,751 - INFO - 正在为时间段 18541-19381 生成可视化
+2025-05-08 03:23:46,751 - INFO - 正在为时间段 18541-19381 生成异常图可视化
+2025-05-08 03:23:46,752 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:46,755 - DEBUG - 边统计: 正常边 800 条, 异常边 70 条
+2025-05-08 03:23:46,824 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_4_18541_19381.png
+2025-05-08 03:23:47,086 - INFO - 成功保存时间段 18541-19381 的可视化结果
+2025-05-08 03:23:47,086 - INFO - 
+正在处理时间段 6/11: 20820-20822
+2025-05-08 03:23:47,086 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:23:47,086 - INFO - 正在计算异常分数...
+2025-05-08 03:23:47,086 - INFO - 检测到的异常节点: set()
+2025-05-08 03:23:47,086 - INFO - 正在为时间段 20820-20822 生成可视化
+2025-05-08 03:23:47,086 - INFO - 正在为时间段 20820-20822 生成异常图可视化
+2025-05-08 03:23:47,086 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:47,090 - DEBUG - 边统计: 正常边 438 条, 异常边 318 条
+2025-05-08 03:23:47,156 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_5_20820_20822.png
+2025-05-08 03:23:47,423 - INFO - 成功保存时间段 20820-20822 的可视化结果
+2025-05-08 03:23:47,423 - INFO - 
+正在处理时间段 7/11: 21024-21026
+2025-05-08 03:23:47,423 - INFO - 该时间段的真实异常节点: {11}
+2025-05-08 03:23:47,423 - INFO - 正在计算异常分数...
+2025-05-08 03:23:47,423 - INFO - 检测到的异常节点: set()
+2025-05-08 03:23:47,423 - INFO - 正在为时间段 21024-21026 生成可视化
+2025-05-08 03:23:47,423 - INFO - 正在为时间段 21024-21026 生成异常图可视化
+2025-05-08 03:23:47,423 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:47,427 - DEBUG - 边统计: 正常边 418 条, 异常边 284 条
+2025-05-08 03:23:47,494 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_6_21024_21026.png
+2025-05-08 03:23:47,755 - INFO - 成功保存时间段 21024-21026 的可视化结果
+2025-05-08 03:23:47,755 - INFO - 
+正在处理时间段 8/11: 21280-21294
+2025-05-08 03:23:47,755 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 4, 6, 7}
+2025-05-08 03:23:47,755 - INFO - 正在计算异常分数...
+2025-05-08 03:23:47,793 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:47,793 - INFO - 正在为时间段 21280-21294 生成可视化
+2025-05-08 03:23:47,793 - INFO - 正在为时间段 21280-21294 生成异常图可视化
+2025-05-08 03:23:47,793 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:47,797 - DEBUG - 边统计: 正常边 708 条, 异常边 104 条
+2025-05-08 03:23:47,860 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_7_21280_21294.png
+2025-05-08 03:23:48,119 - INFO - 成功保存时间段 21280-21294 的可视化结果
+2025-05-08 03:23:48,119 - INFO - 
+正在处理时间段 9/11: 21405-21427
+2025-05-08 03:23:48,119 - INFO - 该时间段的真实异常节点: {19, 20, 21, 22, 28, 31}
+2025-05-08 03:23:48,119 - INFO - 正在计算异常分数...
+2025-05-08 03:23:48,180 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:23:48,180 - INFO - 正在为时间段 21405-21427 生成可视化
+2025-05-08 03:23:48,180 - INFO - 正在为时间段 21405-21427 生成异常图可视化
+2025-05-08 03:23:48,180 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:48,183 - DEBUG - 边统计: 正常边 686 条, 异常边 70 条
+2025-05-08 03:23:48,330 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_8_21405_21427.png
+2025-05-08 03:23:48,600 - INFO - 成功保存时间段 21405-21427 的可视化结果
+2025-05-08 03:23:48,600 - INFO - 
+正在处理时间段 10/11: 22260-22262
+2025-05-08 03:23:48,600 - INFO - 该时间段的真实异常节点: {6, 10, 11, 12, 13}
+2025-05-08 03:23:48,600 - INFO - 正在计算异常分数...
+2025-05-08 03:23:48,600 - INFO - 检测到的异常节点: set()
+2025-05-08 03:23:48,600 - INFO - 正在为时间段 22260-22262 生成可视化
+2025-05-08 03:23:48,600 - INFO - 正在为时间段 22260-22262 生成异常图可视化
+2025-05-08 03:23:48,600 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:48,604 - DEBUG - 边统计: 正常边 402 条, 异常边 410 条
+2025-05-08 03:23:48,670 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_9_22260_22262.png
+2025-05-08 03:23:48,930 - INFO - 成功保存时间段 22260-22262 的可视化结果
+2025-05-08 03:23:48,930 - INFO - 
+正在处理时间段 11/11: 23099-23298
+2025-05-08 03:23:48,930 - INFO - 该时间段的真实异常节点: {9, 15}
+2025-05-08 03:23:48,930 - INFO - 正在计算异常分数...
+2025-05-08 03:23:49,506 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:23:49,506 - INFO - 正在为时间段 23099-23298 生成可视化
+2025-05-08 03:23:49,506 - INFO - 正在为时间段 23099-23298 生成异常图可视化
+2025-05-08 03:23:49,506 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:23:49,510 - DEBUG - 边统计: 正常边 792 条, 异常边 78 条
+2025-05-08 03:23:49,579 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/seg_10_23099_23298.png
+2025-05-08 03:23:49,844 - INFO - 成功保存时间段 23099-23298 的可视化结果
+2025-05-08 03:23:49,844 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-2-2 中的图像创建GIF
+2025-05-08 03:23:50,475 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-2-2/machine-2-2.gif
+2025-05-08 03:23:50,475 - INFO - 
+==================================================
+2025-05-08 03:23:50,475 - INFO - 开始数据集可视化: machine-2-7
+2025-05-08 03:23:50,475 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=4.5
+2025-05-08 03:23:50,475 - INFO - ==================================================
+
+2025-05-08 03:23:50,476 - INFO - 正在加载数据集 machine-2-7 的数据
+2025-05-08 03:23:50,479 - INFO - 数据加载成功。训练集形状: (23696, 38), 测试集形状: (23696, 38)
+2025-05-08 03:23:50,479 - INFO - 正在计算边缘统计量...
+2025-05-08 03:24:18,394 - INFO - 已计算 435 条边的统计量
+2025-05-08 03:24:18,394 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:24:18,395 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-2-7
+2025-05-08 03:24:18,483 - INFO - 在数据集中发现 20 个异常时间段
+2025-05-08 03:24:18,483 - INFO - 
+正在处理时间段 1/20: 664-666
+2025-05-08 03:24:18,483 - INFO - 该时间段的真实异常节点: {9, 13, 14}
+2025-05-08 03:24:18,483 - INFO - 正在计算异常分数...
+2025-05-08 03:24:18,483 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:18,483 - INFO - 正在为时间段 664-666 生成可视化
+2025-05-08 03:24:18,483 - INFO - 正在为时间段 664-666 生成异常图可视化
+2025-05-08 03:24:18,484 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:18,487 - DEBUG - 边统计: 正常边 436 条, 异常边 214 条
+2025-05-08 03:24:18,559 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_0_664_666.png
+2025-05-08 03:24:18,821 - INFO - 成功保存时间段 664-666 的可视化结果
+2025-05-08 03:24:18,821 - INFO - 
+正在处理时间段 2/20: 2104-2106
+2025-05-08 03:24:18,821 - INFO - 该时间段的真实异常节点: {13, 14}
+2025-05-08 03:24:18,822 - INFO - 正在计算异常分数...
+2025-05-08 03:24:18,822 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:18,822 - INFO - 正在为时间段 2104-2106 生成可视化
+2025-05-08 03:24:18,822 - INFO - 正在为时间段 2104-2106 生成异常图可视化
+2025-05-08 03:24:18,822 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:18,825 - DEBUG - 边统计: 正常边 408 条, 异常边 294 条
+2025-05-08 03:24:18,891 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_1_2104_2106.png
+2025-05-08 03:24:19,158 - INFO - 成功保存时间段 2104-2106 的可视化结果
+2025-05-08 03:24:19,158 - INFO - 
+正在处理时间段 3/20: 3544-3546
+2025-05-08 03:24:19,159 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:19,159 - INFO - 正在计算异常分数...
+2025-05-08 03:24:19,159 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:19,159 - INFO - 正在为时间段 3544-3546 生成可视化
+2025-05-08 03:24:19,159 - INFO - 正在为时间段 3544-3546 生成异常图可视化
+2025-05-08 03:24:19,159 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:19,162 - DEBUG - 边统计: 正常边 462 条, 异常边 240 条
+2025-05-08 03:24:19,227 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_2_3544_3546.png
+2025-05-08 03:24:19,487 - INFO - 成功保存时间段 3544-3546 的可视化结果
+2025-05-08 03:24:19,487 - INFO - 
+正在处理时间段 4/20: 4984-4986
+2025-05-08 03:24:19,487 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:19,487 - INFO - 正在计算异常分数...
+2025-05-08 03:24:19,487 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:19,487 - INFO - 正在为时间段 4984-4986 生成可视化
+2025-05-08 03:24:19,487 - INFO - 正在为时间段 4984-4986 生成异常图可视化
+2025-05-08 03:24:19,487 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:19,491 - DEBUG - 边统计: 正常边 518 条, 异常边 238 条
+2025-05-08 03:24:19,556 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_3_4984_4986.png
+2025-05-08 03:24:19,816 - INFO - 成功保存时间段 4984-4986 的可视化结果
+2025-05-08 03:24:19,817 - INFO - 
+正在处理时间段 5/20: 6030-6033
+2025-05-08 03:24:19,817 - INFO - 该时间段的真实异常节点: {33, 34}
+2025-05-08 03:24:19,817 - INFO - 正在计算异常分数...
+2025-05-08 03:24:19,817 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:19,817 - INFO - 正在为时间段 6030-6033 生成可视化
+2025-05-08 03:24:19,817 - INFO - 正在为时间段 6030-6033 生成异常图可视化
+2025-05-08 03:24:19,817 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:19,820 - DEBUG - 边统计: 正常边 686 条, 异常边 126 条
+2025-05-08 03:24:19,884 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_4_6030_6033.png
+2025-05-08 03:24:20,151 - INFO - 成功保存时间段 6030-6033 的可视化结果
+2025-05-08 03:24:20,151 - INFO - 
+正在处理时间段 6/20: 7665-7668
+2025-05-08 03:24:20,151 - INFO - 该时间段的真实异常节点: {30}
+2025-05-08 03:24:20,151 - INFO - 正在计算异常分数...
+2025-05-08 03:24:20,151 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:20,151 - INFO - 正在为时间段 7665-7668 生成可视化
+2025-05-08 03:24:20,151 - INFO - 正在为时间段 7665-7668 生成异常图可视化
+2025-05-08 03:24:20,151 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:20,154 - DEBUG - 边统计: 正常边 464 条, 异常边 186 条
+2025-05-08 03:24:20,219 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_5_7665_7668.png
+2025-05-08 03:24:20,479 - INFO - 成功保存时间段 7665-7668 的可视化结果
+2025-05-08 03:24:20,479 - INFO - 
+正在处理时间段 7/20: 7863-7866
+2025-05-08 03:24:20,479 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:20,479 - INFO - 正在计算异常分数...
+2025-05-08 03:24:20,479 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:20,479 - INFO - 正在为时间段 7863-7866 生成可视化
+2025-05-08 03:24:20,479 - INFO - 正在为时间段 7863-7866 生成异常图可视化
+2025-05-08 03:24:20,479 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:20,482 - DEBUG - 边统计: 正常边 614 条, 异常边 88 条
+2025-05-08 03:24:20,636 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_6_7863_7866.png
+2025-05-08 03:24:20,896 - INFO - 成功保存时间段 7863-7866 的可视化结果
+2025-05-08 03:24:20,896 - INFO - 
+正在处理时间段 8/20: 9304-9306
+2025-05-08 03:24:20,896 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:20,896 - INFO - 正在计算异常分数...
+2025-05-08 03:24:20,896 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:20,896 - INFO - 正在为时间段 9304-9306 生成可视化
+2025-05-08 03:24:20,896 - INFO - 正在为时间段 9304-9306 生成异常图可视化
+2025-05-08 03:24:20,897 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:20,900 - DEBUG - 边统计: 正常边 440 条, 异常边 210 条
+2025-05-08 03:24:20,963 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_7_9304_9306.png
+2025-05-08 03:24:21,231 - INFO - 成功保存时间段 9304-9306 的可视化结果
+2025-05-08 03:24:21,231 - INFO - 
+正在处理时间段 9/20: 10744-10746
+2025-05-08 03:24:21,231 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:21,231 - INFO - 正在计算异常分数...
+2025-05-08 03:24:21,232 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:21,232 - INFO - 正在为时间段 10744-10746 生成可视化
+2025-05-08 03:24:21,232 - INFO - 正在为时间段 10744-10746 生成异常图可视化
+2025-05-08 03:24:21,232 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:21,235 - DEBUG - 边统计: 正常边 330 条, 异常边 222 条
+2025-05-08 03:24:21,300 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_8_10744_10746.png
+2025-05-08 03:24:21,559 - INFO - 成功保存时间段 10744-10746 的可视化结果
+2025-05-08 03:24:21,559 - INFO - 
+正在处理时间段 10/20: 12099-12126
+2025-05-08 03:24:21,559 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 24, 26}
+2025-05-08 03:24:21,559 - INFO - 正在计算异常分数...
+2025-05-08 03:24:21,633 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 11, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:24:21,633 - INFO - 正在为时间段 12099-12126 生成可视化
+2025-05-08 03:24:21,633 - INFO - 正在为时间段 12099-12126 生成异常图可视化
+2025-05-08 03:24:21,633 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:21,636 - DEBUG - 边统计: 正常边 682 条, 异常边 20 条
+2025-05-08 03:24:21,700 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_9_12099_12126.png
+2025-05-08 03:24:21,957 - INFO - 成功保存时间段 12099-12126 的可视化结果
+2025-05-08 03:24:21,957 - INFO - 
+正在处理时间段 11/20: 13623-13624
+2025-05-08 03:24:21,957 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:21,957 - INFO - 正在计算异常分数...
+2025-05-08 03:24:21,957 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:21,957 - INFO - 正在为时间段 13623-13624 生成可视化
+2025-05-08 03:24:21,957 - INFO - 正在为时间段 13623-13624 生成异常图可视化
+2025-05-08 03:24:21,958 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:21,960 - DEBUG - 边统计: 正常边 2 条, 异常边 598 条
+2025-05-08 03:24:22,024 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_10_13623_13624.png
+2025-05-08 03:24:22,288 - INFO - 成功保存时间段 13623-13624 的可视化结果
+2025-05-08 03:24:22,288 - INFO - 
+正在处理时间段 12/20: 14934-14937
+2025-05-08 03:24:22,288 - INFO - 该时间段的真实异常节点: {33, 34}
+2025-05-08 03:24:22,288 - INFO - 正在计算异常分数...
+2025-05-08 03:24:22,288 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:22,288 - INFO - 正在为时间段 14934-14937 生成可视化
+2025-05-08 03:24:22,288 - INFO - 正在为时间段 14934-14937 生成异常图可视化
+2025-05-08 03:24:22,288 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:22,292 - DEBUG - 边统计: 正常边 644 条, 异常边 168 条
+2025-05-08 03:24:22,356 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_11_14934_14937.png
+2025-05-08 03:24:22,616 - INFO - 成功保存时间段 14934-14937 的可视化结果
+2025-05-08 03:24:22,617 - INFO - 
+正在处理时间段 13/20: 15063-15065
+2025-05-08 03:24:22,617 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:22,617 - INFO - 正在计算异常分数...
+2025-05-08 03:24:22,617 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:22,617 - INFO - 正在为时间段 15063-15065 生成可视化
+2025-05-08 03:24:22,617 - INFO - 正在为时间段 15063-15065 生成异常图可视化
+2025-05-08 03:24:22,617 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:22,620 - DEBUG - 边统计: 正常边 360 条, 异常边 240 条
+2025-05-08 03:24:22,685 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_12_15063_15065.png
+2025-05-08 03:24:22,945 - INFO - 成功保存时间段 15063-15065 的可视化结果
+2025-05-08 03:24:22,945 - INFO - 
+正在处理时间段 14/20: 16534-16556
+2025-05-08 03:24:22,945 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:22,945 - INFO - 正在计算异常分数...
+2025-05-08 03:24:23,004 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:24:23,004 - INFO - 正在为时间段 16534-16556 生成可视化
+2025-05-08 03:24:23,004 - INFO - 正在为时间段 16534-16556 生成异常图可视化
+2025-05-08 03:24:23,004 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:23,007 - DEBUG - 边统计: 正常边 806 条, 异常边 6 条
+2025-05-08 03:24:23,071 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_13_16534_16556.png
+2025-05-08 03:24:23,341 - INFO - 成功保存时间段 16534-16556 的可视化结果
+2025-05-08 03:24:23,341 - INFO - 
+正在处理时间段 15/20: 17978-17980
+2025-05-08 03:24:23,341 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:23,341 - INFO - 正在计算异常分数...
+2025-05-08 03:24:23,341 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:23,341 - INFO - 正在为时间段 17978-17980 生成可视化
+2025-05-08 03:24:23,341 - INFO - 正在为时间段 17978-17980 生成异常图可视化
+2025-05-08 03:24:23,341 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:23,345 - DEBUG - 边统计: 正常边 468 条, 异常边 234 条
+2025-05-08 03:24:23,410 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_14_17978_17980.png
+2025-05-08 03:24:23,671 - INFO - 成功保存时间段 17978-17980 的可视化结果
+2025-05-08 03:24:23,671 - INFO - 
+正在处理时间段 16/20: 18639-18943
+2025-05-08 03:24:23,671 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 7, 11, 16, 19, 20, 21, 22, 23, 25, 28, 29, 31, 32, 34, 35, 36}
+2025-05-08 03:24:23,671 - INFO - 正在计算异常分数...
+2025-05-08 03:24:24,612 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:24:24,612 - INFO - 正在为时间段 18639-18943 生成可视化
+2025-05-08 03:24:24,612 - INFO - 正在为时间段 18639-18943 生成异常图可视化
+2025-05-08 03:24:24,613 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:24,616 - DEBUG - 边统计: 正常边 720 条, 异常边 150 条
+2025-05-08 03:24:24,757 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_15_18639_18943.png
+2025-05-08 03:24:25,021 - INFO - 成功保存时间段 18639-18943 的可视化结果
+2025-05-08 03:24:25,021 - INFO - 
+正在处理时间段 17/20: 19411-19417
+2025-05-08 03:24:25,021 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:25,021 - INFO - 正在计算异常分数...
+2025-05-08 03:24:25,030 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 11, 12, 13, 14, 15, 16, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:24:25,031 - INFO - 正在为时间段 19411-19417 生成可视化
+2025-05-08 03:24:25,031 - INFO - 正在为时间段 19411-19417 生成异常图可视化
+2025-05-08 03:24:25,031 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:25,034 - DEBUG - 边统计: 正常边 740 条, 异常边 16 条
+2025-05-08 03:24:25,099 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_16_19411_19417.png
+2025-05-08 03:24:25,359 - INFO - 成功保存时间段 19411-19417 的可视化结果
+2025-05-08 03:24:25,359 - INFO - 
+正在处理时间段 18/20: 20853-20856
+2025-05-08 03:24:25,359 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:25,359 - INFO - 正在计算异常分数...
+2025-05-08 03:24:25,359 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:25,359 - INFO - 正在为时间段 20853-20856 生成可视化
+2025-05-08 03:24:25,359 - INFO - 正在为时间段 20853-20856 生成异常图可视化
+2025-05-08 03:24:25,359 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:25,362 - DEBUG - 边统计: 正常边 466 条, 异常边 236 条
+2025-05-08 03:24:25,429 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_17_20853_20856.png
+2025-05-08 03:24:25,694 - INFO - 成功保存时间段 20853-20856 的可视化结果
+2025-05-08 03:24:25,695 - INFO - 
+正在处理时间段 19/20: 22291-22295
+2025-05-08 03:24:25,695 - INFO - 该时间段的真实异常节点: {9, 13, 14, 15}
+2025-05-08 03:24:25,695 - INFO - 正在计算异常分数...
+2025-05-08 03:24:25,698 - INFO - 检测到的异常节点: {32, 6, 7, 9, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 28, 31}
+2025-05-08 03:24:25,698 - INFO - 正在为时间段 22291-22295 生成可视化
+2025-05-08 03:24:25,698 - INFO - 正在为时间段 22291-22295 生成异常图可视化
+2025-05-08 03:24:25,699 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:25,701 - DEBUG - 边统计: 正常边 548 条, 异常边 102 条
+2025-05-08 03:24:25,767 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_18_22291_22295.png
+2025-05-08 03:24:26,027 - INFO - 成功保存时间段 22291-22295 的可视化结果
+2025-05-08 03:24:26,027 - INFO - 
+正在处理时间段 20/20: 22924-22926
+2025-05-08 03:24:26,027 - INFO - 该时间段的真实异常节点: {10}
+2025-05-08 03:24:26,027 - INFO - 正在计算异常分数...
+2025-05-08 03:24:26,027 - INFO - 检测到的异常节点: set()
+2025-05-08 03:24:26,027 - INFO - 正在为时间段 22924-22926 生成可视化
+2025-05-08 03:24:26,028 - INFO - 正在为时间段 22924-22926 生成异常图可视化
+2025-05-08 03:24:26,028 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:26,031 - DEBUG - 边统计: 正常边 390 条, 异常边 312 条
+2025-05-08 03:24:26,096 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/seg_19_22924_22926.png
+2025-05-08 03:24:26,355 - INFO - 成功保存时间段 22924-22926 的可视化结果
+2025-05-08 03:24:26,355 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-2-7 中的图像创建GIF
+2025-05-08 03:24:27,526 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-2-7/machine-2-7.gif
+2025-05-08 03:24:27,526 - INFO - 
+==================================================
+2025-05-08 03:24:27,526 - INFO - 开始数据集可视化: machine-2-8
+2025-05-08 03:24:27,527 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=4.0
+2025-05-08 03:24:27,527 - INFO - ==================================================
+
+2025-05-08 03:24:27,527 - INFO - 正在加载数据集 machine-2-8 的数据
+2025-05-08 03:24:27,530 - INFO - 数据加载成功。训练集形状: (23702, 38), 测试集形状: (23703, 38)
+2025-05-08 03:24:27,530 - INFO - 正在计算边缘统计量...
+2025-05-08 03:24:54,519 - INFO - 已计算 465 条边的统计量
+2025-05-08 03:24:54,519 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:24:54,520 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-2-8
+2025-05-08 03:24:54,611 - INFO - 在数据集中发现 1 个异常时间段
+2025-05-08 03:24:54,611 - INFO - 
+正在处理时间段 1/1: 17580-17740
+2025-05-08 03:24:54,611 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:24:54,611 - INFO - 正在计算异常分数...
+2025-05-08 03:24:55,177 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:24:55,177 - INFO - 正在为时间段 17580-17740 生成可视化
+2025-05-08 03:24:55,177 - INFO - 正在为时间段 17580-17740 生成异常图可视化
+2025-05-08 03:24:55,178 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:24:55,181 - DEBUG - 边统计: 正常边 912 条, 异常边 18 条
+2025-05-08 03:24:55,250 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-2-8/seg_0_17580_17740.png
+2025-05-08 03:24:55,513 - INFO - 成功保存时间段 17580-17740 的可视化结果
+2025-05-08 03:24:55,513 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-2-8 中的图像创建GIF
+2025-05-08 03:24:55,563 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-2-8/machine-2-8.gif
+2025-05-08 03:24:55,564 - INFO - 
+==================================================
+2025-05-08 03:24:55,564 - INFO - 开始数据集可视化: machine-3-11
+2025-05-08 03:24:55,564 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=0.0
+2025-05-08 03:24:55,564 - INFO - ==================================================
+
+2025-05-08 03:24:55,564 - INFO - 正在加载数据集 machine-3-11 的数据
+2025-05-08 03:24:55,567 - INFO - 数据加载成功。训练集形状: (28695, 38), 测试集形状: (28696, 38)
+2025-05-08 03:24:55,567 - INFO - 正在计算边缘统计量...
+2025-05-08 03:25:26,521 - INFO - 已计算 395 条边的统计量
+2025-05-08 03:25:26,521 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:25:26,521 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-3-11
+2025-05-08 03:25:26,632 - INFO - 在数据集中发现 3 个异常时间段
+2025-05-08 03:25:26,632 - INFO - 
+正在处理时间段 1/3: 21230-21295
+2025-05-08 03:25:26,633 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 5, 6, 7, 10, 11, 16, 19, 20, 21, 22, 23, 24, 26, 28, 30, 31, 32, 35, 36}
+2025-05-08 03:25:26,633 - INFO - 正在计算异常分数...
+2025-05-08 03:25:26,820 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 10, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 26, 28, 30, 31, 33, 34, 35, 36, 37}
+2025-05-08 03:25:26,820 - INFO - 正在为时间段 21230-21295 生成可视化
+2025-05-08 03:25:26,820 - INFO - 正在为时间段 21230-21295 生成异常图可视化
+2025-05-08 03:25:26,820 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:25:26,823 - DEBUG - 边统计: 正常边 606 条, 异常边 90 条
+2025-05-08 03:25:26,892 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-11/seg_0_21230_21295.png
+2025-05-08 03:25:27,155 - INFO - 成功保存时间段 21230-21295 的可视化结果
+2025-05-08 03:25:27,155 - INFO - 
+正在处理时间段 2/3: 27825-27950
+2025-05-08 03:25:27,155 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 7, 19, 20, 21, 22, 23, 24, 26, 28, 30, 31, 32, 34, 35, 36, 37}
+2025-05-08 03:25:27,155 - INFO - 正在计算异常分数...
+2025-05-08 03:25:27,522 - INFO - 检测到的异常节点: {1, 2, 3, 4, 5, 6, 7, 10, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 26, 28, 30, 31, 33, 34, 35, 36, 37}
+2025-05-08 03:25:27,522 - INFO - 正在为时间段 27825-27950 生成可视化
+2025-05-08 03:25:27,522 - INFO - 正在为时间段 27825-27950 生成异常图可视化
+2025-05-08 03:25:27,522 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:25:27,525 - DEBUG - 边统计: 正常边 624 条, 异常边 72 条
+2025-05-08 03:25:27,593 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-11/seg_1_27825_27950.png
+2025-05-08 03:25:27,854 - INFO - 成功保存时间段 27825-27950 的可视化结果
+2025-05-08 03:25:27,854 - INFO - 
+正在处理时间段 3/3: 27995-28000
+2025-05-08 03:25:27,855 - INFO - 该时间段的真实异常节点: {10, 11}
+2025-05-08 03:25:27,855 - INFO - 正在计算异常分数...
+2025-05-08 03:25:27,861 - INFO - 检测到的异常节点: {2, 3, 4, 6, 7, 10, 12, 14, 15, 16, 19, 20, 21, 22, 23, 24, 26, 28, 31, 33, 34, 35, 36, 37}
+2025-05-08 03:25:27,861 - INFO - 正在为时间段 27995-28000 生成可视化
+2025-05-08 03:25:27,861 - INFO - 正在为时间段 27995-28000 生成异常图可视化
+2025-05-08 03:25:27,861 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:25:27,864 - DEBUG - 边统计: 正常边 468 条, 异常边 84 条
+2025-05-08 03:25:27,930 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-11/seg_2_27995_28000.png
+2025-05-08 03:25:28,188 - INFO - 成功保存时间段 27995-28000 的可视化结果
+2025-05-08 03:25:28,189 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-3-11 中的图像创建GIF
+2025-05-08 03:25:28,352 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-3-11/machine-3-11.gif
+2025-05-08 03:25:28,352 - INFO - 
+==================================================
+2025-05-08 03:25:28,352 - INFO - 开始数据集可视化: machine-3-3
+2025-05-08 03:25:28,352 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=7.0
+2025-05-08 03:25:28,352 - INFO - ==================================================
+
+2025-05-08 03:25:28,353 - INFO - 正在加载数据集 machine-3-3 的数据
+2025-05-08 03:25:28,356 - INFO - 数据加载成功。训练集形状: (23703, 38), 测试集形状: (23703, 38)
+2025-05-08 03:25:28,356 - INFO - 正在计算边缘统计量...
+2025-05-08 03:25:58,695 - INFO - 已计算 623 条边的统计量
+2025-05-08 03:25:58,696 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:25:58,696 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-3-3
+2025-05-08 03:25:58,786 - INFO - 在数据集中发现 26 个异常时间段
+2025-05-08 03:25:58,786 - INFO - 
+正在处理时间段 1/26: 739-741
+2025-05-08 03:25:58,786 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:25:58,786 - INFO - 正在计算异常分数...
+2025-05-08 03:25:58,786 - INFO - 检测到的异常节点: set()
+2025-05-08 03:25:58,786 - INFO - 正在为时间段 739-741 生成可视化
+2025-05-08 03:25:58,786 - INFO - 正在为时间段 739-741 生成异常图可视化
+2025-05-08 03:25:58,787 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:25:58,791 - DEBUG - 边统计: 正常边 600 条, 异常边 330 条
+2025-05-08 03:25:58,957 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_0_739_741.png
+2025-05-08 03:25:59,225 - INFO - 成功保存时间段 739-741 的可视化结果
+2025-05-08 03:25:59,225 - INFO - 
+正在处理时间段 2/26: 1808-1813
+2025-05-08 03:25:59,225 - INFO - 该时间段的真实异常节点: {18}
+2025-05-08 03:25:59,225 - INFO - 正在计算异常分数...
+2025-05-08 03:25:59,233 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:25:59,234 - INFO - 正在为时间段 1808-1813 生成可视化
+2025-05-08 03:25:59,234 - INFO - 正在为时间段 1808-1813 生成异常图可视化
+2025-05-08 03:25:59,234 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:25:59,238 - DEBUG - 边统计: 正常边 868 条, 异常边 188 条
+2025-05-08 03:25:59,307 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_1_1808_1813.png
+2025-05-08 03:25:59,571 - INFO - 成功保存时间段 1808-1813 的可视化结果
+2025-05-08 03:25:59,571 - INFO - 
+正在处理时间段 3/26: 2179-2181
+2025-05-08 03:25:59,571 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:25:59,571 - INFO - 正在计算异常分数...
+2025-05-08 03:25:59,571 - INFO - 检测到的异常节点: set()
+2025-05-08 03:25:59,571 - INFO - 正在为时间段 2179-2181 生成可视化
+2025-05-08 03:25:59,571 - INFO - 正在为时间段 2179-2181 生成异常图可视化
+2025-05-08 03:25:59,571 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:25:59,575 - DEBUG - 边统计: 正常边 312 条, 异常边 558 条
+2025-05-08 03:25:59,641 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_2_2179_2181.png
+2025-05-08 03:25:59,899 - INFO - 成功保存时间段 2179-2181 的可视化结果
+2025-05-08 03:25:59,899 - INFO - 
+正在处理时间段 4/26: 3619-3621
+2025-05-08 03:25:59,900 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:25:59,900 - INFO - 正在计算异常分数...
+2025-05-08 03:25:59,900 - INFO - 检测到的异常节点: set()
+2025-05-08 03:25:59,900 - INFO - 正在为时间段 3619-3621 生成可视化
+2025-05-08 03:25:59,900 - INFO - 正在为时间段 3619-3621 生成异常图可视化
+2025-05-08 03:25:59,900 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:25:59,904 - DEBUG - 边统计: 正常边 660 条, 异常边 210 条
+2025-05-08 03:25:59,970 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_3_3619_3621.png
+2025-05-08 03:26:00,233 - INFO - 成功保存时间段 3619-3621 的可视化结果
+2025-05-08 03:26:00,234 - INFO - 
+正在处理时间段 5/26: 4561-4577
+2025-05-08 03:26:00,234 - INFO - 该时间段的真实异常节点: {1, 6, 7, 9, 10, 11, 12, 13, 14, 15, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 35, 36, 37, 38}
+2025-05-08 03:26:00,234 - INFO - 正在计算异常分数...
+2025-05-08 03:26:00,282 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:00,282 - INFO - 正在为时间段 4561-4577 生成可视化
+2025-05-08 03:26:00,282 - INFO - 正在为时间段 4561-4577 生成异常图可视化
+2025-05-08 03:26:00,282 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:00,286 - DEBUG - 边统计: 正常边 802 条, 异常边 190 条
+2025-05-08 03:26:00,354 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_4_4561_4577.png
+2025-05-08 03:26:00,618 - INFO - 成功保存时间段 4561-4577 的可视化结果
+2025-05-08 03:26:00,618 - INFO - 
+正在处理时间段 6/26: 5059-5061
+2025-05-08 03:26:00,618 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:00,618 - INFO - 正在计算异常分数...
+2025-05-08 03:26:00,618 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:00,619 - INFO - 正在为时间段 5059-5061 生成可视化
+2025-05-08 03:26:00,619 - INFO - 正在为时间段 5059-5061 生成异常图可视化
+2025-05-08 03:26:00,619 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:00,622 - DEBUG - 边统计: 正常边 574 条, 异常边 296 条
+2025-05-08 03:26:00,687 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_5_5059_5061.png
+2025-05-08 03:26:00,947 - INFO - 成功保存时间段 5059-5061 的可视化结果
+2025-05-08 03:26:00,947 - INFO - 
+正在处理时间段 7/26: 5449-5452
+2025-05-08 03:26:00,948 - INFO - 该时间段的真实异常节点: {12, 13, 15, 16, 17}
+2025-05-08 03:26:00,948 - INFO - 正在计算异常分数...
+2025-05-08 03:26:00,948 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:00,948 - INFO - 正在为时间段 5449-5452 生成可视化
+2025-05-08 03:26:00,948 - INFO - 正在为时间段 5449-5452 生成异常图可视化
+2025-05-08 03:26:00,948 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:00,952 - DEBUG - 边统计: 正常边 784 条, 异常边 208 条
+2025-05-08 03:26:01,018 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_6_5449_5452.png
+2025-05-08 03:26:01,281 - INFO - 成功保存时间段 5449-5452 的可视化结果
+2025-05-08 03:26:01,281 - INFO - 
+正在处理时间段 8/26: 6499-6501
+2025-05-08 03:26:01,281 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:01,281 - INFO - 正在计算异常分数...
+2025-05-08 03:26:01,281 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:01,281 - INFO - 正在为时间段 6499-6501 生成可视化
+2025-05-08 03:26:01,281 - INFO - 正在为时间段 6499-6501 生成异常图可视化
+2025-05-08 03:26:01,282 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:01,286 - DEBUG - 边统计: 正常边 550 条, 异常边 380 条
+2025-05-08 03:26:01,355 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_7_6499_6501.png
+2025-05-08 03:26:01,618 - INFO - 成功保存时间段 6499-6501 的可视化结果
+2025-05-08 03:26:01,619 - INFO - 
+正在处理时间段 9/26: 7939-7941
+2025-05-08 03:26:01,619 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:01,619 - INFO - 正在计算异常分数...
+2025-05-08 03:26:01,619 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:01,619 - INFO - 正在为时间段 7939-7941 生成可视化
+2025-05-08 03:26:01,619 - INFO - 正在为时间段 7939-7941 生成异常图可视化
+2025-05-08 03:26:01,619 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:01,623 - DEBUG - 边统计: 正常边 458 条, 异常边 412 条
+2025-05-08 03:26:01,761 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_8_7939_7941.png
+2025-05-08 03:26:02,021 - INFO - 成功保存时间段 7939-7941 的可视化结果
+2025-05-08 03:26:02,021 - INFO - 
+正在处理时间段 10/26: 8407-8413
+2025-05-08 03:26:02,021 - INFO - 该时间段的真实异常节点: {12, 13, 15, 16, 17}
+2025-05-08 03:26:02,021 - INFO - 正在计算异常分数...
+2025-05-08 03:26:02,032 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:02,032 - INFO - 正在为时间段 8407-8413 生成可视化
+2025-05-08 03:26:02,032 - INFO - 正在为时间段 8407-8413 生成异常图可视化
+2025-05-08 03:26:02,032 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:02,036 - DEBUG - 边统计: 正常边 914 条, 异常边 140 条
+2025-05-08 03:26:02,102 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_9_8407_8413.png
+2025-05-08 03:26:02,368 - INFO - 成功保存时间段 8407-8413 的可视化结果
+2025-05-08 03:26:02,368 - INFO - 
+正在处理时间段 11/26: 9737-9739
+2025-05-08 03:26:02,368 - INFO - 该时间段的真实异常节点: {16, 17, 15}
+2025-05-08 03:26:02,368 - INFO - 正在计算异常分数...
+2025-05-08 03:26:02,368 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:02,368 - INFO - 正在为时间段 9737-9739 生成可视化
+2025-05-08 03:26:02,368 - INFO - 正在为时间段 9737-9739 生成异常图可视化
+2025-05-08 03:26:02,368 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:02,373 - DEBUG - 边统计: 正常边 584 条, 异常边 470 条
+2025-05-08 03:26:02,442 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_10_9737_9739.png
+2025-05-08 03:26:02,709 - INFO - 成功保存时间段 9737-9739 的可视化结果
+2025-05-08 03:26:02,709 - INFO - 
+正在处理时间段 12/26: 10819-10821
+2025-05-08 03:26:02,709 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:02,709 - INFO - 正在计算异常分数...
+2025-05-08 03:26:02,709 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:02,709 - INFO - 正在为时间段 10819-10821 生成可视化
+2025-05-08 03:26:02,709 - INFO - 正在为时间段 10819-10821 生成异常图可视化
+2025-05-08 03:26:02,709 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:02,713 - DEBUG - 边统计: 正常边 504 条, 异常边 366 条
+2025-05-08 03:26:02,779 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_11_10819_10821.png
+2025-05-08 03:26:03,039 - INFO - 成功保存时间段 10819-10821 的可视化结果
+2025-05-08 03:26:03,039 - INFO - 
+正在处理时间段 13/26: 12259-12261
+2025-05-08 03:26:03,039 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:03,039 - INFO - 正在计算异常分数...
+2025-05-08 03:26:03,039 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:03,039 - INFO - 正在为时间段 12259-12261 生成可视化
+2025-05-08 03:26:03,039 - INFO - 正在为时间段 12259-12261 生成异常图可视化
+2025-05-08 03:26:03,040 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:03,044 - DEBUG - 边统计: 正常边 472 条, 异常边 458 条
+2025-05-08 03:26:03,110 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_12_12259_12261.png
+2025-05-08 03:26:03,369 - INFO - 成功保存时间段 12259-12261 的可视化结果
+2025-05-08 03:26:03,369 - INFO - 
+正在处理时间段 14/26: 13699-13701
+2025-05-08 03:26:03,369 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:03,370 - INFO - 正在计算异常分数...
+2025-05-08 03:26:03,370 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:03,370 - INFO - 正在为时间段 13699-13701 生成可视化
+2025-05-08 03:26:03,370 - INFO - 正在为时间段 13699-13701 生成异常图可视化
+2025-05-08 03:26:03,370 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:03,374 - DEBUG - 边统计: 正常边 472 条, 异常边 458 条
+2025-05-08 03:26:03,441 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_13_13699_13701.png
+2025-05-08 03:26:03,710 - INFO - 成功保存时间段 13699-13701 的可视化结果
+2025-05-08 03:26:03,710 - INFO - 
+正在处理时间段 15/26: 13827-13829
+2025-05-08 03:26:03,710 - INFO - 该时间段的真实异常节点: {17}
+2025-05-08 03:26:03,710 - INFO - 正在计算异常分数...
+2025-05-08 03:26:03,710 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:03,710 - INFO - 正在为时间段 13827-13829 生成可视化
+2025-05-08 03:26:03,710 - INFO - 正在为时间段 13827-13829 生成异常图可视化
+2025-05-08 03:26:03,711 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:03,715 - DEBUG - 边统计: 正常边 654 条, 异常边 336 条
+2025-05-08 03:26:03,781 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_14_13827_13829.png
+2025-05-08 03:26:04,046 - INFO - 成功保存时间段 13827-13829 的可视化结果
+2025-05-08 03:26:04,046 - INFO - 
+正在处理时间段 16/26: 14476-14485
+2025-05-08 03:26:04,046 - INFO - 该时间段的真实异常节点: {14}
+2025-05-08 03:26:04,046 - INFO - 正在计算异常分数...
+2025-05-08 03:26:04,066 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:04,066 - INFO - 正在为时间段 14476-14485 生成可视化
+2025-05-08 03:26:04,066 - INFO - 正在为时间段 14476-14485 生成异常图可视化
+2025-05-08 03:26:04,066 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:04,070 - DEBUG - 边统计: 正常边 926 条, 异常边 4 条
+2025-05-08 03:26:04,136 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_15_14476_14485.png
+2025-05-08 03:26:04,396 - INFO - 成功保存时间段 14476-14485 的可视化结果
+2025-05-08 03:26:04,397 - INFO - 
+正在处理时间段 17/26: 15139-15141
+2025-05-08 03:26:04,397 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:04,397 - INFO - 正在计算异常分数...
+2025-05-08 03:26:04,397 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:04,397 - INFO - 正在为时间段 15139-15141 生成可视化
+2025-05-08 03:26:04,397 - INFO - 正在为时间段 15139-15141 生成异常图可视化
+2025-05-08 03:26:04,397 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:04,401 - DEBUG - 边统计: 正常边 418 条, 异常边 452 条
+2025-05-08 03:26:04,466 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_16_15139_15141.png
+2025-05-08 03:26:04,734 - INFO - 成功保存时间段 15139-15141 的可视化结果
+2025-05-08 03:26:04,734 - INFO - 
+正在处理时间段 18/26: 16199-16211
+2025-05-08 03:26:04,734 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:04,734 - INFO - 正在计算异常分数...
+2025-05-08 03:26:04,768 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:04,768 - INFO - 正在为时间段 16199-16211 生成可视化
+2025-05-08 03:26:04,768 - INFO - 正在为时间段 16199-16211 生成异常图可视化
+2025-05-08 03:26:04,768 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:04,772 - DEBUG - 边统计: 正常边 974 条, 异常边 18 条
+2025-05-08 03:26:04,914 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_17_16199_16211.png
+2025-05-08 03:26:05,178 - INFO - 成功保存时间段 16199-16211 的可视化结果
+2025-05-08 03:26:05,178 - INFO - 
+正在处理时间段 19/26: 16579-16581
+2025-05-08 03:26:05,178 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 19, 21, 22, 25, 28, 31}
+2025-05-08 03:26:05,178 - INFO - 正在计算异常分数...
+2025-05-08 03:26:05,178 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:05,178 - INFO - 正在为时间段 16579-16581 生成可视化
+2025-05-08 03:26:05,178 - INFO - 正在为时间段 16579-16581 生成异常图可视化
+2025-05-08 03:26:05,179 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:05,182 - DEBUG - 边统计: 正常边 566 条, 异常边 304 条
+2025-05-08 03:26:05,248 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_18_16579_16581.png
+2025-05-08 03:26:05,508 - INFO - 成功保存时间段 16579-16581 的可视化结果
+2025-05-08 03:26:05,508 - INFO - 
+正在处理时间段 20/26: 18019-18021
+2025-05-08 03:26:05,508 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:05,508 - INFO - 正在计算异常分数...
+2025-05-08 03:26:05,508 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:05,508 - INFO - 正在为时间段 18019-18021 生成可视化
+2025-05-08 03:26:05,508 - INFO - 正在为时间段 18019-18021 生成异常图可视化
+2025-05-08 03:26:05,508 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:05,512 - DEBUG - 边统计: 正常边 700 条, 异常边 230 条
+2025-05-08 03:26:05,578 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_19_18019_18021.png
+2025-05-08 03:26:05,846 - INFO - 成功保存时间段 18019-18021 的可视化结果
+2025-05-08 03:26:05,847 - INFO - 
+正在处理时间段 21/26: 19081-19087
+2025-05-08 03:26:05,847 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:05,847 - INFO - 正在计算异常分数...
+2025-05-08 03:26:05,859 - INFO - 检测到的异常节点: {1, 2, 3, 4, 7, 9, 10, 11, 12, 13, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:05,859 - INFO - 正在为时间段 19081-19087 生成可视化
+2025-05-08 03:26:05,859 - INFO - 正在为时间段 19081-19087 生成异常图可视化
+2025-05-08 03:26:05,859 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:05,863 - DEBUG - 边统计: 正常边 848 条, 异常边 144 条
+2025-05-08 03:26:05,928 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_20_19081_19087.png
+2025-05-08 03:26:06,192 - INFO - 成功保存时间段 19081-19087 的可视化结果
+2025-05-08 03:26:06,192 - INFO - 
+正在处理时间段 22/26: 19349-19829
+2025-05-08 03:26:06,192 - INFO - 该时间段的真实异常节点: {1, 2, 3}
+2025-05-08 03:26:06,192 - INFO - 正在计算异常分数...
+2025-05-08 03:26:07,813 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:07,813 - INFO - 正在为时间段 19349-19829 生成可视化
+2025-05-08 03:26:07,813 - INFO - 正在为时间段 19349-19829 生成异常图可视化
+2025-05-08 03:26:07,813 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:07,818 - DEBUG - 边统计: 正常边 982 条, 异常边 10 条
+2025-05-08 03:26:07,887 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_21_19349_19829.png
+2025-05-08 03:26:08,154 - INFO - 成功保存时间段 19349-19829 的可视化结果
+2025-05-08 03:26:08,154 - INFO - 
+正在处理时间段 23/26: 20897-20902
+2025-05-08 03:26:08,154 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:08,154 - INFO - 正在计算异常分数...
+2025-05-08 03:26:08,161 - INFO - 检测到的异常节点: {1, 2, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:08,161 - INFO - 正在为时间段 20897-20902 生成可视化
+2025-05-08 03:26:08,161 - INFO - 正在为时间段 20897-20902 生成异常图可视化
+2025-05-08 03:26:08,161 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:08,165 - DEBUG - 边统计: 正常边 876 条, 异常边 54 条
+2025-05-08 03:26:08,231 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_22_20897_20902.png
+2025-05-08 03:26:08,494 - INFO - 成功保存时间段 20897-20902 的可视化结果
+2025-05-08 03:26:08,494 - INFO - 
+正在处理时间段 24/26: 21878-21892
+2025-05-08 03:26:08,494 - INFO - 该时间段的真实异常节点: {18}
+2025-05-08 03:26:08,494 - INFO - 正在计算异常分数...
+2025-05-08 03:26:08,533 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 18, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:08,533 - INFO - 正在为时间段 21878-21892 生成可视化
+2025-05-08 03:26:08,533 - INFO - 正在为时间段 21878-21892 生成异常图可视化
+2025-05-08 03:26:08,533 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:08,537 - DEBUG - 边统计: 正常边 1052 条, 异常边 4 条
+2025-05-08 03:26:08,605 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_23_21878_21892.png
+2025-05-08 03:26:08,867 - INFO - 成功保存时间段 21878-21892 的可视化结果
+2025-05-08 03:26:08,867 - INFO - 
+正在处理时间段 25/26: 22339-22341
+2025-05-08 03:26:08,867 - INFO - 该时间段的真实异常节点: {10, 11, 12, 13}
+2025-05-08 03:26:08,867 - INFO - 正在计算异常分数...
+2025-05-08 03:26:08,867 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:08,867 - INFO - 正在为时间段 22339-22341 生成可视化
+2025-05-08 03:26:08,867 - INFO - 正在为时间段 22339-22341 生成异常图可视化
+2025-05-08 03:26:08,868 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:08,872 - DEBUG - 边统计: 正常边 606 条, 异常边 386 条
+2025-05-08 03:26:08,941 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_24_22339_22341.png
+2025-05-08 03:26:09,209 - INFO - 成功保存时间段 22339-22341 的可视化结果
+2025-05-08 03:26:09,209 - INFO - 
+正在处理时间段 26/26: 23159-23179
+2025-05-08 03:26:09,209 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 19, 21, 22, 28, 31}
+2025-05-08 03:26:09,209 - INFO - 正在计算异常分数...
+2025-05-08 03:26:09,270 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36, 37, 38}
+2025-05-08 03:26:09,271 - INFO - 正在为时间段 23159-23179 生成可视化
+2025-05-08 03:26:09,271 - INFO - 正在为时间段 23159-23179 生成异常图可视化
+2025-05-08 03:26:09,271 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:09,275 - DEBUG - 边统计: 正常边 982 条, 异常边 10 条
+2025-05-08 03:26:09,341 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/seg_25_23159_23179.png
+2025-05-08 03:26:09,680 - INFO - 成功保存时间段 23159-23179 的可视化结果
+2025-05-08 03:26:09,680 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-3-3 中的图像创建GIF
+2025-05-08 03:26:11,162 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-3-3/machine-3-3.gif
+2025-05-08 03:26:11,162 - INFO - 
+==================================================
+2025-05-08 03:26:11,162 - INFO - 开始数据集可视化: machine-3-4
+2025-05-08 03:26:11,162 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=5.5
+2025-05-08 03:26:11,162 - INFO - ==================================================
+
+2025-05-08 03:26:11,163 - INFO - 正在加载数据集 machine-3-4 的数据
+2025-05-08 03:26:11,166 - INFO - 数据加载成功。训练集形状: (23687, 38), 测试集形状: (23687, 38)
+2025-05-08 03:26:11,166 - INFO - 正在计算边缘统计量...
+2025-05-08 03:26:38,777 - INFO - 已计算 435 条边的统计量
+2025-05-08 03:26:38,778 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:26:38,778 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-3-4
+2025-05-08 03:26:38,867 - INFO - 在数据集中发现 8 个异常时间段
+2025-05-08 03:26:38,867 - INFO - 
+正在处理时间段 1/8: 2734-3519
+2025-05-08 03:26:38,867 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 7, 11, 16}
+2025-05-08 03:26:38,867 - INFO - 正在计算异常分数...
+2025-05-08 03:26:41,260 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:26:41,260 - INFO - 正在为时间段 2734-3519 生成可视化
+2025-05-08 03:26:41,260 - INFO - 正在为时间段 2734-3519 生成异常图可视化
+2025-05-08 03:26:41,260 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:41,263 - DEBUG - 边统计: 正常边 734 条, 异常边 22 条
+2025-05-08 03:26:41,333 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_0_2734_3519.png
+2025-05-08 03:26:41,599 - INFO - 成功保存时间段 2734-3519 的可视化结果
+2025-05-08 03:26:41,599 - INFO - 
+正在处理时间段 2/8: 4474-4549
+2025-05-08 03:26:41,599 - INFO - 该时间段的真实异常节点: {2, 11}
+2025-05-08 03:26:41,599 - INFO - 正在计算异常分数...
+2025-05-08 03:26:41,832 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:26:41,832 - INFO - 正在为时间段 4474-4549 生成可视化
+2025-05-08 03:26:41,832 - INFO - 正在为时间段 4474-4549 生成异常图可视化
+2025-05-08 03:26:41,832 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:41,835 - DEBUG - 边统计: 正常边 806 条, 异常边 6 条
+2025-05-08 03:26:41,901 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_1_4474_4549.png
+2025-05-08 03:26:42,163 - INFO - 成功保存时间段 4474-4549 的可视化结果
+2025-05-08 03:26:42,163 - INFO - 
+正在处理时间段 3/8: 6013-6015
+2025-05-08 03:26:42,163 - INFO - 该时间段的真实异常节点: {10, 12, 13, 14}
+2025-05-08 03:26:42,163 - INFO - 正在计算异常分数...
+2025-05-08 03:26:42,163 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:42,163 - INFO - 正在为时间段 6013-6015 生成可视化
+2025-05-08 03:26:42,163 - INFO - 正在为时间段 6013-6015 生成异常图可视化
+2025-05-08 03:26:42,164 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:42,166 - DEBUG - 边统计: 正常边 488 条, 异常边 214 条
+2025-05-08 03:26:42,231 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_2_6013_6015.png
+2025-05-08 03:26:42,493 - INFO - 成功保存时间段 6013-6015 的可视化结果
+2025-05-08 03:26:42,493 - INFO - 
+正在处理时间段 4/8: 10963-10968
+2025-05-08 03:26:42,493 - INFO - 该时间段的真实异常节点: {33, 34, 30}
+2025-05-08 03:26:42,493 - INFO - 正在计算异常分数...
+2025-05-08 03:26:42,501 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 10, 11, 12, 13, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:26:42,501 - INFO - 正在为时间段 10963-10968 生成可视化
+2025-05-08 03:26:42,501 - INFO - 正在为时间段 10963-10968 生成异常图可视化
+2025-05-08 03:26:42,501 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:42,505 - DEBUG - 边统计: 正常边 672 条, 异常边 198 条
+2025-05-08 03:26:42,571 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_3_10963_10968.png
+2025-05-08 03:26:42,842 - INFO - 成功保存时间段 10963-10968 的可视化结果
+2025-05-08 03:26:42,842 - INFO - 
+正在处理时间段 5/8: 11565-11568
+2025-05-08 03:26:42,842 - INFO - 该时间段的真实异常节点: {24, 33, 34}
+2025-05-08 03:26:42,842 - INFO - 正在计算异常分数...
+2025-05-08 03:26:42,842 - INFO - 检测到的异常节点: set()
+2025-05-08 03:26:42,842 - INFO - 正在为时间段 11565-11568 生成可视化
+2025-05-08 03:26:42,842 - INFO - 正在为时间段 11565-11568 生成异常图可视化
+2025-05-08 03:26:42,842 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:42,846 - DEBUG - 边统计: 正常边 712 条, 异常边 100 条
+2025-05-08 03:26:42,911 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_4_11565_11568.png
+2025-05-08 03:26:43,171 - INFO - 成功保存时间段 11565-11568 的可视化结果
+2025-05-08 03:26:43,172 - INFO - 
+正在处理时间段 6/8: 13699-13708
+2025-05-08 03:26:43,172 - INFO - 该时间段的真实异常节点: {24, 33, 34}
+2025-05-08 03:26:43,172 - INFO - 正在计算异常分数...
+2025-05-08 03:26:43,191 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:26:43,191 - INFO - 正在为时间段 13699-13708 生成可视化
+2025-05-08 03:26:43,191 - INFO - 正在为时间段 13699-13708 生成异常图可视化
+2025-05-08 03:26:43,191 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:43,194 - DEBUG - 边统计: 正常边 736 条, 异常边 76 条
+2025-05-08 03:26:43,260 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_5_13699_13708.png
+2025-05-08 03:26:43,521 - INFO - 成功保存时间段 13699-13708 的可视化结果
+2025-05-08 03:26:43,521 - INFO - 
+正在处理时间段 7/8: 18589-18639
+2025-05-08 03:26:43,521 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4}
+2025-05-08 03:26:43,521 - INFO - 正在计算异常分数...
+2025-05-08 03:26:43,667 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:26:43,667 - INFO - 正在为时间段 18589-18639 生成可视化
+2025-05-08 03:26:43,667 - INFO - 正在为时间段 18589-18639 生成异常图可视化
+2025-05-08 03:26:43,667 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:43,670 - DEBUG - 边统计: 正常边 754 条, 异常边 2 条
+2025-05-08 03:26:43,737 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_6_18589_18639.png
+2025-05-08 03:26:44,003 - INFO - 成功保存时间段 18589-18639 的可视化结果
+2025-05-08 03:26:44,003 - INFO - 
+正在处理时间段 8/8: 18784-18824
+2025-05-08 03:26:44,003 - INFO - 该时间段的真实异常节点: {1, 2, 3}
+2025-05-08 03:26:44,003 - INFO - 正在计算异常分数...
+2025-05-08 03:26:44,116 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:26:44,117 - INFO - 正在为时间段 18784-18824 生成可视化
+2025-05-08 03:26:44,117 - INFO - 正在为时间段 18784-18824 生成异常图可视化
+2025-05-08 03:26:44,117 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:26:44,120 - DEBUG - 边统计: 正常边 738 条, 异常边 18 条
+2025-05-08 03:26:44,186 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/seg_7_18784_18824.png
+2025-05-08 03:26:44,447 - INFO - 成功保存时间段 18784-18824 的可视化结果
+2025-05-08 03:26:44,447 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-3-4 中的图像创建GIF
+2025-05-08 03:26:44,913 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-3-4/machine-3-4.gif
+2025-05-08 03:26:44,914 - INFO - 
+==================================================
+2025-05-08 03:26:44,914 - INFO - 开始数据集可视化: machine-3-6
+2025-05-08 03:26:44,914 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=1.5
+2025-05-08 03:26:44,914 - INFO - ==================================================
+
+2025-05-08 03:26:44,914 - INFO - 正在加载数据集 machine-3-6 的数据
+2025-05-08 03:26:44,918 - INFO - 数据加载成功。训练集形状: (28726, 38), 测试集形状: (28726, 38)
+2025-05-08 03:26:44,918 - INFO - 正在计算边缘统计量...
+2025-05-08 03:27:18,733 - INFO - 已计算 435 条边的统计量
+2025-05-08 03:27:18,734 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:27:18,734 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-3-6
+2025-05-08 03:27:18,843 - INFO - 在数据集中发现 11 个异常时间段
+2025-05-08 03:27:18,843 - INFO - 
+正在处理时间段 1/11: 1187-1220
+2025-05-08 03:27:18,843 - INFO - 该时间段的真实异常节点: {32, 1, 2, 3, 4, 36, 35, 34, 19, 20, 21, 22, 23, 24, 25, 28, 29, 31}
+2025-05-08 03:27:18,843 - INFO - 正在计算异常分数...
+2025-05-08 03:27:18,943 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:27:18,943 - INFO - 正在为时间段 1187-1220 生成可视化
+2025-05-08 03:27:18,943 - INFO - 正在为时间段 1187-1220 生成异常图可视化
+2025-05-08 03:27:18,944 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:18,947 - DEBUG - 边统计: 正常边 512 条, 异常边 358 条
+2025-05-08 03:27:19,119 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_0_1187_1220.png
+2025-05-08 03:27:19,382 - INFO - 成功保存时间段 1187-1220 的可视化结果
+2025-05-08 03:27:19,382 - INFO - 
+正在处理时间段 2/11: 8177-8210
+2025-05-08 03:27:19,382 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 34, 33}
+2025-05-08 03:27:19,382 - INFO - 正在计算异常分数...
+2025-05-08 03:27:19,480 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:27:19,480 - INFO - 正在为时间段 8177-8210 生成可视化
+2025-05-08 03:27:19,480 - INFO - 正在为时间段 8177-8210 生成异常图可视化
+2025-05-08 03:27:19,481 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:19,484 - DEBUG - 边统计: 正常边 788 条, 异常边 82 条
+2025-05-08 03:27:19,550 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_1_8177_8210.png
+2025-05-08 03:27:19,819 - INFO - 成功保存时间段 8177-8210 的可视化结果
+2025-05-08 03:27:19,819 - INFO - 
+正在处理时间段 3/11: 10637-10742
+2025-05-08 03:27:19,819 - INFO - 该时间段的真实异常节点: {1, 34, 33}
+2025-05-08 03:27:19,819 - INFO - 正在计算异常分数...
+2025-05-08 03:27:20,148 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:27:20,148 - INFO - 正在为时间段 10637-10742 生成可视化
+2025-05-08 03:27:20,148 - INFO - 正在为时间段 10637-10742 生成异常图可视化
+2025-05-08 03:27:20,148 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:20,152 - DEBUG - 边统计: 正常边 854 条, 异常边 16 条
+2025-05-08 03:27:20,218 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_2_10637_10742.png
+2025-05-08 03:27:20,480 - INFO - 成功保存时间段 10637-10742 的可视化结果
+2025-05-08 03:27:20,480 - INFO - 
+正在处理时间段 4/11: 15633-15862
+2025-05-08 03:27:20,480 - INFO - 该时间段的真实异常节点: {1, 9, 10, 12, 13, 14, 15, 16}
+2025-05-08 03:27:20,480 - INFO - 正在计算异常分数...
+2025-05-08 03:27:21,196 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:27:21,196 - INFO - 正在为时间段 15633-15862 生成可视化
+2025-05-08 03:27:21,196 - INFO - 正在为时间段 15633-15862 生成异常图可视化
+2025-05-08 03:27:21,196 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:21,199 - DEBUG - 边统计: 正常边 550 条, 异常边 206 条
+2025-05-08 03:27:21,265 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_3_15633_15862.png
+2025-05-08 03:27:21,528 - INFO - 成功保存时间段 15633-15862 的可视化结果
+2025-05-08 03:27:21,528 - INFO - 
+正在处理时间段 5/11: 16788-16994
+2025-05-08 03:27:21,528 - INFO - 该时间段的真实异常节点: {1, 10, 12, 13, 14, 15}
+2025-05-08 03:27:21,528 - INFO - 正在计算异常分数...
+2025-05-08 03:27:22,167 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:27:22,167 - INFO - 正在为时间段 16788-16994 生成可视化
+2025-05-08 03:27:22,167 - INFO - 正在为时间段 16788-16994 生成异常图可视化
+2025-05-08 03:27:22,167 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:22,170 - DEBUG - 边统计: 正常边 548 条, 异常边 264 条
+2025-05-08 03:27:22,236 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_4_16788_16994.png
+2025-05-08 03:27:22,498 - INFO - 成功保存时间段 16788-16994 的可视化结果
+2025-05-08 03:27:22,498 - INFO - 
+正在处理时间段 6/11: 18054-18133
+2025-05-08 03:27:22,499 - INFO - 该时间段的真实异常节点: {1, 10, 12, 13, 14, 15}
+2025-05-08 03:27:22,499 - INFO - 正在计算异常分数...
+2025-05-08 03:27:22,741 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:27:22,741 - INFO - 正在为时间段 18054-18133 生成可视化
+2025-05-08 03:27:22,741 - INFO - 正在为时间段 18054-18133 生成异常图可视化
+2025-05-08 03:27:22,742 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:22,745 - DEBUG - 边统计: 正常边 548 条, 异常边 264 条
+2025-05-08 03:27:22,811 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_5_18054_18133.png
+2025-05-08 03:27:23,078 - INFO - 成功保存时间段 18054-18133 的可视化结果
+2025-05-08 03:27:23,078 - INFO - 
+正在处理时间段 7/11: 19276-19499
+2025-05-08 03:27:23,078 - INFO - 该时间段的真实异常节点: {1, 10, 12, 13, 14, 15}
+2025-05-08 03:27:23,078 - INFO - 正在计算异常分数...
+2025-05-08 03:27:23,770 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:27:23,770 - INFO - 正在为时间段 19276-19499 生成可视化
+2025-05-08 03:27:23,771 - INFO - 正在为时间段 19276-19499 生成异常图可视化
+2025-05-08 03:27:23,771 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:23,774 - DEBUG - 边统计: 正常边 562 条, 异常边 194 条
+2025-05-08 03:27:23,840 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_6_19276_19499.png
+2025-05-08 03:27:24,106 - INFO - 成功保存时间段 19276-19499 的可视化结果
+2025-05-08 03:27:24,107 - INFO - 
+正在处理时间段 8/11: 20681-20864
+2025-05-08 03:27:24,107 - INFO - 该时间段的真实异常节点: {1, 9, 10, 12, 13, 14, 15}
+2025-05-08 03:27:24,107 - INFO - 正在计算异常分数...
+2025-05-08 03:27:24,669 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:27:24,669 - INFO - 正在为时间段 20681-20864 生成可视化
+2025-05-08 03:27:24,669 - INFO - 正在为时间段 20681-20864 生成异常图可视化
+2025-05-08 03:27:24,669 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:24,673 - DEBUG - 边统计: 正常边 638 条, 异常边 232 条
+2025-05-08 03:27:24,739 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_7_20681_20864.png
+2025-05-08 03:27:25,002 - INFO - 成功保存时间段 20681-20864 的可视化结果
+2025-05-08 03:27:25,002 - INFO - 
+正在处理时间段 9/11: 24503-24505
+2025-05-08 03:27:25,002 - INFO - 该时间段的真实异常节点: {1, 9, 10, 12, 13, 14, 15}
+2025-05-08 03:27:25,002 - INFO - 正在计算异常分数...
+2025-05-08 03:27:25,002 - INFO - 检测到的异常节点: set()
+2025-05-08 03:27:25,002 - INFO - 正在为时间段 24503-24505 生成可视化
+2025-05-08 03:27:25,002 - INFO - 正在为时间段 24503-24505 生成异常图可视化
+2025-05-08 03:27:25,003 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:25,006 - DEBUG - 边统计: 正常边 508 条, 异常边 248 条
+2025-05-08 03:27:25,071 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_8_24503_24505.png
+2025-05-08 03:27:25,340 - INFO - 成功保存时间段 24503-24505 的可视化结果
+2025-05-08 03:27:25,340 - INFO - 
+正在处理时间段 10/11: 26138-26148
+2025-05-08 03:27:25,340 - INFO - 该时间段的真实异常节点: {1, 12}
+2025-05-08 03:27:25,340 - INFO - 正在计算异常分数...
+2025-05-08 03:27:25,363 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:27:25,363 - INFO - 正在为时间段 26138-26148 生成可视化
+2025-05-08 03:27:25,363 - INFO - 正在为时间段 26138-26148 生成异常图可视化
+2025-05-08 03:27:25,364 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:25,367 - DEBUG - 边统计: 正常边 806 条, 异常边 6 条
+2025-05-08 03:27:25,508 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_9_26138_26148.png
+2025-05-08 03:27:25,769 - INFO - 成功保存时间段 26138-26148 的可视化结果
+2025-05-08 03:27:25,769 - INFO - 
+正在处理时间段 11/11: 27877-27957
+2025-05-08 03:27:25,769 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 6, 7, 11, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 35, 36}
+2025-05-08 03:27:25,769 - INFO - 正在计算异常分数...
+2025-05-08 03:27:26,036 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:27:26,036 - INFO - 正在为时间段 27877-27957 生成可视化
+2025-05-08 03:27:26,036 - INFO - 正在为时间段 27877-27957 生成异常图可视化
+2025-05-08 03:27:26,036 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:26,040 - DEBUG - 边统计: 正常边 848 条, 异常边 22 条
+2025-05-08 03:27:26,105 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/seg_10_27877_27957.png
+2025-05-08 03:27:26,375 - INFO - 成功保存时间段 27877-27957 的可视化结果
+2025-05-08 03:27:26,375 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-3-6 中的图像创建GIF
+2025-05-08 03:27:27,006 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-3-6/machine-3-6.gif
+2025-05-08 03:27:27,007 - INFO - 
+==================================================
+2025-05-08 03:27:27,007 - INFO - 开始数据集可视化: machine-3-8
+2025-05-08 03:27:27,007 - INFO - 使用参数: 评分模式=robust_zscore, all=None, 阈值=2.5
+2025-05-08 03:27:27,007 - INFO - ==================================================
+
+2025-05-08 03:27:27,007 - INFO - 正在加载数据集 machine-3-8 的数据
+2025-05-08 03:27:27,010 - INFO - 数据加载成功。训练集形状: (28703, 38), 测试集形状: (28704, 38)
+2025-05-08 03:27:27,010 - INFO - 正在计算边缘统计量...
+2025-05-08 03:27:59,046 - INFO - 已计算 434 条边的统计量
+2025-05-08 03:27:59,047 - INFO - 为每个节点使用所有邻居
+2025-05-08 03:27:59,047 - INFO - 可视化结果将保存到: ./visual/machine/neighbor_all/robust_zscore/machine-3-8
+2025-05-08 03:27:59,156 - INFO - 在数据集中发现 6 个异常时间段
+2025-05-08 03:27:59,156 - INFO - 
+正在处理时间段 1/6: 15144-15265
+2025-05-08 03:27:59,157 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 35, 36, 19, 20, 21, 22, 28, 31}
+2025-05-08 03:27:59,157 - INFO - 正在计算异常分数...
+2025-05-08 03:27:59,523 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:27:59,524 - INFO - 正在为时间段 15144-15265 生成可视化
+2025-05-08 03:27:59,524 - INFO - 正在为时间段 15144-15265 生成异常图可视化
+2025-05-08 03:27:59,524 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:27:59,527 - DEBUG - 边统计: 正常边 698 条, 异常边 58 条
+2025-05-08 03:27:59,597 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-8/seg_0_15144_15265.png
+2025-05-08 03:27:59,859 - INFO - 成功保存时间段 15144-15265 的可视化结果
+2025-05-08 03:27:59,859 - INFO - 
+正在处理时间段 2/6: 15941-16513
+2025-05-08 03:27:59,860 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 19, 20, 21, 22, 28, 30, 31}
+2025-05-08 03:27:59,860 - INFO - 正在计算异常分数...
+2025-05-08 03:28:01,626 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:28:01,626 - INFO - 正在为时间段 15941-16513 生成可视化
+2025-05-08 03:28:01,626 - INFO - 正在为时间段 15941-16513 生成异常图可视化
+2025-05-08 03:28:01,626 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:28:01,629 - DEBUG - 边统计: 正常边 782 条, 异常边 30 条
+2025-05-08 03:28:01,696 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-8/seg_1_15941_16513.png
+2025-05-08 03:28:01,957 - INFO - 成功保存时间段 15941-16513 的可视化结果
+2025-05-08 03:28:01,957 - INFO - 
+正在处理时间段 3/6: 17063-17275
+2025-05-08 03:28:01,957 - INFO - 该时间段的真实异常节点: {1, 2, 3, 4, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:28:01,957 - INFO - 正在计算异常分数...
+2025-05-08 03:28:02,636 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 33, 34, 35, 36}
+2025-05-08 03:28:02,636 - INFO - 正在为时间段 17063-17275 生成可视化
+2025-05-08 03:28:02,636 - INFO - 正在为时间段 17063-17275 生成异常图可视化
+2025-05-08 03:28:02,637 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:28:02,640 - DEBUG - 边统计: 正常边 808 条, 异常边 60 条
+2025-05-08 03:28:02,707 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-8/seg_2_17063_17275.png
+2025-05-08 03:28:02,971 - INFO - 成功保存时间段 17063-17275 的可视化结果
+2025-05-08 03:28:02,971 - INFO - 
+正在处理时间段 4/6: 21405-21547
+2025-05-08 03:28:02,971 - INFO - 该时间段的真实异常节点: {9, 10, 12, 13}
+2025-05-08 03:28:02,971 - INFO - 正在计算异常分数...
+2025-05-08 03:28:03,399 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:28:03,399 - INFO - 正在为时间段 21405-21547 生成可视化
+2025-05-08 03:28:03,399 - INFO - 正在为时间段 21405-21547 生成异常图可视化
+2025-05-08 03:28:03,399 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:28:03,402 - DEBUG - 边统计: 正常边 696 条, 异常边 6 条
+2025-05-08 03:28:03,466 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-8/seg_3_21405_21547.png
+2025-05-08 03:28:03,728 - INFO - 成功保存时间段 21405-21547 的可视化结果
+2025-05-08 03:28:03,728 - INFO - 
+正在处理时间段 5/6: 23478-23780
+2025-05-08 03:28:03,728 - INFO - 该时间段的真实异常节点: {9, 10, 13, 14, 30}
+2025-05-08 03:28:03,728 - INFO - 正在计算异常分数...
+2025-05-08 03:28:04,643 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 25, 26, 28, 30, 31, 32, 34, 35, 36}
+2025-05-08 03:28:04,643 - INFO - 正在为时间段 23478-23780 生成可视化
+2025-05-08 03:28:04,643 - INFO - 正在为时间段 23478-23780 生成异常图可视化
+2025-05-08 03:28:04,643 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:28:04,647 - DEBUG - 边统计: 正常边 750 条, 异常边 62 条
+2025-05-08 03:28:04,711 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-8/seg_4_23478_23780.png
+2025-05-08 03:28:04,972 - INFO - 成功保存时间段 23478-23780 的可视化结果
+2025-05-08 03:28:04,972 - INFO - 
+正在处理时间段 6/6: 28253-28269
+2025-05-08 03:28:04,973 - INFO - 该时间段的真实异常节点: {10, 12, 13}
+2025-05-08 03:28:04,973 - INFO - 正在计算异常分数...
+2025-05-08 03:28:05,013 - INFO - 检测到的异常节点: {1, 2, 3, 4, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 19, 20, 21, 22, 23, 24, 26, 28, 31, 32, 34, 35, 36}
+2025-05-08 03:28:05,013 - INFO - 正在为时间段 28253-28269 生成可视化
+2025-05-08 03:28:05,013 - INFO - 正在为时间段 28253-28269 生成异常图可视化
+2025-05-08 03:28:05,013 - DEBUG - 创建包含 38 个节点的图结构
+2025-05-08 03:28:05,016 - DEBUG - 边统计: 正常边 660 条, 异常边 42 条
+2025-05-08 03:28:05,079 - DEBUG - 正在保存可视化结果到 ./visual/machine/neighbor_all/robust_zscore/machine-3-8/seg_5_28253_28269.png
+2025-05-08 03:28:05,339 - INFO - 成功保存时间段 28253-28269 的可视化结果
+2025-05-08 03:28:05,340 - INFO - 正在从 ./visual/machine/neighbor_all/robust_zscore/machine-3-8 中的图像创建GIF
+2025-05-08 03:28:05,690 - INFO - GIF已保存到 ./visual/machine/neighbor_all/robust_zscore/machine-3-8/machine-3-8.gif
+2025-05-08 03:28:05,690 - INFO - 可视化结果生成完成！
+2025-05-08 03:28:05,690 - INFO - 
+==================================================
+2025-05-08 03:28:05,690 - INFO - 程序运行总耗时: 0:15:31.903011 
+
