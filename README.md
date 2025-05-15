@@ -44,6 +44,8 @@ python algorithm/stack_train.py --dataset=omi-1			# training
 python algorithm/stack_predict.py --load_model_dir=./results/stack_train/	# evaluation
 ```
 
+python algorithm/stack_predict.py --load_model_dir=./results/stack_train/
+
 For dataset SWaT and WADI (Note: you need to acquire these datasets first following ``data/Dataset Description`` and ``explib/raw_data_converter``):
 
 SWaT:

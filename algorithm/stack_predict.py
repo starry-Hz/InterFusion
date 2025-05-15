@@ -346,6 +346,8 @@ def main(exp: mltk.Experiment[PredictConfig], test_config: PredictConfig):
     spt.settings.enable_assertions = False
     spt.settings.check_numerics = train_config.check_numerics
 
+    # Adjust output directory to include dataset name and stack_predict
+    test_config.output_dirs = os.path.join('results', train_config.dataset, 'stack_predict')
     exp.make_dirs(test_config.output_dirs)
 
     # prepare the data

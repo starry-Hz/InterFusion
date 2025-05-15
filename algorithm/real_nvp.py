@@ -5,6 +5,25 @@ import numpy as np
 from tfsnippet.layers.flows.utils import ZeroLogDet
 
 
+class StableInvertibleDense(spt.layers.InvertibleDense):
+    def _get_kernel_matrix(self):
+        # 获取原始 kernel 矩阵
+        matrix = super()._get_kernel_matrix()
+        k_shape = tf.shape(matrix)
+
+        # 仅对方阵进行调整
+        def stabilize():
+            epsilon = 1e-6
+            identity = tf.eye(k_shape[0], dtype=matrix.dtype)
+            return matrix + epsilon * identity
+
+        def passthrough():
+            return matrix
+
+        # 如果是方阵，添加微小正则
+        matrix = tf.cond(tf.equal(k_shape[0], k_shape[1]), stabilize, passthrough)
+        return matrix
+
 class FeatureReversingFlow(spt.layers.FeatureMappingFlow):
 
     def __init__(self, axis=-1, value_ndims=1, name=None, scope=None):
@@ -93,8 +112,12 @@ def dense_real_nvp(flow_depth: int,
         for i in range(flow_depth):
             level = []
             if use_invertible_flow:
+                # level.append(
+                #     spt.layers.InvertibleDense(
+                #         strict_invertible=strict_invertible)
+                # )
                 level.append(
-                    spt.layers.InvertibleDense(
+                    StableInvertibleDense(
                         strict_invertible=strict_invertible)
                 )
             else:

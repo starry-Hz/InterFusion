@@ -11,6 +11,7 @@ from tfsnippet.trainer import Trainer, Evaluator
 import mltk
 from algorithm.utils import get_data_dim, get_data, get_sliding_window_data_flow, time_generator, GraphNodes
 import random
+import argparse
 
 from algorithm.InterFusion import ModelConfig, MTSAD
 from algorithm.InterFusion_swat import MTSAD_SWAT
@@ -424,7 +425,12 @@ def main(exp: mltk.Experiment[ExpConfig], config: ExpConfig):
 
 
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--dataset', type=str, default='omi-1', help='Dataset name')
+    args = parser.parse_args()
+
     with mltk.Experiment(ExpConfig()) as exp:
+        exp.config.dataset = args.dataset
         exp.save_config()
         main(exp, exp.config)
         if exp.config.exp_dir_save_path is not None:
