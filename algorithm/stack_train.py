@@ -429,7 +429,9 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', type=str, default='omi-1', help='Dataset name')
     args = parser.parse_args()
 
-    with mltk.Experiment(ExpConfig()) as exp:
+    output_dir = os.path.abspath(os.path.join('results', args.dataset))
+
+    with mltk.Experiment(ExpConfig(), output_dir=output_dir) as exp:
         exp.config.dataset = args.dataset
         exp.save_config()
         main(exp, exp.config)

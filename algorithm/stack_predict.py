@@ -634,5 +634,11 @@ def main(exp: mltk.Experiment[PredictConfig], test_config: PredictConfig):
 
 
 if __name__ == '__main__':
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--load_model_dir', type=str, required=True, help='Path to trained model directory')
+    args = parser.parse_args()
+
     with mltk.Experiment(PredictConfig()) as exp:
+        exp.config.load_model_dir = args.load_model_dir
         main(exp, exp.config)
