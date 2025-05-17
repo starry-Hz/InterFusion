@@ -5,11 +5,10 @@ __pycache__/
 .pytest_cache
 *.pyc
 .DS_Store
-*.log
+# *.log
 data/Dataset Description.md
 .idea/vcs.xml
 figures/
 visual/
 visual_20250415/
-logs/
 results/

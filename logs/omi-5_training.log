@@ -1,0 +1,418 @@
+/home/hz/anaconda3/envs/interfusionCpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:523: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint8 = np.dtype([("qint8", np.int8, 1)])
+/home/hz/anaconda3/envs/interfusionCpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:524: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint8 = np.dtype([("quint8", np.uint8, 1)])
+/home/hz/anaconda3/envs/interfusionCpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:525: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint16 = np.dtype([("qint16", np.int16, 1)])
+/home/hz/anaconda3/envs/interfusionCpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:526: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_quint16 = np.dtype([("quint16", np.uint16, 1)])
+/home/hz/anaconda3/envs/interfusionCpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:527: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  _np_qint32 = np.dtype([("qint32", np.int32, 1)])
+/home/hz/anaconda3/envs/interfusionCpu/lib/python3.6/site-packages/tensorflow/python/framework/dtypes.py:532: FutureWarning: Passing (type, 1) or '1type' as a synonym of type is deprecated; in a future version of numpy, it will be understood as (type, (1,)) / '(1,)type'.
+  np_resource = np.dtype([("resource", np.ubyte, 1)])
+2025-05-15 22:45:42,871 [INFO] root: Current random seed: 1747320342
+2025-05-15 22:45:42,912 [INFO] root: pretrain_q_net builder: {'n_z': None, 'observed': None, 'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'self': MTSAD('model'), 'is_training': <tf.Tensor 'is_training:0' shape=() dtype=bool>}
+2025-05-15 22:45:43,041 [INFO] root: p_net builder: {'is_training': <tf.Tensor 'is_training:0' shape=() dtype=bool>, 'n_z': None, 'observed': {'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'z': StochasticTensor(<tf.Tensor 'training/pretrain_q_net/sample/Normal.sample/Squeeze:0' shape=(?, 13, 19) dtype=float32>)}, 'self': MTSAD('model')}
+2025-05-15 22:45:43,263 [INFO] root: q_net builder: {'n_z': None, 'u': <tf.Tensor 'input_u:0' shape=(?, 100, 1) dtype=float32>, 'observed': None, 'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'self': MTSAD('model'), 'is_training': <tf.Tensor 'is_training:0' shape=() dtype=bool>}
+2025-05-15 22:45:54,502 [INFO] root: p_net builder: {'is_training': <tf.Tensor 'is_training:0' shape=() dtype=bool>, 'n_z': None, 'u': <tf.Tensor 'input_u:0' shape=(?, 100, 1) dtype=float32>, 'observed': {'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'z2': StochasticTensor(<tf.Tensor 'training/q_net/sample/Normal.sample/Squeeze:0' shape=(?, 13, 19) dtype=float32>), 'z1': StochasticTensor(<tf.Tensor 'training/q_net/FlowDistribution.sample/sequential_flow.transform/_39/coupling_layer_19.transform/concat:0' shape=(?, ?, 3) dtype=float32>)}, 'self': MTSAD('model')}
+2025-05-15 22:45:54,924 [INFO] root: pretrain_q_net builder: {'n_z': 100, 'observed': None, 'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'self': MTSAD('model'), 'is_training': False}
+2025-05-15 22:45:54,979 [INFO] root: p_net builder: {'is_training': False, 'n_z': None, 'observed': {'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'z': StochasticTensor(<tf.Tensor 'validation/pretrain_q_net/sample/Normal.sample/add:0' shape=(100, ?, 13, 19) dtype=float32>)}, 'self': MTSAD('model')}
+2025-05-15 22:45:55,438 [INFO] root: q_net builder: {'n_z': 100, 'u': <tf.Tensor 'input_u:0' shape=(?, 100, 1) dtype=float32>, 'observed': None, 'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'self': MTSAD('model'), 'is_training': False}
+2025-05-15 22:46:04,635 [INFO] root: p_net builder: {'is_training': False, 'n_z': None, 'u': <tf.Tensor 'input_u:0' shape=(?, 100, 1) dtype=float32>, 'observed': {'x': <tf.Tensor 'input_x:0' shape=(?, 100, 19) dtype=float32>, 'z2': StochasticTensor(<tf.Tensor 'validation/q_net/sample/Normal.sample/add:0' shape=(100, ?, 13, 19) dtype=float32>), 'z1': StochasticTensor(<tf.Tensor 'validation/q_net/FlowDistribution.sample/sequential_flow.transform/_39/coupling_layer_19.transform/concat:0' shape=(100, ?, ?, 3) dtype=float32>)}, 'self': MTSAD('model')}
+2025-05-15 22:46:29.767012: I tensorflow/core/platform/cpu_feature_guard.cc:141] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 AVX512F FMA
+Configurations
+============================================================
+seed                                   1747320342
+dataset                                'omi-5'
+model.x_dim                            19
+model.z_dim                            3
+model.u_dim                            1
+model.window_length                    100
+model.output_shape                     [25, 25, 50, 50, 100]
+model.z2_dim                           13
+model.l2_reg                           0.0001
+model.posterior_flow_type              'rnvp'
+model.posterior_flow_layers            20
+model.rnn_cell                         'GRU'
+model.rnn_hidden_units                 500
+model.use_leaky_relu                   False
+model.use_bidirectional_rnn            False
+model.use_self_attention               False
+model.unified_px_logstd                False
+model.dropout_feature                  False
+model.logstd_min                       -5.0
+model.logstd_max                       2.0
+model.use_prior_flow                   False
+model.prior_flow_layers                20
+model.connect_qz                       True
+model.connect_pz                       True
+use_time_info                          False
+model_type                             'mtsad'
+train.batch_size                       100
+train.pretrain_max_epoch               20
+train.max_epoch                        20
+train.train_start                      0
+train.max_train_size                   None
+train.initial_lr                       0.001
+train.lr_anneal_factor                 0.5
+train.lr_anneal_epoch_freq             10
+train.lr_anneal_step_freq              None
+train.pretrain_lr_anneal_epoch_freq    10
+train.early_stopping                   True
+train.valid_portion                    0.3
+train.save_test_stats                  True
+test.test_n_z                          100
+test.test_batch_size                   50
+test.test_start                        0
+test.max_test_size                     None
+test.save_results                      True
+test.output_dirs                       'analysis_results'
+test.train_score_filename              'train_score.pkl'
+test.test_score_filename               'test_score.pkl'
+test.preserve_feature_dim              False
+test.anomaly_score_calculate_latency   1
+test.plot_recons_results               True
+test.use_mcmc                          True
+test.mcmc_iter                         10
+test.mcmc_rand_mask                    False
+test.n_mc_chain                        10
+test.pos_mask                          True
+test.mcmc_track                        True
+test.load_model_dir                    None
+write_summary                          False
+write_histogram_summary                False
+check_numerics                         False
+save_results                           True
+save_ckpt                              True
+ckpt_epoch_freq                        10
+ckpt_max_keep                          10
+pretrain_ckpt_epoch_freq               20
+pretrain_ckpt_max_keep                 10
+exp_dir_save_path                      None
+
+load data of: omi-5
+train:  0 None
+test:  0 None
+Data normalized with min-max scaler
+train set shape:  (8640, 19)
+test set shape:  (4320, 19)
+test set label shape:  (4320,)
+Trainable Parameters (19,760 in total)
+======================================
+
+model/pretrain_p_net/   (760 in total)
+--------------------------------------
+pre_px_mean/kernel    (1, 19, 19)  361
+pre_px_mean/bias      (19,)         19
+pre_px_logstd/kernel  (1, 19, 19)  361
+pre_px_logstd/bias    (19,)         19
+
+model/h_for_qz/       (9,880 in total)
+--------------------------------------
+conv1d/kernel       (5, 19, 19)  1,805
+conv1d/bias         (19,)           19
+conv1d_1/kernel     (5, 19, 19)  1,805
+conv1d_1/bias       (19,)           19
+conv1d_2/kernel     (5, 19, 19)  1,805
+conv1d_2/bias       (19,)           19
+conv1d_3/kernel     (5, 19, 19)  1,805
+conv1d_3/bias       (19,)           19
+conv1d_4/kernel     (5, 19, 19)  1,805
+conv1d_4/bias       (19,)           19
+conv1d_5/kernel     (1, 19, 19)    361
+conv1d_5/bias       (19,)           19
+conv1d_6/kernel     (1, 19, 19)    361
+conv1d_6/bias       (19,)           19
+
+model/h_for_px/       (9,120 in total)
+--------------------------------------
+deconv1d/kernel     (5, 19, 19)  1,805
+deconv1d/bias       (19,)           19
+deconv1d_1/kernel   (5, 19, 19)  1,805
+deconv1d_1/bias     (19,)           19
+deconv1d_2/kernel   (5, 19, 19)  1,805
+deconv1d_2/bias     (19,)           19
+deconv1d_3/kernel   (5, 19, 19)  1,805
+deconv1d_3/bias     (19,)           19
+deconv1d_4/kernel   (5, 19, 19)  1,805
+deconv1d_4/bias     (19,)           19
+
+[Epoch 1/20, Step 59, ETA 5m 28.43s] epoch time: 14s; pre valid time: 9.729s; step time: 0.07196s (±0.1951s); pretrain loss: 1402.39 (±426.093); pretrain train recons: -1401.01 (±427.304); pretrain valid loss: 496.007; pretrain valid recons: -482.473 (*)
+[Epoch 2/20, Step 118, ETA 4m 44.29s] epoch time: 14.3s; pre valid time: 11.18s; step time: 0.05256s (±0.007341s); pretrain loss: -335.082 (±420.86); pretrain train recons: 359.041 (±425.324); pretrain valid loss: -929.349; pretrain valid recons: 963.104 (*)
+[Epoch 3/20, Step 177, ETA 4m 25.1s] epoch time: 15.19s; pre valid time: 11.78s; step time: 0.05759s (±0.02554s); pretrain loss: -1057.41 (±103.875); pretrain train recons: 1100.43 (±103.804); pretrain valid loss: -1265.21; pretrain valid recons: 1313.44 (*)
+[Epoch 4/20, Step 236, ETA 4m 2.407s] epoch time: 13.82s; pre valid time: 10.38s; step time: 0.05798s (±0.0186s); pretrain loss: -1338.81 (±103.526); pretrain train recons: 1394.37 (±107.891); pretrain valid loss: -1555.66; pretrain valid recons: 1630.31 (*)
+[Epoch 5/20, Step 295, ETA 3m 37.15s] epoch time: 11.78s; pre valid time: 7.925s; step time: 0.06507s (±0.03194s); pretrain loss: -1558.86 (±102.744); pretrain train recons: 1654.57 (±103.136); pretrain valid loss: -1674.84; pretrain valid recons: 1763.65 (*)
+[Epoch 6/20, Step 354, ETA 3m 20.89s] epoch time: 13.71s; pre valid time: 11.31s; step time: 0.04042s (±0.007258s); pretrain loss: -1701.31 (±80.8615); pretrain train recons: 1788.96 (±82.4338); pretrain valid loss: -1797.59; pretrain valid recons: 1884.88 (*)
+[Epoch 7/20, Step 413, ETA 3m 5.876s] epoch time: 13.99s; pre valid time: 10.97s; step time: 0.05097s (±0.01802s); pretrain loss: -1782.16 (±63.3384); pretrain train recons: 1870.1 (±64.6214); pretrain valid loss: -1875.4; pretrain valid recons: 1961.98 (*)
+[Epoch 8/20, Step 472, ETA 2m 50.69s] epoch time: 13.7s; pre valid time: 10.38s; step time: 0.05609s (±0.01159s); pretrain loss: -1851.41 (±62.2477); pretrain train recons: 1940.27 (±64.0545); pretrain valid loss: -1929.73; pretrain valid recons: 2020.07 (*)
+[Epoch 9/20, Step 531, ETA 2m 37.03s] epoch time: 14.69s; pre valid time: 11.22s; step time: 0.05847s (±0.01289s); pretrain loss: -1912.73 (±61.8912); pretrain train recons: 2001.46 (±63.587); pretrain valid loss: -1971.71; pretrain valid recons: 2062.71 (*)
+[Epoch 10/20, Step 590, ETA 2m 22.8s] epoch time: 14.32s; pre valid time: 10.91s; step time: 0.05739s (±0.01268s); pretrain loss: -1967.6 (±67.6154); pretrain train recons: 2057.11 (±68.8609); pretrain valid loss: -2039.61; pretrain valid recons: 2128.31 (*)
+[Epoch 11/20, Step 649, ETA 2m 8.307s] epoch time: 14.02s; pre valid time: 10.67s; step time: 0.05633s (±0.0136s); pretrain loss: -2015.34 (±56.2582); pretrain train recons: 2106.9 (±57.3506); pretrain valid loss: -2092.68; pretrain valid recons: 2181.76 (*)
+[Epoch 12/20, Step 708, ETA 1m 53.71s] epoch time: 13.74s; pre valid time: 10.3s; step time: 0.05764s (±0.01344s); pretrain loss: -2052.61 (±65.6357); pretrain train recons: 2142.65 (±66.4264); pretrain valid loss: -2086.04; pretrain valid recons: 2175.9
+[Epoch 13/20, Step 767, ETA 1m 39.8s] epoch time: 14.79s; pre valid time: 11.11s; step time: 0.06153s (±0.01458s); pretrain loss: -2082.07 (±67.8659); pretrain train recons: 2172.15 (±69.6709); pretrain valid loss: -2156.99; pretrain valid recons: 2244.52 (*)
+[Epoch 14/20, Step 826, ETA 1m 25.53s] epoch time: 14.22s; pre valid time: 10.82s; step time: 0.05707s (±0.01375s); pretrain loss: -2114.69 (±52.8138); pretrain train recons: 2204.19 (±53.9707); pretrain valid loss: -2174.3; pretrain valid recons: 2264.65 (*)INFO:tensorflow:Restoring parameters from /home/hz/code/InterFusion/results/omi-5/pre_ckpt_params/early_stopping/checkpoint.dat-1180
+2025-05-15 22:51:57,139 [INFO] tensorflow: Restoring parameters from /home/hz/code/InterFusion/results/omi-5/pre_ckpt_params/early_stopping/checkpoint.dat-1180
+
+[Epoch 15/20, Step 885, ETA 1m 12.25s] epoch time: 17.17s; pre valid time: 13.67s; step time: 0.05803s (±0.01392s); pretrain loss: -2140.62 (±56.6602); pretrain train recons: 2230.05 (±58.5368); pretrain valid loss: -2182; pretrain valid recons: 2272.52 (*)
+[Epoch 16/20, Step 944, ETA 59.22s] epoch time: 20.13s; pre valid time: 15.32s; step time: 0.08013s (±0.01873s); pretrain loss: -2167.42 (±59.5028); pretrain train recons: 2256.55 (±61.3833); pretrain valid loss: -2235.82; pretrain valid recons: 2325.43 (*)
+[Epoch 17/20, Step 1003, ETA 45.59s] epoch time: 21.49s; pre valid time: 16.75s; step time: 0.07917s (±0.01689s); pretrain loss: -2193.02 (±58.8482); pretrain train recons: 2281.35 (±60.5026); pretrain valid loss: -2248.95; pretrain valid recons: 2336.75 (*)
+[Epoch 18/20, Step 1062, ETA 31.05s] epoch time: 21.09s; pre valid time: 16.42s; step time: 0.0781s (±0.01342s); pretrain loss: -2218.82 (±52.6482); pretrain train recons: 2306.74 (±53.933); pretrain valid loss: -2264.62; pretrain valid recons: 2351.02 (*)
+[Epoch 19/20, Step 1121, ETA 15.81s] epoch time: 21s; pre valid time: 16.2s; step time: 0.08016s (±0.01647s); pretrain loss: -2246.8 (±56.1764); pretrain train recons: 2333.73 (±57.3144); pretrain valid loss: -2304.05; pretrain valid recons: 2390.33 (*)
+[Epoch 20/20, Step 1180, ETA 0s] epoch time: 21.59s; pre valid time: 16.66s; step time: 0.08088s (±0.01948s); pretrain loss: -2273.44 (±51.1344); pretrain train recons: 2359.89 (±52.2483); pretrain valid loss: -2331.55; pretrain valid recons: 2418.6 (*)
+Restore early-stopping parameters: from checkpoint /home/hz/code/InterFusion/results/omi-5/pre_ckpt_params/early_stopping/checkpoint.dat-1180
+
+PreTraining Finished.
+
+Pretrain Model saved.
+************Start train the whole network***********
+Trainable Parameters                              (1,644,818 in total)
+======================================================================
+
+model/p_net/                                        (289,114 in total)
+----------------------------------------------------------------------
+dense/kernel                                       (3, 19)          57
+dense/bias                                         (19,)            19
+feature_dense1/kernel                              (38, 500)    19,000
+feature_dense1/bias                                (500,)          500
+feature_dense2/kernel                              (500, 500)  250,000
+feature_dense2/bias                                (500,)          500
+x_mean/kernel                                      (500, 19)     9,500
+x_mean/bias                                        (19,)            19
+x_logstd/kernel                                    (500, 19)     9,500
+x_logstd/bias                                      (19,)            19
+
+model/posterior_flow/                                (12,260 in total)
+----------------------------------------------------------------------
+stable_invertible_dense/kernel/matrix                    (3, 3)      9
+coupling/hidden_0/kernel                                 (1, 100)  100
+coupling/hidden_0/bias                                   (100,)    100
+coupling/shift_and_scale/kernel                          (100, 4)  400
+coupling/shift_and_scale/bias                            (4,)        4
+stable_invertible_dense_1/kernel/matrix                  (3, 3)      9
+coupling_1/hidden_0/kernel                               (1, 100)  100
+coupling_1/hidden_0/bias                                 (100,)    100
+coupling_1/shift_and_scale/kernel                        (100, 4)  400
+coupling_1/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_2/kernel/matrix                  (3, 3)      9
+coupling_2/hidden_0/kernel                               (1, 100)  100
+coupling_2/hidden_0/bias                                 (100,)    100
+coupling_2/shift_and_scale/kernel                        (100, 4)  400
+coupling_2/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_3/kernel/matrix                  (3, 3)      9
+coupling_3/hidden_0/kernel                               (1, 100)  100
+coupling_3/hidden_0/bias                                 (100,)    100
+coupling_3/shift_and_scale/kernel                        (100, 4)  400
+coupling_3/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_4/kernel/matrix                  (3, 3)      9
+coupling_4/hidden_0/kernel                               (1, 100)  100
+coupling_4/hidden_0/bias                                 (100,)    100
+coupling_4/shift_and_scale/kernel                        (100, 4)  400
+coupling_4/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_5/kernel/matrix                  (3, 3)      9
+coupling_5/hidden_0/kernel                               (1, 100)  100
+coupling_5/hidden_0/bias                                 (100,)    100
+coupling_5/shift_and_scale/kernel                        (100, 4)  400
+coupling_5/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_6/kernel/matrix                  (3, 3)      9
+coupling_6/hidden_0/kernel                               (1, 100)  100
+coupling_6/hidden_0/bias                                 (100,)    100
+coupling_6/shift_and_scale/kernel                        (100, 4)  400
+coupling_6/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_7/kernel/matrix                  (3, 3)      9
+coupling_7/hidden_0/kernel                               (1, 100)  100
+coupling_7/hidden_0/bias                                 (100,)    100
+coupling_7/shift_and_scale/kernel                        (100, 4)  400
+coupling_7/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_8/kernel/matrix                  (3, 3)      9
+coupling_8/hidden_0/kernel                               (1, 100)  100
+coupling_8/hidden_0/bias                                 (100,)    100
+coupling_8/shift_and_scale/kernel                        (100, 4)  400
+coupling_8/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_9/kernel/matrix                  (3, 3)      9
+coupling_9/hidden_0/kernel                               (1, 100)  100
+coupling_9/hidden_0/bias                                 (100,)    100
+coupling_9/shift_and_scale/kernel                        (100, 4)  400
+coupling_9/shift_and_scale/bias                          (4,)        4
+stable_invertible_dense_10/kernel/matrix                 (3, 3)      9
+coupling_10/hidden_0/kernel                              (1, 100)  100
+coupling_10/hidden_0/bias                                (100,)    100
+coupling_10/shift_and_scale/kernel                       (100, 4)  400
+coupling_10/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_11/kernel/matrix                 (3, 3)      9
+coupling_11/hidden_0/kernel                              (1, 100)  100
+coupling_11/hidden_0/bias                                (100,)    100
+coupling_11/shift_and_scale/kernel                       (100, 4)  400
+coupling_11/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_12/kernel/matrix                 (3, 3)      9
+coupling_12/hidden_0/kernel                              (1, 100)  100
+coupling_12/hidden_0/bias                                (100,)    100
+coupling_12/shift_and_scale/kernel                       (100, 4)  400
+coupling_12/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_13/kernel/matrix                 (3, 3)      9
+coupling_13/hidden_0/kernel                              (1, 100)  100
+coupling_13/hidden_0/bias                                (100,)    100
+coupling_13/shift_and_scale/kernel                       (100, 4)  400
+coupling_13/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_14/kernel/matrix                 (3, 3)      9
+coupling_14/hidden_0/kernel                              (1, 100)  100
+coupling_14/hidden_0/bias                                (100,)    100
+coupling_14/shift_and_scale/kernel                       (100, 4)  400
+coupling_14/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_15/kernel/matrix                 (3, 3)      9
+coupling_15/hidden_0/kernel                              (1, 100)  100
+coupling_15/hidden_0/bias                                (100,)    100
+coupling_15/shift_and_scale/kernel                       (100, 4)  400
+coupling_15/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_16/kernel/matrix                 (3, 3)      9
+coupling_16/hidden_0/kernel                              (1, 100)  100
+coupling_16/hidden_0/bias                                (100,)    100
+coupling_16/shift_and_scale/kernel                       (100, 4)  400
+coupling_16/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_17/kernel/matrix                 (3, 3)      9
+coupling_17/hidden_0/kernel                              (1, 100)  100
+coupling_17/hidden_0/bias                                (100,)    100
+coupling_17/shift_and_scale/kernel                       (100, 4)  400
+coupling_17/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_18/kernel/matrix                 (3, 3)      9
+coupling_18/hidden_0/kernel                              (1, 100)  100
+coupling_18/hidden_0/bias                                (100,)    100
+coupling_18/shift_and_scale/kernel                       (100, 4)  400
+coupling_18/shift_and_scale/bias                         (4,)        4
+stable_invertible_dense_19/kernel/matrix                 (3, 3)      9
+coupling_19/hidden_0/kernel                              (1, 100)  100
+coupling_19/hidden_0/bias                                (100,)    100
+coupling_19/shift_and_scale/kernel                       (100, 4)  400
+coupling_19/shift_and_scale/bias                         (4,)        4
+
+Other Parameters                                  (1,343,444 in total)
+----------------------------------------------------------------------
+model/h_for_qz/conv1d/kernel                      (5, 19, 19)    1,805
+model/h_for_qz/conv1d/bias                        (19,)             19
+model/h_for_qz/conv1d_1/kernel                    (5, 19, 19)    1,805
+model/h_for_qz/conv1d_1/bias                      (19,)             19
+model/h_for_qz/conv1d_2/kernel                    (5, 19, 19)    1,805
+model/h_for_qz/conv1d_2/bias                      (19,)             19
+model/h_for_qz/conv1d_3/kernel                    (5, 19, 19)    1,805
+model/h_for_qz/conv1d_3/bias                      (19,)             19
+model/h_for_qz/conv1d_4/kernel                    (5, 19, 19)    1,805
+model/h_for_qz/conv1d_4/bias                      (19,)             19
+model/h_for_qz/conv1d_5/kernel                    (1, 19, 19)      361
+model/h_for_qz/conv1d_5/bias                      (19,)             19
+model/h_for_qz/conv1d_6/kernel                    (1, 19, 19)      361
+model/h_for_qz/conv1d_6/bias                      (19,)             19
+model/h_for_px/deconv1d/kernel                    (5, 19, 19)    1,805
+model/h_for_px/deconv1d/bias                      (19,)             19
+model/h_for_px/deconv1d_1/kernel                  (5, 19, 19)    1,805
+model/h_for_px/deconv1d_1/bias                    (19,)             19
+model/h_for_px/deconv1d_2/kernel                  (5, 19, 19)    1,805
+model/h_for_px/deconv1d_2/bias                    (19,)             19
+model/h_for_px/deconv1d_3/kernel                  (5, 19, 19)    1,805
+model/h_for_px/deconv1d_3/bias                    (19,)             19
+model/h_for_px/deconv1d_4/kernel                  (5, 19, 19)    1,805
+model/h_for_px/deconv1d_4/bias                    (19,)             19
+model/pretrain_p_net/pre_px_mean/kernel           (1, 19, 19)      361
+model/pretrain_p_net/pre_px_mean/bias             (19,)             19
+model/pretrain_p_net/pre_px_logstd/kernel         (1, 19, 19)      361
+model/pretrain_p_net/pre_px_logstd/bias           (19,)             19
+model/a_rnn_net/rnn/a_fw_cell/gates/kernel        (519, 1000)  519,000
+model/a_rnn_net/rnn/a_fw_cell/gates/bias          (1000,)        1,000
+model/a_rnn_net/rnn/a_fw_cell/candidate/kernel    (519, 500)   259,500
+model/a_rnn_net/rnn/a_fw_cell/candidate/bias      (500,)           500
+model/a_rnn_net/arnn_feature_dense1/kernel        (500, 500)   250,000
+model/a_rnn_net/arnn_feature_dense1/bias          (500,)           500
+model/a_rnn_net/arnn_feature_dense2/kernel        (500, 500)   250,000
+model/a_rnn_net/arnn_feature_dense2/bias          (500,)           500
+model/qz_mean_layer/qz_mean/kernel                (503, 3)       1,509
+model/qz_mean_layer/qz_mean/bias                  (3,)               3
+model/qz_logstd_layer/qz_logstd/kernel            (503, 3)       1,509
+model/qz_logstd_layer/qz_logstd/bias              (3,)               3
+model/pz_mean_layer/pz_mean/kernel                (22, 3)           66
+model/pz_mean_layer/pz_mean/bias                  (3,)               3
+model/pz_logstd_layer/pz_logstd/kernel            (22, 3)           66
+model/pz_logstd_layer/pz_logstd/bias              (3,)               3
+beta1_power                                       ()                 1
+beta2_power                                       ()                 1
+model/pretrain_p_net/pre_px_mean/kernel/Adam      (1, 19, 19)      361
+model/pretrain_p_net/pre_px_mean/kernel/Adam_1    (1, 19, 19)      361
+model/pretrain_p_net/pre_px_mean/bias/Adam        (19,)             19
+model/pretrain_p_net/pre_px_mean/bias/Adam_1      (19,)             19
+model/pretrain_p_net/pre_px_logstd/kernel/Adam    (1, 19, 19)      361
+model/pretrain_p_net/pre_px_logstd/kernel/Adam_1  (1, 19, 19)      361
+model/pretrain_p_net/pre_px_logstd/bias/Adam      (19,)             19
+model/pretrain_p_net/pre_px_logstd/bias/Adam_1    (19,)             19
+model/h_for_qz/conv1d/kernel/Adam                 (5, 19, 19)    1,805
+model/h_for_qz/conv1d/kernel/Adam_1               (5, 19, 19)    1,805
+model/h_for_qz/conv1d/bias/Adam                   (19,)             19
+model/h_for_qz/conv1d/bias/Adam_1                 (19,)             19
+model/h_for_qz/conv1d_1/kernel/Adam               (5, 19, 19)    1,805
+model/h_for_qz/conv1d_1/kernel/Adam_1             (5, 19, 19)    1,805
+model/h_for_qz/conv1d_1/bias/Adam                 (19,)             19
+model/h_for_qz/conv1d_1/bias/Adam_1               (19,)             19
+model/h_for_qz/conv1d_2/kernel/Adam               (5, 19, 19)    1,805
+model/h_for_qz/conv1d_2/kernel/Adam_1             (5, 19, 19)    1,805
+model/h_for_qz/conv1d_2/bias/Adam                 (19,)             19
+model/h_for_qz/conv1d_2/bias/Adam_1               (19,)             19
+model/h_for_qz/conv1d_3/kernel/Adam               (5, 19, 19)    1,805
+model/h_for_qz/conv1d_3/kernel/Adam_1             (5, 19, 19)    1,805
+model/h_for_qz/conv1d_3/bias/Adam                 (19,)             19
+model/h_for_qz/conv1d_3/bias/Adam_1               (19,)             19
+model/h_for_qz/conv1d_4/kernel/Adam               (5, 19, 19)    1,805
+model/h_for_qz/conv1d_4/kernel/Adam_1             (5, 19, 19)    1,805
+model/h_for_qz/conv1d_4/bias/Adam                 (19,)             19
+model/h_for_qz/conv1d_4/bias/Adam_1               (19,)             19
+model/h_for_qz/conv1d_5/kernel/Adam               (1, 19, 19)      361
+model/h_for_qz/conv1d_5/kernel/Adam_1             (1, 19, 19)      361
+model/h_for_qz/conv1d_5/bias/Adam                 (19,)             19
+model/h_for_qz/conv1d_5/bias/Adam_1               (19,)             19
+model/h_for_qz/conv1d_6/kernel/Adam               (1, 19, 19)      361
+model/h_for_qz/conv1d_6/kernel/Adam_1             (1, 19, 19)      361
+model/h_for_qz/conv1d_6/bias/Adam                 (19,)             19
+model/h_for_qz/conv1d_6/bias/Adam_1               (19,)             19
+model/h_for_px/deconv1d/kernel/Adam               (5, 19, 19)    1,805
+model/h_for_px/deconv1d/kernel/Adam_1             (5, 19, 19)    1,805
+model/h_for_px/deconv1d/bias/Adam                 (19,)             19
+model/h_for_px/deconv1d/bias/Adam_1               (19,)             19
+model/h_for_px/deconv1d_1/kernel/Adam             (5, 19, 19)    1,805
+model/h_for_px/deconv1d_1/kernel/Adam_1           (5, 19, 19)    1,805
+model/h_for_px/deconv1d_1/bias/Adam               (19,)             19
+model/h_for_px/deconv1d_1/bias/Adam_1             (19,)             19
+model/h_for_px/deconv1d_2/kernel/Adam             (5, 19, 19)    1,805
+model/h_for_px/deconv1d_2/kernel/Adam_1           (5, 19, 19)    1,805
+model/h_for_px/deconv1d_2/bias/Adam               (19,)             19
+model/h_for_px/deconv1d_2/bias/Adam_1             (19,)             19
+model/h_for_px/deconv1d_3/kernel/Adam             (5, 19, 19)    1,805
+model/h_for_px/deconv1d_3/kernel/Adam_1           (5, 19, 19)    1,805
+model/h_for_px/deconv1d_3/bias/Adam               (19,)             19
+model/h_for_px/deconv1d_3/bias/Adam_1             (19,)             19
+model/h_for_px/deconv1d_4/kernel/Adam             (5, 19, 19)    1,805
+model/h_for_px/deconv1d_4/kernel/Adam_1           (5, 19, 19)    1,805
+model/h_for_px/deconv1d_4/bias/Adam               (19,)             19
+model/h_for_px/deconv1d_4/bias/Adam_1             (19,)             19INFO:tensorflow:Restoring parameters from /home/hz/code/InterFusion/results/omi-5/ckpt_params/early_stopping/checkpoint.dat-1180
+2025-05-16 05:06:49,930 [INFO] tensorflow: Restoring parameters from /home/hz/code/InterFusion/results/omi-5/ckpt_params/early_stopping/checkpoint.dat-1180
+
+
+[Epoch 1/20, Step 59, ETA 5h 45m 46.99s] epoch time: 18m 6.53s; step time: 2.727s (±4.67s); valid time: 15m 25.57s; loss: -943.728 (±1104.02); train kl: 186.246 (±105.325); train recons: 1130.06 (±1038.35); valid kl: 228.257; valid loss: -1979.68; valid recons: 2208.02 (*)
+[Epoch 2/20, Step 118, ETA 5h 31m 56.52s] epoch time: 18m 41s; step time: 3.01s (±0.4863s); valid time: 15m 43.25s; loss: -2174.35 (±170.716); train kl: 190.199 (±19.0571); train recons: 2364.63 (±167.216); valid kl: 171.711; valid loss: -2397.08; valid recons: 2568.87 (*)
+[Epoch 3/20, Step 177, ETA 5h 14m 45.04s] epoch time: 18m 39.71s; step time: 2.965s (±0.4637s); valid time: 15m 44.6s; loss: -2338.14 (±190.781); train kl: 152.939 (±14.2557); train recons: 2491.16 (±194.789); valid kl: 156.058; valid loss: -2482.33; valid recons: 2638.47 (*)
+[Epoch 4/20, Step 236, ETA 4h 56m 59.65s] epoch time: 18m 42.26s; step time: 2.921s (±0.4423s); valid time: 15m 49.69s; loss: -2539.92 (±123.923); train kl: 127.709 (±14.0198); train recons: 2667.71 (±117.75); valid kl: 115.806; valid loss: -2620.86; valid recons: 2736.75 (*)
+[Epoch 5/20, Step 295, ETA 4h 38m 53.54s] epoch time: 18m 42.93s; step time: 2.956s (±0.3635s); valid time: 15m 48.48s; loss: -2564.9 (±255.793); train kl: 117.133 (±17.5177); train recons: 2682.11 (±251.019); valid kl: 101.352; valid loss: -2461.96; valid recons: 2563.39
+[Epoch 6/20, Step 354, ETA 4h 20m 45.32s] epoch time: 18m 47.29s; step time: 2.937s (±0.3668s); valid time: 15m 53.9s; loss: -2562.63 (±378.113); train kl: 106.585 (±10.7342); train recons: 2669.29 (±375.244); valid kl: 91.0321; valid loss: -2500.17; valid recons: 2591.28
+[Epoch 7/20, Step 413, ETA 4h 1m 58.72s] epoch time: 18m 32.53s; step time: 2.989s (±0.3369s); valid time: 15m 36.09s; loss: -2524.41 (±232.205); train kl: 96.8999 (±9.51943); train recons: 2621.38 (±230.063); valid kl: 100.227; valid loss: -2671.94; valid recons: 2772.25 (*)
+[Epoch 8/20, Step 472, ETA 3h 43m 49.23s] epoch time: 18m 55.05s; step time: 2.974s (±0.3901s); valid time: 15m 59.53s; loss: -2746.4 (±146.78); train kl: 100.676 (±10.8579); train recons: 2847.15 (±144.446); valid kl: 106.386; valid loss: -2597.4; valid recons: 2703.86
+[Epoch 9/20, Step 531, ETA 3h 24m 54.35s] epoch time: 18m 26.19s; step time: 2.987s (±0.3784s); valid time: 15m 29.79s; loss: -2809.63 (±136.893); train kl: 95.3748 (±7.34937); train recons: 2905.08 (±136.221); valid kl: 121.124; valid loss: -2606.82; valid recons: 2728.02
+[Epoch 10/20, Step 590, ETA 3h 6m 24.19s] epoch time: 18m 45.17s; step time: 3.001s (±0.3955s); valid time: 15m 47.96s; loss: -2726.57 (±258.362); train kl: 103.024 (±13.4665); train recons: 2829.67 (±252.924); valid kl: 94.1734; valid loss: -2750.16; valid recons: 2844.41 (*)
+[Epoch 11/20, Step 649, ETA 2h 47m 52.76s] epoch time: 18m 43.55s; step time: 3.033s (±0.4352s); valid time: 15m 44.53s; loss: -2992.37 (±116.394); train kl: 100.735 (±7.73931); train recons: 3093.19 (±116.978); valid kl: 96.2151; valid loss: -2948.68; valid recons: 3044.98 (*)
+[Epoch 12/20, Step 708, ETA 2h 29m 17.15s] epoch time: 18m 44.56s; step time: 3.113s (±0.4426s); valid time: 15m 40.79s; loss: -3135.55 (±79.2179); train kl: 96.6815 (±3.25015); train recons: 3232.31 (±80.5335); valid kl: 99.5583; valid loss: -3050.95; valid recons: 3150.58 (*)
+[Epoch 13/20, Step 767, ETA 2h 10m 42.22s] epoch time: 18m 48.41s; step time: 3.122s (±0.3895s); valid time: 15m 44.09s; loss: -3198.24 (±47.2908); train kl: 96.4945 (±3.50779); train recons: 3294.82 (±48.7622); valid kl: 95.1914; valid loss: -3090.68; valid recons: 3185.95 (*)
+[Epoch 14/20, Step 826, ETA 1h 52m 20.01s] epoch time: 19m 22.56s; step time: 3.173s (±0.441s); valid time: 16m 15.22s; loss: -3207.06 (±57.5115); train kl: 94.6999 (±4.16508); train recons: 3301.83 (±58.6978); valid kl: 95.8727; valid loss: -3102.65; valid recons: 3198.61 (*)
+[Epoch 15/20, Step 885, ETA 1h 33m 33.1s] epoch time: 18m 32.61s; step time: 3.086s (±0.4917s); valid time: 15m 30.4s; loss: -3225.34 (±57.3017); train kl: 91.7171 (±5.3988); train recons: 3317.13 (±56.8885); valid kl: 84.2655; valid loss: -3028.04; valid recons: 3112.39
+[Epoch 16/20, Step 944, ETA 1h 14m 54.98s] epoch time: 19m 0.6056s; step time: 3.173s (±0.4778s); valid time: 15m 53.28s; loss: -3244.65 (±59.8512); train kl: 85.0497 (±3.3902); train recons: 3329.78 (±60.013); valid kl: 83.3951; valid loss: -3087.56; valid recons: 3171.04
+[Epoch 17/20, Step 1003, ETA 56m 18.71s] epoch time: 19m 26.1s; step time: 3.201s (±0.4433s); valid time: 16m 17.18s; loss: -3291.11 (±46.0362); train kl: 82.5176 (±2.75946); train recons: 3373.7 (±47.1805); valid kl: 80.0354; valid loss: -3103.63; valid recons: 3183.74 (*)
+[Epoch 18/20, Step 1062, ETA 37m 34.46s] epoch time: 19m 4.101s; step time: 2.981s (±0.3723s); valid time: 16m 8.073s; loss: -3301.96 (±52.39); train kl: 81.0574 (±2.4052); train recons: 3383.1 (±53.0865); valid kl: 78.6198; valid loss: -3142.64; valid recons: 3221.34 (*)
+[Epoch 19/20, Step 1121, ETA 18m 46.82s] epoch time: 18m 39.51s; step time: 3.022s (±0.4369s); valid time: 15m 41.08s; loss: -3315.54 (±47.7786); train kl: 79.8413 (±2.26161); train recons: 3395.46 (±49.0283); valid kl: 77.5049; valid loss: -3152.77; valid recons: 3230.36 (*)
+[Epoch 20/20, Step 1180, ETA 0s] epoch time: 17m 46.75s; step time: 3.083s (±0.4271s); valid time: 14m 44.71s; loss: -3328.47 (±44.9071); train kl: 77.8722 (±2.47611); train recons: 3406.42 (±46.121); valid kl: 75.5227; valid loss: -3152.85; valid recons: 3228.45 (*)
+Restore early-stopping parameters: from checkpoint /home/hz/code/InterFusion/results/omi-5/ckpt_params/early_stopping/checkpoint.dat-1180
+
+Training Finished.
+
+Model saved.
